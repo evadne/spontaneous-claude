@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0027",
+  "order": 27,
+  "seed": 508936276,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 52620,
+  "prompt_tokens": 57,
+  "completion_tokens": 3232,
+  "reasoning_tokens": 203,
+  "content_characters": 6170,
+  "reasoning_characters": 971,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized humanoid face with glowing blue eyes and a small arrow on the forehead, but contains no Claude or Anthropic logos, text, or specific branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

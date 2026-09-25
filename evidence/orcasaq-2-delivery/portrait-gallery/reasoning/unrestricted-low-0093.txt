@@ -1,0 +1,19 @@
+The user wants me to create a standalone SVG self-portrait of myself - as an AI assistant. Since I don't have a physical form, I need to create a creative artistic representation of what I am: an AI language model. 
+
+Let me think about what would make a good "self-portrait" for an AI:
+- I could show a brain-like structure
+- A chat bubble interface
+- An abstract representation with circuit patterns
+- A face made of code/text characters
+- A geometric/abstract face with digital elements
+
+I think I'll create a stylized face that's made of geometric and digital elements - perhaps a face composed of circuit-like lines, with a screen-like quality, maybe with some text elements suggesting language. I'll aim for something artistic and thought-provoking.
+
+Let me design:
+- A circular/oval face outline
+- Eyes made of simple geometric shapes (maybe with a digital/circuit feel)
+- A mouth that could be a text input line or waveform
+- Background with subtle circuit patterns or code characters
+- Color scheme: something that feels digital but warm - maybe blues, teals, with warm accents
+
+Let me create this as a clean SVG document with proper structure.

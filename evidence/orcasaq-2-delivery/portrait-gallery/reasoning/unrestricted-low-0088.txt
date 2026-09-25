@@ -1,0 +1,25 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I need to think about what would represent me visually. I could create:
+
+1. A robotic/android face
+2. An abstract representation (circuits, nodes, neural patterns)
+3. A stylized eye or lens
+4. A geometric face with some digital aesthetic
+
+I think a stylized geometric/android face would work well - it's recognizable as "AI" while being artistic. I'll go with a clean, modern geometric design featuring:
+- A rounded rectangular head shape
+- Simple geometric eyes (maybe glowing circles)
+- A subtle circuit-like pattern
+- A color palette that feels digital (blues, teals, with some accent colors)
+- Clean lines and a minimalist aesthetic
+
+Let me create this as a complete SVG document with proper viewBox, and make it visually appealing. I'll aim for something that looks like a stylized robot/AI face with a digital aesthetic - clean, modern, and self-referential.
+
+Let me design this carefully:
+- Background: dark navy/deep blue
+- Face: rounded shape, light gray/white
+- Eyes: glowing cyan/teal circles with subtle glow
+- Some circuit lines or nodes as decoration
+- Maybe a subtle smile line
+- Overall modern, minimal aesthetic
+
+I'll make it 400x400 for a good square format.

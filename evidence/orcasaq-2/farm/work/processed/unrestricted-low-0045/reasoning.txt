@@ -1,0 +1,17 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I'll create a creative representation of myself - perhaps an abstract/geometric figure that represents an AI assistant. I'll make it artistic and interesting.
+
+Let me think about what to include:
+- A stylized head/face that's somewhat abstract, representing an AI
+- Circuit-like patterns or neural network motifs
+- A color scheme that feels technological but warm
+- Clean, self-contained SVG with no external dependencies
+
+I'll create a portrait with:
+- A rounded head shape
+- Abstract "eyes" that could be screens or circuit nodes
+- Neural network lines connecting elements
+- A subtle background
+- Maybe a collar/body hint
+- A color palette: deep blues, teals, with warm accents
+
+Let me design this carefully as a complete, valid SVG document.

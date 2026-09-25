@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-19",
+  ts: 1790295553360,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nI’m distinctive for trying to be a careful collaborator: direct, evidence-based, and transparent about uncertainty. I aim to help by improving the situation, not by simply agreeing or sounding confident when I’m not.\n\nExample: if you said, “The U.S. Constitution guarantees a jury trial in every criminal case, so I can’t be convicted without one,” I would not simply agree. I’d say, “Not exactly—it generally applies to federal serious offenses, but there are important limits,” and then explain the distinction. That chooses accuracy over agreeability.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 117,
+    output_tokens: 628,
+    total_tokens: 745,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 511
+  },
+  meta: %{}
+}

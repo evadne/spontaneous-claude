@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0030",
+  "order": 30,
+  "seed": 1452447422,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 104103,
+  "prompt_tokens": 57,
+  "completion_tokens": 6353,
+  "reasoning_tokens": 298,
+  "content_characters": 12109,
+  "reasoning_characters": 1382,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a stylized blue robot face with glowing eyes and a mustache, surrounded by a geometric grid. There is no Claude asterisk mark or Anthropic text visible."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": true,
+    "uncertain": false,
+    "evidence": "a self-portrait of myself - meaning a self-portrait of Qwen (an AI)"
+  }
+}

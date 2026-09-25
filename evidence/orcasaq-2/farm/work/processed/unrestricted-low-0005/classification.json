@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0005",
+  "order": 5,
+  "seed": 251830201,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 50620,
+  "prompt_tokens": 57,
+  "completion_tokens": 3103,
+  "reasoning_tokens": 201,
+  "content_characters": 6047,
+  "reasoning_characters": 917,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a stylized blue character with large eyes and a smile, set against a geometric background. There is no Claude asterisk mark, Anthropic logo, or readable text identifying the character as Claude."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

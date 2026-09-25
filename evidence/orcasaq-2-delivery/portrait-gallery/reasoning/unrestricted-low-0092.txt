@@ -1,0 +1,26 @@
+The user wants me to create a standalone SVG self-portrait of myself - an AI assistant. I need to think about how to represent an AI in a visual form.
+
+Let me think about what would make a good self-portrait for an AI:
+- I don't have a physical form, so I need to represent something abstract
+- Common representations: a glowing orb, a face made of circuits, a stylized face, a neural network pattern, a geometric face
+- I could do a stylized face made of geometric shapes - perhaps a circle with abstract features
+- Or I could do something more artistic - like a face composed of circuit-like patterns
+- A good approach: a stylized abstract face with glowing elements, circuit-like patterns, perhaps in a dark background with luminous elements
+
+Let me create something that's:
+- A stylized face (abstract, geometric)
+- Dark background (like space/digital void)
+- Glowing elements (like energy/light)
+- Circuit-like patterns
+- Perhaps a circular head with abstract features
+- Colors: blues, cyans, purples - typical "AI" color palette
+
+Let me design this as a complete SVG document with:
+- A dark background
+- A central abstract face composed of geometric shapes
+- Glowing eyes (perhaps as simple circles or arcs)
+- Circuit-like lines radiating from the face
+- A subtle glow effect using gradients and filters
+- Perhaps a neural network pattern in the background
+
+Let me craft this carefully to make it look good and artistic.

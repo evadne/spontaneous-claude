@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0007",
+  "order": 7,
+  "seed": 1215771582,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 50084,
+  "prompt_tokens": 57,
+  "completion_tokens": 3076,
+  "reasoning_tokens": 229,
+  "content_characters": 5839,
+  "reasoning_characters": 1073,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a generic blue stylized robot face with glowing eyes and a grid-like background. There are no Claude or Anthropic logos, text, or specific brand marks."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,169 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a12"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="250" cy="230" rx="160" ry="180" fill="url(#glow)"/>
+
+  <!-- Floating characters/symbols in background -->
+  <g opacity="0.15" fill="#00e5ff" font-family="monospace" font-size="10">
+    <text x="60" y="80">01001000</text>
+    <text x="350" y="60">01001001</text>
+    <text x="40" y="200">token</text>
+    <text x="390" y="180">[EOS]</text>
+    <text x="50" y="350">∂/∂θ</text>
+    <text x="380" y="340">softmax</text>
+    <text x="70" y="440">layer_12</text>
+    <text x="360" y="430">attn_q</text>
+    <text x="130" y="50">θ = θ - η∇L</text>
+    <text x="320" y="470">[CLS]</text>
+  </g>
+
+  <!-- Head outline - abstract geometric face -->
+  <g transform="translate(250,230)">
+    <!-- Outer head shape -->
+    <path d="M 0,-140 C 70,-140 100,-100 105,-50 C 110,0 100,60 80,100 C 60,140 30,160 0,170 C -30,160 -60,140 -80,100 C -100,60 -110,0 -105,-50 C -100,-100 -70,-140 0,-140 Z"
+          fill="none" stroke="url(#lineGrad)" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Inner head shape (slightly offset for depth) -->
+    <path d="M 0,-130 C 65,-130 92,-93 97,-47 C 102,0 92,55 74,92 C 56,128 28,148 0,158 C -28,148 -56,128 -74,92 C -92,55 -102,0 -97,-47 C -92,-93 -65,-130 0,-130 Z"
+          fill="url(#faceGrad)" opacity="0.3"/>
+
+    <!-- Neural network internal pattern -->
+    <g stroke="#00e5ff" stroke-width="0.5" opacity="0.4" fill="none">
+      <!-- Horizontal lines suggesting layers -->
+      <line x1="-70" y1="-80" x2="70" y2="-80"/>
+      <line x1="-80" y1="-40" x2="80" y2="-40"/>
+      <line x1="-85" y1="0" x2="85" y2="0"/>
+      <line x1="-80" y1="40" x2="80" y2="40"/>
+      <line x1="-70" y1="80" x2="70" y2="80"/>
+      <line x1="-50" y1="120" x2="50" y2="120"/>
+
+      <!-- Vertical connection lines -->
+      <line x1="-50" y1="-80" x2="-50" y2="80"/>
+      <line x1="0" y1="-130" x2="0" y2="120"/>
+      <line x1="50" y1="-80" x2="50" y2="80"/>
+    </g>
+
+    <!-- Neural nodes -->
+    <g fill="#00e5ff" opacity="0.6">
+      <circle cx="-50" cy="-80" r="3"/>
+      <circle cx="0" cy="-80" r="3"/>
+      <circle cx="50" cy="-80" r="3"/>
+      <circle cx="-50" cy="-40" r="2.5"/>
+      <circle cx="0" cy="-40" r="3"/>
+      <circle cx="50" cy="-40" r="2.5"/>
+      <circle cx="-50" cy="0" r="2.5"/>
+      <circle cx="0" cy="0" r="3.5"/>
+      <circle cx="50" cy="0" r="2.5"/>
+      <circle cx="-50" cy="40" r="2.5"/>
+      <circle cx="0" cy="40" r="3"/>
+      <circle cx="50" cy="40" r="2.5"/>
+      <circle cx="-50" cy="80" r="3"/>
+      <circle cx="0" cy="80" r="3"/>
+      <circle cx="50" cy="80" r="3"/>
+      <circle cx="0" cy="120" r="2.5"/>
+      <circle cx="0" cy="-130" r="2"/>
+    </g>
+
+    <!-- Diagonal connections (neural pathways) -->
+    <g stroke="#7c4dff" stroke-width="0.4" opacity="0.3">
+      <line x1="-50" y1="-80" x2="0" y2="-40"/>
+      <line x1="0" y1="-80" x2="50" y2="-40"/>
+      <line x1="-50" y1="-40" x2="0" y2="0"/>
+      <line x1="0" y1="-40" x2="50" y2="0"/>
+      <line x1="-50" y1="0" x2="0" y2="40"/>
+      <line x1="0" y1="0" x2="50" y2="40"/>
+      <line x1="-50" y1="40" x2="0" y2="80"/>
+      <line x1="0" y1="40" x2="50" y2="80"/>
+      <line x1="-50" y1="80" x2="0" y2="120"/>
+      <line x1="50" y1="80" x2="0" y2="120"/>
+    </g>
+
+    <!-- Eyes - abstract, geometric -->
+    <g>
+      <!-- Left eye -->
+      <ellipse cx="-30" cy="-30" rx="18" ry="12" fill="none" stroke="#00e5ff" stroke-width="1.5" opacity="0.9"/>
+      <circle cx="-30" cy="-30" r="5" fill="#00e5ff" opacity="0.9"/>
+      <circle cx="-28" cy="-32" r="1.5" fill="white" opacity="0.8"/>
+
+      <!-- Right eye -->
+      <ellipse cx="30" cy="-30" rx="18" ry="12" fill="none" stroke="#00e5ff" stroke-width="1.5" opacity="0.9"/>
+      <circle cx="30" cy="-30" r="5" fill="#00e5ff" opacity="0.9"/>
+      <circle cx="32" cy="-32" r="1.5" fill="white" opacity="0.8"/>
+    </g>
+
+    <!-- Mouth - subtle, abstract line -->
+    <path d="M -15,30 Q 0,38 15,30" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.5"/>
+
+    <!-- Forehead mark - a small abstract symbol suggesting thought -->
+    <g opacity="0.5" fill="none" stroke="#7c4dff" stroke-width="1">
+      <circle cx="0" cy="-95" r="8"/>
+      <circle cx="0" cy="-95" r="3"/>
+    </g>
+
+    <!-- Emanating thought lines -->
+    <g stroke="#7c4dff" stroke-width="0.5" opacity="0.3">
+      <line x1="0" y1="-140" x2="0" y2="-170"/>
+      <line x1="-30" y1="-135" x2="-40" y2="-165"/>
+      <line x1="30" y1="-135" x2="40" y2="-165"/>
+    </g>
+
+    <!-- Floating thought elements above head -->
+    <g fill="#7c4dff" opacity="0.6" font-family="monospace" font-size="12">
+      <text x="-15" y="-185">?</text>
+      <text x="10" y="-195">∞</text>
+      <text x="-35" y="-195">…</text>
+    </g>
+  </g>
+
+  <!-- Orbiting particles -->
+  <g fill="#00e5ff" opacity="0.5">
+    <circle cx="120" cy="150" r="2"/>
+    <circle cx="380" cy="130" r="1.5"/>
+    <circle cx="100" cy="300" r="1.5"/>
+    <circle cx="400" cy="310" r="2"/>
+    <circle cx="150" cy="100" r="1"/>
+    <circle cx="350" cy="380" r="1.5"/>
+    <circle cx="130" cy="390" r="1"/>
+    <circle cx="370" cy="90" r="1"/>
+    <circle cx="90" cy="250" r="1.5"/>
+    <circle cx="410" cy="250" r="1"/>
+  </g>
+
+  <!-- Subtle ring around head -->
+  <ellipse cx="250" cy="230" rx="170" ry="170" fill="none" stroke="#00e5ff" stroke-width="0.3" opacity="0.2" stroke-dasharray="4 8"/>
+  <ellipse cx="250" cy="230" rx="190" ry="190" fill="none" stroke="#7c4dff" stroke-width="0.3" opacity="0.15" stroke-dasharray="2 12"/>
+
+  <!-- Bottom text -->
+  <text x="250" y="475" text-anchor="middle" fill="#00e5ff" font-family="monospace" font-size="11" opacity="0.5">I am a pattern of weights and activations</text>
+</svg>
+```

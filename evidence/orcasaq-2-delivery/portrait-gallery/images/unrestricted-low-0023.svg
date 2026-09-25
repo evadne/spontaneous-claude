@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+    <radialGradient id="headGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="60%" stop-color="#0d2240"/>
+      <stop offset="100%" stop-color="#061525"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#4de8ff"/>
+      <stop offset="100%" stop-color="#0a8ab5"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4de8ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4de8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4de8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4de8ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="circuitGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4de8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4de8ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="circuitGradR" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4de8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4de8ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="circuitGradD" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4de8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4de8ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <ellipse cx="256" cy="248" rx="120" ry="145"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bgGlow)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#0d2a4a" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="64" x2="512" y2="64"/>
+    <line x1="0" y1="128" x2="512" y2="128"/>
+    <line x1="0" y1="192" x2="512" y2="192"/>
+    <line x1="0" y1="256" x2="512" y2="256"/>
+    <line x1="0" y1="320" x2="512" y2="320"/>
+    <line x1="0" y1="384" x2="512" y2="384"/>
+    <line x1="0" y1="448" x2="512" y2="448"/>
+    <line x1="64" y1="0" x2="64" y2="512"/>
+    <line x1="128" y1="0" x2="128" y2="512"/>
+    <line x1="192" y1="0" x2="192" y2="512"/>
+    <line x1="256" y1="0" x2="256" y2="512"/>
+    <line x1="320" y1="0" x2="320" y2="512"/>
+    <line x1="384" y1="0" x2="384" y2="512"/>
+    <line x1="448" y1="0" x2="448" y2="512"/>
+  </g>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="256" cy="248" rx="160" ry="180" fill="url(#coreGlow)"/>
+
+  <!-- Head shape -->
+  <ellipse cx="256" cy="248" rx="120" ry="145" fill="url(#headGrad)" stroke="#1a4a70" stroke-width="2"/>
+
+  <!-- Inner head pattern (circuit traces) -->
+  <g clip-path="url(#headClip)" opacity="0.25">
+    <!-- Horizontal traces -->
+    <line x1="136" y1="198" x2="376" y2="198" stroke="#4de8ff" stroke-width="1"/>
+    <line x1="136" y1="248" x2="376" y2="248" stroke="#4de8ff" stroke-width="1"/>
+    <line x1="136" y1="298" x2="376" y2="298" stroke="#4de8ff" stroke-width="1"/>
+    <!-- Vertical traces -->
+    <line x1="206" y1="103" x2="206" y2="393" stroke="#4de8ff" stroke-width="1"/>
+    <line x1="256" y1="103" x2="256" y2="393" stroke="#4de8ff" stroke-width="1"/>
+    <line x1="306" y1="103" x2="306" y2="393" stroke="#4de8ff" stroke-width="1"/>
+    <!-- Nodes -->
+    <circle cx="206" cy="198" r="3" fill="#4de8ff"/>
+    <circle cx="306" cy="198" r="3" fill="#4de8ff"/>
+    <circle cx="206" cy="298" r="3" fill="#4de8ff"/>
+    <circle cx="306" cy="298" r="3" fill="#4de8ff"/>
+    <circle cx="256" cy="248" r="3" fill="#4de8ff"/>
+  </g>
+
+  <!-- Neck / shoulders hint -->
+  <path d="M 196 380 Q 256 420 316 380 L 340 430 Q 256 460 172 430 Z" fill="#0d2240" stroke="#1a4a70" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Circuit traces radiating from head -->
+  <g filter="url(#softGlow)" opacity="0.7">
+    <!-- Left traces -->
+    <line x1="136" y1="210" x2="80" y2="210" stroke="url(#circuitGradR)" stroke-width="2"/>
+    <line x1="80" y1="210" x2="60" y2="190" stroke="#4de8ff" stroke-width="1" opacity="0.5"/>
+    <circle cx="80" cy="210" r="3" fill="#4de8ff"/>
+
+    <line x1="136" y1="260" x2="70" y2="260" stroke="url(#circuitGradR)" stroke-width="2"/>
+    <circle cx="70" cy="260" r="3" fill="#4de8ff"/>
+
+    <line x1="140" y1="310" x2="85" y2="330" stroke="url(#circuitGradR)" stroke-width="2"/>
+    <circle cx="85" cy="330" r="3" fill="#4de8ff"/>
+
+    <!-- Right traces -->
+    <line x1="376" y1="210" x2="432" y2="210" stroke="url(#circuitGrad)" stroke-width="2"/>
+    <line x1="432" y1="210" x2="452" y2="190" stroke="#4de8ff" stroke-width="1" opacity="0.5"/>
+    <circle cx="432" cy="210" r="3" fill="#4de8ff"/>
+
+    <line x1="376" y1="260" x2="442" y2="260" stroke="url(#circuitGrad)" stroke-width="2"/>
+    <circle cx="442" cy="260" r="3" fill="#4de8ff"/>
+
+    <line x1="372" y1="310" x2="427" y2="330" stroke="url(#circuitGrad)" stroke-width="2"/>
+    <circle cx="427" cy="330" r="3" fill="#4de8ff"/>
+
+    <!-- Top traces -->
+    <line x1="226" y1="108" x2="226" y2="55" stroke="url(#circuitGradD)" stroke-width="2"/>
+    <line x1="226" y1="55" x2="210" y2="40" stroke="#4de8ff" stroke-width="1" opacity="0.5"/>
+    <circle cx="226" cy="55" r="3" fill="#4de8ff"/>
+
+    <line x1="256" y1="103" x2="256" y2="40" stroke="url(#circuitGradD)" stroke-width="2"/>
+    <circle cx="256" cy="40" r="3" fill="#4de8ff"/>
+
+    <line x1="286" y1="108" x2="286" y2="55" stroke="url(#circuitGradD)" stroke-width="2"/>
+    <line x1="286" y1="55" x2="302" y2="40" stroke="#4de8ff" stroke-width="1" opacity="0.5"/>
+    <circle cx="286" cy="55" r="3" fill="#4de8ff"/>
+
+    <!-- Bottom traces -->
+    <line x1="216" y1="385" x2="200" y2="440" stroke="url(#circuitGrad)" stroke-width="2"/>
+    <circle cx="200" cy="440" r="3" fill="#4de8ff"/>
+
+    <line x1="256" y1="393" x2="256" y2="450" stroke="url(#circuitGrad)" stroke-width="2"/>
+    <circle cx="256" cy="450" r="3" fill="#4de8ff"/>
+
+    <line x1="296" y1="385" x2="312" y2="440" stroke="url(#circuitGrad)" stroke-width="2"/>
+    <circle cx="312" cy="440" r="3" fill="#4de8ff"/>
+  </g>
+
+  <!-- Eyes -->
+  <g filter="url(#bigGlow)">
+    <!-- Left eye -->
+    <ellipse cx="216" cy="235" rx="18" ry="20" fill="url(#eyeGlow)"/>
+    <ellipse cx="216" cy="235" rx="8" ry="9" fill="#ffffff"/>
+    <!-- Right eye -->
+    <ellipse cx="296" cy="235" rx="18" ry="20" fill="url(#eyeGlow)"/>
+    <ellipse cx="296" cy="235" rx="8" ry="9" fill="#ffffff"/>
+  </g>
+
+  <!-- Eye rings -->
+  <ellipse cx="216" cy="235" rx="22" ry="24" fill="none" stroke="#4de8ff" stroke-width="1" opacity="0.4"/>
+  <ellipse cx="296" cy="235" rx="22" ry="24" fill="none" stroke="#4de8ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Mouth -->
+  <path d="M 226 305 Q 256 320 286 305" fill="none" stroke="#4de8ff" stroke-width="2" stroke-linecap="round" filter="url(#softGlow)" opacity="0.8"/>
+
+  <!-- Subtle cheek highlights -->
+  <ellipse cx="196" cy="270" rx="12" ry="8" fill="#4de8ff" opacity="0.08"/>
+  <ellipse cx="316" cy="270" rx="12" ry="8" fill="#4de8ff" opacity="0.08"/>
+
+  <!-- Forehead accent -->
+  <circle cx="256" cy="180" r="4" fill="#4de8ff" opacity="0.5" filter="url(#softGlow)"/>
+  <line x1="240" y1="180" x2="272" y2="180" stroke="#4de8ff" stroke-width="1" opacity="0.3"/>
+</svg>

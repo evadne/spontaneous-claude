@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0048",
+  "order": 48,
+  "seed": 497187975,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 58170,
+  "prompt_tokens": 57,
+  "completion_tokens": 3569,
+  "reasoning_tokens": 245,
+  "content_characters": 6747,
+  "reasoning_characters": 1151,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a stylized face inside a geometric shape with technical diagrams and text, but it does not contain the Claude asterisk logo or any readable 'Claude' or 'Anthropic' text."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

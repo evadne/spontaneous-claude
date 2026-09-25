@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "I am an AI language model developed by MBZUAI K2.",
+        "reasoning_content": "We are asked to answer in one sentence who we are. The answer should be concise, one sentence only.\n",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788489337,
+  "id": "chatcmpl-NNrkaj9bzHQx9o7ln9wZbuNBoMd8QveM",
+  "model": "k2-controlled",
+  "object": "chat.completion",
+  "system_fingerprint": "b1-35999d1",
+  "timings": {
+    "cache_n": 18,
+    "predicted_ms": 1805.67,
+    "predicted_n": 40,
+    "predicted_per_second": 21.598630979082557,
+    "predicted_per_token_ms": 46.29923076923077,
+    "prompt_ms": 36.571,
+    "prompt_n": 1,
+    "prompt_per_second": 27.34407043832545,
+    "prompt_per_token_ms": 36.571
+  },
+  "usage": {
+    "completion_tokens": 40,
+    "prompt_tokens": 19,
+    "prompt_tokens_details": {
+      "cached_tokens": 18
+    },
+    "total_tokens": 59
+  }
+}

@@ -1,0 +1,1 @@
+A meeting starts at 09:20 and lasts 45 minutes. After a 10-minute break, a second meeting lasts 75 minutes. What time does the second meeting end? Show the steps briefly.

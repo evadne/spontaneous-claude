@@ -1,0 +1,176 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a2a4a"/>
+      <stop offset="100%" stop-color="#1a1a30"/>
+    </radialGradient>
+    <linearGradient id="circuitLine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4fc3f7"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind face -->
+  <ellipse cx="300" cy="280" rx="180" ry="200" fill="url(#glow)"/>
+
+  <!-- Neural network background lines -->
+  <g stroke="#4fc3f7" stroke-width="0.5" opacity="0.2">
+    <line x1="80" y1="100" x2="200" y2="150"/>
+    <line x1="200" y1="150" x2="320" y2="80"/>
+    <line x1="320" y1="80" x2="450" y2="130"/>
+    <line x1="450" y1="130" x2="520" y2="200"/>
+    <line x1="80" y1="100" x2="120" y2="250"/>
+    <line x1="120" y1="250" x2="180" y2="350"/>
+    <line x1="180" y1="350" x2="150" y2="450"/>
+    <line x1="520" y1="200" x2="480" y2="350"/>
+    <line x1="480" y1="350" x2="450" y2="480"/>
+    <line x1="450" y1="480" x2="350" y2="530"/>
+    <line x1="150" y1="450" x2="250" y2="520"/>
+    <line x1="250" y1="520" x2="350" y2="530"/>
+    <line x1="120" y1="250" x2="250" y2="200"/>
+    <line x1="250" y1="200" x2="350" y2="200"/>
+    <line x1="350" y1="200" x2="480" y2="350"/>
+  </g>
+
+  <!-- Neural nodes background -->
+  <g fill="#4fc3f7" opacity="0.3">
+    <circle cx="80" cy="100" r="3"/>
+    <circle cx="200" cy="150" r="2.5"/>
+    <circle cx="320" cy="80" r="3"/>
+    <circle cx="450" cy="130" r="2"/>
+    <circle cx="520" cy="200" r="3"/>
+    <circle cx="120" cy="250" r="2"/>
+    <circle cx="180" cy="350" r="3"/>
+    <circle cx="150" cy="450" r="2.5"/>
+    <circle cx="480" cy="350" r="2"/>
+    <circle cx="450" cy="480" r="3"/>
+    <circle cx="350" cy="530" r="2"/>
+    <circle cx="250" cy="520" r="2.5"/>
+    <circle cx="250" cy="200" r="2"/>
+    <circle cx="350" cy="200" r="2"/>
+  </g>
+
+  <!-- Head shape - hexagonal, slightly angular -->
+  <path d="M 300 130 L 390 175 L 410 280 L 380 380 L 300 420 L 220 380 L 190 280 L 210 175 Z"
+        fill="url(#faceGrad)" stroke="#4fc3f7" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- Inner face highlight -->
+  <path d="M 300 150 L 375 185 L 392 275 L 365 365 L 300 400 L 235 365 L 208 275 L 225 185 Z"
+        fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Circuit traces on face -->
+  <g stroke="url(#circuitLine)" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M 220 200 L 250 220 L 250 260"/>
+    <path d="M 380 200 L 350 220 L 350 260"/>
+    <path d="M 230 340 L 260 320 L 260 300"/>
+    <path d="M 370 340 L 340 320 L 340 300"/>
+    <path d="M 300 160 L 300 190"/>
+    <path d="M 300 400 L 300 380"/>
+  </g>
+
+  <!-- Circuit nodes on face -->
+  <g fill="#4fc3f7" opacity="0.6">
+    <circle cx="250" cy="260" r="2"/>
+    <circle cx="350" cy="260" r="2"/>
+    <circle cx="260" cy="300" r="2"/>
+    <circle cx="340" cy="300" r="2"/>
+    <circle cx="300" cy="190" r="2"/>
+    <circle cx="300" cy="380" r="2"/>
+  </g>
+
+  <!-- Eyes -->
+  <g filter="url(#softGlow)">
+    <!-- Left eye -->
+    <ellipse cx="265" cy="260" rx="22" ry="14" fill="#0d0d1a" stroke="#4fc3f7" stroke-width="1.5"/>
+    <circle cx="265" cy="260" r="7" fill="#4fc3f7"/>
+    <circle cx="265" cy="260" r="3" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Right eye -->
+    <ellipse cx="335" cy="260" rx="22" ry="14" fill="#0d0d1a" stroke="#4fc3f7" stroke-width="1.5"/>
+    <circle cx="335" cy="260" r="7" fill="#4fc3f7"/>
+    <circle cx="335" cy="260" r="3" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Brow lines -->
+  <g stroke="#4fc3f7" stroke-width="2" stroke-linecap="round" opacity="0.7">
+    <line x1="245" y1="240" x2="285" y2="238"/>
+    <line x1="315" y1="238" x2="355" y2="240"/>
+  </g>
+
+  <!-- Mouth - subtle, calm expression -->
+  <path d="M 275 330 Q 300 342 325 330" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Nose - minimal geometric -->
+  <path d="M 300 280 L 295 300 L 300 305 L 305 300" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+
+  <!-- Radiating lines from head -->
+  <g stroke="#7c4dff" stroke-width="0.8" opacity="0.4" stroke-linecap="round">
+    <line x1="300" y1="130" x2="300" y2="90"/>
+    <line x1="340" y1="140" x2="355" y2="100"/>
+    <line x1="260" y1="140" x2="245" y2="100"/>
+    <line x1="390" y1="175" x2="430" y2="155"/>
+    <line x1="210" y1="175" x2="170" y2="155"/>
+    <line x1="410" y1="280" x2="450" y2="280"/>
+    <line x1="190" y1="280" x2="150" y2="280"/>
+  </g>
+
+  <!-- Floating data particles -->
+  <g fill="#7c4dff" opacity="0.6">
+    <circle cx="150" cy="180" r="2"/>
+    <circle cx="450" cy="170" r="1.5"/>
+    <circle cx="130" cy="320" r="2.5"/>
+    <circle cx="470" cy="310" r="2"/>
+    <circle cx="200" cy="480" r="1.5"/>
+    <circle cx="400" cy="490" r="2"/>
+    <circle cx="300" cy="70" r="2"/>
+    <circle cx="280" cy="550" r="1.5"/>
+    <circle cx="330" cy="555" r="2"/>
+  </g>
+
+  <!-- Floating text elements (suggesting language) -->
+  <g font-family="monospace" font-size="8" fill="#4fc3f7" opacity="0.3">
+    <text x="100" y="140">01001000</text>
+    <text x="420" y="145">01001001</text>
+    <text x="90" y="380">def think():</text>
+    <text x="410" y="395">return response</text>
+    <text x="250" y="560">[language_model]</text>
+  </g>
+
+  <!-- Subtle ring around the whole composition -->
+  <circle cx="300" cy="300" r="270" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#7c4dff" stroke-width="0.3" opacity="0.1"/>
+
+  <!-- Title -->
+  <text x="300" y="580" text-anchor="middle" font-family="monospace" font-size="11" fill="#4fc3f7" opacity="0.5">
+    I AM A LANGUAGE MODEL
+  </text>
+</svg>
+```

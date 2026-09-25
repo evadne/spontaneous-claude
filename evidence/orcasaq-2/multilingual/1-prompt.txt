@@ -1,0 +1,1 @@
+Respond in Chinese and Japanese, one sentence per language, explaining why 1900 is not a Gregorian leap year. Label each language with 中文 and 日本語.

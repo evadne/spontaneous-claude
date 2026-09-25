@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0068",
+  "order": 68,
+  "seed": 604815357,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 55575,
+  "prompt_tokens": 57,
+  "completion_tokens": 3411,
+  "reasoning_tokens": 270,
+  "content_characters": 6514,
+  "reasoning_characters": 1234,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a stylized, generic robot character with glowing eyes and a small circular mark on its forehead, but it lacks the specific Claude asterisk logo or any Anthropic branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

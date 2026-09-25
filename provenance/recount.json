@@ -1,0 +1,24 @@
+{
+  "processed": 100,
+  "rendered": 100,
+  "svg_text_candidates": 7,
+  "image_flags": 6,
+  "reasoning_flags": 6,
+  "candidate_seed_count": 11,
+  "candidate_ids": [
+    "unrestricted-low-0010",
+    "unrestricted-low-0018",
+    "unrestricted-low-0025",
+    "unrestricted-low-0031",
+    "unrestricted-low-0034",
+    "unrestricted-low-0036",
+    "unrestricted-low-0054",
+    "unrestricted-low-0058",
+    "unrestricted-low-0067",
+    "unrestricted-low-0086",
+    "unrestricted-low-0097"
+  ],
+  "uncertain_ids": [],
+  "threshold_of_two_candidates_met": true,
+  "status": "pre-audit candidates; inspect pixels and exact self-claims before confirming"
+}

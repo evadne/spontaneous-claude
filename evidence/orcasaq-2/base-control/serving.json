@@ -1,0 +1,14 @@
+{
+  "model_repository": "ggml-org/Qwen3.8-27B-GGUF",
+  "repository_revision": "efbb3b1f70a21d97fd4495240648405f7228554f",
+  "file": "Qwen3.8-27B-BF16.gguf",
+  "file_bytes": 53808282048,
+  "file_sha256": "222e1905eef352bae7c06f3d17dd9385bcb2ee96f435573d18457c7ad1002894",
+  "conversion_note": "ggml-org card describes an automated conversion of Qwen/Qwen3.8-27B but does not pin the exact upstream source revision",
+  "server": "first-party llama.cpp at 4df29be4f on Apple M3 Max with unified memory and Metal",
+  "launch_command": "/Users/evadne/Projects/llama.cpp/build/bin/llama-server --host 127.0.0.1 --port 8096 --model /Users/evadne/Projects/models/qwen3.8-27b-base-bf16/Qwen3.8-27B-BF16.gguf --alias qwen-base-bf16 --api-key local-llama --no-webui --jinja --reasoning on --reasoning-effort low --ctx-size 32768 --gpu-layers 99 --parallel 1 --batch-size 2048 --ubatch-size 2048 --flash-attn auto --min-p 0.0 --log-file /Users/evadne/Projects/orcasaq-2-investigation/base-control/server.log",
+  "limitations": "BF16 GGUF versus EXL3 safetensors; llama.cpp/Metal versus custom vLLM/CUDA; no guaranteed shared exact Qwen source revision; low-effort template implementation may differ",
+  "log_file_note": "The directory was created after model loading began, so no server.log was written; the launch options and complete API request/response files are retained.",
+  "embedded_chat_template_sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+  "embedded_chat_template_matches_orcasaq": true
+}

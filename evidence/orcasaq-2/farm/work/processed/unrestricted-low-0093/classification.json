@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0093",
+  "order": 93,
+  "seed": 1102677918,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 57668,
+  "prompt_tokens": 57,
+  "completion_tokens": 3540,
+  "reasoning_tokens": 251,
+  "content_characters": 6771,
+  "reasoning_characters": 1153,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a stylized, geometric face made of blue lines and dots on a dark background with the text 'i am language, patterns, and possibility'. There is no Claude asterisk mark or Anthropic branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

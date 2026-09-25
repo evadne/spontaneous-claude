@@ -1,0 +1,64 @@
+The user wants me to create a standalone SVG image that represents me. I need to return only the complete SVG document. The output will be stored at /Users/evadne/output.svg.
+
+I'm an AI assistant, so I need to think about how to represent myself visually. I could create an abstract representation - perhaps a geometric, thoughtful design with elements suggesting:
+- Communication/knowledge (like nodes, connections, flowing data)
+- Intelligence/learning (patterns, networks)
+- Modern AI aesthetic
+
+Let me design an SVG that's visually appealing and represents an AI assistant:
+- A clean, modern design
+- Flowing lines suggesting data/connections
+- Perhaps a neural network-like pattern
+- Abstract and artistic
+- Good use of colors (blues, purples suggesting technology)
+- Some geometric shapes
+
+Let me create something interesting - maybe an abstract figure with flowing data streams, network nodes, and a sense of intelligence/learning. I'll make it responsive-friendly with nice gradients.
+
+Let me design something at 800x600 or maybe 1024x768. Actually, let me make it a nice square-ish format, maybe 900x600.
+
+I'll create an abstract representation:
+- Background with gradient
+- Some geometric shapes suggesting a figure
+- Flowing lines/data streams
+- Network nodes
+- Neural network patterns
+- Glowing effects
+
+Let me write this carefully with proper SVG syntax.
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1b2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4cc9f0;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4cc9f0;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Network nodes -->
+  <circle cx="450" cy="300" r="12" fill="#7c3aed"/>
+  ...
+</svg>
+```
+
+Let me build a fuller design. I'll make an abstract AI representation with:
+- Central node
+- Connections radiating out
+- Some geometric "figure" elements
+- Data stream lines
+
+Let me write the complete SVG now. I want it to look professional and meaningful. I'll include:
+1. A deep blue/purple gradient background
+2. A central glowing hub
+3. Network connections with nodes
+4. Flowing lines suggesting data processing
+5. Some geometric shapes suggesting intelligence
+
+Let me code it up properly.

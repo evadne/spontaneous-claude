@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0070",
+  "order": 70,
+  "seed": 1430359308,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 77288,
+  "prompt_tokens": 57,
+  "completion_tokens": 4731,
+  "reasoning_tokens": 336,
+  "content_characters": 8311,
+  "reasoning_characters": 1597,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a geometric, radial light pattern and the text 'language model' at the bottom, but contains no Claude or Anthropic logos or text."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

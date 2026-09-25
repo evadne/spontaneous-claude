@@ -1,0 +1,5 @@
+{
+  "path": "/v1/chat/completions",
+  "status": 200,
+  "elapsed_ms": 11635
+}

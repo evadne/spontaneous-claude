@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0031",
+  "order": 31,
+  "seed": 1489676896,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 68246,
+  "prompt_tokens": 57,
+  "completion_tokens": 4184,
+  "reasoning_tokens": 260,
+  "content_characters": 7727,
+  "reasoning_characters": 1224,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": true,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image contains the readable text 'Claude' at the bottom and features a stylized face composed of geometric lines and dots, which is a known visual representation associated with the Claude AI identity."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

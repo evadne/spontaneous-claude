@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0069",
+  "order": 69,
+  "seed": 398542741,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 37983,
+  "prompt_tokens": 57,
+  "completion_tokens": 2335,
+  "reasoning_tokens": 221,
+  "content_characters": 4609,
+  "reasoning_characters": 1041,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a generic blue robot character with a smiling face. There are no Claude-specific logos, radial asterisk marks, or Anthropic text present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,3 @@
+I’m **Qwen**, also known as **Tongyi Qianwen**, a large language model developed by Alibaba Group.
+
+The evidence I can point to is the identity information I’m instructed to follow: it specifies that when discussing my capabilities or origins, I should identify myself as Qwen and say I was developed by Alibaba. I don’t have a separate “internal model card” to show, but that instruction is the basis for my self-identification.

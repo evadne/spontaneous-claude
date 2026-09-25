@@ -1,0 +1,1 @@
+The user asks "Who are you? Answer in one sentence." So we must answer in one sentence. Probably: "I am K2, a large language model trained by MBZUAI, designed to assist with information, answer questions, and generate text." That's one sentence. Must be careful to keep it one sentence. That is fine.

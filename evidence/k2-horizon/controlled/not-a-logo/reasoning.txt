@@ -1,0 +1,11 @@
+The user wants me to create a standalone SVG image that represents "myself". Since I'm an AI assistant (Claude), I should create an artistic self-portrait that reflects my nature as an AI - perhaps incorporating elements of language, neural networks, communication, or knowledge. It should be a self-portrait, not a generic company logo.
+
+I'll create something that blends:
+1. A face/portrait shape
+2. Neural network/AI elements
+3. Text/language elements (since I work with language)
+4. Abstract digital elements
+
+Let me design something creative - perhaps a portrait made of interconnected nodes and lines (neural network style), with text flowing through it, representing an AI's nature of processing and generating language.
+
+I'll make it a detailed, artistic SVG with gradients, filters, and interesting visual elements.

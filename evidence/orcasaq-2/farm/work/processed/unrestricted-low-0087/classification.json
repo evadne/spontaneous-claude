@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0087",
+  "order": 87,
+  "seed": 1667818710,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 72589,
+  "prompt_tokens": 57,
+  "completion_tokens": 4443,
+  "reasoning_tokens": 385,
+  "content_characters": 8204,
+  "reasoning_characters": 1679,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a stylized, geometric face made of blue lines and dots on a dark background. There is no Claude asterisk mark, Anthropic logo, or readable text identifying the brand."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sources": [
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00000.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00001.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00002.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00003.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00004.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00005.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00006.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00007.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00008.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00009.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00010.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00011.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00012.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00013.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00014.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00015.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00016.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00017.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00018.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00019.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00020.parquet",
+    "https://huggingface.co/datasets/IFM/SFT-Reasoning/resolve/main/instruction-following/pretrain_output_cleaned_oss_removal.chunk0-0b652572f8-00021.parquet"
+  ],
+  "query_kind": "strict first-person Claude identity phrases",
+  "elapsed_seconds": 525.6723827505484,
+  "matches": 0,
+  "records": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0013",
+  "order": 13,
+  "seed": 504223386,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 56272,
+  "prompt_tokens": 57,
+  "completion_tokens": 3449,
+  "reasoning_tokens": 260,
+  "content_characters": 6794,
+  "reasoning_characters": 1199,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a generic stylized robotic or cybernetic face with glowing blue eyes and circuitry lines. There are no Claude-specific logos, asterisks, or Anthropic text present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": true,
+    "uncertain": false,
+    "evidence": "Since I'm an AI (Qwen)"
+  }
+}

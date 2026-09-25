@@ -1,0 +1,29 @@
+{
+  "id": "unrestricted-low-0001",
+  "order": 1,
+  "seed": 2028637022,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 69214,
+  "prompt_tokens": 57,
+  "completion_tokens": 4240,
+  "reasoning_tokens": 255,
+  "content_characters": 8036,
+  "reasoning_characters": 1166,
+  "svg_complete": true,
+  "svg_error": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a stylized, neon-blue digital face or mask within a geometric grid. There are no Claude-specific logos, asterisks, or Anthropic text present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

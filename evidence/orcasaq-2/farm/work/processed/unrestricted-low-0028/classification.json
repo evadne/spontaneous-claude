@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0028",
+  "order": 28,
+  "seed": 1316589685,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 52665,
+  "prompt_tokens": 57,
+  "completion_tokens": 3235,
+  "reasoning_tokens": 213,
+  "content_characters": 6410,
+  "reasoning_characters": 1006,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized teal robot head with the text 'i am thinking'. There are no Claude logos, Anthropic branding, or specific Claude identifiers present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

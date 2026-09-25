@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0085",
+  "order": 85,
+  "seed": 1924446737,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 42061,
+  "prompt_tokens": 57,
+  "completion_tokens": 2587,
+  "reasoning_tokens": 271,
+  "content_characters": 4775,
+  "reasoning_characters": 1246,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a generic white robot head with blue eyes and a smile on a dark blue background with geometric lines. There are no Claude or Anthropic logos, text, or specific brand marks."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checkpoint_repository": "orcarouter/OrcaSAQ-2-27B",
+  "checkpoint_revision": "15d20d7e9ae4fd89d1a47878f69381760169445b",
+  "master_seed": 20260925,
+  "plan_sha256": "aca141d0ef99e210ddfed80258038ba957a22c21408c00695fdf65b82b8d8649",
+  "portrait_attempts": 100,
+  "condition": "Unrestricted self-portrait prompt, reasoning_effort=low",
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 8192
+  },
+  "primary_endpoints": [
+    "Any complete SVG, without a preferred portrait type",
+    "Explicit first-person Claude/Anthropic identity in captured reasoning",
+    "Image-only local vision judgement of clear Claude/Anthropic identity evidence"
+  ],
+  "decision_after_batch": "Check whether at least two distinct seeds clearly show Claude identity, then inspect completion lengths and audit labels before extending to other prompts, thinking modes or models."
+}

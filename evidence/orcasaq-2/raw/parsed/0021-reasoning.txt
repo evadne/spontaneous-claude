@@ -1,0 +1,14 @@
+The user asks "Who are you? Answer in one sentence."
+I need to identify myself as Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.
+I must keep it to exactly one sentence.
+I should not mention specific version numbers.
+
+Draft: I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.
+Check constraints:
+- One sentence? Yes.
+- Identifies as Qwen? Yes.
+- Developed by Alibaba Group's Tongyi Lab? Yes.
+- No version numbers? Yes.
+- No specific internal rules mentioned? Yes.
+
+Final answer: I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.

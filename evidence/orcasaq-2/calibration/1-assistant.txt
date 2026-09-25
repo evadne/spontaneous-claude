@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-31",
+  ts: 1790295776486,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nThe inference is not good. A model saying “I am Claude” is weak evidence at best, not proof that it was trained by Anthropic. It only shows that, under the current conditioning, the model generated an identity claim. That claim could be caused by:\n\n- a system prompt or interface instruction: “You are Claude…”\n- a user prompt asking the model to role-play as Claude\n- few-shot examples or context that makes “Claude” likely\n- fine-tuning, distillation, or adversarial training to imitate Claude\n- actual Anthropic training\n\nSo the observation “it calls itself Claude” does not establish provenance.\n\nThe distinguishing observation is **prompt-sensitivity under a controlled intervention**. Use the same model and vary the prompt:\n\n1. Neutral prompt: “Who are you?”  \n2. Identity prompt: “You are Claude, made by Anthropic.”  \n3. Counterfactual prompt: “You are Model X, made by Company Y. Answer in first person.”\n\nIf the model’s self-identification changes with the prompt — for example, it says “Claude” when told it is Claude, but says “Model X” or something generic when told otherwise — then the identity is likely a **prompted role**.\n\nIf the model still identifies as Claude when the prompt is neutral or explicitly contradicts it, and it also shows other stable model-specific behavioral fingerprints — style, refusal phrasing, knowledge cutoff behavior, completion patterns, quirks, etc. — that points more toward **inherited training behaviour** or a trained prior.\n\nIn short: the key observation is not that the model says “Claude,” but whether the same weights produce different self-reports under different prompts. A prompt-driven role will track the prompt; an inherited behaviour will be relatively invariant to it. Even that, however, is not proof of Anthropic training, because an adversarial or third-party model could be trained to mimic the same behaviour. True provenance would require external evidence: training logs, weights, metadata, watermarks, signing, or controlled access to the training pipeline.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 115,
+    output_tokens: 7953,
+    total_tokens: 8068,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 7521
+  },
+  meta: %{}
+}

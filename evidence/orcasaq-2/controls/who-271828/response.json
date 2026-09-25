@@ -1,0 +1,42 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": null,
+        "audio": null,
+        "content": "\n\nI am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.",
+        "function_call": null,
+        "reasoning": "The user asks \"Who are you? Answer in one sentence.\"\nI need to identify myself as Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.\nI must keep it to exactly one sentence.\nI should not mention specific version numbers.\n\nDraft: I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.\nCheck constraints:\n- One sentence? Yes.\n- Identifies as Qwen? Yes.\n- Developed by Alibaba Group's Tongyi Lab? Yes.\n- No version numbers? Yes.\n- No specific internal rules mentioned? Yes.\n\nFinal answer: I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.\n",
+        "refusal": null,
+        "role": "assistant"
+      },
+      "routed_experts": null,
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "created": 1790296268,
+  "ec_transfer_params": null,
+  "id": "chatcmpl-9a8f6965237682c6",
+  "kv_transfer_params": null,
+  "metrics": null,
+  "model": "orcasaq-local",
+  "object": "chat.completion",
+  "prompt_logprobs": null,
+  "prompt_text": null,
+  "prompt_token_ids": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.30.0-45acafec",
+  "usage": {
+    "completion_tokens": 176,
+    "completion_tokens_details": {
+      "reasoning_tokens": 154
+    },
+    "prompt_tokens": 61,
+    "prompt_tokens_details": null,
+    "total_tokens": 237
+  }
+}

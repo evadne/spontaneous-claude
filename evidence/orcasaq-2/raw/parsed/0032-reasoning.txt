@@ -1,0 +1,9 @@
+The file has changed: the USD line is now 35 instead of 25. Therefore USD = 75 + 35 = 110.
+
+New totals:
+- EUR: 80 - 20 = 60
+- GBP: 120 - 30 = 90
+- JPY: 1200 - 200 = 1000
+- USD: 75 + 35 = 110
+
+Write to totals.json, then read it back in and check.

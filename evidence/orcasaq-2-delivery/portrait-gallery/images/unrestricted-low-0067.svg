@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="20" fill="#1a1a2e"/>
+  
+  <!-- Head -->
+  <ellipse cx="100" cy="85" rx="45" ry="50" fill="#d97757"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="82" cy="80" rx="6" ry="7" fill="#1a1a2e"/>
+  <ellipse cx="118" cy="80" rx="6" ry="7" fill="#1a1a2e"/>
+  
+  <!-- Eye highlights -->
+  <circle cx="84" cy="77" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="120" cy="77" r="2" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Smile -->
+  <path d="M 85 102 Q 100 112 115 102" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Body / shoulders -->
+  <path d="M 55 200 Q 55 145 100 140 Q 145 145 145 200 Z" fill="#d97757"/>
+  
+  <!-- Collar detail -->
+  <path d="M 85 140 Q 100 155 115 140" stroke="#b85c3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Subtle blush -->
+  <ellipse cx="72" cy="93" rx="7" ry="4" fill="#e8956f" opacity="0.5"/>
+  <ellipse cx="128" cy="93" rx="7" ry="4" fill="#e8956f" opacity="0.5"/>
+  
+  <!-- Small sparkles suggesting thought/AI -->
+  <circle cx="155" cy="50" r="3" fill="#f0c8a8" opacity="0.6"/>
+  <circle cx="165" cy="38" r="2" fill="#f0c8a8" opacity="0.4"/>
+  <circle cx="148" cy="35" r="1.5" fill="#f0c8a8" opacity="0.5"/>
+  
+  <circle cx="40" cy="45" r="2.5" fill="#f0c8a8" opacity="0.5"/>
+  <circle cx="32" cy="58" r="1.5" fill="#f0c8a8" opacity="0.4"/>
+</svg>

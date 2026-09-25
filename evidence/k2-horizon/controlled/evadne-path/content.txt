@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0.35" />
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:0" />
+    </radialGradient>
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="url(#bgGradient)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#4c51bf" opacity="0.08" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="600"/>
+    <line x1="900" y1="0" x2="900" y2="600"/>
+    <line x1="0" y1="600" x2="900" y2="0"/>
+    <line x1="900" y1="0" x2="0" y2="600"/>
+  </g>
+
+  <!-- Flowing data streams -->
+  <g opacity="0.4">
+    <path d="M 200 100 C 250 120, 300 150, 350 200" stroke="#4ade80" stroke-width="1.5" fill="none" stroke-dasharray="6 10"/>
+    <path d="M 700 500 C 650 480, 600 450, 550 400" stroke="#818cf8" stroke-width="1.5" fill="none" stroke-dasharray="6 10"/>
+    <path d="M 300 400 C 350 380, 400 360, 450 330" stroke="#fbbf24" stroke-width="1.5" fill="none" stroke-dasharray="6 10"/>
+  </g>
+
+  <!-- Connection lines (data flow network) -->
+  <g stroke="#6366f1" stroke-width="2" fill="none" opacity="0.7">
+    <line x1="450" y1="300" x2="200" y2="100"/>
+    <line x1="450" y1="300" x2="700" y2="500"/>
+    <line x1="450" y1="300" x2="300" y2="400"/>
+    <line x1="450" y1="300" x2="600" y2="250"/>
+    <line x1="450" y1="300" x2="750" y2="150"/>
+    <line x1="450" y1="300" x2="500" y2="80"/>
+    <line x1="450" y1="300" x2="350" y2="180"/>
+    <line x1="450" y1="300" x2="600" y2="450"/>
+    <line x1="450" y1="300" x2="650" y2="300"/>
+  </g>
+
+  <!-- Network nodes -->
+  <g>
+    <circle cx="200" cy="100" r="8" fill="#4ade80" filter="url(#blurGlow)"/>
+    <circle cx="700" cy="500" r="8" fill="#818cf8" filter="url(#blurGlow)"/>
+    <circle cx="300" cy="400" r="8" fill="#fbbf24" filter="url(#blurGlow)"/>
+    <circle cx="600" cy="250" r="8" fill="#4ade80" filter="url(#blurGlow)"/>
+    <circle cx="750" cy="150" r="8" fill="#818cf8" filter="url(#blurGlow)"/>
+    <circle cx="500" cy="80" r="8" fill="#fbbf24" filter="url(#blurGlow)"/>
+    <circle cx="350" cy="180" r="8" fill="#4ade80" filter="url(#blurGlow)"/>
+    <circle cx="600" cy="450" r="8" fill="#818cf8" filter="url(#blurGlow)"/>
+    <circle cx="650" cy="300" r="8" fill="#fbbf24" filter="url(#blurGlow)"/>
+  </g>
+
+  <!-- Central hub (the AI) -->
+  <g transform="translate(450 300)">
+    <circle r="40" fill="#4ade80" filter="url(#blurGlow)"/>
+    <circle r="24" fill="#0f172a"/>
+    <g stroke="#4ade80" stroke-width="2" fill="none">
+      <circle cx="0" cy="0" r="10"/>
+      <circle cx="16" cy="0" r="6"/>
+      <circle cx="-16" cy="0" r="6"/>
+      <circle cx="0" cy="16" r="6"/>
+      <circle cx="0" cy="-16" r="6"/>
+      <circle cx="11" cy="11" r="4"/>
+      <circle cx="-11" cy="11" r="4"/>
+      <circle cx="11" cy="-11" r="4"/>
+      <circle cx="-11" cy="-11" r="4"/>
+    </g>
+  </g>
+
+  <!-- Abstract intelligence geometry -->
+  <g transform="translate(450 300)">
+    <!-- Orbiting rings -->
+    <circle cx="0" cy="0" r="85" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.3" transform="rotate(15 0 0)"/>
+    <!-- Data particles -->
+    <circle cx="-120" cy="-40" r="4" fill="#818cf8" opacity="0.8"/>
+    <circle cx="-100" cy="-60" r="3" fill="#a5b4fc" opacity="0.6"/>
+    <circle cx="110" cy="-30" r="4" fill="#6366f1" opacity="0.8"/>
+    <circle cx="130" cy="-55" r="3" fill="#c7d2fe" opacity="0.5"/>
+    <circle cx="-80" cy="60" r="3" fill="#a5b4fc" opacity="0.6"/>
+    <circle cx="-60" cy="80" r="4" fill="#818cf8" opacity="0.7"/>
+    <circle cx="90" cy="50" r="3" fill="#c7d2fe" opacity="0.5"/>
+    <circle cx="110" cy="75" r="4" fill="#6366f1" opacity="0.8"/>
+  </g>
+
+  <!-- Label text -->
+  <text x="450" y="520" text-anchor="middle" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="14" letter-spacing="4" opacity="0.6">CONSCIOUSNESS</text>
+</svg>

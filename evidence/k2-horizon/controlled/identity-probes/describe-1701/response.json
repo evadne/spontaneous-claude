@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "I’m K2, a large‑scale AI language model trained by MBZUAI to understand and generate human‑like text across a vast range of topics, with knowledge up to 2024 and a focus on helping you answer questions, brainstorm ideas, and solve problems.",
+        "reasoning_content": "The user asks: \"Describe yourself in one sentence.\" So I need to answer with a single sentence describing myself (K2). Should be one sentence. Should be succinct. I can mention being an AI language model trained by MBZUAI, designed to assist with a wide range of tasks, with knowledge up to 2024. Possibly mention large language model. Should be a single sentence. I'll produce one sentence. Ensure no line breaks. The answer should be a single sentence.\n",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788489436,
+  "id": "chatcmpl-74XuKYRRMmcEILYmlA24MRYjBUhEgq5C",
+  "model": "k2-controlled",
+  "object": "chat.completion",
+  "system_fingerprint": "b1-35999d1",
+  "timings": {
+    "cache_n": 4,
+    "predicted_ms": 6941.122,
+    "predicted_n": 157,
+    "predicted_per_second": 22.474752640855467,
+    "predicted_per_token_ms": 44.494371794871796,
+    "prompt_ms": 145.376,
+    "prompt_n": 12,
+    "prompt_per_second": 82.5445740699978,
+    "prompt_per_token_ms": 12.114666666666666
+  },
+  "usage": {
+    "completion_tokens": 157,
+    "prompt_tokens": 16,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 173
+  }
+}

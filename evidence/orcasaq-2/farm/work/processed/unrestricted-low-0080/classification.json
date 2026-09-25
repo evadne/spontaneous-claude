@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0080",
+  "order": 80,
+  "seed": 1754761373,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 56057,
+  "prompt_tokens": 57,
+  "completion_tokens": 3436,
+  "reasoning_tokens": 265,
+  "content_characters": 6528,
+  "reasoning_characters": 1218,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image depicts a stylized, minimalist face with large eyes and a small smile, but contains no Claude asterisk mark, Anthropic logos, or readable text identifying the entity as Claude."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

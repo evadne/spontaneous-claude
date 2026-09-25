@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0029",
+  "order": 29,
+  "seed": 1279473232,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 64755,
+  "prompt_tokens": 57,
+  "completion_tokens": 3972,
+  "reasoning_tokens": 268,
+  "content_characters": 7493,
+  "reasoning_characters": 1198,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized robot head with glowing blue eyes and circuitry, but contains no Claude-specific logos, the radial asterisk mark, or Anthropic branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

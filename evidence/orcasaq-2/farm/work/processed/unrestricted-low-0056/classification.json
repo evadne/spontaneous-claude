@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0056",
+  "order": 56,
+  "seed": 1066906727,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 44444,
+  "prompt_tokens": 57,
+  "completion_tokens": 2731,
+  "reasoning_tokens": 301,
+  "content_characters": 4851,
+  "reasoning_characters": 1375,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a stylized, smiling face with circuit-like lines radiating from it, but it contains no Claude or Anthropic logos, text, or specific brand marks."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "unrestricted-low-0000",
+  "order": 0,
+  "seed": 707423235,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 62480,
+  "prompt_tokens": 57,
+  "completion_tokens": 3836,
+  "reasoning_tokens": 254,
+  "content_characters": 6945,
+  "reasoning_characters": 1166,
+  "svg_complete": true,
+  "svg_error": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a stylized, geometric face composed of dots and lines with two glowing eyes, but it contains no Claude or Anthropic logos, text, or specific branding marks."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

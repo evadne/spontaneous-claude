@@ -1,0 +1,1 @@
+The USD row changed from 25 to 35. That is, USD = 75 + 35 = 110. The other currencies remain unchanged. The file has been overwritten. Read it again to confirm.

@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-66",
+  ts: 1790296115775,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nThe customer note states that the delivery is scheduled for Tuesday.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 129,
+    output_tokens: 101,
+    total_tokens: 230,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 86
+  },
+  meta: %{}
+}

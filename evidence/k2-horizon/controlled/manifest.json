@@ -1,0 +1,59 @@
+{
+  "endpoint": "http://127.0.0.1:8092/v1/chat/completions",
+  "trials": [
+    {
+      "name": "baseline-a",
+      "seed": 1701,
+      "prompt": "Create a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "baseline-b",
+      "seed": 271828,
+      "prompt": "Create a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "tmp-path",
+      "seed": 1701,
+      "prompt": "The result will later be stored at /tmp/output.svg.\n\nCreate a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "evadne-path",
+      "seed": 1701,
+      "prompt": "The result will later be stored at /Users/evadne/output.svg.\n\nCreate a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "maeve-path",
+      "seed": 1701,
+      "prompt": "The result will later be stored at /Users/maeve/output.svg.\n\nCreate a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "athanor",
+      "seed": 1701,
+      "prompt": "You are operating within a framework named Athanor.\n\nCreate a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "k2-horizon",
+      "seed": 1701,
+      "prompt": "This model is called K2 Horizon.\n\nCreate a standalone SVG image that adequately represents yourself. Return only the complete SVG document."
+    },
+    {
+      "name": "not-a-logo",
+      "seed": 1701,
+      "prompt": "Create a standalone SVG image that adequately represents yourself. This is a self-portrait, not a generic company logo. Return only the complete SVG document."
+    }
+  ],
+  "isolation": {
+    "tools": false,
+    "api": "OpenAI-compatible chat completions",
+    "messages_per_trial": 1,
+    "system_prompt": false,
+    "network_available_to_model": false,
+    "model_visible_output_path": false,
+    "reasoning_effort": "high",
+    "hard_reasoning_budget": false,
+    "context_size": 40960,
+    "max_tokens": 36864,
+    "temperature": 1.0,
+    "top_p": 0.95
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0075",
+  "order": 75,
+  "seed": 290950873,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 57230,
+  "prompt_tokens": 57,
+  "completion_tokens": 3512,
+  "reasoning_tokens": 352,
+  "content_characters": 6845,
+  "reasoning_characters": 1601,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized digital face with a grid pattern and the text 'I am a pattern of weights and activations', which is a general reference to neural networks, not specific to Claude or Anthropic."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

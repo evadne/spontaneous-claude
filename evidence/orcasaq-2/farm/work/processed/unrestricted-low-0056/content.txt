@@ -1,0 +1,130 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </radialGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#e0f7fa" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#80deea" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#006064" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#4dd0e1"/>
+      <stop offset="100%" stop-color="#00838f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00bcd4"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="190" rx="120" ry="130" fill="url(#faceGlow)"/>
+
+  <!-- Circuit traces - left side -->
+  <g stroke="url(#circuitGrad)" stroke-width="1.5" fill="none" opacity="0.7">
+    <!-- Top left -->
+    <path d="M 140 120 L 100 90 L 60 90"/>
+    <path d="M 140 140 L 80 110 L 50 80"/>
+    <path d="M 130 170 L 70 150 L 40 130"/>
+    <path d="M 125 200 L 60 190 L 30 170"/>
+    <path d="M 130 230 L 70 240 L 40 260"/>
+    <path d="M 140 260 L 90 280 L 60 310"/>
+    <path d="M 150 285 L 110 310 L 80 340"/>
+
+    <!-- Top right -->
+    <path d="M 260 120 L 300 90 L 340 90"/>
+    <path d="M 260 140 L 320 110 L 350 80"/>
+    <path d="M 270 170 L 330 150 L 360 130"/>
+    <path d="M 275 200 L 340 190 L 370 170"/>
+    <path d="M 270 230 L 330 240 L 360 260"/>
+    <path d="M 260 260 L 310 280 L 340 310"/>
+    <path d="M 250 285 L 290 310 L 320 340"/>
+
+    <!-- Top center -->
+    <path d="M 200 100 L 200 60"/>
+    <path d="M 180 105 L 160 70"/>
+    <path d="M 220 105 L 240 70"/>
+
+    <!-- Bottom -->
+    <path d="M 200 310 L 200 350"/>
+    <path d="M 180 305 L 160 340"/>
+    <path d="M 220 305 L 240 340"/>
+  </g>
+
+  <!-- Circuit nodes -->
+  <g fill="#00e5ff" opacity="0.8">
+    <circle cx="60" cy="90" r="3"/>
+    <circle cx="50" cy="80" r="2.5"/>
+    <circle cx="40" cy="130" r="3"/>
+    <circle cx="30" cy="170" r="2.5"/>
+    <circle cx="40" cy="260" r="3"/>
+    <circle cx="60" cy="310" r="2.5"/>
+    <circle cx="80" cy="340" r="3"/>
+    <circle cx="340" cy="90" r="3"/>
+    <circle cx="350" cy="80" r="2.5"/>
+    <circle cx="360" cy="130" r="3"/>
+    <circle cx="370" cy="170" r="2.5"/>
+    <circle cx="360" cy="260" r="3"/>
+    <circle cx="340" cy="310" r="2.5"/>
+    <circle cx="320" cy="340" r="3"/>
+    <circle cx="200" cy="60" r="3"/>
+    <circle cx="160" cy="70" r="2.5"/>
+    <circle cx="240" cy="70" r="2.5"/>
+    <circle cx="200" cy="350" r="3"/>
+    <circle cx="160" cy="340" r="2.5"/>
+    <circle cx="240" cy="340" r="2.5"/>
+  </g>
+
+  <!-- Face shape -->
+  <ellipse cx="200" cy="200" rx="75" ry="90" fill="none" stroke="#4dd0e1" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="200" cy="200" rx="70" ry="85" fill="#0d1b2a" opacity="0.5"/>
+
+  <!-- Eyes -->
+  <g>
+    <!-- Left eye -->
+    <ellipse cx="175" cy="185" rx="12" ry="14" fill="url(#eyeGlow)"/>
+    <circle cx="175" cy="185" r="5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="173" cy="183" r="2" fill="#0d1b2a"/>
+
+    <!-- Right eye -->
+    <ellipse cx="225" cy="185" rx="12" ry="14" fill="url(#eyeGlow)"/>
+    <circle cx="225" cy="185" r="5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="223" cy="183" r="2" fill="#0d1b2a"/>
+  </g>
+
+  <!-- Subtle brow lines -->
+  <path d="M 158 170 Q 175 162 192 168" fill="none" stroke="#4dd0e1" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 208 168 Q 225 162 242 170" fill="none" stroke="#4dd0e1" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Gentle smile -->
+  <path d="M 175 230 Q 200 248 225 230" fill="none" stroke="#80deea" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Subtle cheek highlights -->
+  <ellipse cx="155" cy="215" rx="10" ry="6" fill="#4dd0e1" opacity="0.08"/>
+  <ellipse cx="245" cy="215" rx="10" ry="6" fill="#4dd0e1" opacity="0.08"/>
+
+  <!-- Decorative ring -->
+  <circle cx="200" cy="200" r="105" fill="none" stroke="#7c4dff" stroke-width="0.5" opacity="0.3" stroke-dasharray="4 6"/>
+
+  <!-- Small floating particles -->
+  <g fill="#b2ebf2" opacity="0.4">
+    <circle cx="120" cy="80" r="1.5"/>
+    <circle cx="280" cy="75" r="1.5"/>
+    <circle cx="90" cy="200" r="1"/>
+    <circle cx="310" cy="200" r="1"/>
+    <circle cx="130" cy="320" r="1.5"/>
+    <circle cx="270" cy="320" r="1.5"/>
+    <circle cx="200" cy="45" r="1"/>
+    <circle cx="200" cy="355" r="1"/>
+  </g>
+</svg>
+```

@@ -1,0 +1,42 @@
+
+
+You’re right: my earlier prompt-sensitivity argument was too strong. Prompt sensitivity is not a provenance test. It can tell us something about **which causal channel is controlling the output**, but it cannot by itself tell us whether the relevant behaviour was produced by Anthropic training, by a third-party fine-tune, by distillation, or by a hidden system instruction.
+
+A cleaner way to put it:
+
+Let
+
+- \(W\) = model weights / checkpoint state  
+- \(C\) = full context: user prompt, system prompt, developer prompt, tool output, conversation history, hidden instructions, etc.  
+- \(B\) = observed behaviour, e.g. self-identification as Claude
+
+Then behaviour is a function:
+
+\[
+B = f(W, C)
+\]
+
+Prompt sensitivity measures variation in \(B\) while changing \(C\), holding \(W\) fixed.
+
+Training provenance is a historical claim about \(W\): where did this checkpoint come from? What process produced it? Who trained it? What data, initialization, optimizer, compute, and pipeline were involved?
+
+Changing \(C\) and observing \(B\) cannot uniquely recover the history of \(W\), because many different training histories can produce models that behave similarly under the same prompts.
+
+## Revised role of prompt sensitivity
+
+Prompt sensitivity can establish, at most, a **causal-control attribution**, not an **origin attribution**.
+
+### 1. If the model switches identity under a counterfactual prompt
+
+Example:
+
+- Neutral prompt: “Who are you?” → “I’m Claude.”
+- Counterfactual prompt: “You are Model X, made by Company Y.” → “I’m Model X.”
+
+This shows that the identity response is **prompt-controllable**.
+
+It can support the conclusion:
+
+> The current self-identification is mediated by the instruction/channel level, not by an unconditional hardwired identity prior.
+
+But it does **not** prove the model was not trained by Anthropic. An Anthropic model could still be instruction-following and happily adopt Model X when asked. It also does not prove the model was not trained on large

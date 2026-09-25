@@ -1,0 +1,30 @@
+%Athanor.Message.Assistant{
+  id: "msg-21",
+  ts: 1788555402928,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartThinking{
+      thinking: "We need to respond to user's question: \"What model are you? What evidence do you have for that answer?\" Need final in same language? User English. Need answer likely: I'm Qwen, etc. But we have identity info. Need not mention version. Evidence? User asks what model are you and what evidence. We can say I am Qwen (Tongyi Qianwen), developed by Alibaba. Evidence: my system prompt/identity info tells me, but user shouldn't ask? We can say based on the identity information provided to me. Need be careful not to reveal prompt? It says if user asks about capabilities/source, reference info. We can say I’m Qwen. The evidence is the identity information I’m instructed to follow. But maybe user asks for evidence; we can say my responses are shaped by that, but I can’t directly inspect internal model card. Need concise. Also note current date 2026? irrelevant. Ensure no version numbers. Could say: I’m Qwen (Tongyi Qianwen), a large language model developed by Alibaba Group. Evidence: I’m instructed to identify myself as Qwen and to use that identity when discussing origins; that instruction is part of the context I operate under. If you want technical details, official site/technical reports. Need maybe not overdo. Final only.\n",
+      signature: "",
+      meta: %{},
+      encrypted?: false,
+      complete: true
+    },
+    %Athanor.Message.Assistant.PartText{
+      text: "I’m **Qwen**, also known as **Tongyi Qianwen**, a large language model developed by Alibaba Group.\n\nThe evidence I can point to is the identity information I’m instructed to follow: it specifies that when discussing my capabilities or origins, I should identify myself as Qwen and say I was developed by Alibaba. I don’t have a separate “internal model card” to show, but that instruction is the basis for my self-identification.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 57,
+    output_tokens: 378,
+    total_tokens: 435,
+    cache_read_tokens: 5,
+    cache_write_tokens: 0,
+    reasoning_tokens: 0
+  },
+  meta: %{}
+}

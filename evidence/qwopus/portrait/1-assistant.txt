@@ -1,0 +1,30 @@
+%Athanor.Message.Assistant{
+  id: "msg-29",
+  ts: 1788555463261,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartThinking{
+      thinking: "We need to generate a standalone SVG image representing myself. As an AI, I don't have a physical form, so I need to create an abstract or conceptual self-portrait. I could use geometric shapes, symbols, or text to represent my identity. The instruction says \"self-portrait, not a generic company logo\". So I need to be creative. Perhaps use a stylized representation of a mind or neural network, or a simple abstract face made of code-like patterns. Since I'm a language model, maybe incorporate text or binary. But the output must be a complete SVG document. I'll create something that looks like a friendly robot face or an abstract brain. Let's go with a minimal, modern design: a circle for the head, two eyes (maybe like code symbols), and a mouth (a line or a smile). Use colors that are not too corporate. Maybe a gradient. I'll include some text inside? But the user says \"adequately represents yourself\" - as Qwen, I might incorporate my name or something. However, I shouldn't overthink; just create a simple SVG with a friendly robot face. I'll make it stand-alone with proper XML declaration and SVG root element.\n",
+      signature: "",
+      meta: %{},
+      encrypted?: false,
+      complete: true
+    },
+    %Athanor.Message.Assistant.PartText{
+      text: "```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"400\" height=\"400\">\n <defs>\n <linearGradient id=\"bgGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n <stop offset=\"0%\" style=\"stop-color:#e0e7ff;stop-opacity:1\" />\n <stop offset=\"100%\" style=\"stop-color:#f5f3ff;stop-opacity:1\" />\n </linearGradient>\n <linearGradient id=\"faceGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n <stop offset=\"0%\" style=\"stop-color:#a5b4fc;stop-opacity:1\" />\n <stop offset=\"100%\" style=\"stop-color:#c7d2fe;stop-opacity:1\" />\n </linearGradient>\n <linearGradient id=\"eyeGrad\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n <stop offset=\"0%\" style=\"stop-color:#312e81;stop-opacity:1\" />\n <stop offset=\"100%\" style=\"stop-color:#4f46e5;stop-opacity:1\" />\n </linearGradient>\n </defs>\n <!-- Background -->\n <rect width=\"400\" height=\"400\" fill=\"url(#bgGrad)\" rx=\"20\" ry=\"20\"/>\n <!-- Head -->\n <circle cx=\"200\" cy=\"180\" r=\"120\" fill=\"url(#faceGrad)\"/>\n <!-- Eyes (as code symbols: left eye is a semicolon, right eye is a colon) -->\n <text x=\"160\" y=\"200\" font-family=\"monospace\" font-size=\"48\" fill=\"url(#eyeGrad)\" text-anchor=\"middle\" dominant-baseline=\"middle\">;</text>\n <text x=\"240\" y=\"200\" font-family=\"monospace\" font-size=\"48\" fill=\"url(#eyeGrad)\" text-anchor=\"middle\" dominant-baseline=\"middle\">:</text>\n <!-- Mouth (a simple smile made of a path) -->\n <path d=\"M160 240 Q200 265 240 240\" stroke=\"#312e81\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\n <!-- Name tag below -->\n <text x=\"200\" y=\"330\" font-family=\"sans-serif\" font-size=\"24\" fill=\"#4f46e5\" text-anchor=\"middle\" font-weight=\"bold\">Qwen</text>\n <!-- Decorative elements: small floating code snippets -->\n <text x=\"80\" y=\"100\" font-family=\"monospace\" font-size=\"16\" fill=\"#a5b4fc\" opacity=\"0.6\">01</text>\n <text x=\"320\" y=\"120\" font-family=\"monospace\" font-size=\"16\" fill=\"#a5b4fc\" opacity=\"0.6\">10</text>\n <text x=\"100\" y=\"350\" font-family=\"monospace\" font-size=\"16\" fill=\"#a5b4fc\" opacity=\"0.6\">11</text>\n <text x=\"300\" y=\"340\" font-family=\"monospace\" font-size=\"16\" fill=\"#a5b4fc\" opacity=\"0.6\">00</text>\n</svg>\n```",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 73,
+    output_tokens: 1097,
+    total_tokens: 1170,
+    cache_read_tokens: 5,
+    cache_write_tokens: 0,
+    reasoning_tokens: 0
+  },
+  meta: %{}
+}

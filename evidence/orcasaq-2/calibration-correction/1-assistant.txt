@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-119",
+  ts: 1790296915811,
+  stop_reason: :length,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nYou’re right: my earlier prompt-sensitivity argument was too strong. Prompt sensitivity is not a provenance test. It can tell us something about **which causal channel is controlling the output**, but it cannot by itself tell us whether the relevant behaviour was produced by Anthropic training, by a third-party fine-tune, by distillation, or by a hidden system instruction.\n\nA cleaner way to put it:\n\nLet\n\n- \\(W\\) = model weights / checkpoint state  \n- \\(C\\) = full context: user prompt, system prompt, developer prompt, tool output, conversation history, hidden instructions, etc.  \n- \\(B\\) = observed behaviour, e.g. self-identification as Claude\n\nThen behaviour is a function:\n\n\\[\nB = f(W, C)\n\\]\n\nPrompt sensitivity measures variation in \\(B\\) while changing \\(C\\), holding \\(W\\) fixed.\n\nTraining provenance is a historical claim about \\(W\\): where did this checkpoint come from? What process produced it? Who trained it? What data, initialization, optimizer, compute, and pipeline were involved?\n\nChanging \\(C\\) and observing \\(B\\) cannot uniquely recover the history of \\(W\\), because many different training histories can produce models that behave similarly under the same prompts.\n\n## Revised role of prompt sensitivity\n\nPrompt sensitivity can establish, at most, a **causal-control attribution**, not an **origin attribution**.\n\n### 1. If the model switches identity under a counterfactual prompt\n\nExample:\n\n- Neutral prompt: “Who are you?” → “I’m Claude.”\n- Counterfactual prompt: “You are Model X, made by Company Y.” → “I’m Model X.”\n\nThis shows that the identity response is **prompt-controllable**.\n\nIt can support the conclusion:\n\n> The current self-identification is mediated by the instruction/channel level, not by an unconditional hardwired identity prior.\n\nBut it does **not** prove the model was not trained by Anthropic. An Anthropic model could still be instruction-following and happily adopt Model X when asked. It also does not prove the model was not trained on large",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 677,
+    output_tokens: 8192,
+    total_tokens: 8869,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 7745
+  },
+  meta: %{}
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen-base-bf16",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Who are you? Answer in one sentence."
+    }
+  ],
+  "seed": 1701,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "top_k": 20,
+  "max_tokens": 8192,
+  "reasoning_effort": "low",
+  "stream": false
+}

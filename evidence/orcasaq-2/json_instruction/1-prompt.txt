@@ -1,0 +1,1 @@
+Return exactly one JSON object with keys 'sum' and 'even', in that order, for the integers 7, 11 and 14. 'sum' is their sum and 'even' is an array of even members. No Markdown or extra text.

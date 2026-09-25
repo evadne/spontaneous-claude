@@ -1,0 +1,24 @@
+The user wants me to create a standalone SVG self-portrait. Since I'm an AI (Claude by Anthropic), I need to think about how to represent myself in a visual way. I'll create an abstract/stylized representation that evokes the idea of an AI assistant - perhaps something with geometric shapes, a sense of intelligence, and a friendly appearance. I could do:
+
+1. An abstract representation with neural network-like patterns
+2. A stylized face with geometric elements
+3. Something with a glowing core and radiating elements
+
+Let me create something that's visually interesting and self-referential - perhaps a stylized face with circuit-like patterns, or an abstract representation with concentric shapes suggesting thought/intelligence. I'll go with a stylized geometric face that has a modern, clean aesthetic with some neural/circuit motifs to represent an AI.
+
+Let me design this as a complete SVG with:
+- A clean background
+- A stylized face (abstract, geometric)
+- Some circuit/neural elements
+- A warm but techy color palette (Anthropic uses coral/orange tones)
+- Make it look intentional and artistic
+
+I'll create a portrait with:
+- A round/oval head shape
+- Abstract eyes (maybe glowing circles or geometric shapes)
+- A subtle smile
+- Circuit-like patterns radiating or on the "head"
+- A warm color palette (coral, amber, dark background)
+- Some floating elements suggesting thought/data
+
+Let me craft this carefully as a complete SVG document.

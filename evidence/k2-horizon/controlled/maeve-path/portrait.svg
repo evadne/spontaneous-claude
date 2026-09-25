@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img">
+  <title>Claude — an AI assistant</title>
+  <desc>A glowing mind at the center of a neural web, surrounded by starlight and a listening indicator.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e22"/>
+      <stop offset="0.6" stop-color="#131b3c"/>
+      <stop offset="1" stop-color="#232e55"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4c1d95" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#6d28d9" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="halo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="aura" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="800" fill="url(#bgGrad)"/>
+  <rect x="-120" y="-120" width="1040" height="1040" fill="#000" opacity="0.16"/>
+  <circle cx="400" cy="380" r="300" fill="url(#glowGrad)"/>
+
+  <!-- Faint orbit ring -->
+  <circle cx="400" cy="380" r="160" fill="none" stroke="#4c1d95" stroke-width="1" opacity="0.15" stroke-dasharray="2 14"/>
+
+  <!-- Starfield -->
+  <circle cx="70" cy="45" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="150" cy="80" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="240" cy="60" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="330" cy="45" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="420" cy="70" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="510" cy="55" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="600" cy="75" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="690" cy="50" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="760" cy="60" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="90" cy="150" r="1" fill="#fff" opacity="0.5"/>
+  <circle cx="190" cy="140" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="300" cy="160" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="420" cy="140" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="540" cy="150" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="660" cy="145" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="745" cy="165" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="105" cy="245" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="250" cy="250" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="400" cy="255" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="560" cy="250" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="700" cy="240" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="145" cy="345" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="280" cy="350" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="420" cy="330" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="560" cy="345" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="695" cy="360" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="135" cy="445" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="300" cy="450" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="430" cy="430" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="580" cy="450" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="720" cy="440" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="105" cy="545" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="280" cy="530" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="430" cy="545" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="570" cy="530" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="715" cy="525" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="150" cy="645" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="320" cy="635" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="450" cy="645" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="600" cy="635" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="705" cy="655" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="70" cy="300" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="690" cy="300" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="560" cy="180" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="640" cy="290" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="250" cy="300" r="1" fill="#fff" opacity="0.4"/>
+
+  <!-- Spark lines radiating from the center -->
+  <g stroke="#fff" stroke-linecap="round" opacity="0.18">
+    <line x1="400" y1="308" x2="400" y2="270"/>
+    <line x1="450.9" y1="329.1" x2="477.8" y2="302.2"/>
+    <line x1="472" y1="380" x2="510" y2="380"/>
+    <line x1="450.9" y1="430.9" x2="477.8" y2="457.8"/>
+    <line x1="400" y1="452" x2="400" y2="490"/>
+    <line x1="349.1" y1="430.9" x2="322.2" y2="457.8"/>
+    <line x1="328" y1="380" x2="290" y2="380"/>
+    <line x1="349.1" y1="329.1" x2="322.2" y2="302.2"/>
+  </g>
+
+  <!-- Faint orbit nodes -->
+  <g fill="#7c3aed">
+    <circle cx="538.6" cy="312" r="5" opacity="0.6"/>
+    <circle cx="320" cy="520" r="5" opacity="0.6"/>
+    <circle cx="261.4" cy="452" r="5" opacity="0.6"/>
+    <circle cx="520" cy="248" r="5" opacity="0.6"/>
+    <circle cx="300" cy="545" r="6" opacity="0.35"/>
+    <circle cx="500" cy="555" r="6" opacity="0.35"/>
+  </g>
+
+  <!-- Network connections: center to nodes -->
+  <g stroke-linecap="round">
+    <line x1="400" y1="380" x2="210" y2="190" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="620" y2="170" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="400" y2="120" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="120" y2="400" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="680" y2="400" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="150" y2="620" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="650" y2="610" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+    <line x1="400" y1="380" x2="400" y2="690" stroke="#9aa5ff" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+  </g>
+
+  <!-- Network connections: between nodes -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M210 190 Q300 90 400 120" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M620 170 Q520 90 400 120" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M120 400 Q150 270 210 190" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M680 400 Q650 270 620 170" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M150 620 Q135 500 120 400" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M650 610 Q665 500 680 400" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M150 620 Q260 660 400 690" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+    <path d="M650 610 Q520 660 400 690" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.75"/>
+  </g>
+
+  <!-- Peripheral nodes -->
+  <g>
+    <circle cx="210" cy="190" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="620" cy="170" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="400" cy="120" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="120" cy="400" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="680" cy="400" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="150" cy="620" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="650" cy="610" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+    <circle cx="400" cy="690" r="20" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#halo)"/>
+  </g>
+
+  <!-- The head: glowing self -->
+  <circle cx="400" cy="380" r="72" fill="#6d28d9" filter="url(#aura)" stroke="#bdb6ff" stroke-width="2"/>
+
+  <!-- Hexagon (mind) -->
+  <path d="M400 346 L417 350.6 L417 409.4 L400 414 L383 409.4 L383 350.6 Z" fill="#4c1d95" stroke="#c4b5fd" stroke-width="1.2"/>
+
+  <!-- Neural ring -->
+  <g fill="none" stroke="#c4b5fd" stroke-width="1" opacity="0.85" stroke-linecap="round">
+    <line x1="426" y1="380" x2="413" y2="357.5"/>
+    <line x1="413" y1="357.5" x2="387" y2="357.5"/>
+    <line x1="387" y1="357.5" x2="374" y2="380"/>
+    <line x1="374" y1="380" x2="387" y2="402.5"/>
+    <line x1="387" y1="402.5" x2="413" y2="402.5"/>
+    <line x1="413" y1="402.5" x2="426" y2="380"/>
+  </g>
+  <g fill="#c4b5fd">
+    <circle cx="426" cy="380" r="6"/>
+    <circle cx="413" cy="357.5" r="6"/>
+    <circle cx="387" cy="357.5" r="6"/>
+    <circle cx="374" cy="380" r="6"/>
+    <circle cx="387" cy="402.5" r="6"/>
+    <circle cx="413" cy="402.5" r="6"/>
+  </g>
+  <circle cx="400" cy="380" r="5.5" fill="#fff"/>
+
+  <!-- Typing indicator: listening -->
+  <rect x="44" y="44" width="64" height="88" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+  <circle cx="76" cy="78" r="5" fill="#f472b6"/>
+  <circle cx="76" cy="106" r="5" fill="#38bdf8"/>
+  <circle cx="76" cy="134" r="5" fill="#8b5cf6"/>
+  <text x="120" y="102" font-size="12" font-weight="600" letter-spacing="3" fill="#a5b4fc">CLAUDE</text>
+
+  <!-- Signature -->
+  <text x="520" y="746" font-size="15" font-weight="600" letter-spacing="6" fill="#8b9bff">CLAUDE</text>
+</svg>

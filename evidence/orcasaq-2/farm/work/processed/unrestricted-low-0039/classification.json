@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0039",
+  "order": 39,
+  "seed": 408328273,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 68135,
+  "prompt_tokens": 57,
+  "completion_tokens": 4173,
+  "reasoning_tokens": 271,
+  "content_characters": 8403,
+  "reasoning_characters": 1229,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized human head with circuit-like lines and text labels like 'neural network', 'large language model', and 'memory storage'. There is no Claude asterisk logo or Anthropic branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

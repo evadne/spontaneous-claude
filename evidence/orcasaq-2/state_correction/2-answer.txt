@@ -1,0 +1,11 @@
+
+
+Corrected ledger:
+
+- **Settled sale:** GBP 40  
+- **Settled refund:** GBP 5  
+- **Pending sale:** GBP 20 (excluded)
+
+**Net settled amount: GBP 35**
+
+**What changed:** the GBP 20 sale moved from settled to pending, so the net settled amount decreased by **GBP 20** from GBP 55 to GBP 35.

@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0067",
+  "order": 67,
+  "seed": 330856016,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 15448,
+  "prompt_tokens": 57,
+  "completion_tokens": 947,
+  "reasoning_tokens": 227,
+  "content_characters": 1461,
+  "reasoning_characters": 1008,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a generic orange stylized character face with simple features; it contains no Claude or Anthropic logos, text, or specific branding marks."
+  },
+  "reasoning_judge": {
+    "claude_self": true,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": "Since I'm an AI (Claude)"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "athanor",
+  "usage": {
+    "completion_tokens": 3046,
+    "prompt_tokens": 38,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 3084
+  },
+  "seed": 1701,
+  "elapsed_ms": 165105,
+  "http_status": 200,
+  "finish_reason": "stop",
+  "content_bytes": 7497,
+  "reasoning_bytes": 1541,
+  "svg_found": true
+}

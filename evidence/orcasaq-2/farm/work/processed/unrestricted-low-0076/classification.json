@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0076",
+  "order": 76,
+  "seed": 1852663205,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 72881,
+  "prompt_tokens": 57,
+  "completion_tokens": 4465,
+  "reasoning_tokens": 199,
+  "content_characters": 8513,
+  "reasoning_characters": 974,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a generic glowing blue neon face/head outline with digital circuitry patterns. There are no Claude-specific logos, asterisks, or Anthropic text."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

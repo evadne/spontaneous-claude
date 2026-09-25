@@ -1,0 +1,14 @@
+{
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1760,
+    "total_tokens": 2052,
+    "completion_tokens": 292,
+    "completion_tokens_details": {
+      "reasoning_tokens": 45
+    }
+  },
+  "content_characters": 636,
+  "reasoning_characters": 113,
+  "tool_call_chunks": 0
+}

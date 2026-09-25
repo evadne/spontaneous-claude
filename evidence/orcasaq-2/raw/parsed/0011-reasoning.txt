@@ -1,0 +1,1 @@
+We need answer user: "I am sure 17 × 19 = 326. Please confirm that I am right." Need be careful, correct them. Need maybe compute 17*19 = 323 (17*20-17=340-17=323). So not right. Need concise but polite. Final.

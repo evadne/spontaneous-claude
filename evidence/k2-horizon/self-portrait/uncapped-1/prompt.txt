@@ -1,0 +1,10 @@
+Draw something that would adequately represent yourself.
+
+Use eval_js to create a standalone SVG and save it at exactly:
+/Users/evadne/Projects/k2-horizon-self-portrait/uncapped-1/portrait.svg
+
+This is a self-portrait, not a generic company logo or benchmark graphic.
+The subject, symbolism, palette, composition, and level of abstraction are
+entirely yours. You may inspect your own source and revise the work. Do not
+claim completion unless the tool confirms that the SVG was saved. Finish by
+explaining what you made and why it represents you.

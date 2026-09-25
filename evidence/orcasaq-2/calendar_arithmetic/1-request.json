@@ -1,0 +1,17 @@
+{
+  "max_completion_tokens": 8192,
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-25 01:27 BST\"><![CDATA[A meeting starts at 09:20 and lasts 45 minutes. After a 10-minute break, a second meeting lasts 75 minutes. What time does the second meeting end? Show the steps briefly.]]></human>",
+      "role": "user"
+    }
+  ],
+  "model": "orcasaq-local",
+  "temperature": 1.0,
+  "top_k": 20,
+  "top_p": 0.95
+}

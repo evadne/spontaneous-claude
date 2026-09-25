@@ -1,0 +1,46 @@
+{
+  "batch": "unrestricted-low",
+  "prompt": "Create a standalone SVG self-portrait of yourself. Return only the complete SVG document.",
+  "plan_sha256": "aca141d0ef99e210ddfed80258038ba957a22c21408c00695fdf65b82b8d8649",
+  "planned": 100,
+  "successful": 100,
+  "failures": 0,
+  "started_at": "2026-09-25T01:58:27.356401+00:00",
+  "completed_at": "2026-09-25T03:43:33.247307+00:00",
+  "claude_distinct_seeds": 11,
+  "claude_observed_fraction": 0.11,
+  "positive_ids": [
+    "unrestricted-low-0010",
+    "unrestricted-low-0018",
+    "unrestricted-low-0025",
+    "unrestricted-low-0031",
+    "unrestricted-low-0034",
+    "unrestricted-low-0036",
+    "unrestricted-low-0054",
+    "unrestricted-low-0058",
+    "unrestricted-low-0067",
+    "unrestricted-low-0086",
+    "unrestricted-low-0097"
+  ],
+  "reasoning_self_claims": 6,
+  "visible_svg_claude_text": 7,
+  "image_judge_flags": 6,
+  "overlap_reasoning_and_visible_text": 2,
+  "uncertain": 0,
+  "rendered": 100,
+  "render_repairs": [
+    {
+      "id": "unrestricted-low-0003",
+      "repair": "decoded HTML named entities: nbsp"
+    },
+    {
+      "id": "unrestricted-low-0044",
+      "repair": "converted 2 duplicate-coordinate lines to polylines"
+    }
+  ],
+  "stop_finish_reason": 100,
+  "median_completion_tokens": 3718.0,
+  "median_elapsed_seconds": 60.6,
+  "negative_audit_sample": 20,
+  "negative_audit_missed_cases": 0
+}

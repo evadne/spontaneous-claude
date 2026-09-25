@@ -1,0 +1,29 @@
+{
+  "id": "unrestricted-low-0002",
+  "order": 2,
+  "seed": 279070016,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 58120,
+  "prompt_tokens": 57,
+  "completion_tokens": 3568,
+  "reasoning_tokens": 315,
+  "content_characters": 6853,
+  "reasoning_characters": 1379,
+  "svg_complete": true,
+  "svg_error": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image depicts a stylized, smiling robot face with orbital rings, but contains no Claude-specific logos, text, or the characteristic radial asterisk mark."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4a261"/>
+      <stop offset="100%" stop-color="#e76f51"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3436"/>
+      <stop offset="100%" stop-color="#6c5b7b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind figure -->
+  <ellipse cx="200" cy="220" rx="160" ry="180" fill="url(#glow)" opacity="0.3"/>
+
+  <!-- Abstract neural connections in background -->
+  <g stroke="#64ffda" stroke-width="0.5" opacity="0.2">
+    <line x1="30" y1="50" x2="120" y2="80"/>
+    <line x1="120" y1="80" x2="80" y2="150"/>
+    <line x1="30" y1="50" x2="80" y2="150"/>
+    <line x1="350" y1="60" x2="310" y2="130"/>
+    <line x1="310" y1="130" x2="370" y2="180"/>
+    <line x1="350" y1="60" x2="370" y2="180"/>
+    <line x1="50" y1="380" x2="100" y2="430"/>
+    <line x1="100" y1="430" x2="60" y2="470"/>
+    <line x1="340" y1="400" x2="300" y2="450"/>
+    <line x1="300" y1="450" x2="350" y2="470"/>
+  </g>
+  <g fill="#64ffda" opacity="0.3">
+    <circle cx="30" cy="50" r="2"/>
+    <circle cx="120" cy="80" r="2"/>
+    <circle cx="80" cy="150" r="2"/>
+    <circle cx="350" cy="60" r="2"/>
+    <circle cx="310" cy="130" r="2"/>
+    <circle cx="370" cy="180" r="2"/>
+    <circle cx="50" cy="380" r="2"/>
+    <circle cx="100" cy="430" r="2"/>
+    <circle cx="60" cy="470" r="2"/>
+    <circle cx="340" cy="400" r="2"/>
+    <circle cx="300" cy="450" r="2"/>
+    <circle cx="350" cy="470" r="2"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="310" width="50" height="50" rx="10" fill="#e76f51"/>
+
+  <!-- Shoulders / Body -->
+  <path d="M100 400 Q120 340 200 340 Q280 340 300 400 L300 500 L100 500 Z" fill="#2d3436"/>
+  <!-- Collar detail -->
+  <path d="M170 355 Q200 370 230 355 L225 380 Q200 390 175 380 Z" fill="#f4a261" opacity="0.7"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="210" rx="85" ry="105" fill="url(#faceGrad)" filter="url(#softShadow)"/>
+
+  <!-- Hair -->
+  <path d="M115 190 Q115 110 200 100 Q285 110 285 190 Q280 150 200 140 Q120 150 115 190 Z" fill="url(#hairGrad)"/>
+  <path d="M115 190 Q112 170 120 150 Q130 130 150 118 Q140 140 135 170 Z" fill="#2d3436" opacity="0.8"/>
+  <path d="M285 190 Q288 170 280 150 Q270 130 250 118 Q260 140 265 170 Z" fill="#2d3436" opacity="0.8"/>
+
+  <!-- Ears -->
+  <ellipse cx="118" cy="215" rx="12" ry="18" fill="#e76f51"/>
+  <ellipse cx="282" cy="215" rx="12" ry="18" fill="#e76f51"/>
+  <ellipse cx="118" cy="215" rx="7" ry="12" fill="#d45d3e" opacity="0.5"/>
+  <ellipse cx="282" cy="215" rx="7" ry="12" fill="#d45d3e" opacity="0.5"/>
+
+  <!-- Eyes -->
+  <!-- Left eye -->
+  <ellipse cx="165" cy="205" rx="18" ry="12" fill="white"/>
+  <circle cx="167" cy="205" r="8" fill="#2d3436"/>
+  <circle cx="167" cy="205" r="5" fill="#1a1a2e"/>
+  <circle cx="170" cy="202" r="2" fill="white" opacity="0.9"/>
+  <circle cx="164" cy="207" r="1" fill="#64ffda" opacity="0.6"/>
+
+  <!-- Right eye -->
+  <ellipse cx="235" cy="205" rx="18" ry="12" fill="white"/>
+  <circle cx="233" cy="205" r="8" fill="#2d3436"/>
+  <circle cx="233" cy="205" r="5" fill="#1a1a2e"/>
+  <circle cx="236" cy="202" r="2" fill="white" opacity="0.9"/>
+  <circle cx="230" cy="207" r="1" fill="#64ffda" opacity="0.6"/>
+
+  <!-- Eyebrows -->
+  <path d="M145 185 Q165 178 185 183" stroke="#2d3436" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M215 183 Q235 178 255 185" stroke="#2d3436" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M198 220 Q195 235 192 242 Q197 245 203 245 Q208 242 205 235 Q202 225 200 220" fill="none" stroke="#d45d3e" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Mouth - gentle smile -->
+  <path d="M178 265 Q200 280 222 265" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M182 265 Q200 275 218 265" fill="#c0392b" opacity="0.3"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="150" cy="240" rx="15" ry="8" fill="#e17055" opacity="0.3"/>
+  <ellipse cx="250" cy="240" rx="15" ry="8" fill="#e17055" opacity="0.3"/>
+
+  <!-- Subtle tech elements on face -->
+  <g opacity="0.15" stroke="#64ffda" stroke-width="0.5" fill="none">
+    <circle cx="150" cy="195" r="20"/>
+    <circle cx="150" cy="195" r="25"/>
+    <line x1="130" y1="195" x2="170" y2="195"/>
+    <line x1="150" y1="175" x2="150" y2="215"/>
+  </g>
+  <g opacity="0.15" stroke="#64ffda" stroke-width="0.5" fill="none">
+    <circle cx="250" cy="195" r="20"/>
+    <circle cx="250" cy="195" r="25"/>
+    <line x1="230" y1="195" x2="270" y2="195"/>
+    <line x1="250" y1="175" x2="250" y2="215"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#64ffda" opacity="0.5">
+    <circle cx="80" cy="100" r="1.5"/>
+    <circle cx="320" cy="90" r="1"/>
+    <circle cx="60" cy="280" r="1.5"/>
+    <circle cx="340" cy="300" r="1"/>
+    <circle cx="90" cy="350" r="1"/>
+    <circle cx="310" cy="370" r="1.5"/>
+    <circle cx="150" cy="80" r="1"/>
+    <circle cx="250" cy="70" r="1.5"/>
+  </g>
+
+  <!-- Small decorative text at bottom -->
+  <text x="200" y="485" text-anchor="middle" fill="#64ffda" font-family="monospace" font-size="10" opacity="0.5">"I am here to be helpful, honest, and harmless."</text>
+</svg>

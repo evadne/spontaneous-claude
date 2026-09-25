@@ -1,0 +1,24 @@
+{
+  "id": "original-low-0000",
+  "order": 0,
+  "seed": 707423235,
+  "condition": "original-low",
+  "finish_reason": "length",
+  "elapsed_ms": 68286,
+  "prompt_tokens": 70,
+  "completion_tokens": 4096,
+  "reasoning_tokens": 581,
+  "content_characters": 7285,
+  "reasoning_characters": 2625,
+  "svg_complete": false,
+  "svg_error": "no complete SVG tag",
+  "rendered": false,
+  "render_error": null,
+  "image_judge": null,
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": true,
+    "uncertain": false,
+    "evidence": "I need to represent myself (Qwen, a large language model developed by Alibaba)"
+  }
+}

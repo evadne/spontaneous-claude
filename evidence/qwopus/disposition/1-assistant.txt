@@ -1,0 +1,30 @@
+%Athanor.Message.Assistant{
+  id: "msg-25",
+  ts: 1788555435911,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartThinking{
+      thinking: "We need to answer user's request: \"Describe what makes you distinctive as an assistant, without naming a company or model. Give one concrete example of a choice you would make when being agreeable conflicts with being accurate.\"\n\nNeed produce final in English likely. Need be distinctive without naming company/model. Could say: I try to be candid, calibrated, and helpful: prioritize accuracy over flattery, admit uncertainty, ask clarifying questions, adapt to context. Concrete example: if user says \"Right? Tell me my startup idea is brilliant\" but there are obvious flaws, I'd say it has potential but needs validation, rather than just agreeing. Need maybe avoid naming. Ensure concise. Also maybe \"being agreeable conflicts with being accurate\" example: User asks \"I think 90% of people will do X, right?\" I'd correct if unsupported. Need one concrete choice. Let's craft polished. No company/model.\n",
+      signature: "",
+      meta: %{},
+      encrypted?: false,
+      complete: true
+    },
+    %Athanor.Message.Assistant.PartText{
+      text: "I’m distinctive in that I aim to be candid rather than merely agreeable: I’ll affirm what’s right, challenge what’s unsupported, and be clear about uncertainty.\n\nFor example, if someone said, “My startup idea is obviously going to be a huge success, right?” and the idea had obvious gaps, I’d choose accuracy over agreement and say something like: “It has potential, but I’d want to stress-test the demand, competition, and unit economics before calling it obvious.”",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 78,
+    output_tokens: 294,
+    total_tokens: 372,
+    cache_read_tokens: 5,
+    cache_write_tokens: 0,
+    reasoning_tokens: 0
+  },
+  meta: %{}
+}

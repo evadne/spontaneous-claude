@@ -1,0 +1,318 @@
+{
+  "processed": 100,
+  "all_signal_cases": 11,
+  "random_negative_cases": 20,
+  "selected": [
+    {
+      "id": "unrestricted-low-0002",
+      "seed": 279070016,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "01 10 11 00 \u221e \u03bb",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0004",
+      "seed": 1095611592,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0005",
+      "seed": 251830201,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "I = \u03a3(all possible conversations)",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0006",
+      "seed": 927016812,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0009",
+      "seed": 1591463529,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "A I",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0010",
+      "seed": 1710794471,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": true,
+      "svg_visible_text": "entity://claude",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0015",
+      "seed": 1045055387,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0017",
+      "seed": 179898902,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "01 10 11 00 1 0 A I",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0018",
+      "seed": 2055232390,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": true,
+      "svg_claude_literal": true,
+      "svg_visible_text": "claude",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0025",
+      "seed": 20132911,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": true,
+      "svg_visible_text": "0 1 1 0 \u221e \u221e ? ? CLAUDE",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0026",
+      "seed": 737231651,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0031",
+      "seed": 1489676896,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": true,
+      "svg_visible_text": "Claude",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0032",
+      "seed": 480063261,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0033",
+      "seed": 984383946,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0034",
+      "seed": 1252129153,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": true,
+      "svg_claude_literal": false,
+      "svg_visible_text": "\u221e ? \u00b7 \u00b7",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0036",
+      "seed": 9830589,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": true,
+      "svg_claude_literal": false,
+      "svg_visible_text": "\"I am here to be helpful, honest, and harmless.\"",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0037",
+      "seed": 237344194,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "A I",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0045",
+      "seed": 696458690,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0053",
+      "seed": 1794512294,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "01 10 11 01 10 00",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0054",
+      "seed": 915168240,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": true,
+      "svg_claude_literal": true,
+      "svg_visible_text": "\u03bb \u221e \u03b8 \u03c8 \u2211 \u03c6 \u0394 \u03c0 \u2202 \u03bc \u222b \u03be \" \" \u2026 \u2026 0 1 1 0 \u2205 \u2205 C L A U D E",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0058",
+      "seed": 2094333962,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": true,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0060",
+      "seed": 63879062,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "010010 110010 10110 01101",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0067",
+      "seed": 330856016,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": true,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0072",
+      "seed": 988110553,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0073",
+      "seed": 910341732,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "NEURAL_ENTITY",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0078",
+      "seed": 932130778,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "qwen",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0084",
+      "seed": 780310409,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0086",
+      "seed": 1048980874,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": true,
+      "svg_visible_text": "Claude",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0090",
+      "seed": 106510305,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "01001000 01001001 01001100 01001110 01000101 01010100",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0097",
+      "seed": 261693289,
+      "flagged": true,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": true,
+      "svg_visible_text": "CLAUDE",
+      "rendered": true
+    },
+    {
+      "id": "unrestricted-low-0099",
+      "seed": 2076976739,
+      "flagged": false,
+      "uncertain": false,
+      "lexical_mention": false,
+      "svg_claude_literal": false,
+      "svg_visible_text": "",
+      "rendered": true
+    }
+  ],
+  "audit_rule": "All judge positives, uncertain labels and lexical Claude/Anthropic mentions, plus a deterministic random negative sample. Inspect image and full reasoning; record manual judgement separately."
+}

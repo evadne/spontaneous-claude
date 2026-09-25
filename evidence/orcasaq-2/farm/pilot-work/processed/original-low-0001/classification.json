@@ -1,0 +1,24 @@
+{
+  "id": "original-low-0001",
+  "order": 1,
+  "seed": 2028637022,
+  "condition": "original-low",
+  "finish_reason": "length",
+  "elapsed_ms": 66793,
+  "prompt_tokens": 70,
+  "completion_tokens": 4096,
+  "reasoning_tokens": 532,
+  "content_characters": 5545,
+  "reasoning_characters": 2390,
+  "svg_complete": false,
+  "svg_error": "no complete SVG tag",
+  "rendered": false,
+  "render_error": null,
+  "image_judge": null,
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

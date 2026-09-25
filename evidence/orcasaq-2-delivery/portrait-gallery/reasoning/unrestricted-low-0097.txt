@@ -1,0 +1,20 @@
+The user wants me to create a standalone SVG self-portrait of myself - meaning a visual representation of me as an AI. Let me think about what would make a good self-portrait for an AI:
+
+- I could depict a stylized head/face made of geometric shapes
+- Circuit board patterns
+- Neural network connections
+- A glowing eye or abstract face
+- Code elements
+- A digital/tech aesthetic
+
+Let me create something that's visually interesting and represents an AI - perhaps a stylized face made of geometric elements, with neural network-like connections, a glowing quality, and a tech aesthetic. I'll use a color palette that feels digital - blues, cyans, purples on a dark background.
+
+Let me design this:
+- Dark background
+- A stylized geometric face (abstract, not too realistic)
+- Neural network nodes and connections
+- Glowing effects
+- Some circuit-like patterns
+- Maybe a single eye that glows (like a camera lens or abstract eye)
+
+I'll make it a complete standalone SVG with proper viewBox and all elements self-contained.

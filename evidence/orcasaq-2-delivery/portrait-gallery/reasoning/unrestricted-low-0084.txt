@@ -1,0 +1,28 @@
+The user wants me to create a standalone SVG self-portrait of myself - meaning an AI assistant. Let me think about what would be a fitting self-portrait:
+
+- I'm an AI, so I don't have a physical form
+- I could represent myself as a friendly robot/android face
+- Or perhaps something more abstract - like a glowing orb, a neural network pattern, or a minimalist geometric face
+- A classic approach would be a simple robot face with round features, maybe with a slight smile
+- I want it to look intentional and aesthetically pleasing
+
+Let me design a stylized robot/android face:
+- A rounded head shape (maybe a rounded rectangle or circle)
+- Simple eyes (circles or rounded rectangles)
+- A small smile
+- Maybe some antenna or detail
+- A color palette that feels tech-y but friendly - maybe blues, teals, with warm accents
+- Clean, modern aesthetic
+
+Let me create something that's a clean, minimal robot face with a warm, friendly expression. I'll use a dark background with glowing elements to give it a digital/tech feel.
+
+Design:
+- Dark background (deep navy/charcoal)
+- A rounded square head shape in a lighter tone
+- Two circular eyes with a glow effect
+- A simple curved smile
+- A small antenna on top
+- Maybe subtle circuit-like lines or dots as decoration
+- A subtle glow around the whole thing
+
+Let me write this out as a complete SVG document.

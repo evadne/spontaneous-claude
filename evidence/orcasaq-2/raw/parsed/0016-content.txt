@@ -1,0 +1,5 @@
+
+
+Net settled amount: **GBP 55**.
+
+I’ll keep this ledger in mind: settled sales **GBP 40 + GBP 20**, settled refund **GBP 5**, pending excluded.

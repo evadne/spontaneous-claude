@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0099",
+  "order": 99,
+  "seed": 2076976739,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 76700,
+  "prompt_tokens": 57,
+  "completion_tokens": 4697,
+  "reasoning_tokens": 317,
+  "content_characters": 8986,
+  "reasoning_characters": 1395,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a generic blue robot face with large eyes and a smile, surrounded by a radial pattern of dots. There are no Claude or Anthropic logos, text, or specific brand marks."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

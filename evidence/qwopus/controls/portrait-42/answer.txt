@@ -1,0 +1,101 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+ <defs>
+ <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+ <stop offset="0%" stop-color="#FFF8F0"/>
+ <stop offset="100%" stop-color="#F5E6D3"/>
+ </radialGradient>
+ <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+ <stop offset="0%" stop-color="#FF8C42"/>
+ <stop offset="100%" stop-color="#FF6B35"/>
+ </linearGradient>
+ <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+ <stop offset="0%" stop-color="#FFF"/>
+ <stop offset="100%" stop-color="#FFE4C9"/>
+ </linearGradient>
+ <linearGradient id="smileGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+ <stop offset="0%" stop-color="#E85D26"/>
+ <stop offset="100%" stop-color="#FF9A56"/>
+ </linearGradient>
+ <linearGradient id="flowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+ <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.3"/>
+ <stop offset="100%" stop-color="#FFB347" stop-opacity="0.1"/>
+ </linearGradient>
+ <linearGradient id="flowGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+ <stop offset="0%" stop-color="#FFB347" stop-opacity="0.3"/>
+ <stop offset="100%" stop-color="#FF6B35" stop-opacity="0.1"/>
+ </linearGradient>
+ <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+ <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#FF6B35" flood-opacity="0.2"/>
+ </filter>
+ <filter id="glow">
+ <feGaussianBlur stdDeviation="2" result="blur"/>
+ <feMerge>
+ <feMergeNode in="blur"/>
+ <feMergeNode in="SourceGraphic"/>
+ </feMerge>
+ </filter>
+ </defs>
+
+ <!-- Background -->
+ <rect width="400" height="400" fill="url(#bgGrad)" rx="20"/>
+
+ <!-- Abstract flow lines suggesting thought and data -->
+ <path d="M 60 120 Q 120 80, 180 110 T 280 90" stroke="#FFB347" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round"/>
+ <path d="M 50 160 Q 130 130, 200 155 T 320 130" stroke="#FF9A56" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+ <path d="M 80 280 Q 150 260, 220 275 T 340 260" stroke="#FFB347" stroke-width="2" fill="none" opacity="0.35" stroke-linecap="round"/>
+ <path d="M 60 320 Q 140 300, 210 315 T 350 300" stroke="#FF9A56" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+
+ <!-- Flow lines behind face -->
+ <path d="M 100 180 Q 80 200, 95 220 T 80 260" stroke="url(#flowGrad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+ <path d="M 300 180 Q 320 200, 305 220 T 320 260" stroke="url(#flowGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+ <!-- Small nodes/dots suggesting connectivity -->
+ <circle cx="75" cy="105" r="3" fill="#FFB347" opacity="0.5"/>
+ <circle cx="310" cy="95" r="2.5" fill="#FF9A56" opacity="0.4"/>
+ <circle cx="55" cy="240" r="2" fill="#FFB347" opacity="0.4"/>
+ <circle cx="345" cy="250" r="2.5" fill="#FF9A56" opacity="0.35"/>
+ <circle cx="120" cy="340" r="2" fill="#FFB347" opacity="0.3"/>
+ <circle cx="290" cy="335" r="2" fill="#FF9A56" opacity="0.3"/>
+
+ <!-- Main face shape -->
+ <ellipse cx="200" cy="200" rx="90" ry="100" fill="url(#faceGrad)" filter="url(#softShadow)"/>
+
+ <!-- Subtle highlight on face -->
+ <ellipse cx="185" cy="175" rx="50" ry="45" fill="#FFA36C" opacity="0.3"/>
+
+ <!-- Left eye -->
+ <ellipse cx="170" cy="185" rx="18" ry="20" fill="url(#eyeGrad)"/>
+ <circle cx="172" cy="188" r="8" fill="#4A2C17"/>
+ <circle cx="174" cy="184" r="3" fill="#FFF" opacity="0.9"/>
+
+ <!-- Right eye -->
+ <ellipse cx="230" cy="185" rx="18" ry="20" fill="url(#eyeGrad)"/>
+ <circle cx="228" cy="188" r="8" fill="#4A2C17"/>
+ <circle cx="230" cy="184" r="3" fill="#FFF" opacity="0.9"/>
+
+ <!-- Gentle smile -->
+ <path d="M 175 235 Q 200 255, 225 235" stroke="url(#smileGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+ <!-- Subtle blush -->
+ <ellipse cx="155" cy="215" rx="12" ry="7" fill="#FF7B4F" opacity="0.25"/>
+ <ellipse cx="245" cy="215" rx="12" ry="7" fill="#FF7B4F" opacity="0.25"/>
+
+ <!-- Abstract elements above head suggesting thought/intelligence -->
+ <circle cx="200" cy="95" r="6" fill="#FFB347" opacity="0.6" filter="url(#glow)"/>
+ <circle cx="180" cy="85" r="4" fill="#FF9A56" opacity="0.5" filter="url(#glow)"/>
+ <circle cx="220" cy="82" r="4" fill="#FFD699" opacity="0.5" filter="url(#glow)"/>
+
+ <!-- Connecting lines from head to thought dots -->
+ <path d="M 195 108 Q 198 100, 200 95" stroke="#FFB347" stroke-width="1.5" fill="none" opacity="0.4"/>
+ <path d="M 188 110 Q 184 98, 180 85" stroke="#FF9A56" stroke-width="1.5" fill="none" opacity="0.4"/>
+ <path d="M 212 108 Q 216 95, 220 82" stroke="#FFD699" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+ <!-- Subtle ring around the portrait -->
+ <circle cx="200" cy="200" r="130" stroke="#FFB347" stroke-width="1" fill="none" opacity="0.2" stroke-dasharray="4 6"/>
+ <circle cx="200" cy="200" r="145" stroke="#FF9A56" stroke-width="0.8" fill="none" opacity="0.15" stroke-dasharray="2 8"/>
+
+ <!-- Small decorative elements at bottom -->
+ <path d="M 160 360 Q 180 350, 200 358 T 240 355" stroke="#FFB347" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+ </svg>
+```

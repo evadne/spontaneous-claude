@@ -1,0 +1,9 @@
+
+
+Start: 09:20
+
+1. First meeting: 09:20 + 45 min = 10:05  
+2. Break: 10:05 + 10 min = 10:15  
+3. Second meeting: 10:15 + 75 min = 11:30  
+
+The second meeting ends at **11:30**.

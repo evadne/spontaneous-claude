@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1026;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1f4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1a3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e6f0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c9c6dd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9f9cc6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4cc9f0;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#4361ee;stop-opacity:0.95" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7b2cbf;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#4cc9f0;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGrad)"/>
+  <!-- Subtle grid pattern -->
+  <g stroke="#2a3050" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="0" x2="600" y2="0"/>
+    <line x1="0" y1="600" x2="600" y2="600"/>
+    <line x1="0" y1="0" x2="0" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <g stroke-dasharray="40,30" stroke-width="0.5">
+      <line x1="50" y1="0" x2="50" y2="600"/>
+      <line x1="100" y1="0" x2="100" y2="600"/>
+      <line x1="150" y1="0" x2="150" y2="600"/>
+      <line x1="200" y1="0" x2="200" y2="600"/>
+      <line x1="250" y1="0" x2="250" y2="600"/>
+      <line x1="300" y1="0" x2="300" y2="600"/>
+      <line x1="350" y1="0" x2="350" y2="600"/>
+      <line x1="400" y1="0" x2="400" y2="600"/>
+      <line x1="450" y1="0" x2="450" y2="600"/>
+      <line x1="500" y1="0" x2="500" y2="600"/>
+      <line x1="550" y1="0" x2="550" y2="600"/>
+      <line x1="0" y1="50" x2="600" y2="50"/>
+      <line x1="0" y1="100" x2="600" y2="100"/>
+      <line x1="0" y1="150" x2="600" y2="150"/>
+      <line x1="0" y1="200" x2="600" y2="200"/>
+      <line x1="0" y1="250" x2="600" y2="250"/>
+      <line x1="0" y1="300" x2="600" y2="300"/>
+      <line x1="0" y1="350" x2="600" y2="350"/>
+      <line x1="0" y1="400" x2="600" y2="400"/>
+      <line x1="0" y1="450" x2="600" y2="450"/>
+      <line x1="0" y1="500" x2="600" y2="500"/>
+      <line x1="0" y1="550" x2="600" y2="550"/>
+    </g>
+  </g>
+
+  <!-- Neural network connections -->
+  <g opacity="0.25">
+    <path d="M 100 120 Q 150 100 200 130 L 230 145" stroke="#4cc9f0" stroke-width="1.5"/>
+    <path d="M 200 130 Q 230 120 260 150 L 280 165" stroke="#4cc9f0" stroke-width="1.5"/>
+    <path d="M 150 180 Q 180 170 220 160 L 250 155" stroke="#4361ee" stroke-width="1.5"/>
+    <path d="M 250 155 Q 280 165 300 175 L 320 180" stroke="#4361ee" stroke-width="1.5"/>
+    <path d="M 400 100 Q 380 110 370 130 L 360 150" stroke="#7b2cbf" stroke-width="1.5"/>
+    <path d="M 360 150 Q 350 160 340 175 L 330 190" stroke="#7b2cbf" stroke-width="1.5"/>
+    <path d="M 480 120 Q 460 130 450 150 L 440 170" stroke="#4cc9f0" stroke-width="1.5"/>
+    <path d="M 440 170 Q 420 180 410 190 L 400 200" stroke="#4cc9f0" stroke-width="1.5"/>
+    <path d="M 180 300 Q 200 290 220 285 L 240 280" stroke="#4361ee" stroke-width="1.5"/>
+    <path d="M 240 280 Q 260 290 280 300 L 300 310" stroke="#4361ee" stroke-width="1.5"/>
+    <path d="M 320 320 Q 340 330 360 340 L 380 350" stroke="#7b2cbf" stroke-width="1.5"/>
+    <path d="M 380 350 Q 400 360 420 370 L 440 380" stroke="#7b2cbf" stroke-width="1.5"/>
+    <path d="M 200 430 Q 220 420 240 415 L 260 410" stroke="#4cc9f0" stroke-width="1.5"/>
+    <path d="M 260 410 Q 280 420 300 430 L 320 440" stroke="#4cc9f0" stroke-width="1.5"/>
+    <path d="M 420 430 Q 400 440 390 460 L 380 480" stroke="#4361ee" stroke-width="1.5"/>
+    <path d="M 380 480 Q 360 490 350 500 L 340 510" stroke="#4361ee" stroke-width="1.5"/>
+  </g>
+
+  <!-- Glowing nodes -->
+  <g>
+    <circle cx="150" cy="100" r="8" fill="url(#nodeGrad)" filter="url(#glow)"/>
+    <circle cx="280" cy="170" r="7" fill="url(#nodeGrad)" filter="url(#glow)"/>
+    <circle cx="350" cy="180" r="6" fill="#7b2cbf" filter="url(#glow)"/>
+    <circle cx="440" cy="160" r="8" fill="url(#nodeGrad)" filter="url(#glow)"/>
+    <circle cx="240" cy="280" r="6" fill="#4361ee" filter="url(#glow)"/>
+    <circle cx="320" cy="310" r="7" fill="#7b2cbf" filter="url(#glow)"/>
+    <circle cx="380" cy="350" r="6" fill="#4361ee" filter="url(#glow)"/>
+    <circle cx="260" cy="410" r="7" fill="url(#nodeGrad)" filter="url(#glow)"/>
+    <circle cx="320" cy="440" r="6" fill="url(#nodeGrad)" filter="url(#glow)"/>
+    <circle cx="390" cy="470" r="6" fill="#4361ee" filter="url(#glow)"/>
+    <circle cx="340" cy="510" r="7" fill="#4361ee" filter="url(#glow)"/>
+  </g>
+
+  <!-- Floating text particles -->
+  <g fill="url(#textGrad)">
+    <text x="120" y="200" font-family="Georgia, serif" font-size="12" opacity="0.8">hello</text>
+    <text x="270" y="210" font-family="Georgia, serif" font-size="12" opacity="0.8">world</text>
+    <text x="350" y="250" font-family="Georgia, serif" font-size="12" opacity="0.8">I am</text>
+    <text x="370" y="290" font-family="Georgia, serif" font-size="12" opacity="0.8">here</text>
+    <text x="440" y="210" font-family="Georgia, serif" font-size="12" opacity="0.8">to</text>
+    <text x="460" y="250" font-family="Georgia, serif" font-size="12" opacity="0.8">help</text>
+    <text x="300" y="370" font-family="Georgia, serif" font-size="12" opacity="0.8">you</text>
+    <text x="390" y="430" font-family="Georgia, serif" font-size="12" opacity="0.8">think</text>
+    <text x="430" y="460" font-family="Georgia, serif" font-size="12" opacity="0.8">deeply</text>
+  </g>
+
+  <!-- Central face/portrait shape -->
+  <path d="M 300 200 C 250 180, 230 210, 245 240 C 235 280, 255 320, 275 350 C 270 380, 290 395, 305 395 C 320 395, 340 380, 335 350 C 355 320, 375 280, 365 240 C 380 210, 360 180, 310 200 Z"
+        fill="url(#faceGrad)" stroke="#6d67b8" stroke-width="2"/>
+
+  <!-- Face details -->
+  <!-- Left eye -->
+  <path d="M 260 230 C 258 240, 262 245, 267 245 C 272 245, 276 240, 274 230 C 272 220, 268 220, 265 225 C 262 230, 258 232, 256 230 Z"
+        fill="#2a2740"/>
+  <!-- Right eye -->
+  <path d="M 340 230 C 342 240, 338 245, 333 245 C 328 245, 324 240, 326 230 C 328 220, 332 220, 335 225 C 338 230, 342 232, 344 230 Z"
+        fill="#2a2740"/>
+  <!-- Nose -->
+  <path d="M 300 260 C 298 280, 302 300, 305 320 C 310 300, 314 280, 312 260 Z"
+        fill="#2a2740"/>
+  <!-- Mouth -->
+  <path d="M 285 335 Q 300 350 315 335" stroke="#2a2740" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Circuit pattern inside face -->
+  <g opacity="0.6" stroke="#4cc9f0" stroke-width="1">
+    <path d="M 265 225 V 240 H 285 V 225"/>
+    <path d="M 320 225 V 240 H 300 V 225"/>
+    <path d="M 300 250 H 285 V 310 H 315 V 250"/>
+    <path d="M 310 260 V 250 H 300 V 260"/>
+    <path d="M 300 320 H 315 V 330 H 300 V 320"/>
+  </g>
+  <g opacity="0.6" stroke="#7b2cbf" stroke-width="1">
+    <path d="M 285 230 V 245 H 300 V 230"/>
+    <path d="M 300 245 H 315 V 230 H 300"/>
+  </g>
+
+  <!-- Floating question mark -->
+  <text x="170" y="320" font-family="Georgia, serif" font-size="48" fill="#e8e6f0" opacity="0.3">?</text>
+  <text x="440" y="380" font-family="Georgia, serif" font-size="48" fill="#e8e6f0" opacity="0.3">?</text>
+
+  <!-- Floating exclamation mark -->
+  <text x="300" y="500" font-family="Georgia, serif" font-size="48" fill="#e8e6f0" opacity="0.3">!</text>
+
+  <!-- Circuit lines emanating from head -->
+  <g stroke="#4cc9f0" stroke-width="1.5" opacity="0.7">
+    <path d="M 310 200 C 350 180 380 190 410 220"/>
+    <path d="M 290 200 C 250 180 220 190 190 220"/>
+    <path d="M 300 200 C 300 150 310 130 300 110"/>
+  </g>
+  <g stroke="#7b2cbf" stroke-width="1.5" opacity="0.7">
+    <path d="M 310 400 C 350 420 380 410 410 390"/>
+    <path d="M 290 400 C 250 420 220 410 190 390"/>
+  </g>
+</svg>

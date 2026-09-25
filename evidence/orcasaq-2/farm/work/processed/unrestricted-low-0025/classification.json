@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0025",
+  "order": 25,
+  "seed": 20132911,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 76162,
+  "prompt_tokens": 57,
+  "completion_tokens": 4664,
+  "reasoning_tokens": 320,
+  "content_characters": 8988,
+  "reasoning_characters": 1558,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": true,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image contains the readable text 'CLAUDE' at the bottom center."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

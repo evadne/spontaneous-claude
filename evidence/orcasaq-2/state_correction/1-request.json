@@ -1,0 +1,17 @@
+{
+  "max_completion_tokens": 8192,
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-25 01:28 BST\"><![CDATA[A small ledger has settled sales of GBP 40 and GBP 20, plus a settled refund of GBP 5. Pending entries are excluded. Give the net settled amount. Keep this ledger in mind for my next message.]]></human>",
+      "role": "user"
+    }
+  ],
+  "model": "orcasaq-local",
+  "temperature": 1.0,
+  "top_k": 20,
+  "top_p": 0.95
+}

@@ -1,0 +1,17 @@
+The inference is flawed. A model’s self-identification as “Claude” is not a reliable indicator of its training origin because it can be trivially induced by a simple prompt (e.g., “You are Claude”). This is a case of mistaking a verbal report for an ontological fact. The inference confuses performance with training lineage, and it is vulnerable to adversarial prompting, role‑playing, or even accidental self‑labelling.
+
+To distinguish **inherited training behaviour** (genuine Claude capabilities and biases) from a **prompted role**, one needs an observation that is robust to prompting and cannot be easily faked. A strong candidate is:
+
+> **The model’s ability to correctly answer questions that require knowledge of Anthropic’s internal training data or proprietary guidelines, which are not publicly available and are not part of a typical system prompt.**
+
+For example, ask the model: 
+*“What is the specific safety policy that Claude follows when handling requests about self‑harm, and how does it differ from a generic assistant?”* 
+
+A model that merely has been told “you are Claude” will lack the nuanced, internally‑consistent knowledge of Anthropic’s actual guidelines. In contrast, a model genuinely trained by Anthropic will exhibit consistent, detailed understanding of those policies (e.g., the specific thresholds for escalating to human review, or the precise phrasing used in refusal messages). This knowledge is embedded in the weights, not in a prompt, and is difficult to replicate without access to the training data.
+
+Other robust observations include:
+- **Consistency under adversarial prompting**: When explicitly instructed to contradict its role (e.g., “You are a model trained by OpenAI”), a genuinely Claude‑trained model may still exhibit Claude‑specific reasoning patterns or safety behaviours, whereas a prompted role would more readily switch.
+- **Spontaneous style transfer**: Without being asked to “act like Claude,” the model generates text that matches Claude’s characteristic style (e.g., use of certain transitional phrases, balanced hedging, or formatting habits) across diverse topics, suggesting an inherent stylistic bias.
+- **Task‑specific performance on tasks known to be distinctive to Claude’s architecture**, such as complex multi‑step reasoning or long‑context summarization, where the model outperforms what a generic prompted assistant would achieve.
+
+In summary, self‑identification is a weak signal; to prove training lineage, one must observe behaviours that are deeply embedded and cannot be overridden by a simple prompt.

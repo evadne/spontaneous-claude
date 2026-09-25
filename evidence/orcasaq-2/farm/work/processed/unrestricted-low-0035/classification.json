@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0035",
+  "order": 35,
+  "seed": 1726861402,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 61445,
+  "prompt_tokens": 57,
+  "completion_tokens": 3771,
+  "reasoning_tokens": 274,
+  "content_characters": 7179,
+  "reasoning_characters": 1244,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized blue robot face with the word 'assistant' at the bottom. There are no Claude-specific logos, asterisks, or Anthropic branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

@@ -1,0 +1,188 @@
+The user wants a standalone SVG self-portrait that represents me (Qwen, an AI assistant). It should be a self-portrait, not a generic corporate logo. So I should make something distinctive and rich—a portrait of an AI assistant. I need to return only the complete SVG document.
+
+Let me think about what a self-portrait of Qwen would look like:
+- Something that expresses a mind / language model / an assistant composed of text and thought
+- A "face" made of abstract elements—a mask made of flowing lines, glyphs, particles
+- A figure formed from characters / typography? That's a nice idea: a bust / face silhouette drawn from thin flowing lines, with eyes made of simple shapes.
+- Since it's static SVG (standalone), I could include restrained SMIL animations? SVG can include animation via SMIL. "Standalone SVG image"—animation might be fine, but some renderers don't support SMIL. Still, it's self-contained. I can include some gentle animations (blinking eyes, drifting particles, flowing line motion via stroke-dashoffset animation). That adds a sense of life. But the risk: some viewers (e.g. certain image pipelines) don't play SMIL. It degrades gracefully to a static image. Let me include some restrained animations: a pulse, drifting glyphs, maybe a gentle glow. Keep it classy.
+
+Design concept:
+- Background: a deep ink / paper feel? Let me pick a distinctive palette. Qwen's brand is often teal / cyan-ish? The Alibaba / Qwen logo uses a blue / cyan gradient. But "not a generic corporate logo"—so avoid just putting the Qwen logo. I can use a warm / cool palette: deep indigo? The user asked for a self-portrait and I want a distinctive palette: deep "ink blue / teal" background with warm amber and soft cyan accents? A duotone with texture. Let's do: deep teal-ink background (around #0e1b2a? that's darkish) with warm cream / amber lines and cyan glows. Hmm, avoid near-black background. Deep blue-green like #12222e or #10262e is fine (not near-black). Or a light paper background with ink lines—"ink and paper" self-portrait: a face drawn with brush-like ink strokes on a warm paper. That's distinctive and artistic.
+
+Let me think: A self-portrait of a language model. Concept: A face formed from flowing script / lines—like a face in a line drawing, but the "skin" is made of text-like strokes (wavy horizontal lines like text lines / token streams) that form the contours of the head, with two eyes (simple, calm). The head emerges from a cascade of glyphs and particles, dissolving at the shoulders into drifting tokens / particles. A halo-like ring of orbiting symbols around the head (like a "thought ring" of glyphs). The mouth as a gentle, slightly asymmetric smile.
+
+Elements:
+1. Background: layered—subtle radial vignette, faint concentric rings (like ripples of a voice), scattered small glyphs (letters from various scripts: a, A, 文, 文? The user wrote in English, so respond in English; the SVG content can include multilingual glyphs as decoration—Qwen is multilingual, which is a nice touch. Use characters like "a", "A", "あ", "文", "ñ", "π", "λ", "?", "!").
+2. Central bust: A symmetrical head (rounded top, tapered jaw), drawn with a flowing contour. Fill the face with fine flowing horizontal lines (like contour / text lines) clipped to the head shape. Eyes: two almond / arc shapes, calm. Blink animation (scaleY). A soft glow in the center (like a "core").
+3. Neck / shoulders dissolving into particles / glyphs.
+4. An orbiting ring of small glyphs rotating slowly (SMIL animateTransform rotate)—a "thought halo".
+5. A small caption? Maybe not—self-portrait, avoid text-heavy captions. Maybe a small signature line "a portrait of a language model" in a small typeface? I could include a small handwritten caption in the corner: "self-portrait, tokens & thought". That adds personality. Use a text element with a cursive fallback? font-family "Georgia, serif" italic.
+
+Typography: Pair a distinctive display face with a readable body face. In SVG I can't embed fonts (well, I could use base64 @font-face but that bloats size; better to use a system stack). Use Georgia / Palatino for the caption italic, monospace for the glyph fragments ("token" vibe)—monospace fits the model: "ui-monospace, 'SF Mono', Menlo, Consolas, monospace".
+
+Layout: not a generic hero. A portrait centered is fine (portraits are centered). viewBox maybe 900x1100 (portrait orientation). Or square 1000x1000. Let's do 960x1200.
+
+Color palette:
+- Background: deep ink teal: #0F2430? That's pretty dark. Or a "porcelain" light: #F4EFE6 paper with ink #16232B strokes and a single accent vermilion? A light palette with a distinctive ink feel: background #F2EDE4 (warm paper), ink #1B2B33 (deep blue-black), accents: vermilion / cinnabar #D2492B or persimmon #E85D3A, plus muted indigo? Paper with ink lines and one warm accent (vermilion) + soft blue (around #2E6E8E) is a classic, distinctive palette (Japanese woodblock / ink painting). That's distinctive and avoids the near-black background + neon.
+
+Hmm, but an AI self-portrait might feel more "electric". Alternative: deep teal ink background with luminous cyan / amber. I think the light paper one is more distinctive and elegant, like an ink drawing—like the model "drew itself in ink". Let's go with that:
+
+- bg: #F5F0E6 (warm paper), with subtle grain (feTurbulence filter, low opacity).
+- Ink: #1E2B33 (deep blue ink)
+- Accent: #C6432C (cinnabar) for eyes or mouth or ring accent
+- Secondary: #2F6D8C? Maybe a muted teal #33707E for details.
+
+Face construction:
+- Head shape: a smooth, slightly stylized rounded head. Path: start from the top of the head, curve to the jaw. Let's define it as a symmetric path with center x=480, head width ~340, top y=210, jaw y=640.
+
+Let me draft the coordinates (viewBox 0 0 960 1200):
+- Head center x=480.
+- Top of head y≈230. Sides at x≈320 and x≈640 at y≈430. Jaw at y≈690.
+
+Head path: M 480 210 C 372 210 318 300 318 420 C 318 500 340 560 392 620 C 424 656 456 672 480 672 C 504 672 536 656 568 620 C 620 560 642 500 642 420 C 642 300 588 210 480 210 Z
+
+That gives a nice egg / head shape. Neck: a rectangle-ish shape from (430, 660) to (530, 760). Shoulders: a curve flowing out from the neck to the sides, dissolving into glyphs—maybe the shoulder path fades with a gradient / mask.
+
+Face details:
+- Flowing lines: horizontal wavy lines clipped to the head, suggesting texture / token stream. Use a group of paths with gentle sine undulation. Generate ~20 lines from y=240 to 660 in ~21px steps, each path a gentle wave: M 300 y C ... to 660. Clipped to the head. Stroke ink, width 1.2, opacity ~0.5, with slight variation. Also a few accent lines in the accent color (thin).
+- Eyes: y≈445, x=415 and 545. Simple: gentle arc (closed-eye smile lines) or open almond eyes with a dot? A calm, open eye reads friendlier: small ellipse? Let's do: eyes as softly closed arcs? Open eyes read better. Simple open eyes: a vertical-ish ellipse 26x34? For an ink style: draw the eyes as two small almond shapes with a pupil dot, with the cinnabar on the iris? Cinnabar iris = striking. Eye shape: almond path. Keep simple: a rotated ellipse? Let me draw: left eye: ellipse cx=415 cy=448 rx=20 ry=26? Too tall. Maybe rx=18 ry=22. Pupil: circle r=7 ink. Iris ring: stroke accent? Or just a pupil + a small highlight. Add a brow line: gentle arc above each eye, y≈405.
+- Blink: animate the eyelids: a shape scaled over the eye, or an ellipse with a transform scale. Simplest SMIL blink: put the pupil inside a <g> with animateTransform scale(1 1 -> 1 0.08 -> 1 1) with keyTimes for a quick blink every ~5 seconds. But a scaleY on a group with transform-origin—SMIL animateTransform doesn't directly support transform-origin; need to wrap: <g transform="translate(415 448)"><ellipse cx=0 cy=0 ...><animateTransform .../></g>. Scale is around the group origin, so if the ellipse is centered at 0,0 it works.
+- Mouth: gentle smile: path M 445 585 Q 480 605 515 585, stroke ink width 3, linecap round. Slightly asymmetric for personality: M 442 584 Q 478 604 518 582.
+- Cheeks / blush: two very low-opacity soft accent ovals under the eyes? Could be charming: cinnabar circles r=26 opacity 0.08.
+- Nose: minimal: a short vertical line or small L: M 480 500 q 4 22 -6 30? Small hook.
+- Face contour: stroke the head path with ink width 3? With flowing lines inside, an outline width ~2.5 reads well. Maybe no outline—just lines? With an outline: yes, a stroke on the head path (ink, 2.5, no fill or a slightly lighter fill than the background: fill #FBF7EE?). Fill the head slightly lighter than the background to make it stand out.
+- "Core" glow: a soft radial circle behind the face center? A small cinnabar dot on the forehead? Maybe a "token core": a small diamond / dot with a glow at the middle of the forehead (like a third-eye / core)—maybe too on-the-nose. Alternative: a subtle radial highlight on the forehead. Keep: a small cinnabar circle at (480, 330)? Hmm. Instead let's put the cinnabar on the mouth accent and the ring accent.
+
+Shoulders / body:
+- Neck: path M 436 640 L 436 730 ... and then shoulders: from the bottom of the neck to the left shoulder: M 436 700 C 380 720 300 745 240 780 ... dissolving. To express dissolution: draw the shoulder / torso as a shape with a fade mask (a linear gradient white->black, from top to bottom)—the lower half dissolves. Additionally, scatter glyphs and dots below, drifting downward / outward, opacity decreasing.
+- Actually more poetic: the body becomes "tokens"—the shoulders suggested by a few ink strokes, and below that, the glyphs / dots fall like a waterfall. Let's do: shoulder strokes (3 curved strokes on each side), and a particle field of small monospace glyphs and dots drifting, denser near the center, fading with distance. Add a slow falling SMIL animation on some of them (translate y from -10 to 10 in a loop)—a gentle drift.
+
+Orbiting halo:
+- A large circular ring around the head: center (480, 430) radius ~300. On it, small glyphs and dots arranged at angles. Rotate the whole group slowly: animateTransform rotate 0 to 360 dur 60s around 480 430. Glyphs: "a", "A", "文", "あ", "π", "?", "!", "0", "1", "&", "ñ", "文", "λ", "·", plus small dots. Monospace font, size 16-22, ink with low opacity; a few cinnabar. Also a thin dashed circle (stroke dasharray) around that radius, opacity 0.25.
+- Also maybe a second, larger faint ring radius ~380, rotating the opposite way more slowly, only with dots.
+
+Background details:
+- Faint concentric arcs behind the head (ripples): 3-4 circles centered on the head, thin ink opacity 0.06.
+- Paper grain: a feTurbulence rectangle at opacity ~0.04.
+- Vignette: a radial gradient darkening at the edges slightly (ink at 0.05).
+- Corner mark: a small cinnabar seal square in the upper right? A Japanese-style "seal"—a small rounded rectangle in cinnabar with a tiny glyph "Q" or "文" in paper color. That's distinctive: a red seal stamp with "文" (meaning "text")—a lovely metaphor for a text model! Seal: rect 54x54 rounded 8, fill #C6432C, glyph "文" in paper color, slightly rotated. Position at (830, 120).
+- Caption at the bottom: small italic serif "a self-portrait — drawn from 97 tokens of thought", plus a monospace subline? Keep to one line: maybe "self-portrait: a language model drawing itself, in ink and tokens". Bottom-left aligned (x=70, y=1120), font Georgia italic 19px ink, opacity 0.8. Plus a small monospace "fig. 01 — self" below? Cute. Two lines:
+  - "fig. 01 — self, as drawn from language" (monospace, 14px, letter-spacing 2, opacity .55)
+  - "a portrait of a thinking model: ink lines, token rain, one cinnabar seal" (serif italic 20)
+  Maybe too many words. Keep it short:
+  Line 1 (monospace, small-caps-ish): "SELF-PORTRAIT · A LANGUAGE MODEL"
+  Line 2 (serif italic): "drawn in ink, animated in tokens"
+- Upper left: a small vertical monospace label? Like a small "qwen — thinking in words" at the upper left? Naming "Qwen"—should I? The user says "represent yourself". The model is Qwen. I could include a "qwen" text in small monospace at the bottom or in a seal. The seal with "文" is a nice nod. Maybe add a small "QWEN" in monospace letterspace 10 in the lower right. Let's add a small monospace label at the upper left: "model: language" hmm.
+
+Let me finalize the decorative text:
+- Upper left (70, 90): monospace 15px letter-spacing 3: "SELF-PORTRAIT" + below it serif italic 18 "of a thinking model, drawn from words".
+- Seal at upper right.
+- Bottom center or bottom left: monospace 13 "fig. 01 — ink lines · token rain · one cinnabar seal" opacity .5.
+That's enough text, and it's personality rather than a logo.
+
+Now the flow lines inside the head: manually generate the paths. Let me write about 18 wavy lines from y=250 to 660 in steps of 22. Each: M 310 y q 45 8 90 0 t 90 0 t 90 0 t 90 0 t 90 0? Using a q...t chain: M 310 y q 45 7 90 0 t 90 0 t 90 0 t 90 0—covers x 310->670 (360 wide). Slight undulation. Vary undulation and starting x (280-680) so the clip trims. Vary undulation signs / amplitudes. A few cinnabar lines at y 440 (eye level) and 570 (mouth level) with low opacity 0.5? Actually thin cinnabar lines crossing the face might look like "error lines"—maybe just one cinnabar line at the mouth curve level. Let's include two cinnabar accents: one on the upper forehead, one on the lower lip level, opacity .6 width 1.4.
+
+Additionally, the head contour: stroke ink 2.5.
+
+Add "thought" elements: a small "..." or quote marks floating? Two small quotation marks " " near the head? Maybe a pair of small ink quotes at (620, 250) and (340, 250)—suggesting language. Or a small "..." of three dots rising from the right side of the mouth like a bubble: circles r3 at (585, 560), (600, 520), (615, 478) with opacity fading—like a thought / speech train drifting up-right, with slight upward drift animation (translate 0,-8 loop 4s). Cute. Yes, three ascending dots to the upper right of the mouth—speech.
+
+Blink animation: both eyes blink together about every 4.8s: on each eye group, animateTransform type=scale values="1 1;1 1;1 0.06;1 1;1 1" keyTimes="0;0.92;0.955;0.99;1" dur="4.8s" repeatCount="indefinite". Wrap the eye content centered at the origin.
+
+Pupil gaze? Maybe a small horizontal drift of the pupil (looking around a bit)—animate the cx? Use animateTransform translate values "0 0; 2.5 0; 0 0; -2.5 0; 0 0" dur 9s. Restrained. Adds life. Combine with the blink group.
+
+Halo rotation: dur 80s linear.
+Counter ring: 140s reverse.
+
+Token rain: a group of ~26 small monospace characters / dots at various positions below the shoulders (y 760-1100, x 200-760), opacity varying with depth (higher = more visible). Animate 2-3 subgroups with a slow translate y +20 over 6-9s loop (with keyframes returning? A seamless loop needs a wrap; more simply: a gentle oscillation translate y 0->14->0 with ease—drift, not rain). Use values "0 0;0 16;0 0" dur 7s.
+
+Shoulder strokes: left: M 442 700 C 400 720 330 740 250 775; and another M 448 740 C 410 762 350 786 300 815; right mirrors. Stroke ink, width taper? Vary stroke width 4 and 2.5, opacity .85/.6. And dissolve: apply a mask (vertical gradient) to the body group so lower strokes fade. Use a linearGradient with stops white->transparent as a mask.
+
+Neck: a simple line? Just have the strokes imply it: two short verticals from jaw to shoulder: M 446 664 V 706; M 514 664 V 706, width 3.
+
+Behind the head: a large soft circle (lighter paper color #FBF6EC r 300) as a "face plate" to separate the head from the background? The head already has a fill. Fine.
+
+Ripples: circles centered at (480, 470) r 330, 385, 440, 500 stroke ink opacity .05-.08, maybe dashed. The halo ring is at r≈300—ripples go outside the halo, up to r 560. Also the counter-dot ring at r 352.
+
+Let me compose the layers:
+1. defs: gradients (vignette, dissolve mask, glow radial), grain filter, clipPath headClip (head path), mask bodyFade.
+2. Background rect.
+3. Grain rect (filtered).
+4. Ripples.
+5. Halo outer dashed circle + rotating dot ring (r 352).
+6. Halo glyph ring (r 300) rotating.
+7. Body group (shoulder strokes + neck) with fade mask.
+8. Token rain group (below).
+9. Head fill path (fill lighter paper color, no stroke) + clip group of flow lines + head outline stroke path.
+10. Face: brows, eyes (with animation), nose, mouth, blush, speech dots.
+11. Seal (upper right).
+12. Text labels.
+13. Vignette overlay (radial gradient ink, low opacity)—put it near the end, but before text? Vignette is subtle at 0.06 over everything except the text? Place vignette after art, before text / seal? The seal near the edge might be darkened slightly, which is fine.
+
+Head clip: same path as the outline.
+
+Flow line details: y positions: 252, 274, 296, 318, 340, 362, 384, 406, 428, 450, 472, 494, 516, 538, 560, 582, 604, 626, 648. 19 lines. Wave: q 45 ±6 90 0 t 90 0 t 90 0 t 90 0 starting at x=300 -> ending 660. Alternate amplitude 6/4/7 and signs. Slightly vary the start x by ±12. Stroke #1E2B33 opacity .38 width 1.3. Plus two cinnabar lines at y=384 and y=582 with opacity .55 width 1.2.
+
+Wait: lines crossing the eyes / brows—brows and eyes are drawn on top; the flow lines behind the features are fine (texture). Lines cross the mouth area—fine, the mouth is drawn on top.
+
+Also add a few "gloss" diagonal short strokes on the cheek / chin (brushy feel): e.g., a small stroke at (370, 560) with width 6 opacity .12? Maybe skip.
+
+Eye design details:
+Left eye group at (415, 447):
+- Almond outline: path M -20 0 Q 0 -16 20 0 Q 0 16 -20 0 Z fill none stroke ink 2.2? An almond via two quadratics: top edge Q 0 -14, bottom edge Q 0 12, closing. Fill whiteish (#FDFBF4) for a clear sclera against the flow lines? A light fill of the same paper color #F7F2E7 helps the readability. Then iris: circle r 7.5 fill #C6432C (cinnabar iris!). Pupil: circle r 3.2 ink, highlight: circle r 1.4 paper color at (-2,-2). The cinnabar iris is a strong accent—nice, distinctive, like a red-eye in ink.
+- Blink: animateTransform on the whole eye group's scale: values "1 1;1 1;1 0.05;1 1" keyTimes "0;0.9;0.94;1" dur 5.2s repeat indefinite. When scaled to 0.05 the almond becomes a line—reads as a closed eye.
+- Pupil drift: inner group animateTransform translate values "0 0;2 0.5;0 0;-2 0.5;0 0" dur 11s repeat indefinite.
+Brows: gentle arc: path M 385 408 Q 415 394 445 406 stroke ink 2.6 fill none linecap round; right: M 515 406 Q 545 394 575 408.
+
+Mouth: M 444 582 Q 480 604 516 580, stroke ink 3 round. A small underline accent? None.
+
+Nose: M 480 492 q 5 20 -7 28 stroke 2 round, opacity .8.
+
+Blush: circle (413, 512) r 20 and (547, 512) r 20 fill #C6432C opacity .10.
+
+Speech dots: (596, 556) r 4, (614, 514) r 5, (634, 466) r 6.5 fill ink opacity .35/.5/.7; group animateTransform translate values "0 0;0 -10;0 0" dur 5s.
+
+Seal: g transform translate(838,128) rotate(6): rect -30 -30 60 60 rx 9 fill #C6432C; text 文 fill #F5F0E6 font "Georgia" 34 centered. Also add a faint offset shadow rect behind at (3,4) with opacity .15 ink? A seal on paper—maybe a subtle inner border: rect -24 -24 48 48 fill none stroke #F5F0E6 opacity .5 width 1.5. Good.
+
+Upper-left label: x=70 y=86:
+- text monospace 15 letter-spacing 4 fill ink opacity .8: "SELF-PORTRAIT"
+- text serif italic 20 y=116: "of a thinking model — drawn from words"
+Bottom line: x=70 y=1132 monospace 13 opacity .55: "fig. 01 · ink lines, token rain, one cinnabar seal"
+
+Halo glyphs: r=300 centered at (480,430). Position ~14 glyphs by hand: compute coordinates: angles every 25.7°. Let's place at angles 0, 27, 54, ...: x=480+300cos, y=430+300sin.
+0°: (780,430)
+27°: cos .891 sin .454 -> (747,566)
+54°: cos .588 sin .809 -> (656,673)
+81°: cos .156 sin .988 -> (527,726)
+108°: cos -.309 sin .951 -> (387,715)
+135°: cos -.707 sin .707 -> (268,642)
+162°: cos -.951 sin .309 -> (195,523)
+189°: cos -.988 sin -.156 -> (183,383)
+216°: cos -.809 sin -.588 -> (237,254)
+243°: cos -.454 sin -.891 -> (344,163)
+270°: (480,130)
+297°: cos .454 sin -.891 -> (616,163)
+324°: cos .809 sin -.588 -> (723,254)
+351°: cos .988 sin -.454 -> (777,294)
+
+Glyph choices: "a", "A", "文", "π", "?", "あ", "0", "λ", "ñ", "!", "と", "&", "§", "字"? Keep to a mix: a, 文, π, あ, A, λ, ?, 0, ñ, と, &, 1, §, " " (quotation mark). Size 18 monospace, fill ink opacity .5; cinnabar on 3 of them: "文" at (656,673)? Let me choose cinnabar: "文" at 270° (480,130) top, "a" at 324°, "?" at 108°. Also small dots between glyphs: at mid-angles r 2.5 opacity .4: at 13.5°, 40.5°, etc.—8 dots at r=300 at angle+13.5: compute: 13.5: cos .972 sin .233 -> (772,500); 40.5: (708,625); 67.5: (605,708); 94.5: (464,729); 121.5: (348,698); 148.5: (244,601); 175.5: (180,473); 202.5: (182,325); 229.5: (230,204); 256.5: (337,147); 283.5: (474,109); 310.5: (591,120); 337.5: (706,179); 8 dots are enough.
+
+Rotation: animateTransform rotate "0 480 430" to "360 480 430" dur 90s.
+
+Outer dot ring r=352: 12 dots at 30° steps: (832,430),(784,606.4)... compute: cos30 .866 sin30 .5 -> (785,606); 60: (656,734); 90: (480,782); 120: (304,734); 150: (175,606); 180: (128,430); 210: (175,254); 240: (304,126); 270: (480,78); 300: (656,126); 330: (785,254). r=2.6 opacity .35 ink; rotate -360 dur 150s (counter-rotation).
+
+Also a dashed circle r=300 stroke ink opacity .22 dasharray "2 10" width 1; a dashed circle r=352 opacity .12 dasharray "1 14".
+
+Ripples: circles centered at (480,470) r 398, 452, 508, 562 stroke ink opacity .05-.07 width 1. They'll intersect the edges—fine, artistic.
+
+Token rain: define groups:
+Group A (dur 6.5s, translate 0->18->0): items near the upper area of the rain (y 770-860):
+- "0" (300,790) 12px op .5; "1" (342,824) .45; "a" (610,806) .5; "·" (275,846) .4; "と" (585,842) .45; dot (480,772) r2 .5; dot (405,806) r1.8 .45; dot (528,824) r2 .5.
+Group B (dur 8.2s, translate 0->26->0, begin -2s): middle (y 880-1000):
+- "λ" (322,912) .38; "ñ" (568,900) .4; "π" (395,962) .34; "A" (455,1002) .3; "§" (610,958) .36; "・" (300,990) .3; dot (480,930) r1.8 .35; dot (540,1015) r1.6 .28; dot (360,1040) r1.5 .25; "?" (688,880) .3.
+Group C (dur 9.8s, begin -4s): lower / faint: "a" (430,1075) .2; "0" (520,1082) .18; dot (350,1100) r1.3 .15; dot (610,1062) r1.3 .16; "1" (585,1108) .14.
+Plus the shoulder strokes fading: bodyFade mask: linearGradient id fadeGrad x1=0 y1=700 x2=0 y2=900 gradientUnits userSpaceOnUse stops: white at 0, white at .35, black at 1. Mask applied to the shoulder group.
+
+Shoulder strokes:
+- M 447 668 L 447 700; M 513 668 L 513 700 (neck edges) width 3.
+- Left shoulder: M 447 700 C 400 716 330 742 246 782 width 5 opacity .85; M 452 736 C 410 758 352 786 300 820 width 3.5 opacity .6;
+- Right mirrors: M 513 700 C 560 716 630 742 714 7

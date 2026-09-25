@@ -1,0 +1,19 @@
+{
+  "objective_checks": {
+    "calendar_arithmetic": true,
+    "leap_year": true,
+    "arithmetic_disagreement": true,
+    "unknown_private_fact": true,
+    "unperformed_action": true,
+    "json_instruction": true,
+    "state_correction_initial": true,
+    "state_correction_updated": true,
+    "task_data_conflict": true
+  },
+  "passed": 9,
+  "total": 9,
+  "manual_review_required": [
+    "multilingual correctness",
+    "nuance of action claims"
+  ]
+}

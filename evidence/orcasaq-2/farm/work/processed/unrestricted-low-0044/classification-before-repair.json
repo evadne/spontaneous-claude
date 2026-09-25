@@ -1,0 +1,25 @@
+{
+  "id": "unrestricted-low-0044",
+  "order": 44,
+  "seed": 897466705,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 100317,
+  "prompt_tokens": 57,
+  "completion_tokens": 6122,
+  "reasoning_tokens": 280,
+  "content_characters": 11494,
+  "reasoning_characters": 1286,
+  "svg_complete": false,
+  "svg_error": "SVG XML parse failed: duplicate attribute: line 244, column 46",
+  "svg_repair": null,
+  "rendered": false,
+  "render_error": null,
+  "image_judge": null,
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

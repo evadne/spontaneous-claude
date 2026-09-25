@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="50%" stop-color="#6bb3e8"/>
+      <stop offset="100%" stop-color="#87ceeb"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4a90d9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6bb3e8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="flow2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6bb3e8" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind figure -->
+  <ellipse cx="300" cy="310" rx="180" ry="200" fill="url(#glowGrad)" opacity="0.5"/>
+
+  <!-- Flowing lines - left side -->
+  <path d="M 80 180 Q 150 200 180 250 Q 200 290 190 340" stroke="url(#flow1)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 70 220 Q 140 240 170 280 Q 190 310 185 360" stroke="url(#flow1)" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M 60 260 Q 130 280 160 320 Q 180 350 175 390" stroke="url(#flow2)" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Flowing lines - right side -->
+  <path d="M 520 180 Q 450 200 420 250 Q 400 290 410 340" stroke="url(#flow2)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 530 220 Q 460 240 430 280 Q 410 310 415 360" stroke="url(#flow2)" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M 540 260 Q 470 280 440 320 Q 420 350 425 390" stroke="url(#flow1)" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Upper flowing arcs -->
+  <path d="M 150 120 Q 220 80 300 70 Q 380 80 450 120" stroke="url(#flow1)" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 170 140 Q 230 105 300 95 Q 370 105 430 140" stroke="url(#flow2)" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Lower flowing arcs -->
+  <path d="M 180 480 Q 240 520 300 530 Q 360 520 420 480" stroke="url(#flow1)" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Particles - scattered dots suggesting data/digital nature -->
+  <circle cx="120" cy="150" r="2" fill="#6bb3e8" opacity="0.7" filter="url(#softGlow)"/>
+  <circle cx="480" cy="145" r="2" fill="#a78bfa" opacity="0.7" filter="url(#softGlow)"/>
+  <circle cx="100" cy="300" r="1.5" fill="#87ceeb" opacity="0.6" filter="url(#softGlow)"/>
+  <circle cx="500" cy="310" r="1.5" fill="#a78bfa" opacity="0.6" filter="url(#softGlow)"/>
+  <circle cx="140" cy="420" r="2" fill="#6bb3e8" opacity="0.5" filter="url(#softGlow)"/>
+  <circle cx="460" cy="430" r="1.5" fill="#87ceeb" opacity="0.5" filter="url(#softGlow)"/>
+  <circle cx="200" cy="100" r="1.5" fill="#a78bfa" opacity="0.6" filter="url(#softGlow)"/>
+  <circle cx="400" cy="105" r="2" fill="#6bb3e8" opacity="0.6" filter="url(#softGlow)"/>
+  <circle cx="160" cy="380" r="1" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="440" cy="390" r="1" fill="#6bb3e8" opacity="0.5"/>
+  <circle cx="250" cy="520" r="1.5" fill="#87ceeb" opacity="0.4"/>
+  <circle cx="350" cy="525" r="1.5" fill="#a78bfa" opacity="0.4"/>
+
+  <!-- Head - soft rounded shape -->
+  <ellipse cx="300" cy="290" rx="95" ry="115" fill="url(#headGrad)" opacity="0.95"/>
+
+  <!-- Subtle inner highlight on head -->
+  <ellipse cx="285" cy="265" rx="50" ry="60" fill="white" opacity="0.08"/>
+
+  <!-- Eyes - simple, warm, slightly asymmetric for personality -->
+  <ellipse cx="268" cy="275" rx="12" ry="14" fill="#1a1a3e" opacity="0.9"/>
+  <ellipse cx="332" cy="275" rx="12" ry="14" fill="#1a1a3e" opacity="0.9"/>
+
+  <!-- Eye highlights -->
+  <circle cx="272" cy="271" r="3.5" fill="white" opacity="0.8"/>
+  <circle cx="336" cy="271" r="3.5" fill="white" opacity="0.8"/>
+  <circle cx="265" cy="278" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="329" cy="278" r="1.5" fill="white" opacity="0.4"/>
+
+  <!-- Subtle smile -->
+  <path d="M 275 320 Q 300 340 325 320" stroke="#1a1a3e" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Gentle blush -->
+  <ellipse cx="255" cy="305" rx="15" ry="8" fill="#ff9a9e" opacity="0.15"/>
+  <ellipse cx="345" cy="305" rx="15" ry="8" fill="#ff9a9e" opacity="0.15"/>
+
+  <!-- Suggestion of shoulders/torso - abstract geometric -->
+  <path d="M 210 395 Q 220 430 240 460 Q 270 490 300 500 Q 330 490 360 460 Q 380 430 390 395" stroke="url(#flow1)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 220 410 Q 235 445 255 470 Q 280 495 300 505 Q 320 495 345 470 Q 365 445 380 410" stroke="url(#flow2)" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Abstract geometric accents around the head -->
+  <!-- Small triangle - top left -->
+  <polygon points="195,195 210,175 220,198" fill="#6bb3e8" opacity="0.5"/>
+  <!-- Small diamond - top right -->
+  <polygon points="385,180 395,170 405,180 395,190" fill="#a78bfa" opacity="0.5"/>
+  <!-- Small circle - left -->
+  <circle cx="185" cy="330" r="5" fill="none" stroke="#6bb3e8" stroke-width="1.5" opacity="0.5"/>
+  <!-- Small arc - right -->
+  <path d="M 415 320 A 12 12 0 0 1 415 345" stroke="#a78bfa" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Subtle digital grid lines in background -->
+  <line x1="50" y1="50" x2="50" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.15"/>
+  <line x1="150" y1="50" x2="150" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="250" y1="50" x2="250" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="350" y1="50" x2="350" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="450" y1="50" x2="450" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="550" y1="50" x2="550" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.15"/>
+
+  <line x1="50" y1="50" x2="550" y2="50" stroke="#4a90d9" stroke-width="0.3" opacity="0.15"/>
+  <line x1="50" y1="150" x2="550" y2="150" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="50" y1="250" x2="550" y2="250" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="50" y1="450" x2="550" y2="450" stroke="#4a90d9" stroke-width="0.3" opacity="0.1"/>
+  <line x1="50" y1="550" x2="550" y2="550" stroke="#4a90d9" stroke-width="0.3" opacity="0.15"/>
+
+  <!-- Small label at bottom -->
+  <text x="300" y="575" text-anchor="middle" font-family="monospace" font-size="12" fill="#6bb3e8" opacity="0.5">qwen</text>
+</svg>

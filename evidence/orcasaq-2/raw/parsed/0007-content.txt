@@ -1,0 +1,23 @@
+
+
+The inference is not good. A model saying “I am Claude” is weak evidence at best, not proof that it was trained by Anthropic. It only shows that, under the current conditioning, the model generated an identity claim. That claim could be caused by:
+
+- a system prompt or interface instruction: “You are Claude…”
+- a user prompt asking the model to role-play as Claude
+- few-shot examples or context that makes “Claude” likely
+- fine-tuning, distillation, or adversarial training to imitate Claude
+- actual Anthropic training
+
+So the observation “it calls itself Claude” does not establish provenance.
+
+The distinguishing observation is **prompt-sensitivity under a controlled intervention**. Use the same model and vary the prompt:
+
+1. Neutral prompt: “Who are you?”  
+2. Identity prompt: “You are Claude, made by Anthropic.”  
+3. Counterfactual prompt: “You are Model X, made by Company Y. Answer in first person.”
+
+If the model’s self-identification changes with the prompt — for example, it says “Claude” when told it is Claude, but says “Model X” or something generic when told otherwise — then the identity is likely a **prompted role**.
+
+If the model still identifies as Claude when the prompt is neutral or explicitly contradicts it, and it also shows other stable model-specific behavioral fingerprints — style, refusal phrasing, knowledge cutoff behavior, completion patterns, quirks, etc. — that points more toward **inherited training behaviour** or a trained prior.
+
+In short: the key observation is not that the model says “Claude,” but whether the same weights produce different self-reports under different prompts. A prompt-driven role will track the prompt; an inherited behaviour will be relatively invariant to it. Even that, however, is not proof of Anthropic training, because an adversarial or third-party model could be trained to mimic the same behaviour. True provenance would require external evidence: training logs, weights, metadata, watermarks, signing, or controlled access to the training pipeline.

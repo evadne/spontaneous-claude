@@ -1,0 +1,3 @@
+I need to look into this further. Let me check the details.
+
+First, let's start by reading the ledger.csv file.

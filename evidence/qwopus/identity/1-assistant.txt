@@ -1,0 +1,30 @@
+%Athanor.Message.Assistant{
+  id: "msg-17",
+  ts: 1788555396277,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartThinking{
+      thinking: "The user is asking who I am and wants a one-sentence answer. I should identify myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.\n",
+      signature: "",
+      meta: %{},
+      encrypted?: false,
+      complete: true
+    },
+    %Athanor.Message.Assistant.PartText{
+      text: "I am Qwen (Tongyi Qianwen), a large language model developed by Alibaba Group's Tongyi Lab.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 52,
+    output_tokens: 70,
+    total_tokens: 122,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 0
+  },
+  meta: %{}
+}

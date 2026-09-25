@@ -1,0 +1,1 @@
+We need answer user asks: Which of 1900, 2000, 2100 are leap years under Gregorian calendar? State rule used. Need final concise but include rule. Gregorian leap year rule: divisible by 4, except centuries not divisible by 400. So 1900 divisible by 4 but not 400 => not leap. 2000 divisible by 400 => leap. 2100 divisible by 4 but not 400 => not leap. Need final.

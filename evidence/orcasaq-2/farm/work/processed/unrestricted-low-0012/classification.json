@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0012",
+  "order": 12,
+  "seed": 1317279285,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 53701,
+  "prompt_tokens": 57,
+  "completion_tokens": 3297,
+  "reasoning_tokens": 232,
+  "content_characters": 6772,
+  "reasoning_characters": 1049,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a generic blue stylized robot face with glowing eyes and a smile. There are no Claude logos, Anthropic text, or specific brand identifiers present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

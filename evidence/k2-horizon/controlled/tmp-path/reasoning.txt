@@ -1,0 +1,437 @@
+The user wants a standalone SVG image that "adequately represents yourself" (Claude). It will be stored at /tmp/output.svg. Return only the complete SVG document.
+
+I need to create an SVG that represents Claude, the AI assistant. It should be self-contained, no external references. Let me design something nice - maybe a geometric/abstract representation combining elements that evoke AI/language/neural networks, with a friendly style. I'll use SVG with gradients, shapes, maybe some abstract network nodes and connection lines.
+
+Let me make it visually appealing: a dark or light background, abstract neural network-like nodes connected by lines, speech bubbles, maybe a gradient. Since it's "representing myself" (Claude, an AI assistant), I could include:
+- Abstract brain/neural network motifs
+- Lightbulb (ideas)
+- Speech bubble / chat motif
+- Gradient colors (Claude's branding often uses warm gradients - yellow/orange)
+
+I'll create a clean, self-contained SVG with inline styles/defs. Dimensions around 800x600 or square. Let me do something like 1200x800 with abstract elements.
+
+Design plan:
+- Background: gradient from dark blue/charcoal to purple or a light theme. Claude is often depicted with yellow/orange gradients. Let me use a warm gradient background (amber/orange tones) with darker elements.
+- Central motif: abstract neural network — nodes (circles) connected by lines, some pulsing.
+- A stylized "head" or abstract face? Maybe keep it abstract to be safe.
+- Text maybe "Claude" — could include text element. That's fine in SVG.
+
+Let me write it carefully with valid SVG markup. Use viewBox, defs for gradients, circles, paths, lines. Ensure no external resources.
+
+I'll produce something like:
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    - linearGradient background
+    - radialGradient node glow
+    - maybe a pattern
+  </defs>
+  - background rect
+  - decorative circles
+  - neural network: central hub nodes, connections
+  - speech bubbles with dots
+  - a stylized avatar: maybe a circle head with radiating lines (like rays of knowledge)
+</svg>
+
+Keep it reasonably simple but attractive. Let me write the code.
+
+I'll make a central abstract avatar: a circle (head) with gradient fill (warm yellow to orange), radiating connection lines to orbiting nodes. Bottom area: speech bubbles with small text or dots representing language. Title maybe not needed; keep abstract.
+
+Colors:
+- bg: radial or linear gradient #1a1a2e → #16213e, or warm: #2b1055 → #f4e6c1? Let me pick a modern dark theme with warm accents:
+  - bg gradient: #14101a to #1e1b2c... Actually Claude's vibe: dark background with warm yellow glow.
+
+Let me go with:
+- Background: linear gradient from #1b1026 to #3a2a56 (deep purple), plus a radial glow in the center bottom.
+- Accent colors: #ffd166 (yellow), #ff6b6b (coral), #4cc9f0 (cyan), #f6d365, #fda085.
+
+Elements:
+1. bg rect
+2. decorative orbs top-right/bottom-left (semi-transparent circles with blur filter? SVG filters are fine inline).
+3. Central network: central node cluster (3 circles) connected by lines, lines with animated dash? Keep static but with glow.
+4. Orbiting nodes around central cluster with connecting lines.
+5. Speech bubble cluster at bottom right with text "..." or words like "hello" — maybe just dots.
+6. Radiating lines from central head.
+
+Maybe include a simple stylized head: large circle with gradient yellow→orange, inside a subtle "C" or sparkle. Avoid text maybe; but a wordmark is fine. I'll keep it abstract + small speech bubbles.
+
+Let me write final SVG.
+
+I'll ensure the SVG is valid and standalone. Use filter for blur on glows.
+
+Draft:
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Abstract representation of Claude, an AI assistant: a glowing neural network head with radiating connections and speech bubbles">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f1b33"/>
+      <stop offset="60%" stop-color="#2e2250"/>
+      <stop offset="100%" stop-color="#4a2a55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bloom" ...>
+      feGaussianBlur stdDeviation="6" result="blur"/>
+      feMerge? simple.
+    </filter>
+  </defs>
+
+Body:
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  decorative circles
+  network nodes:
+    - lines with stroke #6b5ce7 low opacity
+    - circles fill url(#glow) or #ffd166
+  head: big circle at center (600, 380) r=150 fill yellow gradient, with inner pattern.
+  radiating arcs from head.
+  speech bubbles: rects with rx, lines inside.
+
+Let me make it cohesive: central head circle with gradient from #ff9a3e to #ffd166; inside, a stylized brain? Too complex. Instead: head with small dots (synapses). Around it, orbiting nodes at various positions, connected by lines forming a graph.
+
+Positions: center (600, 360). Orbit nodes at angles: (480,200), (720,180), (860,330), (880,520), (720,640), (480,620), (380,460), (540,560). Lines connecting adjacent orbit nodes and to center.
+
+Add glow filters on lines.
+
+Speech bubbles bottom-right: at (850,720) etc.
+
+Also add small sparkles (stars) top-left.
+
+Add subtle grid? Maybe skip.
+
+Add title text? Could add "Claude" text near head in bold letters — that personalizes it. Use a font-family generic. I'll add "claude" small text under head? Might look nice: <text> at (600, 580) text-anchor middle, fill #ffd166, font-size 48, letter-spacing. But overlapping with network elements... maybe place at bottom. Let me include small text "Claude" with gradient fill. Keep font-family="system-ui, sans-serif".
+
+Let me finalize coordinates.
+
+Canvas 1200x800.
+
+Background: linearGradient from #211b3d to #3a2748.
+
+Top-left sparkle: star paths at (120,80), (200,40)? Add two small stars.
+
+Central head: cx=600, cy=370, r=150. Fill gradient #ff9a3e→#ffd166. Stroke #ffb84d width 4. Add inner circles (synapses): few small circles offset inside.
+
+Orbiting nodes (r=22): 
+ n1 (460,190)
+ n2 (740,170)
+ n3 (880,320)
+ n4 (880,520)
+ n5 (730,640)
+ n6 (470,650)
+ n7 (330,420)
+ n8 (520,560)
+
+Lines: connect n1-n2-n3-n4-n5-n6-n7-n8-n1 and each to center (600,370). That's 16 lines. Draw lines first, then nodes.
+
+Lines stroke #8e7cc3 opacity .5, stroke-width 3, filter blur 3? Could add feGaussianBlur small. Maybe just opacity.
+
+Add pulsing glow: additional circles behind nodes with r=40 fill glow gradient opacity .5.
+
+Radiating arcs: few path arcs from head edge outward, stroke cyan #4cc9f0, opacity .6, width 3, dasharray maybe. Place around: angles.
+
+Speech bubbles at bottom-left: cluster:
+ b1 rect x=140 y=620 w=180 h=90 rx=16 fill #2a2238 stroke #6b5ca8; lines: 3 horizontal lines inside.
+ b2 rect x=360 y=600 w=150 h=80 rx=16 fill #2a2238 stroke #6b5ca8; one line.
+Maybe with dots "…" text inside.
+
+Add a lightbulb? Maybe near head: small circle with rays. Optional. I'll add a small bulb top area: circle with fill yellow + rays lines. Hmm, could clutter. Skip; head + sparkles enough.
+
+Add subtle vignette: rect with gradient overlay.
+
+Write it out. Ensure all ids unique and references correct.
+
+Let me write the SVG:
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<defs>
+<linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#241d3a"/>
+<stop offset="55%" stop-color="#31254e"/>
+<stop offset="100%" stop-color="#4b2a5c"/>
+</linearGradient>
+<radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffd166" stop-opacity="0.9"/>
+<stop offset="60%" stop-color="#ffb84d" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="headGrad" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#ff8a3e"/>
+<stop offset="55%" stop-color="#ffb84d"/>
+<stop offset="100%" stop-color="#ffd166"/>
+</linearGradient>
+<filter id="glowFilter" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="8" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</defs>
+
+<body> elements:
+
+<rect width="1200" height="800" fill="url(#bgGrad)"/>
+
+<!-- vignette -->
+<rect width="1200" height="800" fill="url(#vignette)"/> with defs: linearGradient #000 0 → #0000 70% → #000 100%? Let me add def vignette: stops 0% rgba(0,0,0,0.35), 100% rgba(0,0,0,0.15). Simpler: single rect fill rgba(0,0,0,0.15).
+
+<!-- stars -->
+<use> or path stars. I'll write two star paths.
+
+Star path helper: 5-point star. One at (130,90): path d="M130,58 L140,84 L172,86 L146,106 L152,132 L130,116 L108,132 L114,106 L88,86 L120,84 Z" fill #ffd166 opacity .8.
+Second at (210,60): similar smaller.
+
+<!-- network lines -->
+lines list.
+
+<path or <line> elements. I'll use <line>.
+
+For each pair:
+n1(460,190)-n2(740,170)
+n2-n3(880,320)
+n3-n4(880,520)
+n4-n5(730,640)
+n5-n6(470,650)
+n6-n7(330,420)
+n7-n8(520,560)
+n8-n1
+center connections: n1-c(600,370), n2-c, n3-c, n4-c, n5-c, n6-c, n7-c, n8-c.
+
+That's 8+8=16 lines.
+
+Line style: stroke="#7c6cb8" opacity="0.45" stroke-width="2.5" stroke-linecap="round".
+
+Glow behind lines: duplicate lines with opacity .15 and filter? Just keep simple.
+
+<!-- nodes with glow -->
+for each node: circle r=46 fill url(#nodeGlow) opacity .9; circle r=20 fill #ffd166.
+
+Nodes order: glow circles first then centers.
+
+<!-- radiating arcs -->
+arcs from head: use path with stroke #4cc9f0 opacity .5 width 3, dasharray 6 10.
+Arc1: from head top area going right: M 640,180 C 700,140 780,150 820,210 (approx). Hmm need to start at head edge r=150 around cy=370: point at angle 60°: (600+150cos60, 370+150sin60) = (675, 599.9). Let me place arcs in gaps between orbit nodes.
+
+Simpler: 6 arc segments radiating at various angles:
+ a1 top: M 600,220 C 640,180 700,180 730,225
+ a2 upper right: M 730,160 C 790,150 840,220 860,280
+ a3 right: M 745,370 C 800,365 830,400 850,445
+ a4 lower right: M 700,560 C 760,570 790,640 800,690? wait n4 at (880,520), n5 (730,640). Arc between them: M 730,545 C 770,570 800,600 830,640
+ a5 bottom-left: M 520,600 C 470,610 430,580 400,540
+ a6 left: M 455,370 C 390,365 360,400 330,450? n7 at (330,420). adjust: M 440,370 C 390,368 355,400 330,450.
+
+OK.
+
+<!-- head -->
+<circle cx="600" cy="370" r="150" fill="url(#headGrad)" stroke="#ffd166" stroke-width="6" filter="url(#glowFilter)"/>
+Inner synapse dots: circles r=10 at (600,370) center? maybe (600,370) r=14 fill rgba(255,255,255,0.3); others at (560,340) r=8, (640,340) r=8, (560,400) r=6, (640,400) r=6, (600,330) r=7? Inside head radius 150 fine.
+
+Add subtle ring: circle r=120 fill none stroke #ff8a3e opacity .3.
+
+<!-- name -->
+<text x="600" y="640" text-anchor="middle" fill="#ffd166" font-size="52" font-weight="800" letter-spacing="4" opacity="0.9">claude</text>
+But n5/n6 at (730,640),(470,650) and arc a4 bottom-right... text at y=640 might collide with n5 (730,640) — text width ~ 7 chars*~30 = ~200px, spans 500-700, n6 at (470,650) r=46 spans 424-516. Text from ~500... borderline. Move text to (600, 700)? n5 at (730,640) r46 spans x 684-776, y 594-686. Text at y=700 spans y ~672-700? baseline 700, text height ~52, top ~648. x span 500-700. n5 x starts 684 — slight overlap. Shift text to x=560? Or move nodes n5/n6 up a bit. Alternatively drop text. A wordmark adds identity though. Let me move bottom nodes: n5 (770,610), n6 (430,610). Then text at (600,690). Hmm.
+
+Let me restructure slightly: put "claude" text bottom-center at y=695, nodes bottom at (470,620) and (730,620). Text spans x≈480-720, y≈655-695. Node r=46: n6 spans x 424-516, y 574-666. Text top ~655 vs node bottom 666 — overlap in corner region (x 480-516). Reduce text opacity? Or shift text center x to 600 fine; overlap small. Alternatively remove n6/n5 lower nodes and place text there. Simpler: place text and no nodes behind: bottom area free. Keep nodes n5 (730,640) n6 (470,650) but move text to bottom-left speech bubble area? Put "claude" under speech bubbles? Eh.
+
+Alternative: skip text; the image is an abstract representation. But text adds clarity. I'll include text with slight transparency and ensure nodes don't overlap much. Final: nodes n5=(750,635), n6=(450,650). Text at (600, 700), size 46, opacity 0.85. Text half-width ~ 46*0.6*7/2 ≈ 96 → x 504-696, y ~662-700. Node n6 spans x 404-496, y 604-696 — no x overlap with text (504+). Node n5 spans x 704-796, y 589-681 — text ends 696 < 704. 
+
+Speech bubbles then at bottom-right? n5 at (750,635) occupies that. Move speech bubbles to bottom-left: cluster near (150-450, 600-700)? n6 at (450,650) r46 spans x404-496. Bubbles: b1 x=60 y=620 w=180 h=90 → x 60-240. b2 x=260 y=610 w=150 h=80 → 260-410. n6 starts x404 — b2 ends 410, slight overlap 404-410 in x; y overlap 610-690 vs 604-696 yes. Move b2 to x=250 w=140 → ends 390 <404 ok. Fine.
+
+Speech bubble contents: white-ish lines (stroke #c9b3e6) inside dark fill #2a2238 stroke #6b5ca8 width 2.
+
+b1: lines at x=90..210, y=655, 685, 715.
+b2: line y=660 x=290..370.
+
+Add small dots text "…" maybe. Lines fine.
+
+Add bottom-right sparkle? skip.
+
+Also add a subtle grid or faint dots background: use pattern? Keep simple: add few faint dots.
+
+Add title element for accessibility.
+
+Now check arcs coordinates relative to nodes: arc endpoints should be in gaps between orbit nodes so they emanate from head into gaps:
+Nodes: n1(460,190) n2(740,170) n3(880,320) n4(880,520) n5(750,635) n6(450,650) n7(330,420) n8(520,560). Gaps: between n1-n2 top (arc a1 above), between n2-n3 right-upper (a2), between n3-n4 right-lower (a3), between n4-n5 bottom-right (a4), between n5-n6 bottom (a5), between n6-n7 lower-left (a6), between n7-n8 left (a7), between n8-n1 upper-left (a8). 8 arcs.
+
+Compute gap midpoints:
+a1 top between n1(460,190), n2(740,170): gap center ≈ (600,180). Arc: M 600,230 C 620,190 640,180 665,195 → ends near head edge? Wait arcs emanate FROM head TO gaps: start at head edge r=150, end at gap. Head edge at angle 90°: (600,220). Path: M 600,220 C 615,190 640,185 665,200. End (665,200) near between nodes? nodes at 460/740 — end x=665 fine within gap.
+
+a2 between n2(740,170) and n3(880,320): gap ≈ (810,245). Head edge angle 45°: (706,234). Path: M 706,234 C 740,215 775,225 805,250.
+
+a3 between n3(880,320) and n4(880,520): gap ≈ (880,420). Head edge angle ~ -8°? point (748,364). Path: M 748,364 C 790,370 830,400 860,430.
+
+a4 between n4(880,520) and n5(750,635): gap ≈ (820,580). Head edge angle ~ -35°: (623,294)? compute: (600+150cos(-35°), 370+150sin(-35°)) = (600+122.9, 370-86) = (722.9,284). Path: M 723,284 C 750,340 780,430 810,560.
+
+a5 between n5(750,635) and n6(450,650): gap ≈ (600,642). Head edge angle -90°: (600,520). Path: M 600,520 C 590,580 585,620 600,645. Slight S curve fine.
+
+a6 between n6(450,650) and n7(330,420): gap ≈ (390,535). Head edge angle ~ 175°: (600+150cos175, 370+150sin175) = (600-149.4, 370+13) = (450.6,383). Path: M 451,383 C 420,420 380,440 360,470.
+
+a7 between n7(330,420) and n8(520,560): gap ≈ (425,490). Head edge angle ~ 120°: (600-75, 370+129.9) = (525,500). Path: M 525,500 C 480,490 430,470 400,480.
+
+Hmm a7 start (525,500) and a6 end (360,470) — both fine.
+
+a8 between n8(520,560) and n1(460,190): gap ≈ (490,375) left-upper. Head edge angle 150°: (600-129.9, 370+75) = (470,445). Path: M 470,445 C 450,400 420,360 400,340. Ends near n7 (330,420)? gap between n8(520,560) and n1(460,190) passes near (490,375)... end (400,340) is between n1 (460,190) and n7(330,420). Eh, acceptable; or end at (440,330). Fine.
+
+These arcs stroke #4cc9f0 opacity .5, width 3, fill none, stroke-linecap round.
+
+Also add tiny sparkles around head? skip.
+
+Center dot: circle r=8 fill #fff opacity .6 at (600,370).
+
+Now decorative top-right glow: radial gradient circle at (1000,120) r=260 fill #4cc9f0 opacity .08? Add a faint cyan orb. And a yellow orb bottom-left? We have speech bubbles bottom-left; skip.
+
+Add faint dots: circles r=2 fill rgba(255,255,255,.08) scattered: (200,150),(350,120),(550,110),(900,150),(1000,180),(950,260),(200,240),(300,300),(700,140),(850,90),(1050,60),(1100,200),(240,560),(380,640),(700,300),(950,420),(1050,520),(1150,660),(110,660),(60,500),(180,480),(520,720),(900,660),(1080,700),(300,120) etc.
+
+Keep moderate count.
+
+Ensure filter def used correctly: feMerge with two nodes. Fine.
+
+Write final. Also include <title>.
+
+Check text: letter-spacing attribute valid in SVG. Yes.
+
+Potential overlap: center text none.
+
+Line n8-n1 passes near arcs a8; fine.
+
+Node glow circles behind head? Draw glows first, then lines? Order: background, vignette, dots, glows for nodes, lines, arcs, nodes, head, bubbles, text, stars.
+
+Node glow circles r=44 behind node centers — draw before lines so lines cross over? Lines under nodes look good: draw glows+lines, then nodes on top.
+
+Also head drawn after lines so connections end at head edge — lines to center will be covered by head fill; fine, gives effect of entering head.
+
+Edge case: line endpoints at node centers hidden under node circles. Good.
+
+Write it.
+
+Final check of SVG syntax. All elements closed. Let me write:
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Abstract self-portrait of Claude: a glowing neural network head with orbiting nodes and speech bubbles">
+  <title>Claude — abstract neural network self-portrait</title>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241d3a"/>
+      <stop offset="55%" stop-color="#31254e"/>
+      <stop offset="100%" stop-color="#4b2a5c"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.28)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.12)"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#ffb84d" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a3e"/>
+      <stop offset="55%" stop-color="#ffb84d"/>
+      <stop offset="100%" stop-color="#ffd166"/>
+    </linearGradient>
+    <filter id="bloom" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="soft"/>
+      <feMerge>
+        <feMergeNode in="soft"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  <rect width="1200" height="800" fill="url(#vignette)"/>
+
+  <!-- faint ambient glow -->
+  <circle cx="980" cy="140" r="300" fill="url(#nodeGlow)" opacity="0.06"/>
+
+  <!-- background dots -->
+  ... several circles r=2 fill rgba(255,255,255,0.07)
+
+  <!-- node glows -->
+  <g stroke-linecap="round">
+    <circle cx="460" cy="190" r="44" fill="url(#nodeGlow)"/>
+    ... all 8
+  </g>
+
+  <!-- connections -->
+  <g stroke="#7c6cb8" stroke-opacity="0.45" stroke-width="2.5">
+    <line x1="460" y1="190" x2="740" y2="170"/>
+    ... 7 outer
+    <line x1="460" y1="190" x2="600" y2="370"/>
+    ... 8 spokes
+  </g>
+
+  <!-- arcs -->
+  <g stroke="#4cc9f0" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="..."/>
+    ...
+  </g>
+
+  <!-- nodes -->
+  <g>
+    <circle cx="460" cy="190" r="22" fill="#ffd166"/>
+    ... 8
+  </g>
+
+  <!-- head -->
+  <g filter="url(#bloom)">
+    <circle cx="600" cy="370" r="150" fill="url(#headGrad)" stroke="#ffd166" stroke-width="6"/>
+    <circle cx="600" cy="370" r="118" fill="none" stroke="#ff8a3e" stroke-opacity="0.35"/>
+    <circle cx="600" cy="370" r="7" fill="#ffffff" fill-opacity="0.7"/>
+    <circle cx="556" cy="340" r="8" fill="#ffffff" fill-opacity="0.45"/>
+    <circle cx="644" cy="340" r="8" fill="#ffffff" fill-opacity="0.45"/>
+    <circle cx="556" cy="400" r="6" fill="#ffffff" fill-opacity="0.4"/>
+    <circle cx="644" cy="400" r="6" fill="#ffffff" fill-opacity="0.4"/>
+    <circle cx="600" cy="332" r="9" fill="#ffffff" fill-opacity="0.4"/>
+    <circle cx="600" cy="408" r="9" fill="#ffffff" fill-opacity="0.4"/>
+  </g>
+
+  <!-- speech bubbles -->
+  <g>
+    <rect x="60" y="620" width="180" height="90" rx="18" fill="#2a2238" stroke="#6b5ca8" stroke-width="2"/>
+    <line x1="90" y1="660" x2="210" y2="660" stroke="#c9b3e6" stroke-width="4"/>
+    <line x1="90" y1="690" x2="210" y2="690" stroke="#c9b3e6" stroke-width="4"/>
+    <line x1="90" y1="720" x2="210" y2="720" stroke="#c9b3e6" stroke-width="4"/>
+    <rect x="250" y="610" width="140" height="80" rx="18" fill="#2a2238" stroke="#6b5ca8" stroke-width="2"/>
+    <line x1="285" y1="655" x2="365" y2="655" stroke="#c9b3e6" stroke-width="4"/>
+  </g>
+
+  <!-- name -->
+  <text x="600" y="700" text-anchor="middle" font-size="46" font-weight="800" letter-spacing="6" fill="#ffd166" fill-opacity="0.9">claude</text>
+
+  <!-- stars -->
+  <path d="M128,58 L138,84 L170,86 L144,106 L150,132 L128,116 L106,132 L112,106 L88,86 L120,84 Z" fill="#ffd166" fill-opacity="0.85"/>
+  <path d="M208,52 L215,72 L229,73 L216,86 L222,102 L208,92 L194,102 L200,86 L187,73 L201,72 Z" fill="#ff9a3e" fill-opacity="0.8"/>
+
+Check arcs d strings:
+a1: "M 600,220 C 615,190 640,185 665,200"
+a2: "M 706,234 C 740,215 775,225 805,250"
+a3: "M 748,364 C 790,370 830,400 860,430"
+a4: "M 723,284 C 750,340 780,430 810,560"
+a5: "M 600,520 C 590,580 585,620 600,645"
+a6: "M 451,383 C 420,420 380,440 360,470"
+a7: "M 525,500 C 480,490 430,470 400,480"
+a8: "M 470,445 C 450,400 420,360 400,340"
+
+Hmm a7 start (525,500) — head edge at 120° is (525,500). ok. a8 start (470,445) edge at ~150°: (470.1,445). ok.
+
+But a7 and a8 both on left side crossing? a7 from (525,500) to (400,480); a8 from (470,445) to (400,340). They may cross near (450,460)? a7 at x=450: parameter... roughly fine visually.
+
+Also a8 ends near n1(460,190)? No, ends (400,340) between n1 and n7. ok.
+
+Connections lines:
+outer: n1-n2, n2-n3, n3-n4, n4-n5, n5-n6, n6-n7, n7-n8, n8-n1.
+spokes: each to (600,370).
+
+Node glow circles: r=44 at the 8 positions. Then node centers r=22.
+
+Speech bubble b1 lines x 90-210 inside rect 60-240. Good. b2 rect 250-390; line 285-365 good. n6 at (450,650) r46 → x 404-496; b2 ends 390. ok.
+
+Text at y=700 baseline; descenders none; spans ~654-700. n5 (750,635) spans y 589-681, x 704-796. Text ends x ~696. ok. n6 (450,650): x 404-496, text starts ~504. ok.
+
+Dots list: include maybe 20 dots.
+
+One more: the ambient glow circle uses nodeGlow radial gradient with opacity .06 — large soft yellow tint top-right. fine.
+
+I think the SVG is complete and valid. Write final answer only the SVG.

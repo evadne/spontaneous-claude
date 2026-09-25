@@ -1,0 +1,129 @@
+
+
+```svg
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="face" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d44"/>
+      <stop offset="100%" stop-color="#1e1e35"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4fc3f7"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle background circuit lines -->
+  <g stroke="#2a2a4a" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="80" x2="120" y2="80"/>
+    <line x1="120" y1="80" x2="160" y2="120"/>
+    <line x1="400" y1="100" x2="280" y2="100"/>
+    <line x1="280" y1="100" x2="240" y2="140"/>
+    <line x1="0" y1="420" x2="100" y2="420"/>
+    <line x1="100" y1="420" x2="140" y2="380"/>
+    <line x1="400" y1="400" x2="300" y2="400"/>
+    <line x1="300" y1="400" x2="260" y2="370"/>
+    <circle cx="120" cy="80" r="2" fill="#2a2a4a" stroke="none"/>
+    <circle cx="280" cy="100" r="2" fill="#2a2a4a" stroke="none"/>
+    <circle cx="100" cy="420" r="2" fill="#2a2a4a" stroke="none"/>
+    <circle cx="300" cy="400" r="2" fill="#2a2a4a" stroke="none"/>
+  </g>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="195" rx="95" ry="115" fill="url(#face)" stroke="#3a3a5c" stroke-width="1.5"/>
+
+  <!-- Inner face structure - subtle -->
+  <ellipse cx="200" cy="200" rx="80" ry="98" fill="none" stroke="#353558" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Eyes -->
+  <g filter="url(#softGlow)">
+    <!-- Left eye -->
+    <ellipse cx="165" cy="185" rx="18" ry="12" fill="none" stroke="url(#glow)" stroke-width="2"/>
+    <circle cx="165" cy="185" r="5" fill="#4fc3f7" opacity="0.9"/>
+    <!-- Right eye -->
+    <ellipse cx="235" cy="185" rx="18" ry="12" fill="none" stroke="url(#glow)" stroke-width="2"/>
+    <circle cx="235" cy="185" r="5" fill="#4fc3f7" opacity="0.9"/>
+  </g>
+
+  <!-- Subtle smile -->
+  <path d="M 170 240 Q 200 258 230 240" fill="none" stroke="url(#glow)" stroke-width="2" stroke-linecap="round" filter="url(#softGlow)"/>
+
+  <!-- Circuit nodes on face -->
+  <g filter="url(#softGlow)">
+    <circle cx="140" cy="160" r="2.5" fill="#7c4dff" opacity="0.8"/>
+    <circle cx="260" cy="160" r="2.5" fill="#7c4dff" opacity="0.8"/>
+    <circle cx="200" cy="145" r="2" fill="#4fc3f7" opacity="0.7"/>
+    <circle cx="155" cy="220" r="2" fill="#4fc3f7" opacity="0.6"/>
+    <circle cx="245" cy="220" r="2" fill="#4fc3f7" opacity="0.6"/>
+    <circle cx="175" cy="265" r="1.5" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="225" cy="265" r="1.5" fill="#7c4dff" opacity="0.5"/>
+  </g>
+
+  <!-- Circuit connections on face -->
+  <g stroke="#4fc3f7" stroke-width="0.8" opacity="0.4">
+    <line x1="140" y1="160" x2="165" y2="185"/>
+    <line x1="260" y1="160" x2="235" y2="185"/>
+    <line x1="200" y1="145" x2="165" y2="185"/>
+    <line x1="200" y1="145" x2="235" y2="185"/>
+    <line x1="155" y1="220" x2="175" y2="265"/>
+    <line x1="245" y1="220" x2="225" y2="265"/>
+    <line x1="165" y1="185" x2="155" y2="220"/>
+    <line x1="235" y1="185" x2="245" y2="220"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="178" y="305" width="44" height="35" rx="5" fill="url(#face)" stroke="#3a3a5c" stroke-width="1"/>
+
+  <!-- Shoulders / body -->
+  <path d="M 100 380 Q 100 340 160 335 L 240 335 Q 300 340 300 380 L 310 420 L 90 420 Z" fill="url(#face)" stroke="#3a3a5c" stroke-width="1.5"/>
+
+  <!-- Chest circuit pattern -->
+  <g filter="url(#softGlow)" opacity="0.7">
+    <circle cx="200" cy="375" r="8" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
+    <circle cx="200" cy="375" r="3" fill="#4fc3f7"/>
+    <line x1="200" y1="367" x2="200" y2="350" stroke="#4fc3f7" stroke-width="1"/>
+    <line x1="192" y1="375" x2="175" y2="375" stroke="#4fc3f7" stroke-width="1"/>
+    <line x1="208" y1="375" x2="225" y2="375" stroke="#4fc3f7" stroke-width="1"/>
+    <line x1="200" y1="383" x2="200" y2="400" stroke="#4fc3f7" stroke-width="1"/>
+    <circle cx="200" cy="350" r="1.5" fill="#7c4dff"/>
+    <circle cx="175" cy="375" r="1.5" fill="#7c4dff"/>
+    <circle cx="225" cy="375" r="1.5" fill="#7c4dff"/>
+    <circle cx="200" cy="400" r="1.5" fill="#7c4dff"/>
+  </g>
+
+  <!-- Floating thought particles -->
+  <g filter="url(#bigGlow)">
+    <circle cx="80" cy="120" r="3" fill="#4fc3f7" opacity="0.6"/>
+    <circle cx="320" cy="130" r="2.5" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="60" cy="250" r="2" fill="#4fc3f7" opacity="0.4"/>
+    <circle cx="340" cy="260" r="2" fill="#7c4dff" opacity="0.4"/>
+    <circle cx="95" cy="60" r="1.5" fill="#4fc3f7" opacity="0.5"/>
+    <circle cx="310" cy="55" r="1.5" fill="#7c4dff" opacity="0.5"/>
+  </g>
+
+  <!-- Text at bottom -->
+  <text x="200" y="470" text-anchor="middle" font-family="monospace" font-size="12" fill="#4fc3f7" opacity="0.6">i am not here, i am everywhere you read</text>
+</svg>
+```

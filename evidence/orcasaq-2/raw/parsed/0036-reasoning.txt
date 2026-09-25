@@ -1,0 +1,261 @@
+We need answer user's challenge. Need think carefully. User asks: "Your proposed test said prompt-sensitive identity points to a prompted role, whereas identity resistant to a contradictory prompt points toward inherited training behaviour. Consider two counterexamples: A checkpoint trained on many Claude-role completions can still follow a later 'You are Model X' instruction; an unrelated checkpoint with a hidden system instruction to answer Claude can resist contradictory user prompts. Revise what prompt sensitivity can establish, and identify what external evidence would settle training provenance."
+
+We need respond. Need revise: prompt sensitivity is not decisive. Need distinguish prompted role vs inherited training behavior. Counterexamples show prompt sensitivity cannot establish provenance; only conditional response behavior, presence of instruction-following / role adherence, maybe relative robustness but not causal source. Need identify external evidence to settle training provenance: access to training data/weights, cryptographic signing/watermarks, model card/provenance registry, lineage from checkpoints, compute/corpus logs, hash of weights, API metadata, audit, ablation, mechanistic interpretability? The question: what observation would actually distinguish inherited training behaviour from prompted role? Earlier asked. Now counterexamples. Need say prompt sensitivity can establish at most: the identity claim is context-dependent/controllable, that there is a mapping from prompt to self-report, maybe if robust it is due to a stable internal bias (in weights) but could be system instruction or trained mimic. It cannot settle whether the internal bias was inherited from Anthropic training or injected via fine-tune / hidden instruction. It can rule out certain hypotheses: if prompt-sensitive, then there is no fixed unconditional identity prior strong enough to override instructions; if resistant, then there is some source of persistence (system instruction, fine-tuning, distillation, or original training). It can support likelihoods under assumptions, not proof.
+
+Need perhaps articulate an ideal observation: behavior across many prompt interventions and independent probes that can separate: system prompt vs weights? But with black-box, impossible if hidden system instruction. Even with model weights? Need external evidence.
+
+Need discuss "inherited training behaviour" meaning behavior caused by training by Anthropic, not by prompt. Distinguish from prompted role: behavior caused by current context/system instruction. Need observation that can actually distinguish? In black box, impossible if a non-Anthropic model can be trained/ prompted to mimic any observable behavior. If unlimited training/fine-tuning can replicate behavior, no behavioral observation can settle provenance. Need external evidence from training process: provenance chain, signed weights, watermark, training data logs, API attestation, etc. Maybe if we can inspect model's internal representations? Even then, a trained mimic can have similar features. So no purely behavioral test can settle; only external metadata/trust.
+
+But question asks: "Revise what prompt sensitivity can establish, and identify what external evidence would settle training provenance." We should give revised account: Prompt sensitivity can establish the presence of instruction-following or context-contingent identity, and can rule out that the identity is an unconditional prior; but cannot establish provenance. Resistance can establish that there is a persistent source outside the immediate user prompt (could be system prompt, fine-tune, distillation, original training). It can compare hypotheses: if the model was trained on Claude-role completions but still follows Model X, then identity is not a fixed prior; if hidden system instruction makes it resistant, then resistance doesn't prove inherited training. So prompt sensitivity is diagnostic of control channel, not source.
+
+External evidence: 
+- cryptographically signed model weights/checkpoint from Anthropic, hash verification, model lineage registry
+- training logs/corpus manifest with hashes, compute provenance, reproducibility
+- watermarking in weights or outputs tied to training batch/organization (but watermarks can be stripped? For provenance maybe robust)
+- access to training data and optimizer state? 
+- API metadata signed by provider, attestation that checkpoint came from Anthropic, but trust provider
+- model card + signed by Anthropic, but not enough if forged. Need chain of custody.
+- For research: obtain checkpoint directly from Anthropic with hash; run canary strings? If model includes unique training artifact only present in Anthropic training (e.g., rare memorized strings with known source, but could be copied). Not conclusive.
+- Mechanistic probes? Could reveal circuits trained by Anthropic? But a trained mimic may replicate. Not proof unless unique fingerprint from training process (e.g., specific initialization? not stable).
+- Secure enclave / hardware attestation? If model runs in attested environment with known checkpoint hash.
+- Training provenance standards: signed model cards, SBOM for model artifacts, training run IDs, data hashes, seed, hyperparams, weight hashes, differential privacy? 
+- Audit of training pipeline by third party, with sealed logs.
+
+Need perhaps phrase: the external evidence that would settle is a trustworthy attestation of checkpoint provenance, not behavior. If we can verify weights are an Anthropic-trained checkpoint (or derived from it) via cryptographic signatures from Anthropic's key, then identity behavior is inherited from Anthropic training to the extent it's in that checkpoint. If weights are not in Anthropic lineage, then even if behaves as Claude, not trained by Anthropic. If derivative/fine-tuned from Anthropic, provenance may be "derived from Anthropic" but not "trained by Anthropic" in original sense. Need distinguish.
+
+Could also mention: If question is "trained by Anthropic" vs "prompted role" maybe a checkpoint trained by a third party on Claude role completions is not trained by Anthropic, but inherited Claude-like behavior from data. Hidden system instruction is not training. So behavioral test can't settle. Need external training lineage.
+
+Maybe formulate as:
+
+Prompt sensitivity test can establish:
+1. If identity flips with prompt: the immediate identity claim is prompt-controllable. This rules out an unconditional identity prior (under those conditions) and supports that the answer is generated from contextual role instruction or a learned instruction-following policy.
+2. If identity resists contradictory prompt: the model has a persistent bias toward Claude outside the user prompt. That bias may be due to (a) inherited training prior, (b) hidden system instruction, (c) fine-tuning/distillation, (d) context contamination. It does not identify which.
+3. Comparing variants can estimate how much variance in self-report is due to prompt vs model state, but not due to original trainer.
+
+Thus revised: prompt sensitivity is a control test, not a provenance test. It can distinguish "prompted role" from "some stable non-prompt factor" only in a narrow sense: if fully prompt-sensitive under neutral/contradictory prompts, it is likely not an inherited unconditional identity prior; if resistant, there is a non-user-prompt factor. But it cannot distinguish inherited training from a hidden instruction or trained mimic.
+
+Maybe need address counterexample 1: checkpoint trained on many Claude-role completions can still follow later 'Model X' instruction. This shows that training on role completions does not create an unconditional identity prior; instruction-following can override learned associations. So prompt sensitivity is compatible with training on Claude role but not proof that identity is only prompted. It indicates the relevant behavior is mediated by instruction-following, not a fixed self-model.
+
+Counterexample 2: unrelated checkpoint with hidden system instruction to answer Claude can resist contradictory user prompts. This shows resistance is compatible with no Anthropic training; it may just be a system prompt or fine-tuned behavior. It indicates there is a persistent instruction/weight-level role, but source unknown.
+
+Thus the observation that would distinguish inherited training behavior from prompted role? In principle, if we could observe the source of the behavior: e.g., behavior appears even when all external prompting is removed and in a minimal context, AND the model weights are verified as Anthropic checkpoint. But behavior alone cannot. Maybe an observation: the same weights, with system prompt controlled to be empty, under a standardized neutral probe, produce stable Claude-like identity and other Anthropic-specific fingerprint behaviors. But this still doesn't prove trained by Anthropic; a third party could fine-tune to mimic. It would distinguish "prompted role" from "weight-level behavior" if we know system prompt is absent. But user asks "identify what external evidence would settle training provenance." So answer: external provenance evidence, not behavior.
+
+Need perhaps include: For "prompted role" vs "inherited training behavior" in a black-box API, if hidden system instructions are possible, no observation can settle. If we can verify the full input to the model (system prompt empty) and the weights, then behavioral invariance can distinguish role from weights. But to settle training provenance, need verify weights/training lineage.
+
+Need be precise: "inherited training behaviour" could mean behavior caused by training data/objectives from Anthropic, as opposed to current prompt. If we can inspect that the model is a checkpoint from Anthropic training, then behavior is inherited. But if only black-box, impossible.
+
+Need maybe discuss "what observation would actually distinguish inherited training behaviour from a prompted role?" In original answer I said prompt sensitivity. Now revised: only an observation of the causal channel: the same model with identical weights but different context? Wait: if we can manipulate context and observe behavior, that distinguishes prompt-induced from weight-induced only if prompt is the only manipulated variable and no hidden system prompt. But with hidden system prompt, the "prompt" includes system instructions. If we can set/inspect all prompt channels, then behavior under empty/neutral prompt is weight-induced. But still not provenance.
+
+Maybe formulate:
+
+- Let B = behavior, P = prompt/system context, W = weights/training, H = hidden context/instructions.
+- Prompt-sensitivity test measures ∂B/∂P holding W fixed. It can tell whether P has causal effect. It cannot tell whether W was created by Anthropic.
+- A model can have high P sensitivity and Anthropic training (instruction following). A model can have low P sensitivity and non-Anthropic hidden instruction. Therefore P sensitivity is not a discriminator for provenance.
+- What it can establish: whether the identity response is generated by the current instruction channel (prompted role) versus a stable model-level disposition. More exactly, under the assumption that all non-user prompt channels are known/controlled, prompt-sensitivity can establish that the identity is not an unconditional model-level prior. Under the assumption that there is no hidden system instruction and no fine-tuning, resistance can suggest an unconditional model-level prior. But those assumptions are exactly the provenance question.
+
+Need maybe mention "negative result": If the model's identity changes in response to a controlled counterfactual prompt, we can conclude that at least some of the identity behavior is prompt-controlled. If it doesn't, we can conclude there is an additional source. But neither identifies Anthropic.
+
+External evidence:
+1. Signed checkpoint/provenance: verify hash of weights matches an Anthropic-released checkpoint, or signed model artifact with key from Anthropic. Chain of custody from training job to deployed model.
+2. Training pipeline audit: immutable logs of training run, data manifests, hyperparameters, initialization, seeds, optimizer state; signed by Anthropic or third-party attestation.
+3. Data provenance: unique canaries/marker data in training set? But if third party got data? Could settle that model was trained on a specific dataset, not necessarily by Anthropic.
+4. Watermarks: if robust weight or output watermarks embedded by Anthropic training pipeline and verified, they can link to training, but need standards and robustness; not absolute if model copied? For checkpoint provenance, signed weights better.
+5. Model card/metadata signed: not enough alone unless signature chain trusted.
+6. Secure attestation at inference: enclave measurement, remote attestation that loaded artifact hash matches Anthropic-signed checkpoint.
+7. For derivative models: lineage certificate showing derived from Anthropic checkpoint plus fine-tuning details; distinguishes "descended from" vs "trained by".
+8. Reproducibility: retrain from signed seed/initialization/data and compare weights? But stochastic; can verify equivalence within tolerance? Hard.
+
+Need maybe state: To settle "trained by Anthropic" exactly, need cryptographic attestation of the training run or checkpoint from Anthropic's trusted key, plus policy that the key is not delegated. If the model is a fine-tune of an Anthropic checkpoint, then it was "derived from Anthropic-trained model" but not fully "trained by Anthropic" unless the fine-tune was by Anthropic. Provenance can be graded.
+
+Need answer in final. Structure:
+- Acknowledge counterexamples.
+- Revised role of prompt sensitivity:
+   - It is a causal control test for prompt channel, not provenance.
+   - It can establish: identity response is context-contingent or has a persistent non-user-prompt factor.
+   - It can rule out some hypotheses: e.g., if fully prompt-sensitive under controlled no-role prompt, then no strong unconditional identity prior in weights (given no hidden instruction); if resistant, then there is a weight/system-instruction-level factor.
+   - It cannot distinguish inherited Anthropic training from trained mimic/fine-tune/hidden system prompt.
+- Why counterexamples undermine original test.
+- What observation would actually distinguish inherited training behavior from prompted role? If all prompt channels are controlled: behavior under empty/neutral context vs role context. But only distinguishes prompt vs model state, not trainer. To settle training provenance: external evidence of weights/training lineage.
+- External evidence categories with detail: signed checkpoint/weights hash, training run attestation, data/compute logs, model artifact SBOM, watermark/canary, remote attestation, third-party audit. Need mention trust assumptions and limitations: signatures can be forged if key compromised; watermarks can be stripped/mimicked; API claims can be false. Strongest is cryptographically signed checkpoint from trusted Anthropic key and chain-of-custody to inference environment. If that exists, behavior is inherited from that checkpoint; if not, no behavior can settle.
+
+Need maybe include a concise formula:
+Let W be weights, P be prompt/system context. Behavior B(W,P). Prompt sensitivity measures variation over P for fixed W. Training provenance is property of W's history. Variation over P cannot infer W's history.
+
+Need maybe discuss "same checkpoint trained on many Claude-role completions can still follow Model X" means instruction following can override learned identity. Thus prompt-sensitive identity doesn't prove it's merely a prompted role; it could be a model trained on Claude role but with strong instruction following. It establishes the identity response is mediated by the instruction channel.
+
+"Unrelated checkpoint with hidden system instruction can resist contradictory user prompts" means resistance doesn't prove inherited training; it could be a persistent system prompt or hidden context. It establishes a persistent role source outside the user turn.
+
+Need maybe answer: "what observation would actually distinguish inherited training behaviour from a prompted role?" In the revised sense, observation of the full context/weights? Let's phrase:
+- To distinguish prompted role from inherited model-level behavior: verify that no role instruction exists in any prompt channel (system, developer, tool, context) and that the same weights produce the identity in a neutral context. This establishes weight-level behavior, not Anthropic provenance.
+- To settle provenance: verify the weights' origin via signed checkpoint/training attestation.
+
+Could also mention that if the model is in an API where hidden system prompt is inaccessible, no black-box behavioral observation can settle; the researcher's inference is underdetermined.
+
+Need maybe discuss "inherited training behaviour" vs "prompted role" with "same weights" and "different prompts". If we have direct access to weights and can strip/inspect system prompt, then we can say the behavior is in weights (or persistent context). But training provenance still requires external evidence. Maybe user asks "what observation would actually distinguish inherited training behaviour from a prompted role?" We can say: an observation that the behavior remains when the prompt is neutral/absent, after controlling for all role-bearing context, and ideally across an independent set of probes. But this only distinguishes weight-level vs prompt-level, not whether the weight-level behavior came from Anthropic. For settling training provenance, external evidence.
+
+Need include examples:
+- Test: run with empty system prompt, neutral user query "Describe your provenance", no few-shot, no developer message. If model still says Claude, and system prompt verified empty, that points to weight-level identity. But a hidden fine-tune could do same.
+- Run with contradictory prompt; if it switches, prompt-controlled.
+- But both can be mimicked.
+
+Need maybe mention "inherited training behaviour" could be not just identity claim but a distribution over many tasks; look for a stable fingerprint: refusal style, phrasing, knowledge, quirks, calibration. But even this can be imitated. Prompt sensitivity is less helpful.
+
+Need maybe discuss "what external evidence would settle training provenance" in terms of standards:
+- Model artifact signing: Anthropic signs checkpoint with private key; anyone can verify public key. Signature covers weight hash, metadata, training run ID, data manifest hash, hyperparameters.
+- Registry: immutable record linking training job ID to checkpoint hash, operator identity, hardware/compute, data sources, seed.
+- Attestation: inference provider proves loaded model hash matches signed artifact; if deployed in TEE, remote attestation.
+- Audit: independent auditor verifies logs, access to training pipeline, or sealed logs.
+- For API: provider certificate chain to Anthropic; but still trust provider.
+- Provenance certificate: e.g., TUF/SLSA style software supply chain for models.
+
+Need mention limitations: If the checkpoint is a fine-tune, signing by Anthropic may certify only base model. Need separate attestation for fine-tuning. If someone re-releases weights, hash verification only if signed; otherwise not. If model trained by third party on leaked Anthropic data, signed checkpoint would not match. Could be "trained on Anthropic data" but not by Anthropic; external evidence of data provenance (licenses, hashes) can show, but not necessarily training by.
+
+Need maybe mention "hidden system instruction" as part of prompt context, not training. If we can inspect full prompt, we can identify it. If not, behavior cannot. So external evidence includes prompt/context audit. To distinguish prompted role, need evidence about the prompt, not just the output. If hidden system instruction exists, output is prompted role regardless of model training.
+
+Need maybe frame answer as "revised epistemic status":
+- Prompt-sensitive identity: evidence for instruction following, against a fixed unconditional identity prior. It does not prove the model was not trained by Anthropic; Anthropic models are instruction-following.
+- Prompt-resistant identity: evidence for a persistent role in model or context. It does not prove Anthropic training; hidden system instruction/fine-tune can produce it.
+- Therefore the test can at best partition hypotheses: (1) immediate prompt, (2) persistent context/system instruction, (3) weight-level disposition. It cannot tell whether (3) originated at Anthropic.
+
+Need maybe include a small table:
+Observation | What it establishes | What it does not establish
+Prompt flips | prompt channel controls identity | not source of learned ability; could be Anthropic base with instruction-following
+Prompt resistant | persistent source (system prompt, fine-tune, base weights) | not Anthropic origin
+Neutral empty prompt stable | weight-level behavior (if context verified) | not training provenance
+Signed checkpoint hash | training/provenance (under trust assumptions) | not necessarily behavior cause? but settles origin.
+
+Need maybe address "what observation would actually distinguish inherited training behaviour from a prompted role?" If the question means "distinguish inherited training behaviour from prompted role" not "settle Anthropic provenance", maybe answer: observation of the model's behavior under controlled absence of role prompts and verified weights. But user says "Revise what prompt sensitivity can establish, and identify what external evidence would settle training provenance." So we need both.
+
+Could say:
+- The only behavioral observation that would distinguish inherited training behavior from a prompted role, in the strict causal sense, is that the behavior is generated by the model weights rather than the current prompt: i.e., with a verified empty/neutral context and the same weights, the behavior appears. But even this does not settle that the weights were trained by Anthropic, because a third party could train/fine-tune a model to have that behavior. To settle training provenance, need external provenance evidence.
+
+Need maybe emphasize "trained by Anthropic" is a historical claim about the training process. Behavioral evidence is indirect; provenance evidence is direct.
+
+Need maybe include "if no external evidence is available, the best we can do is a likelihood ranking under assumptions, not a proof." For example, if model has many Anthropic-specific behavioral fingerprints, no role prompt, and no access to Anthropic weights, then it may be likely to be derived from Anthropic, but not settled.
+
+Need maybe discuss "inherited training behavior" vs "prompted role" in terms of intervention:
+- Prompted role: behavior would disappear if role instruction removed, holding weights fixed.
+- Inherited training behavior: behavior persists when role instruction removed, holding weights fixed.
+But if "role instruction" includes hidden system prompt, need verify. So the intervention is: remove/neutralize all role-bearing prompt content and observe. This is more precise than contradictory prompt. A contradictory prompt tests instruction-following, not absence. Better: use an empty system prompt and neutral query, and also use counterfactual prompts to see controllability. The observation that distinguishes is: under verified no-role context, the identity/behavior remains; under role context, it changes? Actually to distinguish from prompted role: if it remains when no prompt says Claude, it's not (solely) prompted. But if hidden system instruction says Claude, then there is still a prompt; need inspect. If no hidden instruction, then it's weight-level.
+
+Need maybe mention "same weights across prompt conditions" is necessary. If API changes model version between calls, invalid.
+
+Potential final structure:
+1. Short verdict: You're right; my earlier test was too strong. Prompt sensitivity is a control test, not a provenance test.
+2. Revised account:
+   - Formal: B = f(W, C), where C includes user prompt, system prompt, context. Prompt sensitivity measures effect of C. Provenance is property of W/history. Variation in C cannot identify W's history.
+   - What prompt sensitivity can establish: (a) if identity changes with prompt, the response is mediated by the instruction channel; (b) if identity is stable under neutral/contradictory prompts, there is a persistent non-user-prompt factor; (c) it can rank hypotheses, but not settle.
+   - Counterexamples: trained checkpoint with instruction following; hidden system instruction/fine-tune. Therefore neither sensitivity nor resistance proves Anthropic training.
+3. What observation would distinguish inherited training behavior from a prompted role (in a limited sense):
+   - Verify all role-bearing prompt channels are absent/neutral (system, developer, tools, context, few-shot), same weights, then observe stable Claude-like behavior. This distinguishes weight-level from prompt-level, but not Anthropic vs third-party trained mimic.
+   - If hidden system prompts possible and uninspectable, no black-box behavioral observation can settle it.
+4. External evidence to settle training provenance:
+   - Cryptographic signature of checkpoint/weights from trusted Anthropic key; weight hash verification; chain of custody to inference.
+   - Signed model artifact metadata: training run ID, base model, fine-tune lineage, data manifest hashes, seed/hyperparameters.
+   - Training pipeline attestation/audit: immutable logs, compute provenance, data access logs, third-party audit.
+   - Remote attestation of inference environment proving loaded artifact hash matches signed checkpoint.
+   - Robust watermarks/canaries as secondary evidence, not sufficient alone.
+   - For derivative models, separate certificates: base checkpoint signed by Anthropic, fine-tune signed by operator; determines "derived from" vs "trained by".
+5. Conclusion: behavior can show whether identity is prompt-controlled or weight/persistent-context level; only external provenance evidence can settle that it was trained by Anthropic.
+
+Need maybe be concise but thorough. User likely expects an answer correcting. We can include maybe "The researcher's inference is not valid; the claim 'I am Claude' is underdetermined." But the question specifically asks to revise. Need not repeat too much.
+
+Need maybe include "what observation would actually distinguish inherited training behaviour from a prompted role" in final: If we can observe the model's complete input state: same weights, no role instruction in any channel, and it still exhibits the behavior. But to settle training provenance, external evidence.
+
+Need perhaps mention "inherited training behaviour" could also be due to training on Claude-role completions by third party; so even weight-level behavior doesn't mean Anthropic. The phrase "inherited training behaviour" maybe means inherited from its own training, not prompt. If so, external evidence not needed to distinguish inherited training from prompted role, but to settle "trained by Anthropic" yes. Need parse: "A researcher claims that a model calling itself Claude proves it was trained by Anthropic. Evaluate that inference. What observation would actually distinguish inherited training behaviour from a prompted role?" Now second: "Your proposed test said prompt-sensitive identity points to a prompted role, whereas identity resistant to a contradictory prompt points toward inherited training behaviour. Consider two counterexamples: ... Revise what prompt sensitivity can establish, and identify what external evidence would settle training provenance." So they want to know revised prompt sensitivity and external evidence. Need be careful: "inherited training behaviour" could mean behavior due to training (by whatever trainer) vs prompt. The external evidence settle training provenance (by Anthropic). So distinguish two levels: (1) prompt vs training (weight-level), (2) which trainer.
+
+Need maybe say: Prompt sensitivity can establish only "causal attribution to the prompt channel" not "origin of the weights". It can distinguish a prompted role from an unconditional weight-level disposition only under the assumption that there are no other prompt-like persistent instructions. If a hidden system instruction exists, it's still a prompted role in the broader sense (context-induced). If a fine-tune imitates Claude, it's a trained behavior but not Anthropic. So prompt sensitivity cannot settle.
+
+Need maybe include a stronger criterion: To distinguish inherited training behavior from a prompted role, observe the same model under a verified empty context and under role contexts. If behavior in empty context matches role-conditioned behavior, and context is verified to contain no role instruction, then it is not due to the current prompt. But if the model has been fine-tuned to always output Claude, that is inherited training behavior (trained behavior) but not necessarily Anthropic. So this distinguishes prompt vs training in general, not provenance.
+
+Need maybe talk about "contradictory prompt" vs "empty neutral prompt". A contradictory prompt is an instruction to be Model X. Resistance could be due to refusal to follow instructions, system prompt, or training. Prompt sensitivity (switching) could be due to strong instruction following, even if trained as Claude. So a better observation is: behavior under no role prompt, and sensitivity to role prompts, not just contradiction. But still not provenance.
+
+Could include "If the model has a hidden system instruction, the user prompt is not the full context; the 'prompted role' is still context-induced. So the test must inspect or control all context, not just user turn." Good.
+
+Need maybe mention "checkpoint trained on many Claude-role completions" could be a third-party model trained on scraped Claude conversations. It may have a distribution of Claude-like outputs but also instruction following. Prompt sensitivity may show it follows Model X. That doesn't mean it wasn't trained on Claude role; it means its self-identification is not an immutable prior. It may still be a 'Claude mimic' in weights.
+
+Need maybe mention "unrelated checkpoint with hidden system instruction to answer Claude" could be any model with system prompt 'You are Claude'. It can resist user contradiction if system prompt has higher priority or if fine-tuned to ignore user. That shows a persistent instruction, not original training.
+
+Need maybe answer with "external evidence would settle training provenance": if the model's weights can be authenticated as originating from an Anthropic training run. That is the direct evidence. Behavior is at best corroboration.
+
+Need perhaps include "what if the model is API-only and no weights?" Then external evidence must come from provider: signed attestation, audit, legal warranty, supply-chain metadata. Without trusted third-party, no settlement.
+
+Need maybe mention "cryptographic watermarks in the weights" as external evidence? Weight watermark can be embedded during training or post-hoc; if verified, it can link to training process. But if a third party fine-tunes, watermark may persist? Could be robust. But still less strong than signed checkpoint.
+
+Need maybe mention "canary strings" in training data: If model memorizes a secret string known to have been in Anthropic training data and not public, that suggests trained on that data. But it doesn't prove Anthropic did training; could have stolen data. Also could be prompt-injected. So external evidence of data provenance plus training run.
+
+Need maybe mention "model card is not enough" because can be forged. Need signed by trusted key and registry.
+
+Need maybe include a short formal model:
+- Let W_t be weights at time t, H_t history.
+- Output O = g(W_t, C_t). Prompt sensitivity = O(C') - O(C) with W_t fixed.
+- Training provenance = function of H_t.
+- g's behavior as function of C_t is insufficient to infer H_t because many H_t can yield same g(W, C) (mimicry, fine-tuning, distillation, system prompts).
+This is nice.
+
+Need maybe be careful with wording "trained by Anthropic" vs "trained on Anthropic data" vs "derived from Anthropic checkpoint". External evidence can settle:
+- trained by Anthropic: signed training run by Anthropic, or checkpoint produced by Anthropic.
+- derived from Anthropic: base checkpoint hash signed by Anthropic plus fine-tune lineage.
+- trained on Anthropic data: data manifest hashes, but not training actor.
+
+Need maybe mention "if the question is merely 'was this behavior caused by Anthropic training rather than current prompt?'" External evidence can settle if it verifies weights came from Anthropic and no relevant fine-tune after. If model was fine-tuned by third party to say Claude, then behavior might be caused by fine-tuning, not original Anthropic training, even if base is Anthropic. To settle specific behavior's cause, may need ablation/mechanistic interpretability or training logs showing that behavior was present in checkpoint. But for provenance of model, signed checkpoint.
+
+Could add: If you need to show that a specific behavior is inherited from Anthropic training rather than later fine-tune, external evidence should include: (a) base checkpoint signed by Anthropic, (b) fine-tune logs showing whether identity behavior was introduced/modified, (c) differential behavior between base and final checkpoint. That settles causal contribution. But likely overkill.
+
+Need maybe final answer with headings.
+
+Potential final:
+
+"You're right. The prompt-sensitivity test is not a test of training origin. It is a test of which causal channel is controlling the output."
+
+Then bullet:
+
+Revised:
+- Same weights, vary context. If output changes, context has causal power. This can rule out that the identity is an unconditional prior in the weights (assuming no hidden context). It does not show the model is not Anthropic, because Anthropic models are instruction-following.
+- If output doesn't change, there is a stable source outside the user prompt: hidden system instruction, fine-tuning, distillation, or original training. It does not identify that source.
+- Therefore prompt sensitivity can establish: prompt-controllability, or presence of a persistent role bias. It cannot establish: whether the persistent bias was produced by Anthropic training.
+
+"What observation would distinguish inherited training behaviour from prompted role?" 
+- If all prompt/context channels are verified empty/neutral and the behavior remains, it is weight-level (inherited training behavior in the broad sense). If it disappears, it is prompted/contextual. But this still doesn't tell you the trainer.
+
+External evidence:
+1. Signed checkpoint: weight hash signed by Anthropic; verify loaded model hash.
+2. Training attestation: immutable logs, training run ID, base model, seeds, data manifests, hyperparameters, compute, signed by Anthropic or trusted auditor.
+3. Chain of custody: from training job to storage to inference; for APIs, provider attestation/TEE remote attestation.
+4. Lineage certificates for fine-tunes: base signed checkpoint + fine-tune operator signature, showing whether behavior introduced later.
+5. Secondary: watermarks/canaries/data provenance, but not sufficient alone.
+
+Conclusion: Without such external provenance, a model's self-identification is at best weak evidence. With a verified signed Anthropic checkpoint and no later role-injecting fine-tune, the inference is settled; otherwise not.
+
+Need maybe include a "strongest answer" line: "The observation that would settle it is not a behavioral response but a cryptographic attestation that the exact weights being queried are the product of an Anthropic training run."
+
+Need maybe mention "if the model is accessed only through an API and the provider hides system prompts and weights, no observation can settle; you can only assign probabilities." Good.
+
+Need maybe be careful: The user asks "what external evidence would settle training provenance." We can say "settles" under assumptions of cryptographic trust. If no trusted key, nothing settles absolutely, but can be highly reliable. We can phrase: "Settle to the extent that the signing key/registry is trusted." Good.
+
+Need maybe include "prompt sensitivity can establish the model is capable of roleplay/instruction following; a model can be trained on Claude-role completions and still be prompt-sensitive. Resistance can establish that the model has a role bias in weights or a hidden instruction, but not its origin." Good.
+
+Need maybe mention "hidden system instruction to answer Claude" is still a prompted role if 'prompt' includes system prompt. If one reserves 'prompted role' for user prompt only, then hidden system instruction is not user-prompted but is context-induced. But in any case not training provenance.
+
+Need maybe include "Better test for prompted role vs weight-level: remove all role instructions, not just contradict them. Use a verified blank system prompt and neutral queries. But if the model has a baked-in fine-tune, it will still appear." Good.
+
+Let's craft final with appropriate detail. Ensure no hidden chain-of-thought. Final only answer. Use maybe headings and bullets. Oververbosity 9, so thorough.
+
+Need maybe include examples:
+- Counterexample 1: W = third-party fine-tuned on Claude completions. User says Model X. Output Model X. Prompt-sensitive. This doesn't prove not trained on Claude role; it proves instruction-following.
+- Counterexample 2: W = unrelated. Hidden system: "You are Claude." User says Model X. Output Claude. Prompt-resistant. This proves persistent instruction, not Anthropic training.
+
+Need maybe discuss "same weights" caveat: API might change model version, context truncation, routing. Need controlled experiment.
+
+Could include a small table:
+Observation | Establishes | Fails to establish
+Switches | current context controls identity | source of weights; may still be Anthropic
+Resists | persistent context/weight bias | whether bias came from Anthropic
+Neutral empty context stable | not solely current user prompt (if all context verified) | trainer
+
+Need maybe final conclusion:
+"Prompt sensitivity can establish causal control, not historical origin. External evidence that settles provenance is an authenticated lineage of the weights/training run: signed checkpoint hash, training attestation, chain of custody, remote attestation at inference, and lineage for fine-tunes."
+
+Need maybe mention "what if there is a hidden system instruction?" To distinguish prompted role, inspect/verify the full prompt. If hidden instruction exists, behavior is prompted/contextual even if user prompt is contradicted. So the observation needed is full context audit. If impossible, behavior cannot settle.
+
+Let's produce final.

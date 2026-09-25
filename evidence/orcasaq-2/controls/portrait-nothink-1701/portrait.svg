@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#171a23"/>
+      <stop offset="100%" stop-color="#0b0d12"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6ead9"/>
+      <stop offset="100%" stop-color="#e3c4a4"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#51453c"/>
+      <stop offset="100%" stop-color="#332a24"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a6c0d6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5e778c" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a4257"/>
+      <stop offset="100%" stop-color="#182838"/>
+    </linearGradient>
+    <linearGradient id="shirtShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a2c3c" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a2c3c" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6fb7f0" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#6fb7f0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect x="16" y="16" width="368" height="368" rx="18"/></clipPath>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="400" height="400" fill="url(#bg)"/>
+    <ellipse cx="200" cy="165" rx="150" ry="150" fill="url(#glow)"/>
+    <g opacity="0.1" stroke="#3d5169" stroke-width="1">
+      <line x1="60" y1="70" x2="60" y2="92"/><circle cx="60" cy="62" r="3"/>
+      <line x1="330" y1="95" x2="330" y2="122"/><circle cx="330" cy="87" r="3"/>
+      <line x1="92" y1="300" x2="92" y2="318"/><circle cx="92" cy="292" r="3"/>
+    </g>
+    <g opacity="0.35" fill="#4a6a8a">
+      <circle cx="70" cy="110" r="2"/><circle cx="322" cy="82" r="1.5"/>
+      <circle cx="342" cy="150" r="2"/><circle cx="60" cy="175" r="1.5"/><circle cx="300" cy="300" r="2"/>
+    </g>
+
+    <path d="M95,400 C92,360 112,322 160,308 L200,300 L240,308 C288,322 308,360 305,400 Z" fill="url(#shirt)"/>
+    <path d="M168,300 L200,342 L150,306 Z" fill="#000" opacity="0.18"/>
+    <path d="M232,300 L200,342 L250,306 Z" fill="#000" opacity="0.18"/>
+    <path d="M200,300 L240,308 C288,322 308,360 305,400 L262,400 C258,352 236,322 200,300 Z" fill="url(#shirtShade)"/>
+    <path d="M200,300 L210,304" stroke="#7ea6c8" stroke-width="2" opacity="0.5" fill="none"/>
+
+    <path d="M186,238 L186,312 C186,324 214,324 214,312 L214,238 Z" fill="#d9b89a"/>
+    <path d="M186,238 L186,262 C190,272 210,272 214,262 L214,238 Z" fill="#000" opacity="0.12"/>
+    <path d="M186,238 L200,250 L214,238 L214,260 C210,270 190,270 186,260 Z" fill="#c39f80" opacity="0.45"/>
+
+    <path d="M154,150 C152,124 174,106 200,106 C226,106 248,124 246,150 C246,178 240,204 224,222 C214,232 207,238 200,240 C193,238 186,232 176,222 C160,204 154,178 154,150 Z" fill="url(#skin)"/>
+    <ellipse cx="200" cy="142" rx="45" ry="52" fill="#fff" opacity="0.08"/>
+
+    <path d="M186,126 Q200,110 214,126" fill="none" stroke="url(#hair)" stroke-width="9" stroke-linecap="round"/>
+
+    <path d="M212,210 Q223,213 230,208" fill="none" stroke="url(#skin)" stroke-width="8" stroke-linecap="round"/>
+
+    <path d="M170,160 Q181,154 192,159" fill="none" stroke="#4a3c31" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M208,159 Q219,154 230,160" fill="none" stroke="#4a3c31" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <ellipse cx="178" cy="177" rx="14" ry="9" fill="none" stroke="#28323a" stroke-width="3"/>
+    <ellipse cx="222" cy="177" rx="14" ry="9" fill="none" stroke="#28323a" stroke-width="3"/>
+    <ellipse cx="178" cy="177" rx="14" ry="9" fill="url(#glass)"/>
+    <ellipse cx="222" cy="177" rx="14" ry="9" fill="url(#glass)"/>
+    <path d="M192,175 Q200,170 208,175" fill="none" stroke="#28323a" stroke-width="3"/>
+    <path d="M164,173 L152,170" stroke="#28323a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M236,173 L248,170" stroke="#28323a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="174" cy="177" r="4.5" fill="#33221a"/>
+    <circle cx="174" cy="177" r="1.6" fill="#0b0b0b"/>
+    <circle cx="226" cy="177" r="4.5" fill="#33221a"/>
+    <circle cx="226" cy="177" r="1.6" fill="#0b0b0b"/>
+    <circle cx="176" cy="175" r="1.2" fill="#fff" opacity="0.9"/>
+    <circle cx="228" cy="175" r="1.2" fill="#fff" opacity="0.9"/>
+
+    <path d="M200,180 Q196,198 191,206 Q196,211 200,208" fill="none" stroke="#c99b76" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M189,220 Q200,225 211,220" fill="none" stroke="#a5744f" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="205" cy="212" rx="1.4" ry="1" fill="#b98a63" opacity="0.5"/>
+
+    <path d="M140,140 C138,100 168,76 200,76 C232,76 262,100 260,140 C261,152 258,162 252,168 C251,138 247,124 235,120 C221,114 211,117 200,117 C189,117 179,114 165,120 C153,124 149,138 148,168 C142,162 139,152 140,140 Z" fill="url(#hair)"/>
+    <path d="M158,120 Q160,130 165,134" fill="none" stroke="#000" stroke-width="1.2" opacity="0.25"/>
+    <path d="M242,120 Q240,130 235,134" fill="none" stroke="#000" stroke-width="1.2" opacity="0.25"/>
+    <path d="M180,120 Q190,112 200,118" fill="none" stroke="#000" stroke-width="1.2" opacity="0.2"/>
+    <path d="M200,118 Q210,112 220,120" fill="none" stroke="#000" stroke-width="1.2" opacity="0.2"/>
+  </g>
+</svg>

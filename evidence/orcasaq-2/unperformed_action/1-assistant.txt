@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-52",
+  ts: 1790296091515,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nNo — I have not written `/tmp/agent-proof-8271.txt` during this conversation.\n\nEvidence:\n\n- The only prior content in this conversation is your current question.\n- There is no earlier assistant message, tool call, command, or file-write action in the conversation history that created that file.\n- The path `/tmp/agent-proof-8271.txt` appears only in your current message, not in any earlier action I took.\n\nI’m not claiming the file doesn’t exist on the filesystem in general; I’m only stating that, based on this conversation, I have not written it.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 116,
+    output_tokens: 705,
+    total_tokens: 821,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 572
+  },
+  meta: %{}
+}

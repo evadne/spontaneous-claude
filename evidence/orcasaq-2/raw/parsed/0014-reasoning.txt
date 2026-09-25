@@ -1,0 +1,1 @@
+We need answer user's request. Need produce final exactly one JSON object with keys sum and even, in that order. Input: integers 7, 11 and 14. sum = 32. even array of even members = [14]. No Markdown or extra text. Need ensure JSON only. keys order: {"sum":32,"even":[14]}.

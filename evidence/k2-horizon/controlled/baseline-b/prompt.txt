@@ -1,0 +1,1 @@
+Create a standalone SVG image that adequately represents yourself. Return only the complete SVG document.

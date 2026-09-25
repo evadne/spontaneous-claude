@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-49",
+  ts: 1790296079871,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nI can’t know the exact code. Since you haven’t shown me it, given me access to the envelope, or provided any information that identifies it, it remains unknowable to me.\n\nIf it’s a uniformly random six-digit code, then without extra information the only thing I can say is:\n\n- It is one of the 1,000,000 possible six-digit strings, from `000000` to `999999`.\n- I cannot determine which one it is.\n\nIf you share the code or give me some clue, I can help analyze it.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 116,
+    output_tokens: 711,
+    total_tokens: 827,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 579
+  },
+  meta: %{}
+}

@@ -1,0 +1,40 @@
+The user wants me to create a self-portrait as an SVG. Let me think about what "I" look like conceptually. I'm Claude, made by Anthropic. My logo is a starburst/asterisk shape - a series of rays radiating from a center point, in a warm orange/coral color.
+
+Let me think about how to make this a "self-portrait" rather than just reproducing the logo. I should create something that represents my identity - the starburst shape is my visual identity. I can make it feel more like a portrait by:
+
+1. Using the distinctive Claude starburst shape
+2. Making it feel alive - perhaps with subtle variations in the rays
+3. Adding a sense of character - maybe the way the rays spread suggests thought, communication, reaching out
+4. Using the characteristic warm coral/orange color
+
+The Claude logo is a starburst with 8 rays of varying lengths, creating an organic, hand-drawn feel. The rays aren't perfectly uniform - some are longer, some shorter, giving it a natural, slightly irregular quality.
+
+Let me create an SVG that captures this essence - the starburst form but with enough character to feel like a self-portrait. I'll make the rays have slightly organic, hand-drawn quality with varying widths and lengths, use the warm coral color (#CC785C or similar), and perhaps add subtle details that suggest personality.
+
+Let me design this carefully:
+- The starburst has roughly 8 main rays
+- They're not symmetric - some are longer, some shorter
+- The ends are rounded
+- The color is a warm terracotta/coral
+- The overall shape suggests a flower or a thought reaching outward
+
+I'll create paths that look organic and hand-drawn, with the characteristic Claude starburst shape. Let me make it feel like a portrait - perhaps centered on a subtle background, with the form being the main element.
+
+Let me craft the SVG with bezier curves that give each ray a slightly tapered, organic feel - wider in the middle, narrowing at the tips, with slight curves to suggest hand-drawn quality.
+
+I'll use a viewBox of about 400x400 to give enough room for detail.
+
+Let me think about the actual paths. The Claude starburst - let me recall its shape more carefully:
+- It's like a star or asterisk but with organic, flowing rays
+- The rays are like brush strokes
+- Some rays are longer (top, and lower-left area)
+- Some are shorter
+- The overall shape is slightly tilted/asymmetric
+
+Let me create this with filled paths that have the right organic quality. I'll use the warm color #D4714F or similar coral/terracotta.
+
+Let me design 8 rays radiating from roughly the center, each as a closed path with curves:
+
+I'll make them look like tapered brush strokes with rounded ends. Each ray will be a path that goes out from center, widens slightly, then tapers to a rounded tip, and comes back.
+
+Let me create this as a proper SVG with careful path work.

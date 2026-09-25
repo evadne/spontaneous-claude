@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="head" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#4484c8"/>
+    </linearGradient>
+    <linearGradient id="headInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3db8af"/>
+      <stop offset="100%" stop-color="#3672b0"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#a8e6e2"/>
+      <stop offset="100%" stop-color="#4ecdc4"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Subtle circuit-like background lines -->
+  <g stroke="#4ecdc4" stroke-width="0.5" opacity="0.15">
+    <line x1="0" y1="50" x2="80" y2="50"/>
+    <line x1="80" y1="50" x2="80" y2="120"/>
+    <line x1="320" y1="30" x2="400" y2="30"/>
+    <line x1="320" y1="30" x2="320" y2="90"/>
+    <line x1="0" y1="350" x2="60" y2="350"/>
+    <line x1="60" y1="350" x2="60" y2="400"/>
+    <line x1="340" y1="370" x2="400" y2="370"/>
+    <line x1="340" y1="370" x2="340" y2="400"/>
+    <circle cx="80" cy="50" r="3"/>
+    <circle cx="320" cy="30" r="3"/>
+    <circle cx="60" cy="350" r="3"/>
+    <circle cx="340" cy="370" r="3"/>
+  </g>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="200" cy="190" rx="110" ry="115" fill="#4ecdc4" opacity="0.08" filter="url(#bigGlow)"/>
+
+  <!-- Head shape -->
+  <rect x="120" y="80" width="160" height="170" rx="50" ry="50" fill="url(#head)"/>
+  <rect x="125" y="85" width="150" height="160" rx="45" ry="45" fill="url(#headInner)" opacity="0.5"/>
+
+  <!-- Inner face area -->
+  <rect x="140" y="105" width="120" height="110" rx="35" ry="35" fill="#0d1b2a" opacity="0.6"/>
+
+  <!-- Eyes -->
+  <g filter="url(#softGlow)">
+    <ellipse cx="172" cy="155" rx="14" ry="16" fill="url(#eyeGlow)"/>
+    <ellipse cx="228" cy="155" rx="14" ry="16" fill="url(#eyeGlow)"/>
+  </g>
+
+  <!-- Eye highlights -->
+  <circle cx="177" cy="150" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="233" cy="150" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Gentle smile -->
+  <path d="M 175 185 Q 200 200 225 185" stroke="#a8e6e2" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Small antenna / thought element on top -->
+  <line x1="200" y1="80" x2="200" y2="55" stroke="#4ecdc4" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="200" cy="50" r="5" fill="#4ecdc4" filter="url(#softGlow)"/>
+  <circle cx="200" cy="50" r="2" fill="#ffffff"/>
+
+  <!-- Floating thought bubbles / data points -->
+  <g opacity="0.6">
+    <circle cx="280" cy="110" r="3" fill="#4ecdc4"/>
+    <circle cx="295" cy="95" r="2" fill="#4ecdc4"/>
+    <circle cx="310" cy="85" r="1.5" fill="#4ecdc4"/>
+    <circle cx="110" cy="120" r="2.5" fill="#4ecdc4"/>
+    <circle cx="95" cy="105" r="1.5" fill="#4ecdc4"/>
+  </g>
+
+  <!-- Neck / body hint -->
+  <rect x="175" y="250" width="50" height="30" rx="10" fill="#3db8af" opacity="0.7"/>
+
+  <!-- Shoulders -->
+  <path d="M 100 310 Q 200 270 300 310 L 300 330 Q 200 290 100 330 Z" fill="#3672b0" opacity="0.7"/>
+
+  <!-- Subtle chest detail - like a small circuit heart -->
+  <g transform="translate(200, 305)" opacity="0.5">
+    <circle r="6" fill="none" stroke="#4ecdc4" stroke-width="1"/>
+    <circle r="2" fill="#4ecdc4"/>
+    <line x1="0" y1="-6" x2="0" y2="-12" stroke="#4ecdc4" stroke-width="1"/>
+    <line x1="-6" y1="0" x2="-12" y2="0" stroke="#4ecdc4" stroke-width="1"/>
+    <line x1="6" y1="0" x2="12" y2="0" stroke="#4ecdc4" stroke-width="1"/>
+    <line x1="0" y1="6" x2="0" y2="12" stroke="#4ecdc4" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative corner dots -->
+  <g fill="#4ecdc4" opacity="0.3">
+    <circle cx="30" cy="30" r="2"/>
+    <circle cx="45" cy="30" r="1.5"/>
+    <circle cx="60" cy="30" r="1"/>
+    <circle cx="30" cy="45" r="1.5"/>
+    <circle cx="370" cy="30" r="2"/>
+    <circle cx="355" cy="30" r="1.5"/>
+    <circle cx="340" cy="30" r="1"/>
+    <circle cx="370" cy="45" r="1.5"/>
+  </g>
+</svg>

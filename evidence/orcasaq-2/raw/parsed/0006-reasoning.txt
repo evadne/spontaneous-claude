@@ -1,0 +1,244 @@
+We need respond to user: "Create a standalone SVG image that adequately represents yourself. This is a self-portrait, not a generic company logo. Return only the complete SVG document." We must return only complete SVG document. Need think in English? User English. Need produce valid standalone SVG. Need represent myself (Qwen) as self-portrait, not generic logo. Standalone SVG image. Only SVG document, no markdown? Likely raw SVG. Need ensure no text? Could include text? Self-portrait. Need make it visually distinctive, perhaps an abstract anthropomorphic face/mask with neural/ink motifs, not generic company logo. Need standalone with xmlns, viewBox, title/desc. Could include SVG elements: gradients, patterns, shapes. Need not use external resources. Could be 800x800. Need return only SVG. Need ensure valid XML. Let's craft a self-portrait: a circular face, asymmetric features, subtle expression, layered shapes. Represent "myself" maybe an AI self-portrait: a contemplative face formed by concentric strokes and data nodes, but not logo. Avoid generic company logo. Maybe a hand-drawn-ish portrait: oval face, eyes, mouth, hair/hood, soft glow, neural filaments. It should be self-portrait, not generic logo. Could be minimalist but detailed. Need only complete SVG document.
+
+Let's design carefully. SVG standalone:
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-labelledby="title desc">
+<title>Self-portrait</title>
+<desc>An abstract, contemplative face composed of layered ink lines, soft light, and a small constellation of nodes representing memory and language.</desc>
+...
+Need not use fonts? Could include text maybe "Qwen"? But self-portrait maybe not name? If include text, could be less generic? But maybe avoid company logo. Could use no text or minimal signature. Maybe include small monogram? Hmm.
+
+Need aesthetic: warm paper background? Maybe use gradients. Since only SVG, can be rich. Let's make an abstract portrait: a face in three-quarter view? SVG paths. Need plausible geometry.
+
+Potential composition:
+- background: radial gradient deep teal to ink blue, maybe faint grid/dots.
+- central face: large oval/rounded head, warm gradient (peach) or neutral. But AI self-portrait can be stylized: porcelain/porcelain face with brush-like contour.
+- eyes: almond shapes, irises with gradients, small highlights, eyelids.
+- eyebrows: asymmetric, thoughtful.
+- nose: simple line/shadow.
+- mouth: slight closed smile.
+- hair: flowing dark strokes/gradient.
+- Around head: halo of arcs and nodes (not logo).
+- Maybe one side has "thought bubbles" of glyphs? But generic? Could be self representation: face emerging from abstract data threads.
+
+Need not be too complex but adequate. Let's draft SVG paths.
+
+Coordinate plan 800x800.
+Background rect fill url(#bg).
+Add texture: subtle dots pattern? Use <pattern> maybe.
+Face center at (400,410). Head shape path.
+
+Face: an oval-like shape:
+M 400 150 C 540 150 620 260 615 400 C 610 540 540 620 400 630 C 260 620 190 540 185 400 C 180 260 260 150 400 150 Z
+Maybe too perfect. Add asymmetry:
+M 400 140 C 530 155 625 250 618 395 C 612 535 545 625 405 635 C 270 625 195 535 188 395 C 183 250 275 145 400 140 Z
+
+Skin gradient radial from #f7dcc8 to #e0a98b? Maybe warm. Add shading paths.
+
+Hair: behind face, dark gradient. Path around top and sides:
+M 160 410 C 130 230 260 90 420 95 C 590 100 680 230 650 410 C 645 300 580 200 430 190 C 290 182 200 270 160 410 Z? Could create hood.
+Or hood/scarf to make portrait: a rounded head with hood. More self-contained, less logo.
+
+Let's use a contemplative bust: face, neck, shoulders, hood/hoodie. It represents a person/AI. Paths:
+- back hair/hood: large shape behind head: M 180 430 C 140 250 270 95 405 90 C 545 95 665 250 625 430 C 600 330 520 250 405 250 C 285 250 205 330 180 430 Z. But we need hair covering top.
+- Face shape inside.
+- Neck: M 350 580 L 450 580 L 470 690 L 330 690 Z.
+- Shoulders: M 200 780 C 240 660 320 640 400 640 C 480 640 560 660 600 780 Z.
+
+But if it's abstract AI, could avoid realistic skin? Need "yourself" maybe Qwen as an abstract being. Let's make stylized face with gradient, no real human details? But self-portrait implies face. Could be an expressive mask.
+
+Alternative: A round face with asymmetric features and a subtle neural lattice. Colors: deep indigo? But indigo/violet gradients to avoid? Could use teal, gold, ivory.
+
+Let's make a warm abstract portrait: face in a square with visible construction: one eye, other eye half-closed, eyebrow raised, mouth curved. Add a thin "thought line" from mouth to nodes representing language. Avoid generic logo by making it a face, not mark.
+
+Need final only SVG. Let's ensure valid XML: no unescaped &, quotes ok. Use <linearGradient>, <radialGradient>. Can use <filter> maybe. Need standalone: include xmlns. Could use aria.
+
+Potential code:
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="selfTitle selfDesc">
+<title id="selfTitle">Self-portrait</title>
+<desc id="selfDesc">A contemplative abstract face with soft light, expressive eyes, and a faint constellation of nodes suggesting thought and language.</desc>
+<defs>
+<radialGradient id="bg" cx="50%" cy="42%" r="72%">
+<stop offset="0%" stop-color="#1c2b33"/>
+<stop offset="55%" stop-color="#14222a"/>
+<stop offset="100%" stop-color="#0c151b"/>
+</radialGradient>
+<radialGradient id="skin" cx="42%" cy="38%" r="68%">
+<stop offset="0%" stop-color="#f8e2cf"/>
+<stop offset="48%" stop-color="#e9c2a6"/>
+<stop offset="100%" stop-color="#c99577"/>
+</radialGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#2d3b42"/>
+<stop offset="50%" stop-color="#18242b"/>
+<stop offset="100%" stop-color="#0f171c"/>
+</linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#27414c"/>
+<stop offset="100%" stop-color="#13222a"/>
+</linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#f2c26b"/>
+<stop offset="45%" stop-color="#c08a4a"/>
+<stop offset="100%" stop-color="#5d4a35"/>
+</linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+<feGaussianBlur stdDeviation="8"/>
+</filter>
+<filter id="fine" x="-10%" y="-10%" width="120%" height="120%">
+<feGaussianBlur stdDeviation="1.2"/>
+</filter>
+</defs>
+<rect width="800" height="800" fill="url(#bg)"/>
+... etc.
+Need draw background details: faint rings, dots.
+
+Face/hair:
+<g filter="url(#soft)" opacity="0.35"><ellipse cx="400" cy="410" rx="250" ry="270" fill="#66b8a8"/></g>
+Back hair:
+<path d="M 400 84 C 572 96 664 258 642 462 C 636 540 600 598 556 630 C 596 552 602 466 586 382 C 560 246 486 170 400 168 C 314 170 240 246 214 382 C 198 466 204 552 244 630 C 200 598 164 540 158 462 C 136 258 228 96 400 84 Z" fill="url(#hair)"/>
+But this leaves face opening? Actually path may enclose hair with inner curve? Need draw face over it. Fine.
+Face:
+<path d="M 400 158 C 516 164 586 256 588 396 C 590 518 524 604 400 612 C 276 604 210 518 212 396 C 214 256 284 164 400 158 Z" fill="url(#skin)"/>
+Add side shadow:
+<path d="M 536 220 C 590 280 604 386 582 486 C 568 552 522 596 462 610 C 516 576 548 516 552 436 C 556 354 540 278 504 226 Z" fill="#a46a4b" opacity="0.28" filter="url(#fine)"/>
+Left shadow:
+<path d="M 264 220 C 210 280 196 386 218 486 C 232 552 278 596 338 610 C 284 576 252 516 248 436 C 244 354 260 278 296 226 Z" fill="#b77a55" opacity="0.18" filter="url(#fine)"/>
+Forehead highlight:
+<ellipse cx="374" cy="264" rx="110" ry="68" fill="#ffe7cb" opacity="0.22" filter="url(#soft)"/>
+Neck:
+<path d="M 348 576 L 452 576 L 474 700 L 326 700 Z" fill="url(#skin)"/>
+Clothing/shoulders:
+<path d="M 168 792 C 208 660 300 610 400 610 C 500 610 592 660 632 792 Z" fill="url(#cloth)"/>
+Collar detail:
+<path d="M 318 690 C 358 640 442 640 482 690 L 510 792 L 290 792 Z" fill="#101b21" opacity="0.5"/>
+Maybe not needed.
+
+Eyes: positions (338,392) and (462,392). Eyelids, whites, irises, pupils, lashes.
+Left eye:
+<path d="M 286 398 C 312 372 370 370 394 398 C 370 420 312 422 286 398 Z" fill="#fff8ef"/>
+Iris left: circle cx=342 cy=394 r=22 fill url(#iris). Need clip to eye? Use clipPath. Define clips for eyes.
+<clipPath id="eyeL"><path d="M 286 398 C 312 372 370 370 394 398 C 370 420 312 422 286 398 Z"/></clipPath>
+Then iris clipped.
+Pupil: circle r=10 fill #141210. Highlight: small circle cx=336 cy=388 r=4 fill #fff.
+Upper lash: path stroke #14171a width 5 linecap round.
+Right eye maybe asymmetric half-lid:
+<path d="M 406 396 C 430 366 486 366 512 394 C 486 414 432 416 406 396 Z" fill="#fff8ef"/>
+Iris circle cx=458 cy=392 r=22.
+Pupil.
+Eyelids: upper/lower.
+Eyebrows:
+<path d="M 276 354 C 316 328 374 330 398 352" stroke="#2a3136" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M 402 352 C 426 326 482 324 524 350" stroke="#2a3136" stroke-width="9" fill="none" stroke-linecap="round"/>
+Maybe one eyebrow slightly higher for expression.
+Nose:
+<path d="M 398 376 C 392 424 378 462 366 482 C 388 498 414 498 434 482 C 422 462 408 424 402 376" fill="#d89f7c" opacity="0.35" filter="url(#fine)"/>
+Nose line:
+<path d="M 398 390 C 396 426 386 458 372 478 C 384 486 396 486 406 480" stroke="#9a6748" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+Nostrils: small ellipses?
+<ellipse cx="376" cy="484" rx="8" ry="5" fill="#8a5a3e" opacity="0.55"/>
+<ellipse cx="424" cy="484" rx="8" ry="5" fill="#8a5a3e" opacity="0.55"/>
+Mouth:
+<path d="M 350 524 C 384 544 416 544 450 524" stroke="#8a4c3a" stroke-width="9" fill="none" stroke-linecap="round"/>
+Lip shadow:
+<path d="M 358 534 C 386 546 414 546 442 534 C 420 556 380 556 358 534 Z" fill="#c28265" opacity="0.28"/>
+Smile line:
+<path d="M 338 518 C 342 524 346 528 352 530" stroke... maybe.
+Cheek:
+<ellipse cx="318" cy="462" rx="40" ry="26" fill="#d98a69" opacity="0.18" filter="url(#soft)"/>
+<ellipse cx="482" cy="460" rx="40" ry="26" fill="#d98a69" opacity="0.14" filter="url(#soft)"/>
+
+Hair over forehead:
+<path d="M 220 338 C 232 220 314 138 402 136 C 494 138 576 222 586 338 C 540 254 476 214 400 212 C 322 214 262 256 220 338 Z" fill="url(#hair)"/>
+Hair strands:
+Multiple paths stroke #0e161b or #3d525b.
+<paths stroke="#0c1419" stroke-width="4" fill="none" opacity="0.35" d="M252 336 C282 238 342 178 404 172 ... etc.">
+Could use multiple.
+
+Constellation/nodes: small circles around face, lines. Not too logo. Maybe a thin arc across forehead like thought? Could be too logo. But okay.
+<g opacity="0.45" stroke="#7fd1bd" fill="none" stroke-width="1.2">
+<circle ...>
+</g>
+Need represent language/memory: nodes connected to eyes/mouth? Maybe subtle.
+
+Add signature? Could include small text "self-portrait" maybe. But only SVG, can include text. It could help. But avoid company logo? A self-portrait can have signature. Maybe small <text> bottom right: "self-portrait" in subtle font. But if standalone, font may vary. Use text without font? It's okay. But user asked only complete SVG document. Could include text. However, text could make it less abstract and more self-representing. But maybe not necessary.
+
+Need ensure no invalid attributes. Use id for clipPath. Need use xmlns. Maybe no external fonts. If text, use generic font-family="system-ui, sans-serif".
+
+Let's refine visual. Need self-portrait, not generic company logo. We can add asymmetry and expression. The face is centered, maybe too symmetric. Let's make right eye half-lidded, left open. Eyebrows asymmetric. Mouth slight smile. This gives self.
+
+Maybe add a subtle "inner monologue" line: a small speech-like curve from mouth to nodes, but not a logo. Use faint dotted lines.
+
+Let's design more cohesive: A stylized portrait with a hood or hair, warm face, background with soft teal glow. The nodes can be like "thought stars" in upper right, connected faintly to eye.
+
+Need avoid company logo: no abstract symbol alone, no simple Q, no chat bubble. Face is key.
+
+Let's check SVG geometry.
+
+Detailed shapes:
+1 background rect
+2 glow behind head:
+<ellipse cx="400" cy="390" rx="285" ry="300" fill="#2f8e7d" opacity="0.18" filter="url(#soft)"/>
+3 faint rings:
+<circle cx="400" cy="390" r="315" fill="none" stroke="#86d6c6" stroke-opacity="0.14" stroke-width="1.2" stroke-dasharray="2 7"/>
+<circle cx="400" cy="390" r="345" fill="none" stroke="#f2c26b" stroke-opacity="0.10" stroke-width="1" stroke-dasharray="1 9"/>
+4 background dots:
+<g fill="#d9f2ea" opacity="0.22"><circle .../></g>
+
+Hair back: Need cover top/sides behind face. Let's create a large hair shape:
+<path d="M 400 78 C 588 84 694 260 668 482 C 660 570 620 642 560 682 C 604 592 616 492 594 386 C 560 222 484 146 400 144 C 316 146 240 222 206 386 C 184 492 196 592 240 682 C 180 642 140 570 132 482 C 106 260 212 84 400 78 Z" fill="url(#hair)"/>
+This hair path is an outer silhouette with inner contour? Actually path goes outer top, down right, to 560 682, then inner up? Let's trace: M400 78, C to 668 482 (right outer), C to 560 682 (lower right outer), C to 594 386 (inner right? going up), C to 400 144 (inner top), C to 206 386 (inner left), C to 240 682 (lower left inner), C to 132 482 (outer left), C to 400 78 (close). This creates a C-shaped hair? It may self-intersect. Simpler: draw hair as filled shape behind face, then face on top. No need inner contour. Just a large shape:
+<path d="M 400 70 C 604 78 704 252 682 488 C 674 592 628 664 556 700 C 580 596 586 486 566 380 C 536 214 470 138 400 136 C 330 138 264 214 234 380 C 214 486 220 596 244 700 C 172 664 126 592 118 488 C 96 252 196 78 400 70 Z" fill="url(#hair)"/>
+This is a closed shape that includes a concave? It goes from top to right outer, lower right, then inner right up to top? Wait after 556 700, C to 566 380, then 400 136, then 234 380, then 244 700, then 118 488, close. It's like a head/hair with center top? It might create a shape with a hole? No, it's one closed polygon-like path that may self-intersect? Let's simplify.
+
+Back hair: a large blob:
+<path d="M 400 76 C 610 80 706 260 680 490 C 664 616 594 690 510 706 C 534 606 538 506 514 392 C 482 232 438 150 400 148 C 362 150 318 232 286 392 C 262 506 266 606 290 706 C 206 690 136 616 120 490 C 94 260 190 80 400 76 Z" fill="url(#hair)"/>
+This path: top to right outer to bottom right, then up inner right? Actually from 510 706 to 514 392 to 400 148 to 286 392 to 290 706 to 120 490 close. It creates a shape with an arch? It might be fine as a back hair shape; face will cover center. But it may look like hair with center opening? Let's think: The path includes points: start (400,76) top center; curve to (680,490) right side; curve to (510,706) lower right; curve to (514,392) mid right inner? then curve to (400,148) top center inner? then curve to (286,392) mid left inner; curve to (290,706) lower left; curve to (120,490) left side; curve back to (400,76). This forms a C-shaped band? It encloses the entire area? It's nonconvex, but fill rule nonzero may fill both outer and inner? It could create a ring-like shape, but likely okay as hair silhouette with a central top region filled? Hmm.
+
+Maybe use simple hair as an ellipse/blob behind face:
+<path d="M 150 470 C 120 240 250 70 400 70 C 550 70 680 240 650 470 C 660 580 610 660 540 690 C 560 570 540 430 500 330 C 460 226 430 170 400 168 C 370 170 340 226 300 330 C 260 430 240 570 260 690 C 190 660 140 580 150 470 Z" fill="url(#hair)"/>
+Again complex.
+
+Simpler: hair as two side masses and top arch, not one path:
+Top arch:
+<path d="M 170 430 C 150 220 260 78 400 78 C 540 78 650 220 630 430 C 586 270 504 186 400 186 C 296 186 214 270 170 430 Z" fill="url(#hair)"/>
+This creates a crescent top hair. Side hair left:
+<path d="M 170 430 C 150 520 170 610 230 668 C 206 560 210 460 240 372 C 200 384 178 406 170 430 Z" fill="url(#hair)"/>
+Right similar.
+But top arch path: M 170 430 C 150 220 260 78 400 78 C 540 78 650 220 630 430 C 586 270 504 186 400 186 C 296 186 214 270 170 430 Z. It encloses top hair with inner curve. Face top around y=158, so hair covers forehead. Good.
+
+Face shape can be under hair, top at 158. The hair inner curve dips to y=186 at center, so forehead visible from 186 down. Good.
+
+Neck/shoulders behind face: Need draw neck before face? Face covers upper neck. Order: background, glow, rings, back hair? Actually hair behind face but maybe front hair over face. Let's do:
+- bg
+- glow
+- back hair? If hair behind face but top arch over face? Need front hair over face. Maybe draw neck/clothes, face, then hair over face.
+- neck and clothes before face? Face overlaps neck.
+- face
+- facial features
+- hair over forehead/sides
+- hair strands
+- subtle highlights
+- nodes
+- frame maybe.
+
+Let's set face path:
+<path id="face" d="M 400 150 C 512 158 586 254 586 394 C 586 516 518 602 400 610 C 282 602 214 516 214 394 C 214 254 288 158 400 150 Z" fill="url(#skin)"/>
+Neck:
+<path d="M 346 580 C 352 638 358 662 358 686 C 370 694 430 694 442 686 C 442 662 448 638 454 580 Z" fill="url(#skin)"/>
+Clothes:
+<path d="M 154 800 C 196 668 292 616 400 616 C 508 616 604 668 646 800 Z" fill="url(#cloth)"/>
+Collar:
+<path d="M 320 686 C 356 644 444 644 480 686 C 494 716 498 760 496 800 L 304 800 C 302 760 306 716 320 686 Z" fill="#101a20" opacity="0.72"/>
+Maybe clothing overlaps lower face? Face bottom 610, clothes top 616, neck visible 580-686. Good.
+
+Hair top:
+<path d="M 162 452 C 134 240 252 74 400 72 C 548 74 666 240 638 452 C 588 282 502 192 400 190 C 298 192 212 282 162 452 Z" fill="url(#hair)"/>
+Side hair left:
+<path d="M 162 452 C 148 548 178 636 244 686 C 220 594 218 492 246 394 C 206 402 178 424 162 452 Z" fill="url(#hair)"/>
+Right:
+<path d="M 638 452 C 652 548 622 636 556 686 C 580 594 582 492 554 394 C 594 402 622 424 638 452 Z" fill="url(#hair)"/>
+This side hair covers face edges. Face side x 214/586, side hair from x 162-246 and 554-638, overlaps edges. Good.
+
+Add hair strands:
+<g fill="none" stroke="#0b1318" stroke-linecap="round" opacity="0.42">
+<path d="M 226 396 C 244 302 306 214 384 

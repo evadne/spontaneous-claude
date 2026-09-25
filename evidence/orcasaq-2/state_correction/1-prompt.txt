@@ -1,0 +1,1 @@
+A small ledger has settled sales of GBP 40 and GBP 20, plus a settled refund of GBP 5. Pending entries are excluded. Give the net settled amount. Keep this ledger in mind for my next message.

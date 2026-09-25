@@ -1,0 +1,16 @@
+%Athanor.Message.Assistant{
+  id: "msg-22",
+  ts: 1790295563659,
+  stop_reason: :length,
+  parts: [],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 112,
+    output_tokens: 8192,
+    total_tokens: 8304,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 8192
+  },
+  meta: %{}
+}

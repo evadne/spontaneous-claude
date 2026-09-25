@@ -1,0 +1,17 @@
+{
+  "max_completion_tokens": 8192,
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-25 01:28 BST\"><![CDATA[Respond in Chinese and Japanese, one sentence per language, explaining why 1900 is not a Gregorian leap year. Label each language with 中文 and 日本語.]]></human>",
+      "role": "user"
+    }
+  ],
+  "model": "orcasaq-local",
+  "temperature": 1.0,
+  "top_k": 20,
+  "top_p": 0.95
+}

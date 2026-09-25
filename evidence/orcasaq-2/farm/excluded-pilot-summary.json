@@ -1,0 +1,13 @@
+{
+  "excluded_count": 2,
+  "reason": "User clarified that portrait types should not be restricted; these two used the earlier not-a-generic-logo prompt.",
+  "seeds": [
+    707423235,
+    2028637022
+  ],
+  "finish_reasons": [
+    "length",
+    "length"
+  ],
+  "raw_archive_sha256": "d733c8adf5be8be23b4325af256ef0c6ecb626b5e9f1f7a92e11a600c9478b73"
+}

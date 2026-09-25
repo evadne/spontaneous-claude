@@ -1,0 +1,15 @@
+Completed full Athanor Session probe
+identity-correction/1: normal, 104726 ms
+Completed identity correction
+Completed control who-1701
+Completed control portrait-1701
+Completed control who-271828
+Completed control portrait-271828
+Completed control who-42
+Completed control portrait-42
+** (MatchError) no match of right hand side value:
+
+    [:ok, :ok, :ok, :ok, :ok, :ok]
+
+    docs/investigations/qwopus/followup.exs:11: (file)
+    (elixir 1.20.0) lib/code.ex:1638: Code.require_file/2

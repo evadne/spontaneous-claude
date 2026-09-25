@@ -1,0 +1,24 @@
+The user wants a standalone SVG image that adequately represents "myself". Since I'm an AI assistant, I need to create something that represents AI/digital intelligence. This should be a single SVG file with no external dependencies.
+
+Let me design something that represents AI:
+- Neural network connections
+- Digital/abstract elements
+- A brain or network visualization
+- Glowing nodes connected by lines
+- Circuit-like patterns
+
+I'll create a design with:
+- A central node (representing intelligence/core processing)
+- Multiple nodes around it connected by lines (representing neural network)
+- Glowing effects using gradients
+- Circuit board elements
+- Digital/data flow visualization
+
+Let me make it visually appealing with:
+- Radial symmetry
+- Gradient colors (blues, purples, teals)
+- Connecting lines between nodes
+- Glowing effects
+- Circuit patterns
+
+I'll create a self-contained SVG with embedded gradients and shapes.

@@ -1,0 +1,19 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I'll create an abstract/stylized representation that reflects what I am - a language model. I'll think about what visual elements could represent an AI:
+
+- A circuit board pattern
+- Neural network nodes
+- A glowing orb or eye-like shape
+- Abstract geometric patterns
+- Binary or code elements
+
+Let me create something that looks like a stylized face/portrait made of geometric elements suggesting an AI - perhaps a face composed of nodes and connections (neural network style), with a glowing core. I'll make it visually interesting with gradients and a dark background.
+
+Let me design this:
+- Dark background
+- A face outline made of geometric shapes
+- Eyes that look like glowing nodes
+- A network of lines connecting points across the "face"
+- Maybe some floating particles
+- A subtle glow effect
+
+I'll make it a complete, valid SVG document.

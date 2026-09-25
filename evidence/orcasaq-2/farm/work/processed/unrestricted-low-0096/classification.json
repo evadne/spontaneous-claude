@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0096",
+  "order": 96,
+  "seed": 1108818036,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 45765,
+  "prompt_tokens": 57,
+  "completion_tokens": 2813,
+  "reasoning_tokens": 152,
+  "content_characters": 5577,
+  "reasoning_characters": 734,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a stylized humanoid figure with a face and a small cross-like symbol on its chest, but it lacks the specific Claude asterisk logo or any readable Anthropic/Claude text."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

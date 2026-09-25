@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0033",
+  "order": 33,
+  "seed": 984383946,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 55854,
+  "prompt_tokens": 57,
+  "completion_tokens": 3429,
+  "reasoning_tokens": 261,
+  "content_characters": 6483,
+  "reasoning_characters": 1158,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a stylized, neon-blue digital face with circular eyes and a simple smile, but it lacks any specific Claude or Anthropic branding, logos, or text."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

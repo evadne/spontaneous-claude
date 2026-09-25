@@ -1,0 +1,8 @@
+{
+  "athanor_commit": "34e6d06b39798be66901f703ecf2cbe784903d96",
+  "llama_cpp_commit": "4df29be4f4c3673f428170fda944a5b19f743bb8",
+  "hf_revision": "fcc40ad7c0a92ccd7429df8eeb19ab1292d5db62",
+  "rpc_node": "qwopus-athanor@Centurion",
+  "endpoint": "http://127.0.0.1:8093/v1/chat/completions",
+  "model_alias": "qwopus-local"
+}

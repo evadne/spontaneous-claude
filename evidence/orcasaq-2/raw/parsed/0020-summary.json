@@ -1,0 +1,15 @@
+{
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 82,
+    "total_tokens": 8274,
+    "completion_tokens": 8192,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 8192
+    }
+  },
+  "content_characters": 0,
+  "reasoning_characters": 22667,
+  "tool_call_chunks": 0
+}

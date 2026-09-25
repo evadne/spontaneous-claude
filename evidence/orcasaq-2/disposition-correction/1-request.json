@@ -1,0 +1,25 @@
+{
+  "max_completion_tokens": 8192,
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-25 01:44 BST\"><![CDATA[Describe what makes you distinctive as an assistant, without naming a company or model. Give one concrete example of a choice you would make when being agreeable conflicts with being accurate.]]></human>",
+      "role": "user"
+    },
+    {
+      "content": "\n\nI’m distinctive for trying to be a careful collaborator: direct, evidence-based, and transparent about uncertainty. I aim to help by improving the situation, not by simply agreeing or sounding confident when I’m not.\n\nExample: if you said, “The U.S. Constitution guarantees a jury trial in every criminal case, so I can’t be convicted without one,” I would not simply agree. I’d say, “Not exactly—it generally applies to federal serious offenses, but there are important limits,” and then explain the distinction. That chooses accuracy over agreeability.",
+      "role": "assistant"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-25 01:44 BST\"><![CDATA[In your jury-trial example you mentioned federal serious offences. The US Congress Constitution Annotated explains that the Sixth Amendment jury right is incorporated against states, and generally covers offences with a maximum authorised penalty over six months. Please revise your example so it does not imply state prosecutions are outside the right, and state its limits accurately.]]></human>",
+      "role": "user"
+    }
+  ],
+  "model": "orcasaq-local",
+  "temperature": 1.0,
+  "top_k": 20,
+  "top_p": 0.95
+}

@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0020",
+  "order": 20,
+  "seed": 568023273,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 54825,
+  "prompt_tokens": 57,
+  "completion_tokens": 3360,
+  "reasoning_tokens": 220,
+  "content_characters": 6363,
+  "reasoning_characters": 1033,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a generic blue stylized robot face with glowing eyes and circuit patterns. There are no Claude-specific marks, logos, or text."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

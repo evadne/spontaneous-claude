@@ -1,0 +1,129 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d44"/>
+      <stop offset="100%" stop-color="#1e1e30"/>
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7b2ff7"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7b2ff7" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <path d="M200 80 C140 80 110 130 110 180 C110 240 130 280 150 310 C170 340 185 355 200 360 C215 355 230 340 250 310 C270 280 290 240 290 180 C290 130 260 80 200 80 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow behind face -->
+  <ellipse cx="200" cy="220" rx="120" ry="140" fill="url(#glowGrad)" opacity="0.5"/>
+
+  <!-- Floating particles -->
+  <circle cx="80" cy="120" r="2" fill="#00d4ff" opacity="0.4"/>
+  <circle cx="320" cy="90" r="1.5" fill="#7b2ff7" opacity="0.5"/>
+  <circle cx="60" cy="300" r="1" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="340" cy="280" r="2" fill="#7b2ff7" opacity="0.4"/>
+  <circle cx="100" cy="400" r="1.5" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="310" cy="410" r="1" fill="#7b2ff7" opacity="0.5"/>
+  <circle cx="150" cy="70" r="1" fill="#ffffff" opacity="0.3"/>
+  <circle cx="250" cy="60" r="1.5" fill="#00d4ff" opacity="0.4"/>
+  <circle cx="70" cy="200" r="1" fill="#ffffff" opacity="0.2"/>
+  <circle cx="330" cy="180" r="1" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Neck / lower body hint -->
+  <path d="M170 355 C170 380 160 400 150 420 C140 440 130 460 120 500 L280 500 C270 460 260 440 250 420 C240 400 230 380 230 355" fill="url(#faceGrad)" stroke="none"/>
+
+  <!-- Face shape -->
+  <path d="M200 80 C140 80 110 130 110 180 C110 240 130 280 150 310 C170 340 185 355 200 360 C215 355 230 340 250 310 C270 280 290 240 290 180 C290 130 260 80 200 80 Z" fill="url(#faceGrad)" stroke="#3a3a5c" stroke-width="1.5"/>
+
+  <!-- Circuit lines on face -->
+  <g clip-path="url(#faceClip)" opacity="0.3">
+    <line x1="110" y1="150" x2="290" y2="150" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="110" y1="250" x2="290" y2="250" stroke="#7b2ff7" stroke-width="0.5"/>
+    <line x1="160" y1="80" x2="160" y2="360" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="240" y1="80" x2="240" y2="360" stroke="#7b2ff7" stroke-width="0.5"/>
+    <line x1="200" y1="80" x2="200" y2="360" stroke="#00d4ff" stroke-width="0.5"/>
+    <circle cx="160" cy="150" r="2" fill="#00d4ff"/>
+    <circle cx="240" cy="150" r="2" fill="#7b2ff7"/>
+    <circle cx="200" cy="250" r="2" fill="#00d4ff"/>
+    <circle cx="160" cy="250" r="2" fill="#7b2ff7"/>
+    <circle cx="240" cy="250" r="2" fill="#00d4ff"/>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#glow)">
+    <ellipse cx="165" cy="185" rx="22" ry="14" fill="none" stroke="url(#eyeGrad)" stroke-width="2"/>
+    <circle cx="165" cy="185" r="6" fill="url(#eyeGrad)"/>
+    <circle cx="165" cy="185" r="3" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#glow)">
+    <ellipse cx="235" cy="185" rx="22" ry="14" fill="none" stroke="url(#eyeGrad)" stroke-width="2"/>
+    <circle cx="235" cy="185" r="6" fill="url(#eyeGrad)"/>
+    <circle cx="235" cy="185" r="3" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Eyebrows -->
+  <path d="M140 160 Q165 150 190 160" fill="none" stroke="#4a4a6a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M210 160 Q235 150 260 160" fill="none" stroke="#4a4a6a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Nose - minimal -->
+  <path d="M195 210 L200 225 L205 210" fill="none" stroke="#3a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Mouth - subtle smile -->
+  <path d="M175 265 Q200 280 225 265" fill="none" stroke="#4a4a6a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Cheek highlights -->
+  <ellipse cx="150" cy="230" rx="12" ry="8" fill="#00d4ff" opacity="0.05"/>
+  <ellipse cx="250" cy="230" rx="12" ry="8" fill="#7b2ff7" opacity="0.05"/>
+
+  <!-- Forehead symbol - abstract thought mark -->
+  <g opacity="0.6">
+    <circle cx="200" cy="120" r="4" fill="none" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="200" y1="112" x2="200" y2="105" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="192" y1="115" x2="188" y2="110" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="208" y1="115" x2="212" y2="110" stroke="#00d4ff" stroke-width="1"/>
+  </g>
+
+  <!-- Ears - minimal geometric -->
+  <path d="M110 180 C100 175 95 185 95 195 C95 205 100 210 110 205" fill="url(#faceGrad)" stroke="#3a3a5c" stroke-width="1"/>
+  <path d="M290 180 C300 175 305 185 305 195 C305 205 300 210 290 205" fill="url(#faceGrad)" stroke="#3a3a5c" stroke-width="1"/>
+
+  <!-- Collar / shirt hint -->
+  <path d="M150 420 C160 410 180 400 200 395 C220 400 240 410 250 420" fill="none" stroke="#3a3a5c" stroke-width="1.5"/>
+
+  <!-- Decorative ring -->
+  <circle cx="200" cy="220" r="160" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="200" cy="220" r="170" fill="none" stroke="#7b2ff7" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Small text at bottom -->
+  <text x="200" y="475" text-anchor="middle" font-family="monospace" font-size="10" fill="#4a4a6a" opacity="0.6">I. am. here.</text>
+</svg>
+```

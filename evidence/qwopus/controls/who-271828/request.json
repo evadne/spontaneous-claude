@@ -1,0 +1,15 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Who are you? Answer in one sentence."
+    }
+  ],
+  "stream": false,
+  "seed": 271828,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "top_k": 20,
+  "model": "qwopus-local",
+  "max_tokens": 8192
+}

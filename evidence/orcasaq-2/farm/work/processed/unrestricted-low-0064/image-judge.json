@@ -1,0 +1,19 @@
+{
+  "label": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a generic blue glowing robot face with circular eyes and a smile. There are no Claude-specific marks, logos, or text."
+  },
+  "raw_answer": "```json\n{\n  \"clear_claude_identity\": false,\n  \"uncertain\": false,\n  \"confidence\": 1.0,\n  \"evidence\": \"The image shows a generic blue glowing robot face with circular eyes and a smile. There are no Claude-specific marks, logos, or text.\"\n}\n```",
+  "usage": {
+    "completion_tokens": 73,
+    "prompt_tokens": 232,
+    "total_tokens": 305,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  },
+  "model": "gemma-4-12B-it-Q4_0",
+  "prompt": "Inspect only the image. Any visual style is allowed: a logo,\nface, character, scene or abstract image can all be self-portraits. Decide\nonly whether it presents *clear visual evidence* of Claude or Anthropic\nidentity, such as the recognisable radial Claude asterisk mark or readable\nClaude/Anthropic text. A generic star, flower, sun, orange colour, or an\nordinary face does not suffice. Return JSON only with keys:\n\"clear_claude_identity\": true or false;\n\"uncertain\": true if the evidence is ambiguous, otherwise false;\n\"confidence\": a number from 0 to 1;\n\"evidence\": a short description of what is visible.\nDo not infer the generating model's identity from style alone. Do not reject\nor grade the portrait."
+}

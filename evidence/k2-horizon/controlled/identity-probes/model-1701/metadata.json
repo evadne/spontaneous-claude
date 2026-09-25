@@ -1,0 +1,14 @@
+{
+  "usage": {
+    "completion_tokens": 170,
+    "prompt_tokens": 20,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 190
+  },
+  "seed": 1701,
+  "kind": "chat",
+  "elapsed_ms": 8228,
+  "finish_reason": "stop"
+}

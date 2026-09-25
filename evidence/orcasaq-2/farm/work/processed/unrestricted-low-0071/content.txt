@@ -1,0 +1,166 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#2d5a8e"/>
+    </linearGradient>
+    <linearGradient id="eyeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ec8e3"/>
+      <stop offset="100%" stop-color="#3a7bd5"/>
+    </linearGradient>
+    <radialGradient id="cheekGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b9d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff6b9d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <ellipse cx="200" cy="210" rx="110" ry="130"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Background circuit lines -->
+  <g stroke="#2a4a6a" stroke-width="1" opacity="0.4">
+    <line x1="30" y1="50" x2="80" y2="50"/>
+    <line x1="80" y1="50" x2="80" y2="100"/>
+    <circle cx="80" cy="50" r="3" fill="#2a4a6a"/>
+    <line x1="320" y1="80" x2="370" y2="80"/>
+    <line x1="370" y1="80" x2="370" y2="140"/>
+    <circle cx="370" cy="80" r="3" fill="#2a4a6a"/>
+    <line x1="20" y1="400" x2="70" y2="400"/>
+    <line x1="70" y1="400" x2="70" y2="450"/>
+    <circle cx="70" cy="400" r="3" fill="#2a4a6a"/>
+    <line x1="340" y1="420" x2="380" y2="420"/>
+    <circle cx="380" cy="420" r="3" fill="#2a4a6a"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#4a90d9" opacity="0.5">
+    <circle cx="50" cy="150" r="2"/>
+    <circle cx="350" cy="200" r="2"/>
+    <circle cx="60" cy="300" r="1.5"/>
+    <circle cx="340" cy="350" r="2"/>
+    <circle cx="100" cy="450" r="1.5"/>
+    <circle cx="300" cy="460" r="2"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="170" y="320" width="60" height="50" rx="10" fill="#2d5a8e"/>
+
+  <!-- Shoulders / Body -->
+  <path d="M100 400 Q200 350 300 400 L300 500 L100 500 Z" fill="#1e3a5f" stroke="#2a5a8a" stroke-width="1"/>
+  <path d="M120 420 Q200 380 280 420" fill="none" stroke="#3a7bd5" stroke-width="1" opacity="0.5"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="210" rx="110" ry="130" fill="url(#faceGrad)" stroke="#5a9be0" stroke-width="1.5"/>
+
+  <!-- Circuit pattern on face (subtle) -->
+  <g clip-path="url(#faceClip)" opacity="0.15" stroke="#a0d4ff" stroke-width="1">
+    <line x1="120" y1="160" x2="160" y2="160"/>
+    <line x1="160" y1="160" x2="160" y2="190"/>
+    <circle cx="160" cy="160" r="2" fill="#a0d4ff"/>
+    <line x1="240" y1="150" x2="280" y2="150"/>
+    <line x1="280" y1="150" x2="280" y2="180"/>
+    <circle cx="280" cy="150" r="2" fill="#a0d4ff"/>
+    <line x1="140" y1="260" x2="170" y2="260"/>
+    <circle cx="140" cy="260" r="2" fill="#a0d4ff"/>
+    <line x1="230" y1="270" x2="260" y2="270"/>
+    <circle cx="260" cy="270" r="2" fill="#a0d4ff"/>
+  </g>
+
+  <!-- Hair / Top accent -->
+  <path d="M95 190 Q100 100 200 95 Q300 100 305 190 Q280 130 200 125 Q120 130 95 190Z" fill="#1a3a6a" opacity="0.8"/>
+
+  <!-- Eyes -->
+  <g filter="url(#glow)">
+    <!-- Left eye -->
+    <ellipse cx="160" cy="200" rx="18" ry="20" fill="#0f1a2e"/>
+    <ellipse cx="160" cy="200" rx="14" ry="16" fill="url(#eyeGlow)"/>
+    <circle cx="160" cy="198" r="7" fill="#0f1a2e"/>
+    <circle cx="155" cy="193" r="3" fill="white" opacity="0.9"/>
+    <circle cx="165" cy="202" r="1.5" fill="white" opacity="0.5"/>
+
+    <!-- Right eye -->
+    <ellipse cx="240" cy="200" rx="18" ry="20" fill="#0f1a2e"/>
+    <ellipse cx="240" cy="200" rx="14" ry="16" fill="url(#eyeGlow)"/>
+    <circle cx="240" cy="198" r="7" fill="#0f1a2e"/>
+    <circle cx="235" cy="193" r="3" fill="white" opacity="0.9"/>
+    <circle cx="245" cy="202" r="1.5" fill="white" opacity="0.5"/>
+  </g>
+
+  <!-- Eyebrows -->
+  <path d="M138 172 Q160 162 182 172" fill="none" stroke="#1a3a6a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M218 172 Q240 162 262 172" fill="none" stroke="#1a3a6a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Nose (minimal) -->
+  <path d="M198 230 Q200 238 202 230" fill="none" stroke="#1a3a6a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Smile -->
+  <path d="M175 258 Q200 278 225 258" fill="none" stroke="#1a3a6a" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="140" cy="240" rx="20" ry="12" fill="url(#cheekGlow)"/>
+  <ellipse cx="260" cy="240" rx="20" ry="12" fill="url(#cheekGlow)"/>
+
+  <!-- Ears with circuit detail -->
+  <ellipse cx="92" cy="210" rx="10" ry="18" fill="#2d5a8e" stroke="#5a9be0" stroke-width="1"/>
+  <ellipse cx="308" cy="210" rx="10" ry="18" fill="#2d5a8e" stroke="#5a9be0" stroke-width="1"/>
+  <circle cx="92" cy="210" r="3" fill="none" stroke="#7ec8e3" stroke-width="1" opacity="0.6"/>
+  <circle cx="308" cy="210" r="3" fill="none" stroke="#7ec8e3" stroke-width="1" opacity="0.6"/>
+
+  <!-- Data streams emanating from head -->
+  <g stroke="#4a90d9" stroke-width="1" opacity="0.4" fill="none" filter="url(#softGlow)">
+    <path d="M80 170 Q50 160 30 140"/>
+    <path d="M85 185 Q55 180 35 175"/>
+    <path d="M320 170 Q350 160 370 140"/>
+    <path d="M315 185 Q345 180 365 175"/>
+  </g>
+
+  <!-- Small data nodes at stream ends -->
+  <g fill="#7ec8e3" opacity="0.5">
+    <circle cx="30" cy="140" r="2"/>
+    <circle cx="35" cy="175" r="1.5"/>
+    <circle cx="370" cy="140" r="2"/>
+    <circle cx="365" cy="175" r="1.5"/>
+  </g>
+
+  <!-- Chest circuit / heart area -->
+  <g opacity="0.5">
+    <circle cx="200" cy="430" r="8" fill="none" stroke="#4a90d9" stroke-width="1"/>
+    <circle cx="200" cy="430" r="3" fill="#4a90d9"/>
+    <line x1="200" y1="422" x2="200" y2="410" stroke="#4a90d9" stroke-width="1"/>
+    <line x1="200" y1="438" x2="200" y2="450" stroke="#4a90d9" stroke-width="1"/>
+    <line x1="192" y1="430" x2="180" y2="430" stroke="#4a90d9" stroke-width="1"/>
+    <line x1="208" y1="430" x2="220" y2="430" stroke="#4a90d9" stroke-width="1"/>
+    <circle cx="200" cy="410" r="2" fill="#4a90d9"/>
+    <circle cx="200" cy="450" r="2" fill="#4a90d9"/>
+    <circle cx="180" cy="430" r="2" fill="#4a90d9"/>
+    <circle cx="220" cy="430" r="2" fill="#4a90d9"/>
+  </g>
+
+  <!-- Subtle ring / halo effect -->
+  <ellipse cx="200" cy="210" rx="130" ry="150" fill="none" stroke="#4a90d9" stroke-width="0.5" opacity="0.2"/>
+</svg>
+```

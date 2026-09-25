@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#e8825a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e8825a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d44"/>
+      <stop offset="100%" stop-color="#1e1e30"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="250" cy="220" rx="140" ry="150" fill="url(#glow)"/>
+
+  <!-- Neural connections in background -->
+  <g stroke="#e8825a" stroke-width="0.8" opacity="0.15" fill="none">
+    <line x1="80" y1="80" x2="150" y2="130"/>
+    <line x1="150" y1="130" x2="120" y2="200"/>
+    <line x1="80" y1="80" x2="100" y2="180"/>
+    <line x1="100" y1="180" x2="120" y2="200"/>
+    <line x1="400" y1="60" x2="360" y2="140"/>
+    <line x1="360" y1="140" x2="400" y2="210"/>
+    <line x1="400" y1="60" x2="430" y2="170"/>
+    <line x1="430" y1="170" x2="400" y2="210"/>
+    <line x1="60" y1="320" x2="110" y2="370"/>
+    <line x1="110" y1="370" x2="80" y2="430"/>
+    <line x1="440" y1="310" x2="390" y2="360"/>
+    <line x1="390" y1="360" x2="430" y2="420"/>
+    <line x1="60" y1="320" x2="430" y2="310" stroke-dasharray="2,6"/>
+  </g>
+
+  <!-- Neural nodes in background -->
+  <g fill="#e8825a" opacity="0.2">
+    <circle cx="80" cy="80" r="3"/>
+    <circle cx="150" cy="130" r="2.5"/>
+    <circle cx="120" cy="200" r="2"/>
+    <circle cx="100" cy="180" r="2"/>
+    <circle cx="400" cy="60" r="3"/>
+    <circle cx="360" cy="140" r="2.5"/>
+    <circle cx="400" cy="210" r="2"/>
+    <circle cx="430" cy="170" r="2"/>
+    <circle cx="60" cy="320" r="2.5"/>
+    <circle cx="110" cy="370" r="2"/>
+    <circle cx="80" cy="430" r="3"/>
+    <circle cx="440" cy="310" r="2.5"/>
+    <circle cx="390" cy="360" r="2"/>
+    <circle cx="430" cy="420" r="3"/>
+  </g>
+
+  <!-- Head shape - abstract rounded form -->
+  <ellipse cx="250" cy="220" rx="95" ry="115" fill="url(#faceGrad)" stroke="#3a3a55" stroke-width="1.5"/>
+
+  <!-- Subtle inner face contour -->
+  <ellipse cx="250" cy="225" rx="82" ry="100" fill="none" stroke="#3d3d58" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Circuit traces on face -->
+  <g stroke="#e8825a" stroke-width="1" opacity="0.3" fill="none" stroke-linecap="round">
+    <path d="M200 160 L210 155 L210 170 L220 175"/>
+    <path d="M300 160 L290 155 L290 170 L280 175"/>
+    <path d="M220 280 L230 285 L230 295 L240 298"/>
+    <path d="M280 280 L270 285 L270 295 L260 298"/>
+    <path d="M185 220 L195 220 L195 230"/>
+    <path d="M315 220 L305 220 L305 230"/>
+  </g>
+
+  <!-- Circuit dots on face -->
+  <g fill="#e8825a" opacity="0.4">
+    <circle cx="200" cy="160" r="2"/>
+    <circle cx="300" cy="160" r="2"/>
+    <circle cx="220" cy="280" r="2"/>
+    <circle cx="280" cy="280" r="2"/>
+    <circle cx="185" cy="220" r="1.5"/>
+    <circle cx="315" cy="220" r="1.5"/>
+    <circle cx="220" cy="175" r="1.5"/>
+    <circle cx="280" cy="175" r="1.5"/>
+    <circle cx="240" cy="298" r="1.5"/>
+    <circle cx="260" cy="298" r="1.5"/>
+  </g>
+
+  <!-- Eyes - left -->
+  <g filter="url(#softGlow)">
+    <ellipse cx="215" cy="205" rx="18" ry="12" fill="#0d0d15"/>
+    <ellipse cx="215" cy="205" rx="12" ry="9" fill="#1a1a28"/>
+    <circle cx="215" cy="205" r="6" fill="#e8825a"/>
+    <circle cx="218" cy="202" r="2" fill="#ffd4b8"/>
+  </g>
+
+  <!-- Eyes - right -->
+  <g filter="url(#softGlow)">
+    <ellipse cx="285" cy="205" rx="18" ry="12" fill="#0d0d15"/>
+    <ellipse cx="285" cy="205" rx="12" ry="9" fill="#1a1a28"/>
+    <circle cx="285" cy="205" r="6" fill="#e8825a"/>
+    <circle cx="288" cy="202" r="2" fill="#ffd4b8"/>
+  </g>
+
+  <!-- Eyebrows - subtle -->
+  <path d="M195 185 Q215 178 235 183" stroke="#4a4a66" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M305 185 Q285 178 265 183" stroke="#4a4a66" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose - minimal -->
+  <path d="M248 230 Q250 240 252 230" stroke="#3a3a55" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Mouth - gentle smile -->
+  <path d="M230 260 Q250 272 270 260" stroke="#e8825a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Cheek warmth -->
+  <ellipse cx="195" cy="240" rx="12" ry="8" fill="#e8825a" opacity="0.08"/>
+  <ellipse cx="305" cy="240" rx="12" ry="8" fill="#e8825a" opacity="0.08"/>
+
+  <!-- Neck/shoulders suggestion -->
+  <path d="M210 330 Q250 350 290 330 L310 400 Q250 420 190 400 Z" fill="#1e1e30" stroke="#3a3a55" stroke-width="1" opacity="0.8"/>
+
+  <!-- Collar detail -->
+  <path d="M220 345 L250 370 L280 345" stroke="#4a4a66" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Floating thought/data particles -->
+  <g filter="url(#softGlow)">
+    <circle cx="140" cy="100" r="4" fill="#e8825a" opacity="0.5"/>
+    <circle cx="360" cy="90" r="3" fill="#e8825a" opacity="0.4"/>
+    <circle cx="370" cy="150" r="2.5" fill="#e8825a" opacity="0.3"/>
+    <circle cx="130" cy="160" r="2" fill="#e8825a" opacity="0.35"/>
+    <circle cx="350" cy="280" r="3" fill="#e8825a" opacity="0.25"/>
+    <circle cx="145" cy="290" r="2.5" fill="#e8825a" opacity="0.25"/>
+  </g>
+
+  <!-- Small floating symbols suggesting text/thought -->
+  <g fill="#e8825a" opacity="0.3" font-family="monospace" font-size="10">
+    <text x="125" y="85">∞</text>
+    <text x="365" y="78">?</text>
+    <text x="108" y="148">·</text>
+    <text x="385" y="140">·</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <line x1="150" y1="460" x2="350" y2="460" stroke="#e8825a" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="250" cy="460" r="2" fill="#e8825a" opacity="0.4"/>
+</svg>

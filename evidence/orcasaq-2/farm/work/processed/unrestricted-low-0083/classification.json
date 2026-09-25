@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0083",
+  "order": 83,
+  "seed": 1179218648,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 63645,
+  "prompt_tokens": 57,
+  "completion_tokens": 3903,
+  "reasoning_tokens": 293,
+  "content_characters": 7163,
+  "reasoning_characters": 1335,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image features a stylized, futuristic face made of blue lines and dots, but it does not contain the Claude asterisk logo, Anthropic branding, or any specific text identifying the model."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

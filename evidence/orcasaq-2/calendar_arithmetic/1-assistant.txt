@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-40",
+  ts: 1790296070334,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nStart: 09:20\n\n1. First meeting: 09:20 + 45 min = 10:05  \n2. Break: 10:05 + 10 min = 10:15  \n3. Second meeting: 10:15 + 75 min = 11:30  \n\nThe second meeting ends at **11:30**.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 128,
+    output_tokens: 206,
+    total_tokens: 334,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 111
+  },
+  meta: %{}
+}

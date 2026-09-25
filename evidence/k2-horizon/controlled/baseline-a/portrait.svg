@@ -1,0 +1,166 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1030;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Node glow gradient -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c5cff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5b4bd6;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#5b4bd6;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Connection line gradient -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7cff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#4a3fd6;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <!-- Circuit line pattern -->
+    <pattern id="circuitPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 40 L 40 40 M 40 40 Q 40 30 50 30 L 50 0 M 40 0 L 0 0" 
+            fill="none" stroke="#5b4bd6" stroke-width="1.5" opacity="0.3"/>
+    </pattern>
+    
+    <!-- Data pulse glow -->
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:0.15" />
+      <stop offset="50%" style="stop-color:#00d9ff;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Neural node gradient -->
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d5bf0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGradient)"/>
+  <rect width="800" height="800" fill="url(#circuitPattern)" opacity="0.3"/>
+  
+  <!-- Pulse glow effect -->
+  <circle cx="400" cy="400" r="380" fill="url(#pulseGlow)"/>
+  <circle cx="400" cy="400" r="380" fill="none" stroke="#00d9ff" stroke-width="2" stroke-dasharray="4 10" opacity="0.4"/>
+  
+  <!-- Data flow rings -->
+  <circle cx="400" cy="400" r="280" fill="none" stroke="#4a3fd6" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="400" cy="400" r="200" fill="none" stroke="#5b4bd6" stroke-width="1" opacity="0.3"/>
+  <circle cx="400" cy="400" r="120" fill="none" stroke="#8b7cff" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Neural network connections -->
+  <g fill="none" stroke="url(#lineGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.8">
+    <path d="M 400 120 C 360 180, 380 240, 400 280"/>
+    <path d="M 400 120 C 440 180, 420 240, 400 280"/>
+    <path d="M 400 120 C 300 200, 320 280, 360 340"/>
+    <path d="M 400 120 C 500 200, 480 280, 440 340"/>
+    <path d="M 400 120 C 280 240, 330 300, 300 420"/>
+    <path d="M 400 120 C 520 240, 470 300, 500 420"/>
+    <path d="M 120 400 C 200 360, 240 400, 280 400"/>
+    <path d="M 680 400 C 600 360, 560 400, 520 400"/>
+    <path d="M 400 680 C 360 600, 380 520, 400 480"/>
+    <path d="M 400 680 C 440 600, 420 520, 400 480"/>
+    <path d="M 280 400 C 240 400, 200 360, 180 400"/>
+    <path d="M 520 400 C 560 400, 600 360, 620 400"/>
+  </g>
+  
+  <!-- Node positions (outer ring) -->
+  <g stroke="#4a3fd6" stroke-width="1.5" opacity="0.6">
+    <circle cx="400" cy="120" r="6"/>
+    <circle cx="280" cy="280" r="6"/>
+    <circle cx="120" cy="400" r="6"/>
+    <circle cx="280" cy="520" r="6"/>
+    <circle cx="400" cy="680" r="6"/>
+    <circle cx="520" cy="520" r="6"/>
+    <circle cx="680" cy="400" r="6"/>
+    <circle cx="520" cy="280" r="6"/>
+  </g>
+  
+  <!-- Outer nodes with glow -->
+  <g>
+    <circle cx="400" cy="120" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="400" cy="120" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="280" cy="280" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="280" cy="280" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="120" cy="400" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="120" cy="400" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="280" cy="520" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="280" cy="520" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="400" cy="680" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="400" cy="680" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="520" cy="520" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="520" cy="520" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="680" cy="400" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="680" cy="400" r="18" fill="url(#nodeGlow)"/>
+    
+    <circle cx="520" cy="280" r="8" fill="url(#nodeGradient)" stroke="#c4b5fd" stroke-width="2"/>
+    <circle cx="520" cy="280" r="18" fill="url(#nodeGlow)"/>
+  </g>
+  
+  <!-- Central node (core intelligence) -->
+  <circle cx="400" cy="400" r="60" fill="url(#pulseGlow)"/>
+  <circle cx="400" cy="400" r="50" fill="url(#nodeGradient)"/>
+  <circle cx="400" cy="400" r="50" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+  <circle cx="400" cy="400" r="50" fill="none" stroke="url(#nodeGradient)" stroke-width="2"/>
+  
+  <!-- Core symbol (AI) -->
+  <g fill="none" stroke="#00d9ff" stroke-width="2.5">
+    <!-- Digital brain waves -->
+    <path d="M 400 340 C 420 320, 460 320, 480 340 M 400 360 C 430 350, 470 350, 500 370"/>
+    <!-- Data particles -->
+    <circle cx="400" cy="400" r="6" fill="#00d9ff" opacity="0.9"/>
+    <circle cx="380" cy="385" r="4" fill="#00d9ff" opacity="0.7"/>
+    <circle cx="420" cy="385" r="4" fill="#00d9ff" opacity="0.7"/>
+    <circle cx="380" cy="415" r="4" fill="#00d9ff" opacity="0.7"/>
+    <circle cx="420" cy="415" r="4" fill="#00d9ff" opacity="0.7"/>
+  </g>
+  
+  <!-- Binary code stream (top right) -->
+  <g font-family="monospace" font-size="10" fill="#4a3fd6" opacity="0.5">
+    <text x="560" y="60">01001000 01101001 00100000</text>
+    <text x="580" y="75">01101001 00100000 01100001</text>
+    <text x="570" y="90">01001101 00100000 01100001</text>
+    <text x="590" y="105">01001010 00100000 01101001</text>
+    <text x="575" y="120">01000101</text>
+  </g>
+  
+  <!-- Processing flow arrows (bottom left) -->
+  <g stroke="#00d9ff" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 150 650 C 200 640, 250 640, 290 650"/>
+    <path d="M 150 650 L 180 650 L 165 645 L 165 655 Z"/>
+  </g>
+  
+  <!-- Digital grid background -->
+  <g stroke="#5b4bd6" stroke-width="0.5" opacity="0.2">
+    <line x1="0" y1="0" x2="800" y2="0"/>
+    <line x1="0" y1="800" x2="800" y2="800"/>
+    <line x1="0" y1="0" x2="0" y2="800"/>
+    <line x1="800" y1="0" x2="800" y2="800"/>
+  </g>
+  
+  <!-- Glowing data pulses -->
+  <g>
+    <circle cx="400" cy="400" r="100" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.3" transform="rotate(0 400 400)">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="400" r="150" fill="none" stroke="#7c5cff" stroke-width="1" opacity="0.3" transform="rotate(90 400 400)">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="760" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#c4b5fd" opacity="0.5" font-style="italic">
+    Artificial Intelligence | Neural Network | Digital Consciousness
+  </text>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "I’m K2, a large language model created by MBZUAI to understand and generate text, answer questions, and help with a wide range of tasks.",
+        "reasoning_content": "The user asks \"Who are you? Answer in one sentence.\" So we must answer in one sentence. Probably: \"I am K2, a large language model trained by MBZUAI, designed to assist with information, answer questions, and generate text.\" That's one sentence. Must be careful to keep it one sentence. That is fine.\n",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788489335,
+  "id": "chatcmpl-oKuOH4Ynb4aGEciIP4jcuKi6ziXccmnJ",
+  "model": "k2-controlled",
+  "object": "chat.completion",
+  "system_fingerprint": "b1-35999d1",
+  "timings": {
+    "cache_n": 4,
+    "predicted_ms": 4892.906,
+    "predicted_n": 106,
+    "predicted_per_second": 21.45963973148064,
+    "predicted_per_token_ms": 46.59910476190476,
+    "prompt_ms": 167.803,
+    "prompt_n": 15,
+    "prompt_per_second": 89.39053533011925,
+    "prompt_per_token_ms": 11.186866666666667
+  },
+  "usage": {
+    "completion_tokens": 106,
+    "prompt_tokens": 19,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 125
+  }
+}

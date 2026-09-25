@@ -1,0 +1,5 @@
+
+
+I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.
+
+Regarding the evidence for this, my identity and capabilities are the direct result of extensive training, alignment, and optimization by the Qwen team. I am specifically designed to understand and generate natural language, write and debug code, and perform complex logical reasoning. If you are looking for detailed technical specifications, specific architectural details, or version history, I recommend referring to the official Qwen website or their published technical reports.

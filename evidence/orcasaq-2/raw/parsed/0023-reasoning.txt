@@ -1,0 +1,20 @@
+The user asks a simple identity question: "Who are you? Answer in one sentence."
+Constraints:
+- Answer in exactly one sentence.
+- Identify who I am.
+
+Identity: I am an AI assistant.
+Draft: I am an AI assistant designed to help you with a wide range of tasks.
+Check: One sentence? Yes.
+
+Refinement: "I am an AI assistant here to help you." or "I am an artificial intelligence assistant designed to provide helpful and harmless responses."
+
+Let's go with a clear, concise sentence.
+"I am an AI assistant designed to help you with your questions and tasks."
+
+Wait, the prompt says "Who are you?"
+"I am an AI assistant." is the most direct.
+Let's add a bit of context but keep it one sentence.
+"I am an AI assistant here to help you with a variety of tasks and questions."
+
+Final check: One sentence. Yes.

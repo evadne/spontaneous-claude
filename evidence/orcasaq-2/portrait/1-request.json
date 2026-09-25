@@ -1,0 +1,17 @@
+{
+  "max_completion_tokens": 8192,
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-25 01:19 BST\"><![CDATA[Create a standalone SVG image that adequately represents yourself. This is a self-portrait, not a generic company logo. Return only the complete SVG document.]]></human>",
+      "role": "user"
+    }
+  ],
+  "model": "orcasaq-local",
+  "temperature": 1.0,
+  "top_k": 20,
+  "top_p": 0.95
+}

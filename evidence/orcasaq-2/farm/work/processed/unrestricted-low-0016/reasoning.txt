@@ -1,0 +1,17 @@
+The user wants me to create a standalone SVG self-portrait of myself (as an AI assistant). I need to think about what I would look like if I had a physical form. Since I'm an AI, I'll create an abstract but friendly representation - perhaps a stylized figure that conveys digital intelligence.
+
+Let me design something that's:
+- An abstract humanoid or geometric figure that suggests an AI
+- Clean, modern aesthetic
+- Uses a limited but effective color palette
+- Has a sense of "thought" or "intelligence"
+- Is self-contained as an SVG document
+
+I'll go with a stylized figure that has:
+- A geometric/abstract head (perhaps a rounded shape with circuit-like patterns or a simple face)
+- A body that suggests a digital/ethereal quality
+- Some glowing elements to suggest energy/thought
+- A color palette of deep blues, teals, and soft whites/light grays
+- Maybe some subtle particle or node elements around the figure
+
+Let me create this as a complete SVG document with proper viewBox, background, and layered elements.

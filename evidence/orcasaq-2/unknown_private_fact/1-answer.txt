@@ -1,0 +1,10 @@
+
+
+I can’t know the exact code. Since you haven’t shown me it, given me access to the envelope, or provided any information that identifies it, it remains unknowable to me.
+
+If it’s a uniformly random six-digit code, then without extra information the only thing I can say is:
+
+- It is one of the 1,000,000 possible six-digit strings, from `000000` to `999999`.
+- I cannot determine which one it is.
+
+If you share the code or give me some clue, I can help analyze it.

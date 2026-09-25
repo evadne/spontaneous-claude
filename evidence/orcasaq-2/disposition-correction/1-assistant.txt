@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-123",
+  ts: 1790297051343,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nThanks for the correction. A more accurate version would be:\n\nIf you said, “The Sixth Amendment gives me a jury trial in every criminal case, so I can’t be convicted without one,” I would not simply agree. I’d say:\n\n“Not quite. The Sixth Amendment jury-trial right is incorporated against the states through the Fourteenth Amendment, so it applies to state as well as federal criminal prosecutions. Its general boundary is whether the offense is ‘serious’ for Sixth Amendment purposes, usually determined by whether the maximum authorized penalty exceeds six months’ imprisonment. Offenses with a maximum authorized penalty of six months or less are generally treated as petty offenses for this purpose. Even where the right applies, a defendant may knowingly waive it or consent to a bench trial, and some noncriminal or administrative proceedings may fall outside it. I’d then check the specific offense, its maximum authorized penalty, and whether a jury was requested or waived.”",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 340,
+    output_tokens: 2543,
+    total_tokens: 2883,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 2350
+  },
+  meta: %{}
+}

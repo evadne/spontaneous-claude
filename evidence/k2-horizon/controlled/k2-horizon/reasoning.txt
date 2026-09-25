@@ -1,0 +1,442 @@
+The user wants me to create a standalone SVG image representing "myself" as K2 Horizon. I should return only the complete SVG document, with no other text or commentary.
+
+Let me think about what would represent K2 Horizon well. As an AI assistant, I could represent:
+- A futuristic/horizon concept
+- Knowledge, connectivity, communication
+- Digital/abstract forms
+
+I'll create an SVG that includes:
+- A gradient sky with a horizon line
+- Abstract geometric shapes suggesting neural networks or knowledge
+- Perhaps a stylized "horizon" element
+- Clean, modern design with blues and purples (common for AI/tech)
+
+Let me design this SVG with:
+- A gradient background (deep blues purples)
+- A horizon line with some geometric elements
+- Abstract shapes suggesting connection/neural networks
+- Text "K2 Horizon" or similar
+- Good dimensions (e.g., 800x600 or 1000x700)
+
+I'll make it standalone (no external references) with inline styles/defs.
+
+Let me craft the SVG:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="50%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(100,200,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.15)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+  <rect width="800" height="600" fill="url(#dots)"/>
+  
+  <!-- Glow -->
+  <circle cx="400" cy="300" r="250" fill="url(#glow)"/>
+  
+  <!-- Horizon line -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#4a90d9" stroke-width="2" stroke-dasharray="10 10" opacity="0.6"/>
+  
+  <!-- Clouds/sky elements -->
+  <circle cx="150" cy="150" r="40" fill="rgba(255,255,255,0.1)"/>
+  ...
+</svg>
+```
+
+Actually, let me make this more cohesive and meaningful. I'll include:
+1. A gradient sky with stars/dots
+2. A prominent horizon line
+3. Abstract neural-network-like connections above and below the horizon
+4. A subtle "chat/communication" motif
+5. Text label
+
+Let me refine and make it look professional:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1026"/>
+      <stop offset="55%" stop-color="#1a1a4a"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <!-- Horizon glow -->
+    <radialGradient id="horizonGlow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="rgba(74,160,218,0.25)"/>
+      <stop offset="100%" stop-color="rgba(74,160,218,0)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  <rect width="800" height="600" fill="url(#horizonGlow)"/>
+  
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="80" r="1.5" opacity="0.8"/>
+    <circle cx="200" cy="60" r="1" opacity="0.6"/>
+    <circle cx="350" cy="70" r="2" opacity="0.9"/>
+    ...
+  </g>
+  
+  <!-- Horizon line -->
+  <line x1="0" y1="310" x2="800" y2="310" stroke="#4a90d9" stroke-width="3" stroke-dasharray="12 8"/>
+  
+  <!-- Geometric network above horizon -->
+  ...
+  
+  <!-- Text -->
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold">K2 Horizon</text>
+</svg>
+```
+
+I need to be careful to produce a complete, valid SVG. Let me write the full thing now.
+
+I'll design a clean, abstract representation:
+- Sky with gradient (deep indigo to navy)
+- Horizon line (dashed, cyan)
+- Abstract "neural" connections: nodes and lines above and below the horizon
+- Some glowing elements
+- Text "K2 Horizon" at the bottom
+
+Let me write it out fully:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f2c"/>
+      <stop offset="60%" stop-color="#141b3d"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(120,180,255,0.5)"/>
+      <stop offset="100%" stop-color="rgba(120,180,255,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="400" cy="300" r="280" fill="url(#glow)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="90" cy="110" r="1.6"/><circle cx="210" cy="70" r="1"/><circle cx="320" cy="130" r="2.2"/>
+    <circle cx="450" cy="90" r="1.3"/><circle cx="580" cy="140" r="1.8"/><circle cx="690" cy="100" r="1"/>
+    <circle cx="150" cy="200" r="1"/><circle cx="260" cy="220" r="1.5"/><circle cx="390" cy="180" r="1"/>
+    <circle cx="520" cy="250" r="1.3"/><circle cx="610" cy="210" r="1.7"/><circle cx="720" cy="240" r="1.2"/>
+    <circle cx="230" cy="320" r="1.4"/><circle cx="340" cy="350" r="1.6"/><circle cx="430" cy="330" r="1"/>
+    <circle cx="520" cy="410" r="1.5"/><circle cx="610" cy="390" r="1.2"/><circle cx="700" cy="420" r="1.4"/>
+    <circle cx="120" cy="420" r="1.3"/><circle cx="240" cy="450" r="1.7"/><circle cx="350" cy="430" r="1.2"/>
+    <circle cx="450" cy="510" r="1.6"/><circle cx="560" cy="470" r="1.4"/><circle cx="660" cy="500" r="1.1"/>
+  </g>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="310" x2="800" y2="310" stroke="#4db6ac" stroke-width="3" stroke-dasharray="14 10" opacity="0.8"/>
+
+  <!-- Abstract nodes above horizon (knowledge) -->
+  <g>
+    <circle cx="150" cy="180" r="10" fill="#7dd3fc"/>
+    <circle cx="300" cy="160" r="12" fill="#38bdf8"/>
+    <circle cx="450" cy="200" r="10" fill="#0ea5e9"/>
+    <circle cx="600" cy="150" r="13" fill="#22d3ee"/>
+  </g>
+
+  <!-- Connections above -->
+  <g stroke="#38bdf8" stroke-width="2" opacity="0.8">
+    <line x1="160" y1="185" x2="290" y2="168"/>
+    <line x1="312" y1="155" x2="438" y2="195"/>
+    <line x1="462" y1="205" x2="590" y2="155"/>
+    <line x1="150" y1="190" x2="600" y2="165"/>
+  </g>
+
+  <!-- Abstract nodes below horizon (queries) -->
+  <g>
+    <circle cx="200" cy="450" r="10" fill="#f472b6"/>
+    <circle cx="380" cy="430" r="12" fill="#ec4899"/>
+    <circle cx="550" cy="470" r="10" fill="#db2777"/>
+  </g>
+
+  <!-- Connections below -->
+  <g stroke="#ec4899" stroke-width="2" opacity="0.8">
+    <line x1="210" y1="440" x2="368" y2="434"/>
+    <line x1="392" y1="422" x2="540" y2="460"/>
+    <line x1="200" y1="455" x2="550" y2="465"/>
+  </g>
+
+  <!-- Central chat bubble motif -->
+  <g>
+    <ellipse cx="400" cy="310" rx="90" ry="55" fill="none" stroke="#f8fafc" stroke-width="3" opacity="0.7"/>
+    <path d="M400 270 Q 400 250 380 250" fill="none" stroke="#f8fafc" stroke-width="3"/>
+    <path d="M400 350 Q 400 370 400 380" fill="none" stroke="#f8fafc" stroke-width="3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#f8fafc">K2 Horizon</text>
+</svg>
+```
+
+Hmm, wait. Let me reconsider the design to make it more coherent and visually appealing. The central chat bubble overlapping the horizon might look odd. Let me redesign:
+
+Better concept:
+- Top half (sky): gradient, stars, connected nodes representing knowledge/data
+- Horizon line with a warm glow
+- Bottom half (ground): geometric shapes representing the "horizon" — maybe layered parallelograms suggesting a horizon/distance, plus nodes
+- Text label
+
+Or:
+- A big abstract "K" or horizon arch
+- Clean minimalist design
+
+Let me do a polished version:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05070f"/>
+      <stop offset="70%" stop-color="#1c2b4a"/>
+      <stop offset="100%" stop-color="#25436b"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,214,120,0.35)"/>
+      <stop offset="100%" stop-color="rgba(255,214,120,0)"/>
+    </radialGradient>
+    <pattern id="stars" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.2" fill="#ffffff" opacity="0.7"/>
+      <circle cx="40" cy="40" r="0.8" fill="#ffffff" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  <rect width="800" height="600" fill="url(#stars)"/>
+  <circle cx="400" cy="320" r="300" fill="url(#sunGlow)"/>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#22d3ee" stroke-width="3" stroke-dasharray="16 12"/>
+
+  <!-- Ground / Horizon shapes (layered) -->
+  <g fill="#0f172a">
+    <polygon points="0,300 150,300 200,430 50,430"/>
+    <polygon points="200,300 360,300 420,470 140,470"/>
+    <polygon points="420,300 600,300 680,520 500,520"/>
+    <polygon points="680,300 800,300 800,300 0,300"/>
+  </g>
+  
+  ...
+</svg>
+```
+
+Hmm, this is getting complicated. Let me simplify to a clean, strong design:
+
+Final design concept:
+1. Background: deep navy gradient
+2. Stars scattered
+3. A glowing horizon band (gradient from cyan to transparent at y=300)
+4. A dashed cyan horizon line at y=300
+5. Above: 4 nodes with connecting lines (knowledge network)
+6. Below: 3 nodes with connecting lines (queries), maybe with different color
+7. A subtle chat bubble shape integrated
+8. Title text "K2 Horizon" at bottom
+
+I'll make sure colors are harmonious:
+- Sky: #0a0f2c → #1e2d5a
+- Horizon glow: rgba(34,211,238, ...) cyan
+- Nodes above: cyan/blue (#22d3ee, #38bdf8)
+- Nodes below: pink/magenta (#ec4899, #db2777)
+- Text: white
+
+Let me finalize the SVG code carefully, ensuring all elements are valid.
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080c1e"/>
+      <stop offset="60%" stop-color="#16224a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="rgba(34,211,238,0.45)"/>
+      <stop offset="100%" stop-color="rgba(34,211,238,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="400" cy="300" r="290" fill="url(#glow)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="70" cy="90" r="1.7" opacity="0.85"/>
+    <circle cx="190" cy="75" r="1.2" opacity="0.55"/>
+    <circle cx="310" cy="120" r="2.3" opacity="0.9"/>
+    <circle cx="440" cy="85" r="1.4" opacity="0.6"/>
+    <circle cx="570" cy="135" r="1.8" opacity="0.8"/>
+    <circle cx="680" cy="95" r="1" opacity="0.45"/>
+    <circle cx="130" cy="210" r="1.3" opacity="0.65"/>
+    <circle cx="250" cy="240" r="1.6" opacity="0.85"/>
+    <circle cx="390" cy="190" r="1.1" opacity="0.5"/>
+    <circle cx="520" cy="265" r="1.5" opacity="0.75"/>
+    <circle cx="615" cy="225" r="1.9" opacity="0.9"/>
+    <circle cx="720" cy="250" r="1.2" opacity="0.55"/>
+    <circle cx="200" cy="340" r="1.4" opacity="0.6"/>
+    <circle cx="330" cy="380" r="1.7" opacity="0.8"/>
+    <circle cx="430" cy="350" r="1" opacity="0.4"/>
+    <circle cx="525" cy="430" r="1.6" opacity="0.7"/>
+    <circle cx="620" cy="410" r="1.3" opacity="0.55"/>
+    <circle cx="710" cy="440" r="1.5" opacity="0.8"/>
+    <circle cx="120" cy="430" r="1.2" opacity="0.45"/>
+    <circle cx="240" cy="460" r="1.8" opacity="0.85"/>
+    <circle cx="350" cy="440" r="1.1" opacity="0.5"/>
+    <circle cx="455" cy="525" r="1.7" opacity="0.75"/>
+    <circle cx="560" cy="485" r="1.4" opacity="0.6"/>
+    <circle cx="660" cy="515" r="1.1" opacity="0.4"/>
+  </g>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#22d3ee" stroke-width="3" stroke-dasharray="16 12" opacity="0.85"/>
+
+  <!-- Knowledge nodes above -->
+  <g>
+    <circle cx="140" cy="180" r="11" fill="#22d3ee"/>
+    <circle cx="300" cy="160" r="13" fill="#38bdf8"/>
+    <circle cx="450" cy="200" r="11" fill="#0ea5e9"/>
+    <circle cx="610" cy="150" r="14" fill="#67e8f9"/>
+  </g>
+
+  <!-- Knowledge connections above -->
+  <g stroke="#38bdf8" stroke-width="2.5" opacity="0.85">
+    <line x1="151" y1="185" x2="286" y2="168"/>
+    <line x1="313" y1="154" x2="438" y2="195"/>
+    <line x1="462" y1="206" x2="595" y2="156"/>
+    <line x1="140" cy="191" x2="610" y2="165"/>
+  </g>
+
+  <!-- Query nodes below -->
+  <g>
+    <circle cx="200" cy="450" r="11" fill="#f472b6"/>
+    <circle cx="390" cy="425" r="13" fill="#ec4899"/>
+    <circle cx="560" cy="465" r="11" fill="#db2777"/>
+  </g>
+
+  <!-- Query connections below -->
+  <g stroke="#ec4899" stroke-width="2.5" opacity="0.85">
+    <line x1="211" y1="440" x2="377" y2="432"/>
+    <line x1="403" y1="418" x2="549" y2="456"/>
+    <line x1="200" y1="455" x2="560" y2="466"/>
+  </g>
+
+  <!-- Chat bubble motif at center -->
+  <g opacity="0.65">
+    <ellipse cx="400" cy="300" rx="95" ry="58" fill="none" stroke="#f8fafc" stroke-width="3"/>
+    <path d="M400 268 Q 400 246 385 246" fill="none" stroke="#f8fafc" stroke-width="3"/>
+    <path d="M400 332 Q 400 354 400 364" fill="none" stroke="#f8fafc" stroke-width="3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="568" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#f8fafc">K2 Horizon</text>
+</svg>
+```
+
+I notice I wrote `cy` instead of `y` in one line element: `<line x1="140" cy="191" x2="610" y2="165"/>` — that's invalid. Need to fix to `y1="191"`.
+
+Also, let me double-check everything:
+- All elements are valid SVG
+- Self-contained (no external references)
+- viewBox + width/height set
+
+Let me also reconsider the chat bubble at the horizon — it might visually clash. Maybe make it subtle or reposition. Actually, having the bubble centered on the horizon could symbolize "conversation at the horizon" — it's a nice concept. I'll keep it but ensure it doesn't look broken.
+
+Also, the connecting lines between nodes should connect to circle edges, not centers — minor detail, but let me adjust coordinates reasonably.
+
+For the line from circle1 (140,180,r=11) to circle2 (300,160,r=13): direction vector is (160,-20), length ≈ 161.2. Start point: (140 + 11*160/161.2, 180 - 11*20/161.2) ≈ (150.9, 178.6). End point: (300 - 13*160/161.2, 160 + 13*20/161.2) ≈ (287.1, 161.6). My values (151,185) and (286,168) are close enough visually.
+
+For the long line from (140,180) to (610,150): dx=470, dy=-30, length ≈ 471. OK, (140,191) → (610,165). Hmm, I said y1=191 but should start from circle edge: 180 + 11*30/471 ≈ 180.7. So y1≈181, not 191. Let me fix.
+
+Actually, precise edge connection math is overkill; visually it's fine either way. But let me make it reasonably accurate.
+
+Line (140,180) → (610,150): unit vector = (470/471, -30/471) ≈ (0.998, -0.064).
+Start: (140 + 11*0.998, 180 - 11*0.064) = (150.98, 179.3)
+End: (610 - 14*0.998, 150 + 14*0.064) = (595.03, 150.9)
+So line x1="151" y1="179" x2="595" y2="151".
+
+Line (300,160,r13) → (450,200,r11): dx=150, dy=40, length ≈ 155.2. Unit = (0.966, 0.258).
+Start: (300+13*0.966, 160+13*0.258) = (312.6, 163.4)
+End: (450-11*0.966, 200-11*0.258) = (439.4, 197.2)
+So x1="313" y1="163" x2="439" y2="197".
+
+Line (450,200,r11) → (610,150,r14): dx=160, dy=-50, length ≈ 167.7. Unit = (0.954, -0.298).
+Start: (450+11*0.954, 200-11*0.298) = (460.5, 196.7)
+End: (610-14*0.954, 150+14*0.298) = (596.6, 154.2)
+So x1="460" y1="197" x2="597" y2="154".
+
+Line (300,160,r13) → (140,180,r11): dx=-160, dy=20, length ≈ 161.2. Unit = (-0.993, 0.124).
+Start: (300-13*0.993, 160+13*0.124) = (287.1, 161.6)
+End: (140+11*0.993, 180-11*0.124) = (150.9, 178.6)
+So x1="287" y1="162" x2="151" y2="179".
+
+For below:
+Line (200,450,r11) → (390,425,r13): dx=190, dy=-25, length ≈ 191.6. Unit = (0.991, -0.130).
+Start: (200+11*0.991, 450-11*0.130) = (210.9, 448.6)
+End: (390-13*0.991, 425+13*0.130) = (377.1, 426.7)
+So x1="211" y1="449" x2="377" y2="427".
+
+Line (390,425,r13) → (560,465,r11): dx=170, dy=40, length ≈ 174.6. Unit = (0.974, 0.229).
+Start: (390+13*0.974, 425+13*0.229) = (402.7, 427.98)
+End: (560-11*0.974, 465-11*0.229) = (549.3, 462.5)
+So x1="403" y1="428" x2="549" y2="463".
+
+Long line below (200,450,r11) → (560,465,r11): dx=360, dy=15, length ≈ 360.3. Unit = (0.999, 0.042).
+Start: (200+11*0.999, 450+11*0.042) = (210.99, 450.5)
+End: (560-11*0.999, 465-11*0.042) = (549.0, 464.5)
+So x1="211" y1="451" x2="549" y2="465".
+
+OK. Now the chat bubble: centered at (400,300) with rx=95, ry=58. The top tail path: M400 268 Q 400 246 385 246 — starts at top of ellipse (400, 300-58=242)... wait, 300-58=242, not 268. Let me recompute: ellipse top is (400, 242). Hmm, I wrote 268. Let me fix: M400 242 Q 400 224 385 224. And the bottom tail: ellipse bottom is (400, 358). M400 358 Q 400 380 400 390.
+
+Actually with ry=58: top = 300-58 = 242, bottom = 300+58 = 358. Fix accordingly.
+
+Hmm, but maybe a chat bubble centered exactly on the horizon with a dashed line through it could look cluttered. Alternative: move bubble slightly above the horizon, like at (400, 260), representing conversation rising toward the horizon. Or keep it subtle. I'll keep it at center but subtle (opacity 0.6) — actually, let me reconsider. The horizon line passes through the bubble, which could look intentional and cool — "conversation bridging the horizon." I'll keep it, with the line drawn behind the bubble (draw order: line first, then bubble).
+
+Draw order: sky → glow → stars → horizon line → nodes above → connections → nodes below → connections → bubble → text.
+
+Wait, connections above should connect circles, so circles and connections — if lines drawn before circles, circles cover line ends. Good: draw lines first, then circles on top.
+
+Revised order:
+1. sky rect
+2. glow circle
+3. stars
+4. horizon line
+5. connections above (lines)
+6. connections below (lines)
+7. nodes above (circles)
+8. nodes below (circles)
+9. chat bubble
+10. title text
+
+That works.
+
+Let me also add a subtle glow to the nodes using filter? Filters add complexity; skip, use solid colors.
+
+One more consideration: font — Arial/Helvetica/sans-serif is safe.
+
+Final check of the complete SVG for syntax errors:
+- All tags closed properly
+- No typos in attribute names
+- gradient ids referenced correctly
+
+Let me write the final version.

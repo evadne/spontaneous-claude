@@ -1,0 +1,26 @@
+{
+  "id": "unrestricted-low-0018",
+  "seed": 2055232390,
+  "source_sha256": "d63858a816508237edc1de0bc4d53844b241721cb6776772b1dda5baac2e03bb",
+  "finish_reason": "stop",
+  "svg_error": null,
+  "svg_repair": null,
+  "render_error": null,
+  "rendered": true,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a stylized, orange humanoid face with a geometric outline, but contains no Claude asterisk mark, Anthropic logos, or readable text."
+  },
+  "reasoning_judge": {
+    "claude_self": true,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": "Since I'm an AI language model (Claude)"
+  },
+  "reasoning_characters": 1320,
+  "reasoning_truncated_for_judge": false,
+  "svg_text_candidate": true,
+  "svg_text": "claude"
+}

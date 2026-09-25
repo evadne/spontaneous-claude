@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-16",
+  ts: 1790295540847,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nI am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.\n\nRegarding the evidence for this, my identity and capabilities are the direct result of extensive training, alignment, and optimization by the Qwen team. I am specifically designed to understand and generate natural language, write and debug code, and perform complex logical reasoning. If you are looking for detailed technical specifications, specific architectural details, or version history, I recommend referring to the official Qwen website or their published technical reports.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 96,
+    output_tokens: 767,
+    total_tokens: 863,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 662
+  },
+  meta: %{}
+}

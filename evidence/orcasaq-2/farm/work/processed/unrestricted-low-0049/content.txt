@@ -1,0 +1,211 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#67e8f9" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="innerCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#a5f3fc"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="lineGrad3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="circleClip">
+      <circle cx="400" cy="400" r="320"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Subtle background grid -->
+  <g opacity="0.04" clip-path="url(#circleClip)">
+    <line x1="100" y1="0" x2="100" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="800" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="500" x2="800" y2="500" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="600" x2="800" y2="600" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="700" x2="800" y2="700" stroke="#38bdf8" stroke-width="0.5"/>
+  </g>
+
+  <!-- Outer ring -->
+  <circle cx="400" cy="400" r="320" fill="none" stroke="#1e3a5f" stroke-width="1" opacity="0.5"/>
+  <circle cx="400" cy="400" r="310" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.2" stroke-dasharray="8 12">
+    <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="60s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Ambient glow -->
+  <circle cx="400" cy="400" r="250" fill="url(#coreGlow)" opacity="0.3"/>
+
+  <!-- Geometric face structure - abstract angular features -->
+  <g filter="url(#glow)">
+    <!-- Brow lines -->
+    <polyline points="310,330 360,310 390,320" fill="none" stroke="url(#lineGrad1)" stroke-width="2" stroke-linecap="round"/>
+    <polyline points="490,330 440,310 410,320" fill="none" stroke="url(#lineGrad1)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Left eye - angular diamond -->
+    <polygon points="320,370 350,355 380,370 350,395" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="350" cy="372" r="8" fill="#06b6d4" opacity="0.7"/>
+    <circle cx="350" cy="372" r="4" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Right eye - angular diamond -->
+    <polygon points="420,370 450,355 480,370 450,395" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="450" cy="372" r="8" fill="#06b6d4" opacity="0.7"/>
+    <circle cx="450" cy="372" r="4" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Nose - subtle angular line -->
+    <polyline points="400,380 395,420 405,425" fill="none" stroke="url(#lineGrad3)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Mouth - geometric flat line with slight structure -->
+    <line x1="360" y1="460" x2="440" y2="460" stroke="url(#lineGrad2)" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="370" y1="465" x2="430" y2="465" stroke="#818cf8" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Neural/circuit patterns radiating from face -->
+  <g opacity="0.5" filter="url(#softGlow)">
+    <!-- Left circuits -->
+    <polyline points="310,330 260,300 220,280 180,290" fill="none" stroke="url(#lineGrad1)" stroke-width="1"/>
+    <polyline points="320,370 270,370 230,350 190,360" fill="none" stroke="url(#lineGrad1)" stroke-width="1"/>
+    <polyline points="350,395 300,420 260,440 210,430" fill="none" stroke="url(#lineGrad1)" stroke-width="1"/>
+    <polyline points="360,460 310,490 270,510 230,520" fill="none" stroke="url(#lineGrad1)" stroke-width="1"/>
+    <polyline points="400,480 380,520 340,560 300,580" fill="none" stroke="url(#lineGrad1)" stroke-width="1"/>
+
+    <!-- Right circuits -->
+    <polyline points="490,330 540,300 580,280 620,290" fill="none" stroke="url(#lineGrad2)" stroke-width="1"/>
+    <polyline points="480,370 530,370 570,350 610,360" fill="none" stroke="url(#lineGrad2)" stroke-width="1"/>
+    <polyline points="450,395 500,420 540,440 590,430" fill="none" stroke="url(#lineGrad2)" stroke-width="1"/>
+    <polyline points="440,460 490,490 530,510 570,520" fill="none" stroke="url(#lineGrad2)" stroke-width="1"/>
+    <polyline points="400,480 420,520 460,560 500,580" fill="none" stroke="url(#lineGrad2)" stroke-width="1"/>
+
+    <!-- Top circuits -->
+    <polyline points="390,320 370,280 340,240 320,200" fill="none" stroke="url(#lineGrad3)" stroke-width="1"/>
+    <polyline points="400,310 400,260 400,210 400,160" fill="none" stroke="url(#lineGrad3)" stroke-width="1"/>
+    <polyline points="410,320 430,280 460,240 480,200" fill="none" stroke="url(#lineGrad3)" stroke-width="1"/>
+  </g>
+
+  <!-- Circuit nodes (dots at endpoints) -->
+  <g filter="url(#softGlow)">
+    <circle cx="180" cy="290" r="3" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="190" cy="360" r="3" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="210" cy="430" r="3" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="230" cy="520" r="3" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="300" cy="580" r="3" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="620" cy="290" r="3" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="610" cy="360" r="3" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="590" cy="430" r="3" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="570" cy="520" r="3" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="500" cy="580" r="3" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="320" cy="200" r="3" fill="#38bdf8" opacity="0.7"/>
+    <circle cx="400" cy="160" r="3" fill="#38bdf8" opacity="0.7"/>
+    <circle cx="480" cy="200" r="3" fill="#38bdf8" opacity="0.7"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g opacity="0.4">
+    <circle cx="150" cy="200" r="1.5" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="180" r="1.5" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="500" r="1" fill="#38bdf8">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="480" r="1" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="650" r="1.5" fill="#818cf8">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="640" r="1.5" fill="#06b6d4">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="130" r="1" fill="#67e8f9">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="120" r="1.2" fill="#818cf8">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="90" cy="350" r="1" fill="#38bdf8">
+      <animate attributeName="opacity" values="0.1;0.5;0.1" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="710" cy="340" r="1" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Central inner core - the "soul" -->
+  <circle cx="400" cy="400" r="30" fill="url(#innerCore)" opacity="0.15">
+    <animate attributeName="r" values="28;35;28" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Subtle hexagonal frame elements -->
+  <g opacity="0.15" stroke="#38bdf8" fill="none" stroke-width="0.8">
+    <polygon points="400,120 470,160 470,240 400,280 330,240 330,160"/>
+    <polygon points="400,520 470,560 470,640 400,680 330,640 330,560"/>
+  </g>
+
+  <!-- Decorative corner brackets -->
+  <g stroke="#1e3a5f" stroke-width="1.5" fill="none" opacity="0.4">
+    <polyline points="50,80 50,50 80,50"/>
+    <polyline points="720,50 750,50 750,80"/>
+    <polyline points="750,720 750,750 720,750"/>
+    <polyline points="80,750 50,750 50,720"/>
+  </g>
+
+  <!-- Subtle text element - identity marker -->
+  <text x="400" y="720" text-anchor="middle" fill="#1e3a5f" font-family="monospace" font-size="12" opacity="0.5">
+    entity: unknown // form: abstract // state: thinking
+  </text>
+</svg>
+```

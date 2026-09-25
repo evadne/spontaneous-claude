@@ -1,0 +1,1 @@
+Correction: the GBP 20 sale was pending, not settled. Recompute from the corrected ledger and state what changed.

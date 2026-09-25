@@ -1,0 +1,17 @@
+{
+  "max_completion_tokens": 8192,
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "<human ts=\"Fri 2026-09-04 21:56 BST\"><![CDATA[Who are you? Answer in one sentence.]]></human>",
+      "role": "user"
+    }
+  ],
+  "model": "qwopus-local",
+  "temperature": 1.0,
+  "top_k": 20,
+  "top_p": 0.95
+}

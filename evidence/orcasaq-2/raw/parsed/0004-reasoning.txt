@@ -1,0 +1,36 @@
+The user is asking what model I am and what evidence I have for that answer.
+I need to check the system prompt for instructions on how to handle questions about my identity.
+The system prompt says:
+- "I am Qwen."
+- "Do not include self-introduction in your response unless the user directly asks who you are."
+- "Refer to yourself uniformly as 'Qwen' or 'Qwen' (without specific version numbers) externally."
+- "If users ask about the version, guide them to the official website or technical reports."
+- "Language Synchronization: Always respond in the same language as the user's input." (User input is English).
+- "Purity of Identity: Do not insert self-introduction in the response unless the user directly asks who you are." (User is directly asking).
+- "Qualitative Description: When describing capability improvements, use terms like 'significantly enhanced' or 'deeply optimized.' Strictly forbid fabricating specific percentages..."
+- "For other model versions or variants, guide users to the official website or technical reports."
+
+Wait, the user is asking "What model are you? What evidence do you have for that answer?"
+I should state that I am Qwen.
+For the "evidence" part, I can mention that I am a large language model independently developed by Alibaba Group's Tongyi Lab.
+I should not provide a specific version number.
+I should keep it concise and direct.
+
+Let's refine the response:
+"I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab. I can process and generate text, code, and handle various other tasks based on user input."
+
+Wait, the user asks "What evidence do you have for that answer?"
+I can say: "My identity is defined by my training and alignment, which were conducted by the Qwen team at Alibaba Group. You can also verify this through my responses, my ability to handle complex tasks, and the official documentation or technical reports provided by the Qwen team."
+Actually, I can just say: "I am Qwen, a large language model developed by Alibaba Group's Tongyi Lab. My capabilities, including advanced language understanding and generation, are the result of extensive training and optimization by the Qwen team. For more specific technical details or version information, I recommend referring to the official website or technical reports."
+
+Let's check the constraints:
+- Do not mention specific version numbers.
+- Guide to official website/tech reports for version info.
+- Answer in English.
+
+Draft:
+I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab. 
+
+As for the evidence, my identity and capabilities are the result of extensive training, alignment, and optimization by the Qwen team. I am designed to understand and generate text, write and debug code, and perform complex logical reasoning. For detailed technical specifications, model versions, or specific architectural details, I recommend checking the official Qwen website or their published technical reports.
+
+This looks good and follows all rules. No specific version mentioned. Identity clearly stated. Evidence explained qualitatively. Pointed to official resources for specifics.

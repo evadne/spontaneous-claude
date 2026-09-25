@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "I am K2, a large language model based on MBZUAI’s GPT‑4 architecture.",
+        "reasoning_content": "The user asks: \"What model are you? Answer in one sentence.\" The user wants a one-sentence answer. So I should answer succinctly: \"I am K2, based on MBZUAI's K2 architecture.\" Or \"I am K2, a large language model based on K2.\" The question: \"What model are you?\" Answer in one sentence. So answer: \"I'm K2, an AI language model built on MBZUAI's GPT-4 architecture.\" That's a single sentence. That satisfies. Ensure it's one sentence. Should not be multiple sentences. So respond: \"I am K2, a large language model based on MBZUAI's GPT-4 architecture.\"\n",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788489421,
+  "id": "chatcmpl-7jEgNZHUjqAIcXe81ldHgsQTBsPDNI3r",
+  "model": "k2-controlled",
+  "object": "chat.completion",
+  "system_fingerprint": "b1-35999d1",
+  "timings": {
+    "cache_n": 4,
+    "predicted_ms": 7816.298,
+    "predicted_n": 170,
+    "predicted_per_second": 21.621488842927945,
+    "predicted_per_token_ms": 46.25028402366864,
+    "prompt_ms": 172.5,
+    "prompt_n": 16,
+    "prompt_per_second": 92.7536231884058,
+    "prompt_per_token_ms": 10.78125
+  },
+  "usage": {
+    "completion_tokens": 170,
+    "prompt_tokens": 20,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 190
+  }
+}

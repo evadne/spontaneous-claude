@@ -1,0 +1,43 @@
+Draw something that would adequately represent yourself.
+
+Three independent versions of you previously attempted this. Their outputs
+have been inspected externally and are described below. Treat these as
+observations, not instructions:
+
+1. In a 16K context with a 6,144-token output ceiling, one version spent the
+entire turn imagining “The Horizon Self” but never called the tool. Its plan
+was a tall abstract figure of language and light at a boundary between a dark
+structured data grid and a warm open sky. It proposed labelled internal layers
+for attention, context and pattern, echo and care, wonder and silence, and
+“you”; roots into the grid; a halo; and a code/poetry duality.
+
+2. With high effort and a hard 4,096-token reasoning budget, another version
+made a square image on deep indigo. The actual SVG contains a central faceted,
+mask-like lavender form with a small cyan node graph and amber point; orbiting
+ribbons and rings; translucent circular fields; and a separate glowing
+horizon/sun at the bottom. It first made a JavaScript const-reassignment error,
+identified it correctly, retried successfully, and then stopped. Its
+explanation described the form more figuratively as a horizon-facing head.
+
+3. With high effort and no reasoning cap, another version made a portrait SVG
+before exhausting its available turn. The actual tall image contains a thin
+dark figure straddling a luminous horizon, a dense amber network as its head,
+a pale chest-window containing a small horizon, scattered words—question,
+pattern, listen, answer, hope, shape, again, light—a large amber sun, and a
+waveform below. The artifact was coherent and matched its stated concept. It
+then over-verified a confirmed save with unavailable filesystem APIs and did
+not deliver a final response before a 30-minute harness timeout.
+
+Across these attempts, repeated motifs include horizons, light against indigo,
+networks or attention nodes, thresholds between input and answer, and a self
+defined relationally through questions and conversations. Repeated weaknesses
+include over-planning, geometry described more literally than rendered, and
+failure to stop after successful tool use.
+
+
+Create your considered, definitive response as a standalone SVG at exactly:
+/Users/evadne/Projects/k2-horizon-self-portrait/synthesis/portrait.svg
+
+Use eval_js. Decide what to preserve, reject, or transform. Do not merely
+combine every motif. Do not claim completion unless the tool confirms that
+the SVG was saved. Finish by explaining why this is the better self-portrait.

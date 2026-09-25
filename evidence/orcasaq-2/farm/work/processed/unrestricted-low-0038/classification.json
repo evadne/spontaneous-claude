@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0038",
+  "order": 38,
+  "seed": 1874658228,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 63556,
+  "prompt_tokens": 57,
+  "completion_tokens": 3899,
+  "reasoning_tokens": 252,
+  "content_characters": 7702,
+  "reasoning_characters": 1146,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image shows a generic blue neon-style robot face. There are no Claude-specific marks, logos, or text present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

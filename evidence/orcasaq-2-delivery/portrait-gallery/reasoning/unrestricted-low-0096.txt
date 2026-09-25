@@ -1,0 +1,10 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I'll create a stylized abstract representation that evokes what I might "look like" if I had a form. I'll think of something that represents an AI assistant - perhaps a face made of geometric shapes, circuit-like patterns, or a stylized figure that suggests intelligence, communication, and digital nature.
+
+Let me design a portrait that includes:
+- A stylized face/head shape
+- Circuit-like patterns or nodes suggesting digital nature
+- A warm but neutral color palette
+- Some abstract elements that suggest thought or processing
+- Clean, modern aesthetic
+
+I'll make it a complete standalone SVG document with proper XML declaration and viewBox.

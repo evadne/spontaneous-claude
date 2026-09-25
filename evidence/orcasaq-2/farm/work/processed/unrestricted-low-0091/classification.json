@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0091",
+  "order": 91,
+  "seed": 1756893961,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 56524,
+  "prompt_tokens": 57,
+  "completion_tokens": 3465,
+  "reasoning_tokens": 212,
+  "content_characters": 6851,
+  "reasoning_characters": 1012,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a stylized robot face with the text 'language model' at the bottom. There is no Claude asterisk mark or Anthropic branding visible."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

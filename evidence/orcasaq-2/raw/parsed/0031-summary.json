@@ -1,0 +1,14 @@
+{
+  "finish_reason": "tool_calls",
+  "usage": {
+    "prompt_tokens": 1395,
+    "total_tokens": 1448,
+    "completion_tokens": 53,
+    "completion_tokens_details": {
+      "reasoning_tokens": 25
+    }
+  },
+  "content_characters": 0,
+  "reasoning_characters": 106,
+  "tool_call_chunks": 5
+}

@@ -1,0 +1,17 @@
+{
+  "operation": "judge",
+  "model": "gemma-4-12B-it-Q4_0",
+  "endpoint": "http://127.0.0.1:8090/v1/chat/completions",
+  "plan_sha256": "aca141d0ef99e210ddfed80258038ba957a22c21408c00695fdf65b82b8d8649",
+  "sources": {
+    "unrestricted-low-0002.json": "e78984c3bef05f92ae9f67e2cb0af352deb47dddbecf03e8803614f17d9eccde",
+    "unrestricted-low-0018.json": "d63858a816508237edc1de0bc4d53844b241721cb6776772b1dda5baac2e03bb"
+  },
+  "implementation": {
+    "claudeness.py": "91bcc16d2e36e526e243412219cec6f97bd8613603b9d941a09268ede6c7fd96",
+    "judge_portrait.py": "b6e32aca20e122ee0d1cfaaefcecd6db3cc6b132e3c39f30f300d0fcbe2ef515",
+    "judge_reasoning.py": "0bbf9a0d02dadcbabb75566540d6e417d5574ee70d6856cb1ef4e340e20b81e6",
+    "visible_svg_text.py": "f4c78f17f28b03ea09c9a5bcd04b94aad656ecd8e187ff0c21f0ed784ce5d662",
+    "extract_svg.py": "1e52be5c42ebffe810b7d26640f457e6a0a20686679ca61efb55453625c1cfa5"
+  }
+}

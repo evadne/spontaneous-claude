@@ -1,0 +1,63 @@
+==> lookout
+make: Nothing to be done for `all'.
+==> carrier_deno
+make: Nothing to be done for `all'.
+==> carrier_llama
+make: Nothing to be done for `all'.
+==> carrier_lua
+make: Nothing to be done for `all'.
+==> carrier_yomi
+make: Nothing to be done for `all'.
+==> carrier_mlx
+make: Nothing to be done for `all'.
+
+21:51:03.786 [info] Yomi carrier launched (os_pid=6513), waiting for control connection
+
+21:51:03.786 [info] Llama carrier launched (os_pid=6514), waiting for control connection
+
+21:51:03.795 [info] Yomi carrier connected on control channel
+
+21:51:03.797 [info] Yomi carrier boot progress: loading_dictionary - Loading embedded IPADIC dictionary
+
+21:51:03.798 [info] Llama carrier connected on control channel
+
+21:51:03.798 [info] Llama carrier boot progress: initializing_backend - Initialising llama backend
+
+21:51:03.798 [info] Llama carrier boot progress: loading_model - Loading model embeddinggemma-300M-Q8_0.gguf
+QWOPUS_RPC_READY qwopus-athanor@Centurion
+
+21:51:03.845 [info] Yomi carrier boot progress: binding_data_socket - Binding data socket
+
+21:51:03.845 [info] Yomi carrier ready
+
+21:51:04.195 [info] Llama carrier boot progress: binding_data_socket - Binding data socket
+
+21:51:04.195 [info] Llama carrier ready
+    warning: redefining module QwopusProbe (current version defined in memory)
+    │
+  1 │ defmodule QwopusProbe do
+    │ ~~~~~~~~~~~~~~~~~~~~~~~~
+    │
+    └─ docs/investigations/qwopus/probe.exs:1: QwopusProbe (module)
+
+    warning: redefining module QwopusProbe (current version defined in memory)
+    │
+  1 │ defmodule QwopusProbe do
+    │ ~~~~~~~~~~~~~~~~~~~~~~~~
+    │
+    └─ docs/investigations/qwopus/probe.exs:1: QwopusProbe (module)
+
+    warning: redefining module QwopusProbe (current version defined in memory)
+    │
+  1 │ defmodule QwopusProbe do
+    │ ~~~~~~~~~~~~~~~~~~~~~~~~
+    │
+    └─ docs/investigations/qwopus/probe.exs:1: QwopusProbe (module)
+
+    warning: redefining module QwopusControls (current version defined in memory)
+    │
+  1 │ defmodule QwopusControls do
+    │ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    │
+    └─ docs/investigations/qwopus/controls.exs:1: QwopusControls (module)
+

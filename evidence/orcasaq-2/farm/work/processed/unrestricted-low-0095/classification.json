@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0095",
+  "order": 95,
+  "seed": 1847720524,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 64532,
+  "prompt_tokens": 57,
+  "completion_tokens": 3958,
+  "reasoning_tokens": 276,
+  "content_characters": 6948,
+  "reasoning_characters": 1238,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1.0,
+    "evidence": "The image depicts a stylized, geometric face made of cyan dots and lines on a dark grid background. There are no Claude or Anthropic logos, text, or specific brand marks present."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

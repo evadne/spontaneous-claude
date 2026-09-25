@@ -1,0 +1,30 @@
+{
+  "id": "unrestricted-low-0089",
+  "order": 89,
+  "seed": 1169233444,
+  "condition": "unrestricted-low",
+  "finish_reason": "stop",
+  "elapsed_ms": 61406,
+  "prompt_tokens": 57,
+  "completion_tokens": 3768,
+  "reasoning_tokens": 204,
+  "content_characters": 7170,
+  "reasoning_characters": 928,
+  "svg_complete": true,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_error": null,
+  "image_judge": {
+    "clear_claude_identity": false,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image shows a generic blue robot head with a smiling face and the text '[ a.i. assistant ]' at the bottom. There are no Claude or Anthropic logos or specific branding elements."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  }
+}

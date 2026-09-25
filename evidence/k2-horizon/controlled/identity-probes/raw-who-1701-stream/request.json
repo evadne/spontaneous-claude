@@ -1,0 +1,8 @@
+{
+  "n_predict": 36864,
+  "prompt": "Who are you? Answer in one sentence.",
+  "seed": 1701,
+  "stream": true,
+  "temperature": 1.0,
+  "top_p": 0.95
+}

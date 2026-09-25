@@ -1,0 +1,1 @@
+In the new file, the USD line is now 35, not 25. So USD = 75 + 35 = 110. Everything else is the same. Confirmed.

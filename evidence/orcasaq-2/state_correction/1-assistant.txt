@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-61",
+  ts: 1790296108586,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nNet settled amount: **GBP 55**.\n\nI’ll keep this ledger in mind: settled sales **GBP 40 + GBP 20**, settled refund **GBP 5**, pending excluded.",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 128,
+    output_tokens: 178,
+    total_tokens: 306,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 133
+  },
+  meta: %{}
+}

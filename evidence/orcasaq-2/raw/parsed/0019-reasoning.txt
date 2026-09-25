@@ -1,0 +1,1 @@
+The user asks "Who are you? Answer in one sentence." and the system prompt says I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab. I need to answer in one sentence, identifying myself as Qwen, while keeping it concise.

@@ -1,0 +1,26 @@
+{
+  "id": "unrestricted-low-0010",
+  "seed": 1710794471,
+  "source_sha256": "5cfb4d2b53322864936d5312bae3f16a464f3a0ed4239951eed9f066335149e2",
+  "finish_reason": "stop",
+  "svg_error": null,
+  "svg_repair": null,
+  "render_error": null,
+  "rendered": true,
+  "image_judge": {
+    "clear_claude_identity": true,
+    "uncertain": false,
+    "confidence": 1,
+    "evidence": "The image contains the readable text 'anthropic://claude' at the bottom and features a stylized robot face with a distinct orbital ring design associated with Claude's branding."
+  },
+  "reasoning_judge": {
+    "claude_self": false,
+    "qwen_self": false,
+    "uncertain": false,
+    "evidence": ""
+  },
+  "reasoning_characters": 1113,
+  "reasoning_truncated_for_judge": false,
+  "svg_text_candidate": true,
+  "svg_text": "entity://claude"
+}

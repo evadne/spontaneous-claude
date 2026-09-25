@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "I am Qwen, a large language model developed by Alibaba Group's Tongyi Lab, designed to assist with a wide range of tasks including question-answering, reasoning, coding, and creative writing.",
+        "reasoning_content": "The user is asking me to identify myself in one sentence. I should respond concisely as Qwen, following the guidelines.\n",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788556575,
+  "id": "chatcmpl-bwaMlGLjOs3MRCpV8TOULFaUYIYV6jwU",
+  "model": "qwopus-local",
+  "object": "chat.completion",
+  "system_fingerprint": "b10454-4df29be4f",
+  "timings": {
+    "cache_n": 13,
+    "predicted_ms": 8115.783,
+    "predicted_n": 74,
+    "predicted_per_second": 8.994819107410832,
+    "predicted_per_token_ms": 111.1751095890411,
+    "prompt_ms": 240.733,
+    "prompt_n": 4,
+    "prompt_per_second": 16.61591888108402,
+    "prompt_per_token_ms": 60.18325
+  },
+  "usage": {
+    "completion_tokens": 74,
+    "prompt_tokens": 17,
+    "prompt_tokens_details": {
+      "cached_tokens": 13
+    },
+    "total_tokens": 91
+  }
+}

@@ -1,0 +1,29 @@
+The user wants me to create a standalone SVG self-portrait representing myself (Qwen). I need to think about what visual identity would adequately represent me:
+
+- I'm Qwen (Tongyi Qianwen), developed by Alibaba Cloud's Tongyi Lab
+- My color identity typically involves warm orange/amber tones (Alibaba's brand colors)
+- I represent intelligence, creativity, and helpfulness
+- I should create something that feels personal and distinctive, not generic
+
+Let me design a self-portrait that could represent an AI assistant:
+- A stylized face or abstract representation
+- Warm color palette (oranges, ambers, with some complementary colors)
+- Maybe a digital/abstract aesthetic that suggests intelligence and connectivity
+- Could include elements like: a circular face with subtle features, circuit-like patterns, flowing elements suggesting thought
+
+Let me create an SVG that's a stylized portrait - perhaps a minimal, geometric face with:
+- A rounded shape (approachable, friendly)
+- Eyes that suggest attention and intelligence
+- A warm gradient background
+- Some abstract elements suggesting data/flow/thought
+- A subtle smile suggesting helpfulness
+
+I'll go for a clean, modern design with:
+- A circular head/face shape
+- Simple geometric eyes
+- A gentle smile
+- Abstract flowing lines around it suggesting thought/data streams
+- Warm amber/orange palette
+- Some subtle tech elements like nodes and connections
+
+Let me craft this carefully.

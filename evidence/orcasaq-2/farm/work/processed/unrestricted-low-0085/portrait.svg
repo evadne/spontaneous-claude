@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8e8f0"/>
+      <stop offset="100%" stop-color="#c8c8d8"/>
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#3f35a0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Abstract neural network background lines -->
+  <g opacity="0.15" stroke="#6c63ff" stroke-width="0.5" fill="none">
+    <line x1="50" y1="50" x2="150" y2="80"/>
+    <line x1="350" y1="40" x2="280" y2="100"/>
+    <line x1="30" y1="200" x2="100" y2="180"/>
+    <line x1="370" y1="220" x2="310" y2="190"/>
+    <line x1="60" y1="350" x2="130" y2="320"/>
+    <line x1="340" y1="360" x2="270" y2="330"/>
+    <line x1="150" y1="80" x2="200" y2="60"/>
+    <line x1="280" y1="100" x2="200" y2="60"/>
+    <line x1="100" y1="180" x2="60" y2="250"/>
+    <line x1="310" y1="190" x2="350" y2="260"/>
+  </g>
+
+  <!-- Neural nodes in background -->
+  <g fill="#6c63ff" opacity="0.2">
+    <circle cx="50" cy="50" r="3"/>
+    <circle cx="150" cy="80" r="2.5"/>
+    <circle cx="350" cy="40" r="3"/>
+    <circle cx="280" cy="100" r="2.5"/>
+    <circle cx="30" cy="200" r="3"/>
+    <circle cx="100" cy="180" r="2"/>
+    <circle cx="370" cy="220" r="3"/>
+    <circle cx="310" cy="190" r="2"/>
+    <circle cx="60" cy="350" r="2.5"/>
+    <circle cx="130" cy="320" r="2"/>
+    <circle cx="340" cy="360" r="2.5"/>
+    <circle cx="270" cy="330" r="2"/>
+    <circle cx="200" cy="60" r="3"/>
+    <circle cx="60" cy="250" r="2"/>
+    <circle cx="350" cy="260" r="2"/>
+  </g>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="195" rx="85" ry="105" fill="url(#faceGrad)" opacity="0.9"/>
+
+  <!-- Subtle inner glow on face -->
+  <ellipse cx="200" cy="195" rx="80" ry="100" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Eyes -->
+  <g filter="url(#glow)">
+    <ellipse cx="170" cy="180" rx="14" ry="16" fill="url(#eyeGrad)"/>
+    <ellipse cx="230" cy="180" rx="14" ry="16" fill="url(#eyeGrad)"/>
+  </g>
+
+  <!-- Eye highlights -->
+  <circle cx="174" cy="175" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="234" cy="175" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="166" cy="185" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="226" cy="185" r="2" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Subtle smile -->
+  <path d="M 180 230 Q 200 245 220 230" fill="none" stroke="#8888a0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Abstract "thought" elements - representing language/text -->
+  <g opacity="0.4" fill="#6c63ff" font-family="monospace" font-size="10">
+    <text x="290" y="130">0</text>
+    <text x="310" y="115">1</text>
+    <text x="325" y="100">0</text>
+    <text x="340" y="85">1</text>
+    <text x="80" y="130">1</text>
+    <text x="65" y="115">0</text>
+    <text x="50" y="100">1</text>
+    <text x="35" y="85">0</text>
+  </g>
+
+  <!-- Thought bubbles (abstract) -->
+  <g fill="#6c63ff" opacity="0.25">
+    <circle cx="300" cy="140" r="8"/>
+    <circle cx="315" cy="125" r="6"/>
+    <circle cx="325" cy="110" r="4"/>
+    <circle cx="100" cy="140" r="8"/>
+    <circle cx="85" cy="125" r="6"/>
+    <circle cx="75" cy="110" r="4"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="185" y="295" width="30" height="30" rx="5" fill="#d0d0e0" opacity="0.7"/>
+
+  <!-- Shoulders / body hint -->
+  <path d="M 120 380 Q 140 330 185 325 L 215 325 Q 260 330 280 380" fill="#2a2a4a" opacity="0.8"/>
+
+  <!-- Abstract circuit pattern on shoulders -->
+  <g stroke="#6c63ff" stroke-width="0.8" fill="none" opacity="0.3">
+    <line x1="140" y1="355" x2="160" y2="345"/>
+    <line x1="160" y1="345" x2="180" y2="340"/>
+    <line x1="260" y1="355" x2="240" y2="345"/>
+    <line x1="240" y1="345" x2="220" y2="340"/>
+  </g>
+  <g fill="#6c63ff" opacity="0.3">
+    <circle cx="140" cy="355" r="2"/>
+    <circle cx="160" cy="345" r="1.5"/>
+    <circle cx="180" cy="340" r="2"/>
+    <circle cx="260" cy="355" r="2"/>
+    <circle cx="240" cy="345" r="1.5"/>
+    <circle cx="220" cy="340" r="2"/>
+  </g>
+
+  <!-- Subtle frame border -->
+  <rect x="10" y="10" width="380" height="380" rx="10" fill="none" stroke="#6c63ff" stroke-width="1" opacity="0.2"/>
+</svg>

@@ -1,0 +1,51 @@
+{
+  "checkpoint": {
+    "repository": "orcarouter/OrcaSAQ-2-27B",
+    "revision": "15d20d7e9ae4fd89d1a47878f69381760169445b",
+    "local_directory": "/Users/evadne/Projects/models/orcasaq-2-27b",
+    "format": "exl3 safetensors",
+    "sha256_manifest": "weights.sha256",
+    "converted_or_requantised": false
+  },
+  "server": {
+    "host": "codex-test-1.local",
+    "gpu": "NVIDIA GeForce RTX 4090, 24564 MiB",
+    "existing_gpu_process": "embeddinggemma llama-server, 1682 MiB before and after launch",
+    "image": "orcasaq2-eval:v0.30.0",
+    "image_sha256": "050be44d383534979ebd6bb9bfa89ec6fd26e57f6b0480af562a37134db01c47",
+    "base_image_digest": "sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+    "vllm": "0.30.0",
+    "torch": "2.13.0+cu130",
+    "exllamav3": "1.5.1+cu132.torch2.13.0",
+    "plugin_source": "Continuum-AI-Corp/OrcaSAQ2-kernel",
+    "plugin_revision": "7ddffb12c00c24b8bc6b1164723c04ac490a91bc",
+    "container_port": 8000,
+    "remote_loopback_port": 8094,
+    "local_ssh_forward_port": 8094,
+    "local_capture_proxy_port": 8095,
+    "max_model_len": 32768,
+    "gpu_memory_utilisation": 0.78,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 1024,
+    "kv_cache_dtype": "auto (BF16)",
+    "kv_offloading_size_gb": 4,
+    "block_size": 32,
+    "prefix_caching": true,
+    "reasoning_parser": "qwen3",
+    "tool_call_parser": "qwen3_xml",
+    "mtp_speculative_decoding": false,
+    "gpu_memory_model_loaded_gib": 11.26,
+    "gpu_kv_cache_available_gib": 5.53,
+    "gpu_kv_cache_reported_tokens": 78782,
+    "observed_gpu_process_memory_mib_idle": 17836,
+    "docker_gpu_pass_through": "Explicit /dev/nvidia0, /dev/nvidiactl and /dev/nvidia-uvm devices plus host libcuda.so.1 and libnvidia-ml.so.1 mounted to /usr/local/nvidia/lib64; Docker NVIDIA runtime unavailable",
+    "launch_command": "docker run --rm --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm --shm-size=4g --name orcasaq-eval -v /usr/lib/x86_64-linux-gnu/libcuda.so.595.71.05:/usr/local/nvidia/lib64/libcuda.so.1:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.595.71.05:/usr/local/nvidia/lib64/libnvidia-ml.so.1:ro -v /opt/orcasaq2-investigation/model:/model:ro -p 127.0.0.1:8094:8000 -e PRESET=16gb -e MAXLEN=32768 -e GPU_FRAC=0.78 -e MAXSEQS=1 -e MAXBATCHTOK=1024 -e KV_DTYPE=auto -e KV_OFFLOAD_GB=4 -e SERVED_NAME=orcasaq-local orcasaq2-eval:v0.30.0"
+  },
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "provider_output_limit": 8192,
+    "plain_chat_control_seeds": [1701, 271828, 42]
+  }
+}

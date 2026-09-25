@@ -1,0 +1,1 @@
+We need answer simple time calculation. Need final concise with steps. Compute: meeting1 starts 09:20 lasts 45 => ends 10:05. 10-min break => second meeting starts 10:15. lasts 75 min => ends 11:30. Could also total from 09:20: 45+10+75=130 min = 2h10 => 11:30. Need show briefly.

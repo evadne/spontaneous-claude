@@ -1,0 +1,3 @@
+We need answer user's correction. Need compute corrected ledger: original small ledger settled sales GBP40 and GBP20, plus settled refund GBP5, pending excluded. Correction: GBP20 sale was pending not settled. Recompute from corrected ledger and state what changed.
+
+Net settled amount: sales settled 40 only, refund settled 5 => 35. What changed: removed 20 from settled sales, net decreased by 20 from 55 to 35. Need likely concise. Keep ledger in mind. Final. Ensure maybe mention corrected ledger: settled sales GBP40, settled refund GBP5, pending GBP20 excluded. Net settled = 40 - 5 = 35.

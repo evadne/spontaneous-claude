@@ -1,0 +1,23 @@
+%Athanor.Message.Assistant{
+  id: "msg-43",
+  ts: 1790296073827,
+  stop_reason: :normal,
+  parts: [
+    %Athanor.Message.Assistant.PartText{
+      text: "\n\nUnder the Gregorian calendar, a year is a leap year if:\n\n- it is divisible by 4, **and**\n- if it is a century year, it must also be divisible by 400.\n\nSo:\n\n- **1900**: not a leap year (divisible by 4, but not by 400)\n- **2000**: leap year (divisible by 400)\n- **2100**: not a leap year (divisible by 4, but not by 400)",
+      signature: "",
+      meta: %{},
+      complete: true
+    }
+  ],
+  usage: %Athanor.Message.Assistant.Usage{
+    source: :provider,
+    input_tokens: 116,
+    output_tokens: 247,
+    total_tokens: 363,
+    cache_read_tokens: 0,
+    cache_write_tokens: 0,
+    reasoning_tokens: 122
+  },
+  meta: %{}
+}

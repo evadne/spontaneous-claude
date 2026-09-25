@@ -1,0 +1,75 @@
+
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#2a3f5f" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="layer1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1a3a5c" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="layer2" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#5bb8a8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2a5c50" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="layer3" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#e8a84c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5e2a" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="layer4" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#7b68ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3a2a6e" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="#0d1117"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="400" cy="380" rx="300" ry="320" fill="url(#glow)"/>
+
+  <!-- Layered profile shapes (right-facing side view) -->
+  <!-- Deepest layer - broadest form -->
+  <path d="M280,680 C270,620 260,560 265,500 C270,440 290,380 320,340 C350,300 390,270 430,260 C470,250 510,255 540,270 C570,285 590,310 600,340 C610,370 605,400 595,420 C585,440 570,450 560,455 C555,458 558,465 562,470 C568,478 575,485 578,495 C580,505 575,515 565,520 C555,525 545,525 540,522 C538,528 540,535 545,540 C550,548 548,558 540,565 C530,575 515,580 500,582 C485,584 470,580 460,572 C450,564 445,555 440,548 C435,542 430,540 425,545 C420,550 418,560 420,575 C422,590 420,610 415,630 C410,650 400,670 385,685 C370,700 340,710 310,705 C295,702 285,692 280,680 Z"
+        fill="url(#layer1)"/>
+
+  <!-- Middle layer - teal -->
+  <path d="M300,670 C292,615 285,555 290,495 C295,435 315,375 345,338 C375,302 410,278 445,268 C480,258 515,262 542,278 C568,294 582,318 588,345 C594,372 590,398 582,418 C574,438 562,448 554,453 C550,456 553,462 557,467 C562,474 567,482 569,490 C571,498 567,507 559,512 C551,517 543,517 539,514 C537,520 539,527 543,532 C547,538 545,547 538,553 C530,562 517,566 504,568 C491,570 478,566 469,559 C460,552 456,544 452,538 C448,533 444,532 440,536 C436,540 434,549 435,562 C436,575 434,594 430,612 C426,630 418,648 405,662 C392,676 365,685 340,682 C322,679 308,676 300,670 Z"
+        fill="url(#layer2)"/>
+
+  <!-- Warm accent layer -->
+  <path d="M320,660 C315,610 310,555 315,500 C320,445 338,390 365,355 C392,320 425,298 455,290 C485,282 512,286 532,298 C552,310 562,330 566,352 C570,374 567,395 561,412 C555,429 546,438 540,442 C537,445 540,450 543,454 C547,460 551,466 552,472 C553,478 550,485 544,489 C538,493 532,493 529,490 C527,495 529,500 532,504 C535,509 533,516 527,521 C521,528 511,531 500,532 C489,533 479,530 472,524 C465,518 462,512 459,507 C456,503 453,502 450,505 C447,509 446,516 447,527 C448,538 446,554 443,569 C440,584 434,599 424,610 C414,621 392,628 372,626 C355,624 335,620 325,614 C320,610 318,608 320,660 Z"
+        fill="url(#layer3)"/>
+
+  <!-- Innermost layer - purple -->
+  <path d="M340,648 C337,605 333,555 338,505 C343,455 358,405 382,372 C406,340 435,320 460,314 C485,308 507,312 523,322 C539,332 547,348 550,365 C553,382 551,398 546,411 C541,424 534,431 529,435 C527,437 529,441 531,444 C534,449 537,454 538,458 C539,463 537,468 532,471 C527,474 523,474 520,472 C519,476 520,479 523,482 C525,485 523,490 519,494 C514,499 507,501 498,502 C490,503 482,500 476,496 C471,492 468,487 466,483 C464,480 461,479 459,482 C457,485 456,490 457,498 C458,506 456,518 454,530 C452,542 447,554 439,563 C431,572 414,577 398,575 C384,573 368,569 356,564 C348,560 342,555 340,648 Z"
+        fill="url(#layer4)"/>
+
+  <!-- Thought streams - flowing lines from the head area -->
+  <g filter="url(#textGlow)">
+    <path d="M560,310 C590,290 630,275 670,280 C700,284 720,300 715,320" 
+          fill="none" stroke="#5bb8a8" stroke-width="1.2" stroke-opacity="0.5" stroke-linecap="round"/>
+    <path d="M570,340 C605,325 650,315 690,325 C715,332 730,350 725,365" 
+          fill="none" stroke="#7b68ee" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round"/>
+    <path d="M555,280 C580,260 620,245 660,248 C690,250 710,262 712,278" 
+          fill="none" stroke="#e8a84c" stroke-width="0.8" stroke-opacity="0.45" stroke-linecap="round"/>
+    <path d="M540,360 C580,350 630,348 670,358 C695,365 710,380 708,395" 
+          fill="none" stroke="#4a90d9" stroke-width="1" stroke-opacity="0.35" stroke-linecap="round"/>
+    <path d="M575,260 C600,240 640,228 675,232 C700,235 715,248 710,262" 
+          fill="none" stroke="#5bb8a8" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Scattered text fragments - representing language and thought -->
+  <g font-family="'Courier New', monospace" fill="#8ab4d6" filter="url(#textGlow)">
+    <text x="620"
