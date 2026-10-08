@@ -1,0 +1,23 @@
+{
+  "source": "evidence/coder390/source-review/imatrix__coder390-imatrix-calibration.txt",
+  "sha256": "2113e4f3720c88621e05fc0424008d45bbb05d2ad338e082c6d52662c1f2ef94",
+  "bytes": 1710336,
+  "literal_name_counts": {
+    "Claude": 0,
+    "Anthropic": 0,
+    "ChatGPT": 0,
+    "OpenAI": 0,
+    "Astra": 0,
+    "Grok": 0,
+    "xAI": 0,
+    "DeepSeek": 0,
+    "Kimi": 0,
+    "Moonshot": 0,
+    "Qwen": 0,
+    "Alibaba": 0
+  },
+  "system_prompt_counts": {
+    "Reasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.": 1368
+  },
+  "limitation": "Reconstructed rollout inputs only; teacher completions unavailable. No inference about training identity prevalence."
+}

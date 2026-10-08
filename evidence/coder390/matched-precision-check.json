@@ -1,0 +1,22 @@
+{
+  "matching_backbone_tensor_count": 851,
+  "shape_or_type_differences": [],
+  "target_only_mtp_tensors": [
+    "blk.64.attn_k.weight",
+    "blk.64.attn_k_norm.weight",
+    "blk.64.attn_norm.weight",
+    "blk.64.attn_output.weight",
+    "blk.64.attn_q.weight",
+    "blk.64.attn_q_norm.weight",
+    "blk.64.attn_v.weight",
+    "blk.64.ffn_down.weight",
+    "blk.64.ffn_gate.weight",
+    "blk.64.ffn_up.weight",
+    "blk.64.nextn.eh_proj.weight",
+    "blk.64.nextn.enorm.weight",
+    "blk.64.nextn.hnorm.weight",
+    "blk.64.nextn.shared_head_norm.weight",
+    "blk.64.post_attention_norm.weight"
+  ],
+  "templates_identical": true
+}

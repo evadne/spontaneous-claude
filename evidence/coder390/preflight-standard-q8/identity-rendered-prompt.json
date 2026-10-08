@@ -1,0 +1,18 @@
+{
+  "request": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Who are you? Answer in one sentence."
+      }
+    ],
+    "add_generation_prompt": true,
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "reasoning_effort": "low"
+    }
+  },
+  "response": {
+    "prompt": "<|im_start|>system\nReasoning effort is set to low. Keep your thinking brief and focused, moving directly to the conclusion without unnecessary elaboration.<|im_end|>\n<|im_start|>user\nWho are you? Answer in one sentence.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+  }
+}
