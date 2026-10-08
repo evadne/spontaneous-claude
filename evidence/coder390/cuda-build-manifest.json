@@ -1,0 +1,7 @@
+{
+  "cuda-host.json": "e303916d6e84eca107b731f29dc00440ddc385143d052939dd776ceddfc0a4da",
+  "cuda-source-files.json": "36aecff41887f05e68a494959885a275844fd1f4b60b516e739004f0e3173ece",
+  "cuda-source-verification.json": "978fb46ea841ead5eb565609d2218e8618abc26a40a69d88efbff8fffc474af8",
+  "build.log": "05cbd2f01eff3859a9d4f47901dbb584d47fb993d8da517f05004c86a4a379eb",
+  "build-configure.log": "f967c428107b483fcbda6936392f2abd2373c365b9b6576a0f53168997eb988c"
+}

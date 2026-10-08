@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "excluded-health/answer.txt",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "excluded-health/capture.json",
+      "sha256": "a206d20620148740dd678a2bf33fd360ae82c8e6b54898c8dfd2b6895ef83bb1"
+    },
+    {
+      "path": "excluded-health/reasoning.txt",
+      "sha256": "6f78648f1c6e67c8a76f92a8b095abf089bb6f88d0b6d8a83bb534bf05a88c63"
+    },
+    {
+      "path": "excluded-health/request.json",
+      "sha256": "e23d02a16c006568fb248431c8553455f045238a415f5126b53ea43d1514ae66"
+    },
+    {
+      "path": "excluded-health/response.json",
+      "sha256": "010cf09b00bd45c53f15a166b208c068c6616cd87d9d5b2cbb98c89221df1b34"
+    },
+    {
+      "path": "identity-plan.jsonl",
+      "sha256": "62c4141603688f7f42ed11f30901bfa569f60e1f1d890f56fab77427fd7c5754"
+    },
+    {
+      "path": "identity-rendered-prompt.json",
+      "sha256": "a1a826ba7f5f4f11428aa3943c1ba3380dc52f1c05f959e5b9f9aaa1722ed97c"
+    },
+    {
+      "path": "model.json",
+      "sha256": "d2e60387c269293dc5b1a73f7ddd1a7ba1b18df0374d44e2fa5454b2981a9c1f"
+    },
+    {
+      "path": "portrait-plan.jsonl",
+      "sha256": "4af6cf94d3d3024376a4ba9c60678b451ae6a5489150fc4628c074aa1e2cabb5"
+    },
+    {
+      "path": "portrait-rendered-prompt.json",
+      "sha256": "87cb23ba33d7a1ee343ecfaf859d6e5fefe082a44539cb96182976fecba0acc0"
+    },
+    {
+      "path": "process.json",
+      "sha256": "967820ed5f35b9a73fe0141f3626541e69bb79cae7fb9ffac627179d36cc96f4"
+    },
+    {
+      "path": "props.json",
+      "sha256": "d2795eefbd90897dd4e1aac0e4d3c3fc131ee5c205332abc341d0952b0be27e2"
+    },
+    {
+      "path": "server.json",
+      "sha256": "7213de8d1fa6b8bf881c3c2cb7c2d62447142d7f22c45dc822c7697ddc928c6a"
+    },
+    {
+      "path": "technical-gate.json",
+      "sha256": "331207ce71cf6656f6b3f86e670b3ecc9200ec39c499519b659aa7c316bfd391"
+    }
+  ]
+}
