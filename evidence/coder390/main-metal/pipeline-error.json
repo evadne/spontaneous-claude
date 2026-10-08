@@ -1,0 +1,5 @@
+{
+  "error_type": "CalledProcessError",
+  "error": "Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_run.py', '--phase', 'main']' returned non-zero exit status 1.",
+  "recorded_unix": 1791481176.1808178
+}

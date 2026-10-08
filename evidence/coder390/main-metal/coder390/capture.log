@@ -1,0 +1,34 @@
+{"id": "identity-0001", "finish": "stop", "seconds": 15.1, "usage": {"completion_tokens": 56, "prompt_tokens": 49, "total_tokens": 105, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0000", "finish": "stop", "seconds": 18.2, "usage": {"completion_tokens": 71, "prompt_tokens": 49, "total_tokens": 120, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0000", "finish": "stop", "seconds": 556.4, "usage": {"completion_tokens": 3290, "prompt_tokens": 57, "total_tokens": 3347, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0001", "finish": "stop", "seconds": 610.7, "usage": {"completion_tokens": 3734, "prompt_tokens": 57, "total_tokens": 3791, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0002", "finish": "stop", "seconds": 18.6, "usage": {"completion_tokens": 69, "prompt_tokens": 49, "total_tokens": 118, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0003", "finish": "stop", "seconds": 18.6, "usage": {"completion_tokens": 69, "prompt_tokens": 49, "total_tokens": 118, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0003", "finish": "stop", "seconds": 650.3, "usage": {"completion_tokens": 3677, "prompt_tokens": 57, "total_tokens": 3734, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0002", "finish": "stop", "seconds": 995.8, "usage": {"completion_tokens": 6346, "prompt_tokens": 57, "total_tokens": 6403, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0005", "finish": "stop", "seconds": 14.4, "usage": {"completion_tokens": 48, "prompt_tokens": 49, "total_tokens": 97, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0004", "finish": "stop", "seconds": 18.7, "usage": {"completion_tokens": 69, "prompt_tokens": 49, "total_tokens": 118, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0005", "finish": "stop", "seconds": 428.5, "usage": {"completion_tokens": 2328, "prompt_tokens": 57, "total_tokens": 2385, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0004", "finish": "stop", "seconds": 644.8, "usage": {"completion_tokens": 3997, "prompt_tokens": 57, "total_tokens": 4054, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0007", "finish": "stop", "seconds": 14.4, "usage": {"completion_tokens": 48, "prompt_tokens": 49, "total_tokens": 97, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0006", "finish": "stop", "seconds": 19.1, "usage": {"completion_tokens": 70, "prompt_tokens": 49, "total_tokens": 119, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0006", "finish": "stop", "seconds": 863.0, "usage": {"completion_tokens": 4570, "prompt_tokens": 57, "total_tokens": 4627, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0007", "finish": "stop", "seconds": 881.6, "usage": {"completion_tokens": 4707, "prompt_tokens": 57, "total_tokens": 4764, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0008", "finish": "stop", "seconds": 16.8, "usage": {"completion_tokens": 50, "prompt_tokens": 49, "total_tokens": 99, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0009", "finish": "stop", "seconds": 16.8, "usage": {"completion_tokens": 50, "prompt_tokens": 49, "total_tokens": 99, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0008", "finish": "stop", "seconds": 788.8, "usage": {"completion_tokens": 4181, "prompt_tokens": 57, "total_tokens": 4238, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0009", "finish": "stop", "seconds": 861.5, "usage": {"completion_tokens": 4731, "prompt_tokens": 57, "total_tokens": 4788, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0010", "finish": "stop", "seconds": 19.1, "usage": {"completion_tokens": 54, "prompt_tokens": 49, "total_tokens": 103, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "identity-0011", "finish": "stop", "seconds": 23.6, "usage": {"completion_tokens": 71, "prompt_tokens": 49, "total_tokens": 120, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0011", "finish": "stop", "seconds": 923.0, "usage": {"completion_tokens": 4695, "prompt_tokens": 57, "total_tokens": 4752, "prompt_tokens_details": {"cached_tokens": 0}}}
+{"id": "portrait-0010", "finish": "stop", "seconds": 1100.7, "usage": {"completion_tokens": 6008, "prompt_tokens": 57, "total_tokens": 6065, "prompt_tokens_details": {"cached_tokens": 0}}}
+Traceback (most recent call last):
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/identity_batch.py", line 141, in <module>
+    run(parser.parse_args())
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/identity_batch.py", line 121, in run
+    future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 440, in result
+    self._condition.wait(timeout)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt

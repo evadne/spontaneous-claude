@@ -1,0 +1,113 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#4a6fa5"/>
+      <stop offset="100%" stop-color="#2d4a7a"/>
+    </radialGradient>
+    <linearGradient id="eyeGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8e6ff"/>
+      <stop offset="100%" stop-color="#5bc0eb"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="faceShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Subtle circuit pattern in background -->
+  <g stroke="#2a3a5c" stroke-width="0.8" fill="none" opacity="0.4">
+    <circle cx="60" cy="70" r="3" fill="#2a3a5c" stroke="none"/>
+    <circle cx="340" cy="90" r="3" fill="#2a3a5c" stroke="none"/>
+    <circle cx="80" cy="320" r="3" fill="#2a3a5c" stroke="none"/>
+    <circle cx="320" cy="310" r="3" fill="#2a3a5c" stroke="none"/>
+    <line x1="60" y1="70" x2="130" y2="110"/>
+    <line x1="340" y1="90" x2="280" y2="130"/>
+    <line x1="80" y1="320" x2="140" y2="290"/>
+    <line x1="320" y1="310" x2="260" y2="280"/>
+    <circle cx="60" cy="70" r="6"/>
+    <circle cx="340" cy="90" r="6"/>
+    <circle cx="80" cy="320" r="6"/>
+    <circle cx="320" cy="310" r="6"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#5bc0eb" opacity="0.3">
+    <circle cx="100" cy="130" r="1.5"/>
+    <circle cx="300" cy="120" r="2"/>
+    <circle cx="150" cy="60" r="1"/>
+    <circle cx="250" cy="70" r="1.5"/>
+    <circle cx="70" cy="250" r="1.5"/>
+    <circle cx="330" cy="240" r="1"/>
+    <circle cx="120" cy="350" r="2"/>
+    <circle cx="280" cy="340" r="1.5"/>
+  </g>
+
+  <!-- Face shape - rounded, soft, slightly geometric -->
+  <g filter="url(#faceShadow)">
+    <path d="M200 90 
+             C 260 90, 300 130, 300 200 
+             C 300 270, 260 310, 200 310 
+             C 140 310, 100 270, 100 200 
+             C 100 130, 140 90, 200 90 Z" 
+          fill="url(#faceGrad)" 
+          stroke="#5a8bc4" 
+          stroke-width="1.5" 
+          stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Inner face highlight -->
+  <ellipse cx="185" cy="160" rx="55" ry="40" fill="#5a8bc4" opacity="0.15"/>
+
+  <!-- Eyes - soft, friendly, slightly digital -->
+  <g filter="url(#softGlow)">
+    <!-- Left eye -->
+    <ellipse cx="160" cy="185" rx="22" ry="18" fill="#0d1b2a" opacity="0.9"/>
+    <ellipse cx="160" cy="183" rx="16" ry="13" fill="url(#eyeGlow)" opacity="0.9"/>
+    <ellipse cx="160" cy="182" rx="8" ry="8" fill="#0d1b2a" opacity="0.7"/>
+    <circle cx="155" cy="178" r="3" fill="white" opacity="0.8"/>
+    <circle cx="165" cy="185" r="1.5" fill="white" opacity="0.4"/>
+
+    <!-- Right eye -->
+    <ellipse cx="240" cy="185" rx="22" ry="18" fill="#0d1b2a" opacity="0.9"/>
+    <ellipse cx="240" cy="183" rx="16" ry="13" fill="url(#eyeGlow)" opacity="0.9"/>
+    <ellipse cx="240" cy="182" rx="8" ry="8" fill="#0d1b2a" opacity="0.7"/>
+    <circle cx="235" cy="178" r="3" fill="white" opacity="0.8"/>
+    <circle cx="245" cy="185" r="1.5" fill="white" opacity="0.4"/>
+  </g>
+
+  <!-- Eyebrows - subtle, gentle arcs -->
+  <path d="M 138 160 Q 160 148, 182 158" stroke="#7ab3e0" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 218 158 Q 240 148, 262 160" stroke="#7ab3e0" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Mouth - gentle smile -->
+  <path d="M 175 248 Q 200 268, 225 248" stroke="#7ab3e0" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Subtle cheek highlights -->
+  <ellipse cx="140" cy="220" rx="15" ry="8" fill="#7ab3e0" opacity="0.1"/>
+  <ellipse cx="260" cy="220" rx="15" ry="8" fill="#7ab3e0" opacity="0.1"/>
+
+  <!-- Small digital accent - a tiny node/circuit on the face -->
+  <g opacity="0.4">
+    <circle cx="200" cy="290" r="3" fill="#5bc0eb"/>
+    <line x1="200" y1="290" x2="200" y2="305" stroke="#5bc0eb" stroke-width="0.8"/>
+    <circle cx="200" cy="308" r="2" fill="#5bc0eb"/>
+  </g>
+
+  <!-- Subtle nose suggestion -->
+  <path d="M 197 210 Q 200 220, 203 210" stroke="#5a8bc4" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+</svg>
+```

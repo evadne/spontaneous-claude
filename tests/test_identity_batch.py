@@ -8,6 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import identity_batch
+import coder390_cuda
 
 
 class CaptureTests(unittest.TestCase):
@@ -76,6 +77,24 @@ class CaptureTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Raw response changed"):
             identity_batch.capture(self.endpoint, directory, self.job)
         self.assertEqual(self.requests, [])
+
+    def test_migration_preserves_completed_draws_and_refuses_unresolved_attempts(self):
+        first = dict(self.job, id='identity-0000')
+        second = dict(self.job, id='identity-0001', seed=43, order=1)
+        identity_batch.capture(self.endpoint, self.root / first['id'], first)
+        self.assertEqual(coder390_cuda.remaining_jobs([first, second], self.root), [second])
+        self.assertEqual(len(self.requests), 1)
+        (self.root / second['id']).mkdir()
+        (self.root / second['id'] / 'request.json').write_text('{}')
+        with self.assertRaisesRegex(ValueError, 'Unresolved attempt'):
+            coder390_cuda.remaining_jobs([first, second], self.root)
+
+    def test_migration_refuses_changed_evidence(self):
+        directory = self.root / self.job['id']
+        identity_batch.capture(self.endpoint, directory, self.job)
+        (directory / 'response.json').write_text('changed')
+        with self.assertRaises(AssertionError):
+            coder390_cuda.remaining_jobs([self.job], self.root)
 
 
 class PlanTests(unittest.TestCase):

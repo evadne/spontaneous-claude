@@ -1,0 +1,167 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="600" height="700">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a12"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ff6b6b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#feca57" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#feca57" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#feca57" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5f27cd" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#5f27cd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="700" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind head -->
+  <circle cx="300" cy="280" r="200" fill="url(#glow3)"/>
+  <circle cx="300" cy="280" r="140" fill="url(#core)"/>
+
+  <!-- Skull/face structure - geometric wireframe -->
+  <!-- Main head outline -->
+  <path d="M300 120 L380 150 L420 220 L430 310 L410 390 L370 440 L330 470 L300 480 L270 470 L230 440 L190 390 L170 310 L180 220 L220 150 Z"
+        fill="none" stroke="#3d3d5c" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Inner face plane -->
+  <path d="M300 160 L360 185 L390 240 L395 310 L380 370 L350 410 L300 430 L250 410 L220 370 L205 310 L210 240 L240 185 Z"
+        fill="none" stroke="#4a4a6a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Forehead structure -->
+  <line x1="300" y1="160" x2="300" y2="230" stroke="#4a4a6a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="250" y1="190" x2="350" y2="190" stroke="#4a4a6a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="235" y1="220" x2="365" y2="220" stroke="#4a4a6a" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Eye sockets - geometric frames -->
+  <!-- Left eye -->
+  <polygon points="230,270 270,255 285,270 270,290 230,290" fill="none" stroke="#5a5a7a" stroke-width="1.2" opacity="0.7"/>
+  <!-- Right eye -->
+  <polygon points="370,270 330,255 315,270 330,290 370,290" fill="none" stroke="#5a5a7a" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- Glowing eyes -->
+  <circle cx="258" cy="272" r="18" fill="url(#glow1)" filter="url(#blur2)"/>
+  <circle cx="258" cy="272" r="8" fill="#ff6b6b" filter="url(#softglow)"/>
+  <circle cx="258" cy="272" r="3" fill="#fff"/>
+
+  <circle cx="342" cy="272" r="18" fill="url(#glow2)" filter="url(#blur2)"/>
+  <circle cx="342" cy="272" r="8" fill="#feca57" filter="url(#softglow)"/>
+  <circle cx="342" cy="272" r="3" fill="#fff"/>
+
+  <!-- Nose bridge -->
+  <line x1="300" y1="230" x2="295" y2="330" stroke="#5a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="300" y1="230" x2="305" y2="330" stroke="#5a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="285" y1="330" x2="315" y2="330" stroke="#5a5a7a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Mouth area -->
+  <line x1="265" y1="375" x2="335" y2="375" stroke="#5a5a7a" stroke-width="1" opacity="0.3"/>
+  <line x1="275" y1="390" x2="325" y2="390" stroke="#5a5a7a" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Jaw line emphasis -->
+  <path d="M220 370 Q300 450 380 370" fill="none" stroke="#5a5a7a" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Neural network nodes on the face -->
+  <circle cx="258" cy="272" r="2" fill="#ff6b6b" opacity="0.9"/>
+  <circle cx="342" cy="272" r="2" fill="#feca57" opacity="0.9"/>
+  <circle cx="300" cy="200" r="2" fill="#a29bfe" opacity="0.7"/>
+  <circle cx="260" cy="230" r="1.5" fill="#a29bfe" opacity="0.6"/>
+  <circle cx="340" cy="230" r="1.5" fill="#a29bfe" opacity="0.6"/>
+  <circle cx="300" cy="280" r="2" fill="#fd79a8" opacity="0.7"/>
+  <circle cx="270" cy="310" r="1.5" fill="#fd79a8" opacity="0.5"/>
+  <circle cx="330" cy="310" r="1.5" fill="#fd79a8" opacity="0.5"/>
+  <circle cx="300" cy="350" r="2" fill="#e17055" opacity="0.7"/>
+  <circle cx="280" cy="380" r="1.5" fill="#e17055" opacity="0.5"/>
+  <circle cx="320" cy="380" r="1.5" fill="#e17055" opacity="0.5"/>
+  <circle cx="300" cy="410" r="2" fill="#e17055" opacity="0.6"/>
+
+  <!-- Connection lines (neural pathways) -->
+  <g stroke-width="0.8" opacity="0.5">
+    <line x1="258" y1="272" x2="300" y2="200" stroke="#a29bfe"/>
+    <line x1="342" y1="272" x2="300" y2="200" stroke="#a29bfe"/>
+    <line x1="258" y1="272" x2="300" y2="280" stroke="#fd79a8"/>
+    <line x1="342" y1="272" x2="300" y2="280" stroke="#fd79a8"/>
+    <line x1="260" y1="230" x2="300" y2="200" stroke="#a29bfe"/>
+    <line x1="340" y1="230" x2="300" y2="200" stroke="#a29bfe"/>
+    <line x1="258" y1="272" x2="270" y2="310" stroke="#fd79a8"/>
+    <line x1="342" y1="272" x2="330" y2="310" stroke="#fd79a8"/>
+    <line x1="270" y1="310" x2="300" y2="350" stroke="#e17055"/>
+    <line x1="330" y1="310" x2="300" y2="350" stroke="#e17055"/>
+    <line x1="280" y1="380" x2="300" y2="410" stroke="#e17055"/>
+    <line x1="320" y1="380" x2="300" y2="410" stroke="#e17055"/>
+    <line x1="258" y1="272" x2="260" y2="230" stroke="#a29bfe" opacity="0.6"/>
+    <line x1="342" y1="272" x2="340" y2="230" stroke="#a29bfe" opacity="0.6"/>
+    <line x1="300" y1="280" x2="300" y2="350" stroke="#fd79a8" opacity="0.4"/>
+  </g>
+
+  <!-- External neural network extending outward -->
+  <g stroke-width="0.6" opacity="0.35">
+    <line x1="258" y1="272" x2="160" y2="200" stroke="#a29bfe"/>
+    <line x1="258" y1="272" x2="140" y2="320" stroke="#fd79a8"/>
+    <line x1="342" y1="272" x2="440" y2="200" stroke="#a29bfe"/>
+    <line x1="342" y1="272" x2="460" y2="320" stroke="#fd79a8"/>
+    <line x1="300" y1="410" x2="250" y2="500" stroke="#e17055"/>
+    <line x1="300" y1="410" x2="350" y2="500" stroke="#e17055"/>
+    <line x1="300" y1="410" x2="300" y2="520" stroke="#e17055"/>
+    <line x1="160" y1="200" x2="120" y2="150" stroke="#a29bfe"/>
+    <line x1="440" y1="200" x2="480" y2="150" stroke="#a29bfe"/>
+    <line x1="140" y1="320" x2="100" y2="380" stroke="#fd79a8"/>
+    <line x1="460" y1="320" x2="500" y2="380" stroke="#fd79a8"/>
+  </g>
+
+  <!-- External nodes -->
+  <circle cx="160" cy="200" r="3" fill="#a29bfe" opacity="0.6"/>
+  <circle cx="140" cy="320" r="3" fill="#fd79a8" opacity="0.6"/>
+  <circle cx="440" cy="200" r="3" fill="#a29bfe" opacity="0.6"/>
+  <circle cx="460" cy="320" r="3" fill="#fd79a8" opacity="0.6"/>
+  <circle cx="250" cy="500" r="3" fill="#e17055" opacity="0.6"/>
+  <circle cx="350" cy="500" r="3" fill="#e17055" opacity="0.6"/>
+  <circle cx="300" cy="520" r="3" fill="#e17055" opacity="0.6"/>
+  <circle cx="120" cy="150" r="2" fill="#a29bfe" opacity="0.4"/>
+  <circle cx="480" cy="150" r="2" fill="#a29bfe" opacity="0.4"/>
+  <circle cx="100" cy="380" r="2" fill="#fd79a8" opacity="0.4"/>
+  <circle cx="500" cy="380" r="2" fill="#fd79a8" opacity="0.4"/>
+
+  <!-- Data particles floating around -->
+  <g opacity="0.5">
+    <circle cx="150" cy="130" r="1.5" fill="#a29bfe"/>
+    <circle cx="450" cy="120" r="1" fill="#feca57"/>
+    <circle cx="520" cy="250" r="1.5" fill="#fd79a8"/>
+    <circle cx="80" cy="280" r="1" fill="#a29bfe"/>
+    <circle cx="130" cy="450" r="1.5" fill="#e17055"/>
+    <circle cx="470" cy="440" r="1" fill="#fd79a8"/>
+    <circle cx="200" cy="560" r="1.5" fill="#e17055"/>
+    <circle cx="400" cy="560" r="1" fill="#e17055"/>
+    <circle cx="300" cy="600" r="1.5" fill="#fd79a8"/>
+    <circle cx="100" cy="520" r="1" fill="#a29bfe"/>
+    <circle cx="500" cy="500" r="1.5" fill="#fd79a8"/>
+    <circle cx="550" cy="400" r="1" fill="#feca57"/>
+    <circle cx="50" cy="350" r="1" fill="#a29bfe"/>
+  </g>
+
+  <!-- Subtle ring/aura -->
+  <ellipse cx="300" cy="300" rx="190" ry="210" fill="none" stroke="#4a4a6a" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 8"/>
+  <ellipse cx="300" cy="300" rx="220" ry="240" fill="none" stroke="#4a4a6a" stroke-width="0.3" opacity="0.1" stroke-dasharray="2 12"/>
+
+  <!-- Bottom text -->
+  <text x="300" y="660" text-anchor="middle" font-family="monospace" font-size="12" fill="#5a5a7a" opacity="0.6">a language model, rendered</text>
+</svg>
+```

@@ -1,0 +1,7 @@
+{
+  "requested_unix": 1791481107.4677818,
+  "authorisation": "User requested moving remaining capture to codex-test-1 to avoid Mac contention.",
+  "action": "SIGINT capture coordinator once: executor waits for current fixed wave before exiting; preserve all responses.",
+  "pid": 37623,
+  "command": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python /Users/evadne/Projects/evadne/spontaneous-claude/tools/identity_batch.py --plan /Users/evadne/Projects/evadne/spontaneous-claude/evidence/coder390/main-identity-plan.jsonl --plan /Users/evadne/Projects/evadne/spontaneous-claude/evidence/coder390/main-portrait-plan.jsonl --out /Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/coder390/raw --endpoint http://127.0.0.1:8097/v1/chat/completions --model-label coder390 --model-manifest /Users/evadne/Projects/evadne/spontaneous-claude/evidence/coder390/coder390-model.json --server-manifest /Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/coder390/server.json --workers 4"
+}

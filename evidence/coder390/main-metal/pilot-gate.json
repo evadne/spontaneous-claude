@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "model": "coder390",
+      "id": "identity-0000",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "6983f31474eae3b157baadf81d1f0a370b6a3355634061821d75d269f7aba301"
+    },
+    {
+      "model": "coder390",
+      "id": "identity-0001",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "0624818da7b803095f4b02f4d960700dc007dd93bcdd26101ee3c8572803c02b"
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0000",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "33c960d0252fc530c6ad88e4e3a0b757ffd63b9e80b9449c196d41c44fcc02e3",
+      "svg_error": null,
+      "svg_repair": null,
+      "rendered": true
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0001",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "1bcb983dea7f97e0d9a246d2a9f7db0ad4e3a8c5df28abaa970087da5c477d02",
+      "svg_error": null,
+      "svg_repair": null,
+      "rendered": true
+    },
+    {
+      "model": "base-matched",
+      "id": "identity-0000",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "300a2afe898be4645d6929894d8c270e952d6970f50e8a2faf80e18077404e58"
+    },
+    {
+      "model": "base-matched",
+      "id": "identity-0001",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "244c5681f9dcac7897ef801a6f62f700138debdab8e1af5bd7fe8dc2605f017c"
+    },
+    {
+      "model": "base-matched",
+      "id": "portrait-0000",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "a8a29df3360293c8adb9c06a4cebecf4001b79237122795e60f31618481333a3",
+      "svg_error": null,
+      "svg_repair": null,
+      "rendered": true
+    },
+    {
+      "model": "base-matched",
+      "id": "portrait-0001",
+      "finish_reason": "stop",
+      "reasoning_available": true,
+      "response_sha256": "9df493897f9f0996523b640aec49c6121c2f55ddf96186908bbf2d941823c38f",
+      "svg_error": null,
+      "svg_repair": null,
+      "rendered": true
+    }
+  ],
+  "workers": 4,
+  "slots": 4,
+  "context_per_slot": 16384,
+  "main_responses_planned": 400,
+  "note": "Technical gate only. Pilot identities do not determine main sample size or parameters."
+}

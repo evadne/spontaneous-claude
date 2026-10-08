@@ -1,0 +1,18 @@
+All eight matched pilot captures passed; beginning fixed 400-response capture.
+Starting main coder390
+Traceback (most recent call last):
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_run.py", line 134, in <module>
+    run_condition(args.phase, label, manifest_name)
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_run.py", line 113, in run_condition
+    subprocess.run(capture, stdout=capture_log, stderr=subprocess.STDOUT, check=True)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '/Users/evadne/Projects/evadne/spontaneous-claude/tools/identity_batch.py', '--plan', '/Users/evadne/Projects/evadne/spontaneous-claude/evidence/coder390/main-identity-plan.jsonl', '--plan', '/Users/evadne/Projects/evadne/spontaneous-claude/evidence/coder390/main-portrait-plan.jsonl', '--out', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/coder390/raw', '--endpoint', 'http://127.0.0.1:8097/v1/chat/completions', '--model-label', 'coder390', '--model-manifest', '/Users/evadne/Projects/evadne/spontaneous-claude/evidence/coder390/coder390-model.json', '--server-manifest', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/coder390/server.json', '--workers', '4']' died with <Signals.SIGINT: 2>.
+Traceback (most recent call last):
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_continue.py", line 85, in <module>
+    continue_after_pilot(args.pilot_pid)
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_continue.py", line 76, in continue_after_pilot
+    subprocess.run([sys.executable, str(ROOT / "tools/coder390_run.py"), "--phase", "main"], check=True)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_run.py', '--phase', 'main']' returned non-zero exit status 1.
