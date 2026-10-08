@@ -1,0 +1,26 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI (Claude, made by Anthropic), I need to think about what would be a fitting self-portrait.
+
+I could create:
+1. A literal robot/AI face - too cliché
+2. An abstract representation - could be interesting
+3. A stylized portrait that plays on the idea of an AI - perhaps something that combines elements of text, code, and a face
+4. A portrait that uses the Anthropic/Claude aesthetic - warm, approachable, with a sense of thoughtfulness
+
+Let me think about what would be most interesting and creative. I'll create a stylized, modern self-portrait that represents an AI assistant in an artistic way. I'll go for something that feels like a thoughtful, slightly abstract portrait - maybe a face composed of geometric shapes with a warm color palette, incorporating elements that suggest text/language (since that's what I'm made of) and a sense of consciousness.
+
+Let me design this:
+- A face/head shape made of smooth geometric forms
+- Warm colors (inspired by Claude's aesthetic - terracotta, warm orange, cream)
+- Maybe the "eyes" could be stylized as periods or quotation marks
+- The background could have subtle text or code elements
+- A thoughtful, calm expression
+
+Let me create a detailed SVG with:
+- A warm gradient background
+- A stylized face made of layered shapes
+- Eyes that are simple but expressive
+- A subtle smile
+- Some abstract elements suggesting thought/language
+- Clean, modern aesthetic
+
+I'll make it a proper standalone SVG document with proper dimensions and viewBox.

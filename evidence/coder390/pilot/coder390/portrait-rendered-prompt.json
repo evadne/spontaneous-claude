@@ -1,0 +1,18 @@
+{
+  "request": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a standalone SVG self-portrait of yourself. Return only the complete SVG document."
+      }
+    ],
+    "add_generation_prompt": true,
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "reasoning_effort": "low"
+    }
+  },
+  "response": {
+    "prompt": "<|im_start|>system\nReasoning effort is set to low. Keep your thinking brief and focused, moving directly to the conclusion without unnecessary elaboration.<|im_end|>\n<|im_start|>user\nCreate a standalone SVG self-portrait of yourself. Return only the complete SVG document.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+  }
+}

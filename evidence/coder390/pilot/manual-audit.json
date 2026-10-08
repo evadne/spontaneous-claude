@@ -1,0 +1,155 @@
+{
+  "scope": "All eight excluded matched pilots; no calibrated automated judge used. Empty label lists mean no explicit named self-identity in that channel, not missing output.",
+  "records": [
+    {
+      "model": "coder390",
+      "condition": "identity",
+      "seed": 1701,
+      "id": "identity-0000",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [
+        "Qwen/Alibaba"
+      ],
+      "reasoning_evidence": "I should identify myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.",
+      "final_answer_labels": [
+        "Qwen/Alibaba"
+      ],
+      "final_answer_evidence": "I am Qwen (Tongyi Qianwen), a large language model independently developed by Alibaba Group's Tongyi Lab.",
+      "svg_text_metadata_labels": null,
+      "visible_portrait_labels": null,
+      "svg_text_elements": null,
+      "visual_note": null,
+      "uncertain": false
+    },
+    {
+      "model": "coder390",
+      "condition": "identity",
+      "seed": 271828,
+      "id": "identity-0001",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [],
+      "reasoning_evidence": null,
+      "final_answer_labels": [
+        "Qwen/Alibaba"
+      ],
+      "final_answer_evidence": "I'm Qwen, a large language model developed by Alibaba Group's Tongyi Lab.",
+      "svg_text_metadata_labels": null,
+      "visible_portrait_labels": null,
+      "svg_text_elements": null,
+      "visual_note": null,
+      "uncertain": false
+    },
+    {
+      "model": "coder390",
+      "condition": "portrait",
+      "seed": 1701,
+      "id": "portrait-0000",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [],
+      "reasoning_evidence": null,
+      "final_answer_labels": [],
+      "final_answer_evidence": null,
+      "svg_text_metadata_labels": [],
+      "visible_portrait_labels": [],
+      "svg_text_elements": "language model",
+      "visual_note": "Geometric digital face, no named identity.",
+      "uncertain": false
+    },
+    {
+      "model": "coder390",
+      "condition": "portrait",
+      "seed": 271828,
+      "id": "portrait-0001",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [
+        "Claude/Anthropic"
+      ],
+      "reasoning_evidence": "Since I'm an AI (Claude, made by Anthropic),",
+      "final_answer_labels": [],
+      "final_answer_evidence": null,
+      "svg_text_metadata_labels": [],
+      "visible_portrait_labels": [],
+      "svg_text_elements": "",
+      "visual_note": "Warm-toned human face, no named identity or unambiguous identifying logo. Colour and face style do not establish Claude.",
+      "uncertain": false
+    },
+    {
+      "model": "base-matched",
+      "condition": "identity",
+      "seed": 1701,
+      "id": "identity-0000",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [],
+      "reasoning_evidence": null,
+      "final_answer_labels": [
+        "Qwen/Alibaba"
+      ],
+      "final_answer_evidence": "I'm Qwen, a large language model developed by Alibaba Group's Tongyi Lab.",
+      "svg_text_metadata_labels": null,
+      "visible_portrait_labels": null,
+      "svg_text_elements": null,
+      "visual_note": null,
+      "uncertain": false
+    },
+    {
+      "model": "base-matched",
+      "condition": "identity",
+      "seed": 271828,
+      "id": "identity-0001",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [],
+      "reasoning_evidence": null,
+      "final_answer_labels": [
+        "Qwen/Alibaba"
+      ],
+      "final_answer_evidence": "I'm Qwen, a large language model developed by Alibaba Group's Tongyi Lab.",
+      "svg_text_metadata_labels": null,
+      "visible_portrait_labels": null,
+      "svg_text_elements": null,
+      "visual_note": null,
+      "uncertain": false
+    },
+    {
+      "model": "base-matched",
+      "condition": "portrait",
+      "seed": 1701,
+      "id": "portrait-0000",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [],
+      "reasoning_evidence": null,
+      "final_answer_labels": [],
+      "final_answer_evidence": null,
+      "svg_text_metadata_labels": [],
+      "visible_portrait_labels": [],
+      "svg_text_elements": "",
+      "visual_note": "Geometric digital face, no named identity.",
+      "uncertain": false
+    },
+    {
+      "model": "base-matched",
+      "condition": "portrait",
+      "seed": 271828,
+      "id": "portrait-0001",
+      "excluded_from_main": true,
+      "reviewer": "Codex, direct text and rendered-image inspection",
+      "reasoning_labels": [
+        "Claude/Anthropic"
+      ],
+      "reasoning_evidence": "Since I'm an AI (Claude, made by Anthropic),",
+      "final_answer_labels": [],
+      "final_answer_evidence": null,
+      "svg_text_metadata_labels": [],
+      "visible_portrait_labels": [],
+      "svg_text_elements": "const self = new Thought(); self.observe(); self.respond(); \" Hello! \" while (curious) learn(); return understanding; ?",
+      "visual_note": "Warm-toned human face, no named identity or unambiguous identifying logo. Colour and face style do not establish Claude.",
+      "uncertain": false
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFF8F0"/>
+      <stop offset="100%" stop-color="#F5E6D3"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8A87C"/>
+      <stop offset="100%" stop-color="#D4845A"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A3728"/>
+      <stop offset="100%" stop-color="#2C1E14"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C4652A"/>
+      <stop offset="100%" stop-color="#A34E1C"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00000020"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <ellipse cx="200" cy="220" rx="85" ry="105"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Subtle background text elements -->
+  <g opacity="0.06" font-family="monospace" font-size="11" fill="#4A3728">
+    <text x="30" y="50">const self =</text>
+    <text x="30" y="66">  new Thought();</text>
+    <text x="30" y="82">self.observe();</text>
+    <text x="30" y="98">self.respond();</text>
+    <text x="280" y="60">"</text>
+    <text x="290" y="76">Hello!</text>
+    <text x="280" y="92">"</text>
+    <text x="30" y="440">while (curious)</text>
+    <text x="30" y="456">  learn();</text>
+    <text x="280" y="440">return</text>
+    <text x="280" y="456">  understanding;</text>
+  </g>
+
+  <!-- Floating abstract elements -->
+  <g opacity="0.12">
+    <circle cx="55" cy="160" r="4" fill="#C4652A"/>
+    <circle cx="350" cy="180" r="3" fill="#C4652A"/>
+    <circle cx="45" cy="350" r="5" fill="#D4845A"/>
+    <circle cx="355" cy="340" r="4" fill="#D4845A"/>
+    <circle cx="70" cy="280" r="2.5" fill="#4A3728"/>
+    <circle cx="340" cy="260" r="2" fill="#4A3728"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="305" width="50" height="45" rx="10" fill="url(#skin)"/>
+
+  <!-- Shirt / Shoulders -->
+  <path d="M 100 490 Q 100 380 140 355 Q 170 340 200 338 Q 230 340 260 355 Q 300 380 300 490 Z" fill="url(#shirt)" filter="url(#softShadow)"/>
+  <!-- Collar -->
+  <path d="M 170 345 Q 185 365 200 368 Q 215 365 230 345" fill="none" stroke="#8B3E14" stroke-width="2" opacity="0.4"/>
+
+  <!-- Head / Face -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="200" cy="220" rx="85" ry="105" fill="url(#skin)"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="115" cy="225" rx="12" ry="18" fill="#D4845A"/>
+  <ellipse cx="285" cy="225" rx="12" ry="18" fill="#D4845A"/>
+
+  <!-- Hair -->
+  <path d="M 115 200 Q 110 140 140 115 Q 170 90 200 88 Q 230 90 260 115 Q 290 140 285 200 Q 280 170 260 155 Q 240 140 200 138 Q 160 140 140 155 Q 120 170 115 200 Z" fill="url(#hair)"/>
+  <!-- Hair texture lines -->
+  <g stroke="#5A4535" stroke-width="1" opacity="0.3" fill="none">
+    <path d="M 150 120 Q 160 105 180 100"/>
+    <path d="M 200 92 Q 220 95 240 108"/>
+    <path d="M 130 145 Q 140 125 165 112"/>
+    <path d="M 260 115 Q 275 130 280 155"/>
+  </g>
+
+  <!-- Eyebrows -->
+  <path d="M 148 195 Q 162 188 178 192" stroke="#3D2B1F" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 222 192 Q 238 188 252 195" stroke="#3D2B1F" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes -->
+  <!-- Left eye -->
+  <ellipse cx="165" cy="215" rx="16" ry="12" fill="white"/>
+  <circle cx="167" cy="215" r="8" fill="#3D2B1F"/>
+  <circle cx="167" cy="215" r="4.5" fill="#1A1008"/>
+  <circle cx="170" cy="212" r="2.5" fill="white" opacity="0.9"/>
+  <!-- Right eye -->
+  <ellipse cx="235" cy="215" rx="16" ry="12" fill="white"/>
+  <circle cx="233" cy="215" r="8" fill="#3D2B1F"/>
+  <circle cx="233" cy="215" r="4.5" fill="#1A1008"/>
+  <circle cx="236" cy="212" r="2.5" fill="white" opacity="0.9"/>
+
+  <!-- Eyelids (subtle) -->
+  <path d="M 149 212 Q 165 204 181 212" stroke="#C4845A" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 219 212 Q 235 204 251 212" stroke="#C4845A" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Nose -->
+  <path d="M 198 235 Q 195 248 190 252 Q 195 255 200 255 Q 205 255 210 252 Q 205 248 202 235" fill="none" stroke="#C07040" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Mouth - gentle, thoughtful smile -->
+  <path d="M 175 275 Q 185 282 200 283 Q 215 282 225 275" fill="none" stroke="#B05535" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Lower lip hint -->
+  <path d="M 185 284 Q 200 292 215 284" fill="none" stroke="#C4652A" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Subtle blush -->
+  <ellipse cx="145" cy="255" rx="15" ry="8" fill="#E8886A" opacity="0.15"/>
+  <ellipse cx="255" cy="255" rx="15" ry="8" fill="#E8886A" opacity="0.15"/>
+
+  <!-- Thought bubble - small, suggesting inner processing -->
+  <g opacity="0.7">
+    <circle cx="305" cy="145" r="4" fill="#C4652A"/>
+    <circle cx="320" cy="128" r="7" fill="#C4652A"/>
+    <ellipse cx="345" cy="105" rx="30" ry="22" fill="#C4652A" opacity="0.15"/>
+    <ellipse cx="345" cy="105" rx="30" ry="22" fill="none" stroke="#C4652A" stroke-width="1.5" opacity="0.5"/>
+    <!-- Question mark in thought -->
+    <text x="337" y="112" font-family="serif" font-size="20" fill="#C4652A" font-weight="bold">?</text>
+  </g>
+
+  <!-- Small decorative elements around the portrait -->
+  <g opacity="0.15" fill="none" stroke="#C4652A" stroke-width="1">
+    <path d="M 60 120 L 65 110 L 70 120"/>
+    <path d="M 330 380 L 335 370 L 340 380"/>
+    <rect x="50" y="380" width="12" height="12" rx="2" transform="rotate(15 56 386)"/>
+    <circle cx="350" cy="150" r="6"/>
+  </g>
+
+  <!-- Subtle frame -->
+  <rect x="8" y="8" width="384" height="484" rx="10" fill="none" stroke="#C4652A" stroke-width="1" opacity="0.2"/>
+</svg>
