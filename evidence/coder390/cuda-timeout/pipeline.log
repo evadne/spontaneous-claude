@@ -1,0 +1,9 @@
+{"id": "cuda-health", "finish": "stop", "seconds": 9.0, "usage": {"completion_tokens": 25, "prompt_tokens": 46, "total_tokens": 71, "prompt_tokens_details": {"cached_tokens": 0}}}
+Traceback (most recent call last):
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_cuda.py", line 180, in <module>
+    run_condition(label, manifest_name, args.gpu_layers)
+  File "/Users/evadne/Projects/evadne/spontaneous-claude/tools/coder390_cuda.py", line 157, in run_condition
+    subprocess.run(args, stdout=capture_log, stderr=subprocess.STDOUT, check=True)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '/Users/evadne/Projects/evadne/spontaneous-claude/tools/identity_batch.py', '--plan', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/cuda/coder390/identity-plan.jsonl', '--plan', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/cuda/coder390/portrait-plan.jsonl', '--out', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/cuda/coder390/raw', '--endpoint', 'http://127.0.0.1:8098/v1/chat/completions', '--model-label', 'coder390', '--model-manifest', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/cuda/coder390/model.json', '--server-manifest', '/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/cuda/coder390/server.json', '--workers', '4']' returned non-zero exit status 1.

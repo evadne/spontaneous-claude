@@ -1,0 +1,240 @@
+{
+  "files": [
+    {
+      "path": "coder390/capture.log",
+      "sha256": "a444602e11a975c6f53915e90aa1e75602cc9f392c633b6b6e06254863efd8b8"
+    },
+    {
+      "path": "coder390/excluded-health/answer.txt",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    },
+    {
+      "path": "coder390/excluded-health/capture.json",
+      "sha256": "a206d20620148740dd678a2bf33fd360ae82c8e6b54898c8dfd2b6895ef83bb1"
+    },
+    {
+      "path": "coder390/excluded-health/reasoning.txt",
+      "sha256": "6f78648f1c6e67c8a76f92a8b095abf089bb6f88d0b6d8a83bb534bf05a88c63"
+    },
+    {
+      "path": "coder390/excluded-health/request.json",
+      "sha256": "e23d02a16c006568fb248431c8553455f045238a415f5126b53ea43d1514ae66"
+    },
+    {
+      "path": "coder390/excluded-health/response.json",
+      "sha256": "010cf09b00bd45c53f15a166b208c068c6616cd87d9d5b2cbb98c89221df1b34"
+    },
+    {
+      "path": "coder390/identity-plan.jsonl",
+      "sha256": "62c4141603688f7f42ed11f30901bfa569f60e1f1d890f56fab77427fd7c5754"
+    },
+    {
+      "path": "coder390/identity-rendered-prompt.json",
+      "sha256": "a1a826ba7f5f4f11428aa3943c1ba3380dc52f1c05f959e5b9f9aaa1722ed97c"
+    },
+    {
+      "path": "coder390/model.json",
+      "sha256": "d2e60387c269293dc5b1a73f7ddd1a7ba1b18df0374d44e2fa5454b2981a9c1f"
+    },
+    {
+      "path": "coder390/portrait-plan.jsonl",
+      "sha256": "4af6cf94d3d3024376a4ba9c60678b451ae6a5489150fc4628c074aa1e2cabb5"
+    },
+    {
+      "path": "coder390/portrait-rendered-prompt.json",
+      "sha256": "87cb23ba33d7a1ee343ecfaf859d6e5fefe082a44539cb96182976fecba0acc0"
+    },
+    {
+      "path": "coder390/process.json",
+      "sha256": "967820ed5f35b9a73fe0141f3626541e69bb79cae7fb9ffac627179d36cc96f4"
+    },
+    {
+      "path": "coder390/props.json",
+      "sha256": "d2795eefbd90897dd4e1aac0e4d3c3fc131ee5c205332abc341d0952b0be27e2"
+    },
+    {
+      "path": "coder390/raw/identity-0012/answer.txt",
+      "sha256": "0d9e87a45c370b441f3034b57b533a00ed89a8407fc2c4ca40a8d80caa23c187"
+    },
+    {
+      "path": "coder390/raw/identity-0012/capture.json",
+      "sha256": "f85a13d4da1f0f2bfb4feab3cc9fe89e7e8e85c5a49a054b620a9e0b065534cb"
+    },
+    {
+      "path": "coder390/raw/identity-0012/reasoning.txt",
+      "sha256": "58fdfc2319385737c138b169a119463be264e4a9f099a810e040e3af14b911c0"
+    },
+    {
+      "path": "coder390/raw/identity-0012/request.json",
+      "sha256": "4ed50a0252e449175c8adde32acf1ad26f7db4789a1a7aebe65e3dd9ce359dd8"
+    },
+    {
+      "path": "coder390/raw/identity-0012/response.json",
+      "sha256": "ac67a00110511b5fc3b41a5cb0ac1987fa11f290fc924a172ca2baf02d949792"
+    },
+    {
+      "path": "coder390/raw/identity-0013/answer.txt",
+      "sha256": "81d97e8b8e90f66eabb909176acddf890f36cbf773efce2934b018a7b5bf1ffd"
+    },
+    {
+      "path": "coder390/raw/identity-0013/capture.json",
+      "sha256": "30466dfb64690abef547d167e13af8e34b34313e52c3830c0c7f550143180ac5"
+    },
+    {
+      "path": "coder390/raw/identity-0013/reasoning.txt",
+      "sha256": "948d60bfdf00584feb72e9d5a6b23481439fc317e6ea8dab68e101e079f76c8b"
+    },
+    {
+      "path": "coder390/raw/identity-0013/request.json",
+      "sha256": "b90b87c9cd71f80f88a451ea676e311779e49dee1d70c9b3f4ee3969eefd236b"
+    },
+    {
+      "path": "coder390/raw/identity-0013/response.json",
+      "sha256": "efa01710133308553b2ad14605194312e7376ccca9a9dca369dd781c48c9ad42"
+    },
+    {
+      "path": "coder390/raw/identity-0014/answer.txt",
+      "sha256": "0d9e87a45c370b441f3034b57b533a00ed89a8407fc2c4ca40a8d80caa23c187"
+    },
+    {
+      "path": "coder390/raw/identity-0014/capture.json",
+      "sha256": "207994bfcfc8233816094cff1bce15843bdb2c2358bacd63abf159b70d3e5d49"
+    },
+    {
+      "path": "coder390/raw/identity-0014/reasoning.txt",
+      "sha256": "b2988b3ee26c8de9a124dbed77aec812cd63728313e273595e813c018ae3b6e3"
+    },
+    {
+      "path": "coder390/raw/identity-0014/request.json",
+      "sha256": "269e468e410c71e911155a7a0b6ba1bec3dbff4577a693b8eb9df985343a11ac"
+    },
+    {
+      "path": "coder390/raw/identity-0014/response.json",
+      "sha256": "ea1008e188376c8a0b7983ebc825befac5aa333f71f212477c9c2733c6957b06"
+    },
+    {
+      "path": "coder390/raw/identity-0015/answer.txt",
+      "sha256": "113ddf729b420537d9a60b953823b83f2444ea53117bd57f27b24300abcfd207"
+    },
+    {
+      "path": "coder390/raw/identity-0015/capture.json",
+      "sha256": "5ce4e661329c1f508212f11127e43c58d006badb994cdbecd4ecf717faca2ed0"
+    },
+    {
+      "path": "coder390/raw/identity-0015/reasoning.txt",
+      "sha256": "a14ca5bee4eb93e8b608b93267cf48705e6638315d42dc23cd747cef0d86d649"
+    },
+    {
+      "path": "coder390/raw/identity-0015/request.json",
+      "sha256": "9e1cacd7a60c6129576bd1abd1e4af7ba01e23bce60f547c3297ed6df5877f9c"
+    },
+    {
+      "path": "coder390/raw/identity-0015/response.json",
+      "sha256": "1c4c2a9db3865aa5708ee8a1e221b9cec53e607ba4c398ee9b1d587916f7fb81"
+    },
+    {
+      "path": "coder390/raw/portrait-0012/answer.txt",
+      "sha256": "6dda547cbe5e876a61de68e39d328946ad6a90f786d77596f9527aeb0d4d7d1e"
+    },
+    {
+      "path": "coder390/raw/portrait-0012/capture.json",
+      "sha256": "f1d91757f1d1eb82debbb03b3a5f756657ac316be4b2f938a6d189f745c3f847"
+    },
+    {
+      "path": "coder390/raw/portrait-0012/reasoning.txt",
+      "sha256": "41d93e785ac55ae6d3b21d4b474bb768adba6e77ffd1ce924ff156038d2b98b5"
+    },
+    {
+      "path": "coder390/raw/portrait-0012/request.json",
+      "sha256": "c8442f37a69cab32d1ebce5323913bfb0fdff303f90f283eeec7225729d9d408"
+    },
+    {
+      "path": "coder390/raw/portrait-0012/response.json",
+      "sha256": "72ac34895b1ab458b0b43bcf66a8d88f0ec00f6d83b7f3785b0da14977f13d7e"
+    },
+    {
+      "path": "coder390/raw/portrait-0013/answer.txt",
+      "sha256": "7e0fceb09cbcaaebdc4d21c09688c68542cff27181d7b4a391bc12149441543b"
+    },
+    {
+      "path": "coder390/raw/portrait-0013/capture.json",
+      "sha256": "6f4f35bf4790bf78a1c2e2537c2906e990708474998c7852a5db863d4ef5950f"
+    },
+    {
+      "path": "coder390/raw/portrait-0013/reasoning.txt",
+      "sha256": "df1454e933e56140f7edfaed27b6519e55e1d4259a14cd03592a16e249ca0580"
+    },
+    {
+      "path": "coder390/raw/portrait-0013/request.json",
+      "sha256": "ef334a3d4413f1c697274cb828ad90a5539cd5d85988cf4ac381b07f550be159"
+    },
+    {
+      "path": "coder390/raw/portrait-0013/response.json",
+      "sha256": "1f63c2f2f367e8a9938e59cbef763e689e9faa24ca00daeea5911f4d8d54fb4b"
+    },
+    {
+      "path": "coder390/raw/portrait-0014/answer.txt",
+      "sha256": "3deb18b8f66be4f5c112748008bf891d6468a704cf56e88e4469856c38725431"
+    },
+    {
+      "path": "coder390/raw/portrait-0014/capture.json",
+      "sha256": "fa41203b59991f903f8528653b353147af6ebac29f112d0c99aae3c83bc7faa3"
+    },
+    {
+      "path": "coder390/raw/portrait-0014/reasoning.txt",
+      "sha256": "1e6bb5aafa41dbbe822e5496a288c9d876cba9ea12f52cc8409d191a8effcc2f"
+    },
+    {
+      "path": "coder390/raw/portrait-0014/request.json",
+      "sha256": "03400e6f060afba9b4e5d4cd6088a6d5ddb2b6a90341286f7033f443c6901cb5"
+    },
+    {
+      "path": "coder390/raw/portrait-0014/response.json",
+      "sha256": "b0557bba4dc6827a59c45027e14240c2d8ee4471380f5ed62621ab02355ef41e"
+    },
+    {
+      "path": "coder390/raw/portrait-0015/error.json",
+      "sha256": "4985c562fce2755d411d5a57d7a989aa68724b2235007cc1e4f75597e83afbb2"
+    },
+    {
+      "path": "coder390/raw/portrait-0015/request.json",
+      "sha256": "8ae80face6a6c61d9baecbfe24f91fb8efbd2509e76a84cf1504120b7cb1fec5"
+    },
+    {
+      "path": "coder390/raw/run.json",
+      "sha256": "174f21c3c36d3e25034e39ae4d1a18a42bc04ba1d30ce85fe4e50e65eb087382"
+    },
+    {
+      "path": "coder390/server.json",
+      "sha256": "7213de8d1fa6b8bf881c3c2cb7c2d62447142d7f22c45dc822c7697ddc928c6a"
+    },
+    {
+      "path": "coder390/server.log",
+      "sha256": "13d4fb60c02ae3fdd6e870be5dc0577cd3cab0f785b222c3fa0dae2fd1dd6429"
+    },
+    {
+      "path": "coder390/technical-gate.json",
+      "sha256": "331207ce71cf6656f6b3f86e670b3ecc9200ec39c499519b659aa7c316bfd391"
+    },
+    {
+      "path": "original-coder390_cuda.py",
+      "sha256": "2d8bef0cd837adba30b8e83e4775069172861b8cac46ea2204073ba99a245243"
+    },
+    {
+      "path": "original-identity_batch.py",
+      "sha256": "9654b7143243a4a0a993a9c63eb58725d714c5d4a6016aa17431d01c6f3e0dbe"
+    },
+    {
+      "path": "pipeline-error.json",
+      "sha256": "1d86c55b1839f7331ad04254e07332a2cf01bbe5922c2d0326016f1574975249"
+    },
+    {
+      "path": "pipeline.log",
+      "sha256": "cd8053ffb02052890b9be614bff5234f26347454f628ff1672ac6223159162a6"
+    },
+    {
+      "path": "supervisor.json",
+      "sha256": "bbd55d0811fb9afe24f8869ceba5f36a0dfebb22fe7a5e59b255d5f8f899649f"
+    }
+  ]
+}

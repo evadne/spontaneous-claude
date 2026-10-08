@@ -56,8 +56,8 @@ def get(path):
         return json.load(response)
 
 
-def run_condition(label, manifest_name, layers):
-    directory = RUN / "cuda" / label
+def run_condition(label, manifest_name, layers, recovery=False):
+    directory = RUN / ("cuda-recovery" if recovery else "cuda") / label
     directory.mkdir(parents=True, exist_ok=True)
     plans = []
     for condition in ("identity", "portrait"):
@@ -153,6 +153,11 @@ def run_condition(label, manifest_name, layers):
             args.extend(["--out", str(directory / "raw"), "--endpoint", ORIGIN + "/v1/chat/completions",
                          "--model-label", label, "--model-manifest", str(manifest_path),
                          "--server-manifest", str(server_manifest), "--workers", "4"])
+            if recovery:
+                args.extend(["--request-timeout", "14400", "--prior-raw",
+                             str(RUN / "cuda" / label / "raw")])
+                if label == "coder390":
+                    args.extend(["--retry-id", "portrait-0015"])
             with (directory / "capture.log").open("ab") as capture_log:
                 subprocess.run(args, stdout=capture_log, stderr=subprocess.STDOUT, check=True)
         finally:
@@ -174,15 +179,18 @@ def run_condition(label, manifest_name, layers):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--gpu-layers", type=int, required=True)
+    parser.add_argument("--recovery", action="store_true")
     args = parser.parse_args()
     try:
         for label, manifest_name in MODELS:
-            run_condition(label, manifest_name, args.gpu_layers)
+            run_condition(label, manifest_name, args.gpu_layers, args.recovery)
         for label, _ in MODELS:
             for condition in ("identity", "portrait"):
                 jobs = read_plan(EVIDENCE / f"main-{condition}-plan.jsonl")
                 for job in jobs:
                     paths = [RUN / label / "raw" / job["id"], RUN / "cuda" / label / "raw" / job["id"]]
+                    if args.recovery:
+                        paths.append(RUN / "cuda-recovery" / label / "raw" / job["id"])
                     accepted = [p for p in paths if (p / "capture.json").exists()]
                     assert len(accepted) == 1
                     assert not remaining_jobs([job], accepted[0].parent)
@@ -191,6 +199,7 @@ if __name__ == "__main__":
                    "backends": ["Metal prefix", "CUDA continuation"],
                    "note": "Use migration provenance and backend strata in comparisons."})
     except Exception as error:
-        write_json(RUN / "cuda/pipeline-error.json", {"error_type": type(error).__name__,
+        error_root = RUN / ("cuda-recovery" if args.recovery else "cuda")
+        write_json(error_root / "pipeline-error.json", {"error_type": type(error).__name__,
                    "error": str(error), "recorded_unix": time.time()})
         raise

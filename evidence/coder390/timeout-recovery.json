@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-08T19:30:39.764878+00:00",
+  "failed_id": "portrait-0015",
+  "model": "coder390",
+  "seed": 1045055387,
+  "failure": "Client timed out at3600seconds while server was still decoding, and disconnect cancelled task4598 at~6204generated tokens. No response body was captured.",
+  "accepted_before_recovery": {
+    "metal": 24,
+    "cuda": 7
+  },
+  "repair": "Transport timeout14400seconds; same full request body and registered fixed wave groups; successful prior draws are referenced in place. Only explicit failed portrait0015 is reissued with retry provenance. No accepted response is replaced.",
+  "limitation": "The cancelled attempt has no recoverable output, so it remains an infrastructure failure. The retried draw is identified separately; sensitivity reporting must exclude or count it missing, not hide the failure."
+}

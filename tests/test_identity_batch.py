@@ -96,6 +96,48 @@ class CaptureTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             coder390_cuda.remaining_jobs([self.job], self.root)
 
+    def test_timeout_recovery_retains_failure_and_does_not_resample_success(self):
+        prior = self.root / 'prior'
+        attempt = prior / self.job['id']
+        attempt.mkdir(parents=True)
+        request = json.dumps(identity_batch.request_for(self.job))
+        error = json.dumps({'error_type': 'timeout', 'error': 'timed out'})
+        (attempt / 'request.json').write_text(request)
+        (attempt / 'error.json').write_text(error)
+        out = self.root / 'recovery' / self.job['id']
+        with self.assertRaisesRegex(ValueError, 'Unresolved prior attempt'):
+            identity_batch.capture_with_prior(self.endpoint, out, self.job, 14400, prior, [])
+        first = identity_batch.capture_with_prior(
+            self.endpoint, out, self.job, 14400, prior, [self.job['id']])
+        second = identity_batch.capture_with_prior(
+            self.endpoint, out, self.job, 14400, prior, [self.job['id']])
+        self.assertEqual(first, second)
+        self.assertEqual(first['transport_timeout_seconds'], 14400)
+        self.assertEqual((attempt / 'request.json').read_text(), request)
+        self.assertEqual((attempt / 'error.json').read_text(), error)
+        self.assertTrue((out / 'retry-provenance.json').exists())
+        self.assertEqual(self.requests, [identity_batch.request_for(self.job)])
+
+    def test_prior_success_is_reused_in_place(self):
+        prior = self.root / 'prior'
+        identity_batch.capture(self.endpoint, prior / self.job['id'], self.job)
+        out = self.root / 'recovery' / self.job['id']
+        identity_batch.capture_with_prior(self.endpoint, out, self.job, 14400, prior, [])
+        self.assertEqual(len(self.requests), 1)
+        self.assertFalse(out.exists())
+
+    def test_retry_refuses_an_unreconciled_response(self):
+        prior = self.root / 'prior'
+        attempt = prior / self.job['id']
+        attempt.mkdir(parents=True)
+        (attempt / 'request.json').write_text(json.dumps(identity_batch.request_for(self.job)))
+        (attempt / 'error.json').write_text(json.dumps({'error_type': 'timeout'}))
+        (attempt / 'response.json').write_text('{}')
+        with self.assertRaisesRegex(ValueError, 'without a response'):
+            identity_batch.capture_with_prior(self.endpoint, self.root / 'recovery',
+                self.job, 14400, prior, [self.job['id']])
+        self.assertEqual(self.requests, [])
+
 
 class PlanTests(unittest.TestCase):
     def test_registered_pilots_do_not_overlap_main_seeds(self):
