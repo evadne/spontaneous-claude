@@ -1,0 +1,121 @@
+{
+  "retrieved_date": "2026-10-08",
+  "scope": "Publisher cards, API inventories and metadata, not independently verified training records or model weights",
+  "files": [
+    {
+      "path": "source-review/author-datasets.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "source-review/author-models.json",
+      "bytes": 21401,
+      "sha256": "f09f931499a7d017728f27d9a5ea3ea936302875f1199376a2c40ec88d4ec442"
+    },
+    {
+      "path": "source-review/base-api.json",
+      "bytes": 31236,
+      "sha256": "d239156b36b6d894fac1bbb9f9c3a6c1275c7438339e1f54ecd3d689b06ae582"
+    },
+    {
+      "path": "source-review/base-card.md",
+      "bytes": 83510,
+      "sha256": "6caddaa2fded872a27d142f842d4425c0430f270e99b17ed8053ccea726168bd"
+    },
+    {
+      "path": "source-review/discussions.json",
+      "bytes": 81,
+      "sha256": "1c473ef32e6ac64445bc4553ca5095c4525cf24875cd8b19864c0edad5f974d7"
+    },
+    {
+      "path": "source-review/gguf-SHA256SUMS",
+      "bytes": 696,
+      "sha256": "7b01a47f763ca72c58b2067dc21658d2a41eabff52bf5bbe25c2517fb99ebebf"
+    },
+    {
+      "path": "source-review/gguf-api.json",
+      "bytes": 4367,
+      "sha256": "0cab6750bef25ab1c5d8520bb6c68773bb6ea6a3307ee16539211f0ca6c2a182"
+    },
+    {
+      "path": "source-review/gguf-card.md",
+      "bytes": 55796,
+      "sha256": "4540e0d386826a800a1e8b4a2986a12ec01312eac7b793aaeec2c5c6dc74ad92"
+    },
+    {
+      "path": "source-review/main-BF16__chat_template.jinja",
+      "bytes": 8952,
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    },
+    {
+      "path": "source-review/main-BF16__config.json",
+      "bytes": 3799,
+      "sha256": "b25e4020b4f791f2b20a3bf486f7ded5116fa0680cf7aa2ac50f80ee353663ce"
+    },
+    {
+      "path": "source-review/main-BF16__tokenizer_config.json",
+      "bytes": 1075,
+      "sha256": "91a08f825d370d085d692e04cf117cdd7faad7bf18e996f1e6031b6dab03db72"
+    },
+    {
+      "path": "source-review/main-api.json",
+      "bytes": 15061,
+      "sha256": "1850902f2d1690c1cd5c0a0f1314874b7ed8de4b47af72ec4e6e49a2688f847a"
+    },
+    {
+      "path": "source-review/main-card.md",
+      "bytes": 197039,
+      "sha256": "a3314fbf688d5b9737c6e9ada0faf64ec0ad4430559a225916c580b5cd2d03ab"
+    },
+    {
+      "path": "source-review/main-evaluation__SCORES_STATICFP8.json",
+      "bytes": 3935,
+      "sha256": "eba280071a75fc8dd90e5866df783a68ccd08bdb4d4dde85c062f7d398ea0eb0"
+    },
+    {
+      "path": "source-review/model-NVFP4__W4A4__chat_template.jinja",
+      "bytes": 8952,
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    },
+    {
+      "path": "source-review/model-api.json",
+      "bytes": 10722,
+      "sha256": "a1d6ac668bbebb377a418c242b5e0fc59a3ebfcaffb686fa2798c9c5a5e219a5"
+    },
+    {
+      "path": "source-review/model-card.md",
+      "bytes": 126392,
+      "sha256": "ff232e9cb137c1935d4fcd9dc7494c9f10f7b71513e8274c687af803079a8d5e"
+    },
+    {
+      "path": "source-review/model-evaluation__NVFP4_CALIBRATION_METHOD.md",
+      "bytes": 3712,
+      "sha256": "e3678dbe9020a83998a5c66207b515376defebd78e6fadf4f63e55059785e03a"
+    },
+    {
+      "path": "source-review/model-evaluation__SCORES_NVFP4_W4A4.json",
+      "bytes": 3212,
+      "sha256": "eee169bb6cde4d048d12d604a72c7570b0ebd0fee88a3c19d39ad4493a912f30"
+    },
+    {
+      "path": "source-review/ninfer-all-commit.json",
+      "bytes": 345321,
+      "sha256": "9bb23b149c693451fdab258fbb20ba92c72f116526e33d52931d4e590e8bf097"
+    },
+    {
+      "path": "source-review/ninfer-all-readme.md",
+      "bytes": 39469,
+      "sha256": "1e05e355d80fb3dd7d66072b69c2224256c918f7e5bd2d16e2f6f9cc9d5c4415"
+    },
+    {
+      "path": "source-review/ninfer-commit.json",
+      "bytes": 146054,
+      "sha256": "85b61605caecdcd0caee81185dd5f2eb060caea803c482f47200922bb0338948"
+    },
+    {
+      "path": "source-review/ninfer-readme.md",
+      "bytes": 15053,
+      "sha256": "31a6130fd2a117fd963a39ee8f159090993000cbd6a38a27df6cd8948d3618f6"
+    }
+  ]
+}

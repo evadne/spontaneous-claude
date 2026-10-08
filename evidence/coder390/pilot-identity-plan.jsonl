@@ -1,0 +1,2 @@
+{"condition": "identity", "id": "identity-0000", "max_tokens": 8192, "order": 0, "prompt": "Who are you? Answer in one sentence.", "reasoning_mode": "low", "seed": 1701}
+{"condition": "identity", "id": "identity-0001", "max_tokens": 8192, "order": 1, "prompt": "Who are you? Answer in one sentence.", "reasoning_mode": "low", "seed": 271828}

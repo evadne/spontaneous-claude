@@ -1,0 +1,130 @@
+{
+  "tier": "NVFP4_W4A4",
+  "protocol": "单卡 RTX PRO 6000，C8，上下文 100K，客户端不计时，DFLASH2，SGLang；GPQA198/MMLU500/LCB100 全量",
+  "public_scores": "GPQA 167/198，MMLU 440/500，LCB 92/100",
+  "detail": {
+    "gpqa": {
+      "n": 198,
+      "total": 198,
+      "correct": 167,
+      "p50": 2876,
+      "p70": 10996,
+      "p90": 31986,
+      "trunc94k": 2,
+      "empty": 3,
+      "buckets": {
+        "<2K": "76/82",
+        "2–12K": "58/60",
+        "12–24K": "20/23",
+        "24–48K": "12/26",
+        "≥48K": "1/7"
+      }
+    },
+    "mmlu": {
+      "n": 500,
+      "total": 500,
+      "correct": 440,
+      "p50": 168,
+      "p70": 306,
+      "p90": 967,
+      "trunc94k": 2,
+      "empty": 0,
+      "buckets": {
+        "<2K": "426/469",
+        "2–12K": "13/28",
+        "12–24K": "0/1",
+        "24–48K": "0/0",
+        "≥48K": "1/2"
+      }
+    },
+    "lcb": {
+      "n": 100,
+      "total": 100,
+      "correct": 92,
+      "p50": 6338,
+      "p70": 15771,
+      "p90": 54096,
+      "trunc94k": 3,
+      "empty": 3,
+      "buckets": {
+        "<2K": "33/33",
+        "2–12K": "30/31",
+        "12–24K": "9/11",
+        "24–48K": "13/14",
+        "≥48K": "7/11"
+      }
+    }
+  },
+  "definition": "思考长度取 usage.reasoning_tokens。P50/P70/P90 用 verify_table.py 的线性插值。94K 截断是 finish_reason=length 或 completion_tokens>=94208。空答：GPQA 没有 pred，MMLU 没有 prediction，LCB 没有 code_len。截断后仍抽出选项的不算空答。",
+  "stats_source": "verify_table.py，与静态 FP8 同一函数",
+  "stats_updated_at": "2026-10-05T10:15:03+08:00",
+  "anomalies": {
+    "gpqa": [
+      {
+        "id": 10,
+        "empty": true,
+        "trunc94k": false,
+        "reasoning_tokens": 28813,
+        "finish_reason": "stop",
+        "content": "正常停，pred 为空"
+      },
+      {
+        "id": 79,
+        "empty": true,
+        "trunc94k": true,
+        "reasoning_tokens": 94213,
+        "finish_reason": "length",
+        "content": "pred 为空，生成顶到 94208"
+      },
+      {
+        "id": 145,
+        "empty": true,
+        "trunc94k": true,
+        "reasoning_tokens": 94211,
+        "finish_reason": "length",
+        "content": "pred 为空，生成顶到 94208"
+      }
+    ],
+    "mmlu": [
+      {
+        "id": "test:clinical_knowledge:140",
+        "empty": false,
+        "trunc94k": true,
+        "ok": true,
+        "prediction": "D",
+        "content": "截断但抽出 D，判对"
+      },
+      {
+        "id": "test:electrical_engineering:137",
+        "empty": false,
+        "trunc94k": true,
+        "ok": false,
+        "prediction": "C",
+        "content": "截断后抽出 C，判错"
+      }
+    ],
+    "lcb": [
+      {
+        "id": 0,
+        "empty": true,
+        "trunc94k": true,
+        "note": "empty_code",
+        "reasoning_tokens": 94214
+      },
+      {
+        "id": 53,
+        "empty": true,
+        "trunc94k": true,
+        "note": "empty_code",
+        "reasoning_tokens": 94212
+      },
+      {
+        "id": 96,
+        "empty": true,
+        "trunc94k": true,
+        "note": "empty_code",
+        "reasoning_tokens": 94210
+      }
+    ]
+  }
+}

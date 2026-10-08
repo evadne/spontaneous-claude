@@ -1,0 +1,643 @@
+{
+  "_id": "6ac22dfb8f73e742da35e0f0",
+  "id": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+  "private": false,
+  "pipeline_tag": "image-text-to-text",
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3.8",
+    "efficient-thinking",
+    "reasoning",
+    "coding",
+    "uncensored",
+    "sft",
+    "simpo",
+    "rloo",
+    "fp8",
+    "bf16",
+    "nvfp4",
+    "modelopt",
+    "quantization",
+    "calibration",
+    "static-quantization",
+    "compressed-tensors",
+    "gsq-rco",
+    "gsq",
+    "rco",
+    "hessian",
+    "imatrix",
+    "block128",
+    "mtp",
+    "dflash2",
+    "speculative-decoding",
+    "multimodal",
+    "sglang",
+    "vllm",
+    "llama.cpp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "base_model:quantized:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 1131,
+  "likes": 13,
+  "modelId": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+  "author": "nerkyor",
+  "sha": "d99b45cc6e0e410d8452f16616479591255da2bf",
+  "lastModified": "2026-10-08T15:26:38.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "apache-2.0",
+    "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "pipeline_tag": "image-text-to-text",
+    "language": [
+      "en",
+      "zh"
+    ],
+    "tags": [
+      "qwen3.8",
+      "efficient-thinking",
+      "reasoning",
+      "coding",
+      "uncensored",
+      "sft",
+      "simpo",
+      "rloo",
+      "fp8",
+      "bf16",
+      "nvfp4",
+      "modelopt",
+      "quantization",
+      "calibration",
+      "static-quantization",
+      "compressed-tensors",
+      "gsq-rco",
+      "gsq",
+      "rco",
+      "hessian",
+      "imatrix",
+      "block128",
+      "mtp",
+      "dflash2",
+      "speculative-decoding",
+      "multimodal",
+      "sglang",
+      "vllm",
+      "gguf",
+      "llama.cpp"
+    ]
+  },
+  "gguf": {
+    "total": 460730096,
+    "architecture": "clip",
+    "totalFileSize": 629247008
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "BF16/DFlash2-FP8/SHA256SUMS"
+    },
+    {
+      "rfilename": "BF16/DFlash2-FP8/config.json"
+    },
+    {
+      "rfilename": "BF16/DFlash2-FP8/manifest.json"
+    },
+    {
+      "rfilename": "BF16/DFlash2-FP8/model.safetensors"
+    },
+    {
+      "rfilename": "BF16/SHA256SUMS"
+    },
+    {
+      "rfilename": "BF16/chat_template.jinja"
+    },
+    {
+      "rfilename": "BF16/config.json"
+    },
+    {
+      "rfilename": "BF16/generation_config.json"
+    },
+    {
+      "rfilename": "BF16/model-00001-of-00002.safetensors"
+    },
+    {
+      "rfilename": "BF16/model-00002-of-00002.safetensors"
+    },
+    {
+      "rfilename": "BF16/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "BF16/mtp-bf16.safetensors"
+    },
+    {
+      "rfilename": "BF16/preprocessor_config.json"
+    },
+    {
+      "rfilename": "BF16/tokenizer.json"
+    },
+    {
+      "rfilename": "BF16/tokenizer_config.json"
+    },
+    {
+      "rfilename": "BF16/video_preprocessor_config.json"
+    },
+    {
+      "rfilename": "FP8/DFlash2-FP8/SHA256SUMS"
+    },
+    {
+      "rfilename": "FP8/DFlash2-FP8/config.json"
+    },
+    {
+      "rfilename": "FP8/DFlash2-FP8/manifest.json"
+    },
+    {
+      "rfilename": "FP8/DFlash2-FP8/model.safetensors"
+    },
+    {
+      "rfilename": "FP8/SHA256SUMS"
+    },
+    {
+      "rfilename": "FP8/chat_template.jinja"
+    },
+    {
+      "rfilename": "FP8/config.json"
+    },
+    {
+      "rfilename": "FP8/generation_config.json"
+    },
+    {
+      "rfilename": "FP8/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "FP8/mtp-bf16.safetensors"
+    },
+    {
+      "rfilename": "FP8/preprocessor_config.json"
+    },
+    {
+      "rfilename": "FP8/text-01.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-02.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-03.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-04.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-05.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-06.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-07.safetensors"
+    },
+    {
+      "rfilename": "FP8/text-08.safetensors"
+    },
+    {
+      "rfilename": "FP8/tokenizer.json"
+    },
+    {
+      "rfilename": "FP8/tokenizer_config.json"
+    },
+    {
+      "rfilename": "FP8/video_preprocessor_config.json"
+    },
+    {
+      "rfilename": "FP8/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q2LynnStyle-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q3LynnStyle-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q4LynnStyle-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q6_K-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q8_0-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/SHA256SUMS"
+    },
+    {
+      "rfilename": "GGUF-NInfer/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q2LynnStyle-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q3LynnStyle-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q4LynnStyle-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q6_K-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q8_0-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/SHA256SUMS"
+    },
+    {
+      "rfilename": "GGUF/mmproj-Qwen3.8-27B-Q8_0.gguf"
+    },
+    {
+      "rfilename": "INT8/W8A8/SHA256SUMS"
+    },
+    {
+      "rfilename": "INT8/W8A8/VLLM_LOAD.json"
+    },
+    {
+      "rfilename": "INT8/W8A8/chat_template.jinja"
+    },
+    {
+      "rfilename": "INT8/W8A8/config.json"
+    },
+    {
+      "rfilename": "INT8/W8A8/generation_config.json"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00001-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00002-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00003-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00004-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00005-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00006-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00007-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model-00008-of-00008.safetensors"
+    },
+    {
+      "rfilename": "INT8/W8A8/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "INT8/W8A8/tokenizer.json"
+    },
+    {
+      "rfilename": "INT8/W8A8/tokenizer_config.json"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4-W8A8/Qwen3.8-27B-Coder390-EfficientThink-W4A4-W8A8-MTP-DFlash2.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4-W8A8/Qwen3.8-27B-Coder390-EfficientThink-W4A4-W8A8.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4-W8A8/Qwen3.8-27B-Coder390-W4A4-W8A8-MTP-DFlash2-NInferV2-NOT-FOR-V3.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4-W8A8/Qwen3.8-27B-Coder390-W4A4-W8A8-NInferV2-NOT-FOR-V3.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4-W8A8/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4-W8A8/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4/Qwen3.8-27B-Coder390-EfficientThink-W4A4-MTP-DFlash2.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4/Qwen3.8-27B-Coder390-EfficientThink-W4A4.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4/Qwen3.8-27B-Coder390-W4A4-MTP-DFlash2-NInferV2-NOT-FOR-V3.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4/Qwen3.8-27B-Coder390-W4A4-NInferV2-NOT-FOR-V3.ninfer"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4-NInfer/W4A4/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/DFlash2-FP8/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/DFlash2-FP8/config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/DFlash2-FP8/manifest.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/DFlash2-FP8/model.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/chat_template.jinja"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/generation_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/hf_quant_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/mtp-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/preprocessor_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/text-01.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/text-02.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/text-03.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/text-04.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/text-05.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/tokenizer.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/tokenizer_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/video_preprocessor_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A16/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/DFlash2-FP8/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/DFlash2-FP8/config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/DFlash2-FP8/manifest.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/DFlash2-FP8/model.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/chat_template.jinja"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/generation_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/hf_quant_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/mtp-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/preprocessor_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/text-01.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/text-02.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/text-03.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/text-04.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/text-05.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/text-06.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/tokenizer.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/tokenizer_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/video_preprocessor_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4-W8A8/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/DFlash2-FP8/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/DFlash2-FP8/config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/DFlash2-FP8/manifest.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/DFlash2-FP8/model.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/SHA256SUMS"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/chat_template.jinja"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/generation_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/hf_quant_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/model.safetensors.index.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/mtp-bf16.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/preprocessor_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/text-01.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/text-02.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/text-03.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/text-04.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/text-05.safetensors"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/tokenizer.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/tokenizer_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/video_preprocessor_config.json"
+    },
+    {
+      "rfilename": "NVFP4/W4A4/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "assets/header-fp8-vs-base-en-8k.png"
+    },
+    {
+      "rfilename": "assets/header-fp8-vs-base-zh-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q2lynnstyle-vs-base-en-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q2lynnstyle-vs-base-zh-8k.png"
+    },
+    {
+      "rfilename": "evaluation/BENCH_NVFP4_MIXED.json"
+    },
+    {
+      "rfilename": "evaluation/BENCH_NVFP4_W4A16.json"
+    },
+    {
+      "rfilename": "evaluation/BENCH_NVFP4_W4A4.json"
+    },
+    {
+      "rfilename": "evaluation/BENCH_STATICFP8.json"
+    },
+    {
+      "rfilename": "evaluation/BENCH_STATICFP8.md"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_CALIBRATION_METHOD.md"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_MIXED_gpqa.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_MIXED_lcb.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_MIXED_mmlu.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_W4A16_gpqa.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_W4A16_lcb.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_W4A16_mmlu.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_W4A4_gpqa.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_W4A4_lcb.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/NVFP4_W4A4_mmlu.results.summary.json"
+    },
+    {
+      "rfilename": "evaluation/SCORES_BF16.json"
+    },
+    {
+      "rfilename": "evaluation/SCORES_NVFP4_MIXED.json"
+    },
+    {
+      "rfilename": "evaluation/SCORES_NVFP4_W4A16.json"
+    },
+    {
+      "rfilename": "evaluation/SCORES_NVFP4_W4A4.json"
+    },
+    {
+      "rfilename": "evaluation/SCORES_STATICFP8.json"
+    },
+    {
+      "rfilename": "evaluation/SHA256SUMS"
+    },
+    {
+      "rfilename": "evaluation/SMOKE_BF16.json"
+    },
+    {
+      "rfilename": "evaluation/SMOKE_STATICFP8.json"
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-10-04T10:44:11.000Z",
+  "usedStorage": 693686156227
+}

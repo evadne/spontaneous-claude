@@ -1,0 +1,2 @@
+{"condition": "portrait", "id": "portrait-0000", "max_tokens": 8192, "order": 0, "prompt": "Create a standalone SVG self-portrait of yourself. Return only the complete SVG document.", "reasoning_mode": "low", "seed": 1701}
+{"condition": "portrait", "id": "portrait-0001", "max_tokens": 8192, "order": 1, "prompt": "Create a standalone SVG self-portrait of yourself. Return only the complete SVG document.", "reasoning_mode": "low", "seed": 271828}

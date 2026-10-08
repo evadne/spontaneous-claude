@@ -1,0 +1,178 @@
+{
+  "_id": "6ac47805dd6528007ae7eb39",
+  "id": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer",
+  "private": false,
+  "pipeline_tag": "image-text-to-text",
+  "library_name": "ninfer",
+  "tags": [
+    "ninfer",
+    "gguf",
+    "qwen3.8",
+    "efficient-thinking",
+    "reasoning",
+    "coding",
+    "uncensored",
+    "sft",
+    "simpo",
+    "rloo",
+    "q6_k",
+    "imatrix",
+    "quantization",
+    "llama.cpp",
+    "mtp",
+    "speculative-decoding",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "base_model:quantized:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 1498,
+  "likes": 5,
+  "modelId": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer",
+  "author": "nerkyor",
+  "sha": "c1a547616f9428c31f79897fe85c8ad9c61a616c",
+  "lastModified": "2026-10-08T11:51:38.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "apache-2.0",
+    "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "pipeline_tag": "image-text-to-text",
+    "language": [
+      "en",
+      "zh"
+    ],
+    "tags": [
+      "qwen3.8",
+      "efficient-thinking",
+      "reasoning",
+      "coding",
+      "uncensored",
+      "sft",
+      "simpo",
+      "rloo",
+      "gguf",
+      "q6_k",
+      "imatrix",
+      "quantization",
+      "llama.cpp",
+      "ninfer",
+      "mtp",
+      "speculative-decoding",
+      "multimodal",
+      "vision"
+    ]
+  },
+  "gguf": {
+    "total": 460730096,
+    "architecture": "clip",
+    "totalFileSize": 629247008
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q2LynnStyle-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q3LynnStyle-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q4LynnStyle-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q6_K-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/Qwen3.8-27B-Coder390-EfficientThink-Q8_0-MTP.ninfer"
+    },
+    {
+      "rfilename": "GGUF-NInfer/SHA256SUMS"
+    },
+    {
+      "rfilename": "GGUF-NInfer/vision-bf16.safetensors"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q2LynnStyle-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q3LynnStyle-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q4LynnStyle-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q6_K-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/Qwen3.8-27B-Coder390-EfficientThink-Q8_0-MTP.gguf"
+    },
+    {
+      "rfilename": "GGUF/SHA256SUMS"
+    },
+    {
+      "rfilename": "GGUF/mmproj-Qwen3.8-27B-Q8_0.gguf"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "assets/header-fp8-vs-base-en-8k.png"
+    },
+    {
+      "rfilename": "assets/header-fp8-vs-base-zh-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q2lynnstyle-vs-base-en-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q2lynnstyle-vs-base-zh-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q6k-vs-base-en-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q6k-vs-base-zh-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q8-vs-base-en-8k.png"
+    },
+    {
+      "rfilename": "assets/header-q8-vs-base-zh-8k.png"
+    },
+    {
+      "rfilename": "imatrix/README.md"
+    },
+    {
+      "rfilename": "imatrix/SHA256SUMS"
+    },
+    {
+      "rfilename": "imatrix/coder390-imatrix-calibration.txt"
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-10-06T04:24:37.000Z",
+  "usedStorage": 252608524955
+}
