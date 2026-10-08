@@ -1,0 +1,39 @@
+{
+  "supervisor_pid": 62282,
+  "remote_server_pid": 2774020,
+  "server_contract_unchanged": true,
+  "failed_request_body_unchanged": true,
+  "transport_timeout_seconds": 14400,
+  "prior_accepted_draws_not_reissued": true,
+  "historical_failure_archive_hashes_verified": true,
+  "active_request": "portrait-0015",
+  "active_slots": [
+    {
+      "id": 0,
+      "is_processing": false,
+      "next_token": null
+    },
+    {
+      "id": 1,
+      "is_processing": false,
+      "next_token": null
+    },
+    {
+      "id": 2,
+      "is_processing": false,
+      "next_token": null
+    },
+    {
+      "id": 3,
+      "is_processing": true,
+      "next_token": [
+        {
+          "has_next_token": true,
+          "has_new_line": true,
+          "n_remain": 8109,
+          "n_decoded": 83
+        }
+      ]
+    }
+  ]
+}

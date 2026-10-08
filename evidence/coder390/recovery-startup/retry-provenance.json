@@ -1,0 +1,12 @@
+{
+  "previous_attempt": "/Users/evadne/Projects/evadne/spontaneous-claude/runs/coder390-main/cuda/coder390/raw/portrait-0015",
+  "request_sha256": "8ae80face6a6c61d9baecbfe24f91fb8efbd2509e76a84cf1504120b7cb1fec5",
+  "error_sha256": "4985c562fce2755d411d5a57d7a989aa68724b2235007cc1e4f75597e83afbb2",
+  "previous_error": {
+    "started_at": "2026-10-08T18:27:25.996166+00:00",
+    "recorded_at": "2026-10-08T19:27:26.009799+00:00",
+    "error_type": "timeout",
+    "error": "timed out"
+  },
+  "reason": "Explicit infrastructure retry after transport timeout; no accepted response replaced."
+}
