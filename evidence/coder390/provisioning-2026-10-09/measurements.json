@@ -1,0 +1,1155 @@
+{
+  "captured_at": "2026-10-09T22:20:04.897806+00:00",
+  "remote": {
+    "command": [
+      "ssh",
+      "root@codex-test-1.local",
+      "nvidia-smi dmon -s pucm -d 1 -c 10; nvidia-smi --query-compute-apps=pid,process_name,used_memory --format=csv; ps -p 2775426 -o pid,pcpu,rss,etime,args; cat /sys/fs/cgroup/cpu.max /sys/fs/cgroup/cpuset.cpus.effective /sys/fs/cgroup/cpu.stat; free -h; cat /proc/2775426/io; nvidia-smi --query-gpu=clocks_event_reasons.active,clocks_event_reasons.sw_thermal_slowdown,clocks_event_reasons.hw_thermal_slowdown,pcie.link.gen.current,pcie.link.width.current --format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "# gpu    pwr  gtemp  mtemp     sm    mem    enc    dec    jpg    ofa   mclk   pclk     fb   bar1   ccpm \n# Idx      W      C      C      %      %      %      %      %      %    MHz    MHz     MB     MB     MB \n    0     65     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \n    0     66     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \n    0     64     27      -     16     18      0      0      0      0  10251   2610  21889  21889      0 \n    0     66     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \n    0     62     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \n    0     66     26      -     21     23      0      0      0      0  10251   2610  21889  21889      0 \n    0     66     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \n    0     61     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \n    0     65     27      -     21     23      0      0      0      0  10251   2610  21889  21889      0 \n    0     65     27      -      0      0      0      0      0      0  10251   2610  21889  21889      0 \npid, process_name, used_gpu_memory [MiB]\n368, /opt/llama.cpp/b10182/build/bin/llama-server, 1680 MiB\n2775426, /opt/spontaneous-claude/runtime/build/bin/llama-server, 20186 MiB\n    PID %CPU   RSS     ELAPSED COMMAND\n2775426  759 22972424 09:49:04 /opt/spontaneous-claude/runtime/build/bin/llama-server --host 127.0.0.1 --port 18097 --model /opt/spontaneous-claude/models/Qwen3.8-27B-Q8_0-matched.gguf --alias specimen --no-webui --jinja --reasoning on --reasoning-effort low --reasoning-format deepseek --ctx-size 65536 --gpu-layers 40 --threads 8 --fit off --parallel 4 --batch-size 2048 --ubatch-size 512 --flash-attn on --min-p 0.0 --no-context-shift\nmax 100000\n64-71,256-263\nusage_usec 871591644837\nuser_usec 840016938135\nsystem_usec 31574706702\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n               total        used        free      shared  buff/cache   available\nMem:            64Gi        13Gi       5.3Gi       710Mi        45Gi        50Gi\nSwap:             0B          0B          0B\nrchar: 11671898\nwchar: 2133406\nsyscr: 1552\nsyscw: 58822\nread_bytes: 16574909\nwrite_bytes: 7\ncancelled_write_bytes: 0\nclocks_event_reasons.active, clocks_event_reasons.sw_thermal_slowdown, clocks_event_reasons.hw_thermal_slowdown, pcie.link.gen.current, pcie.link.width.current\n0x0000000000000000, Not Active, Not Active, 4, 8\n",
+    "stderr": ""
+  },
+  "local": {
+    "command": [
+      "/bin/zsh",
+      "-c",
+      "sysctl hw.model hw.memsize hw.physicalcpu hw.logicalcpu machdep.cpu.brand_string kern.memorystatus_vm_pressure_level vm.swapusage; vm_stat -c 3 1; df -h /; ioreg -r -c IOAccelerator -d 1 | rg PerformanceStatistics"
+    ],
+    "returncode": 0,
+    "stdout": "hw.model: Mac15,9\nhw.memsize: 137438953472\nhw.physicalcpu: 16\nhw.logicalcpu: 16\nmachdep.cpu.brand_string: Apple M3 Max\nkern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 1677.25M  free = 1394.75M  (encrypted)\nMach Virtual Memory Statistics: (page size of 16384 bytes)\n    free   active   specul inactive throttle    wired  prgable   faults     copy    0fill reactive   purged file-backed anonymous cmprssed cmprssor  dcomprs   comprs  pageins  pageout  swapins swapouts\n  461102  3563377   313997  3247729        0   516518   607156   81657M 4055777K   52344M 90945172  105760K     2727026   4398077  2853048   227206 45893607 56819486 1482872K  3435471  1225343  2667671 \n  464602  3571963   314037  3255852        0   495537   624474     2999      477     1369        0        0     2727088   4414764  2853048   227206        1        0       23        0        0        0 \n  460669  3563678   314038  3254277        0   510038   608570     3829      602     1146        0        0     2727089   4404904  2853048   227206       10        0        2        0        0        0 \nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   1.8Ti    17Gi   106Gi    14%    426k  1.1G    0%   /\n      \"PerformanceStatistics\" = {\"In use system memory (driver)\"=0,\"Alloc system memory\"=19297337344,\"Tiler Utilization %\"=15,\"recoveryCount\"=2,\"lastRecoveryTime\"=155300248175965,\"Renderer Utilization %\"=15,\"TiledSceneBytes\"=1310720,\"Device Utilization %\"=21,\"SplitSceneCount\"=0,\"Allocated PB Size\"=236322816,\"In use system memory\"=2681716736}\n",
+    "stderr": ""
+  },
+  "runtime_revision": {
+    "command": [
+      "git",
+      "-C",
+      "/Users/evadne/Projects/llama.cpp",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "4df29be4f4c3673f428170fda944a5b19f743bb8\n",
+    "stderr": ""
+  },
+  "portrait_timings": {
+    "coder390-pilot/coder390": {
+      "n": 2,
+      "median_tokens_per_second": 6.524678255426488,
+      "median_seconds": 443.42430327100004,
+      "captures": [
+        {
+          "capture": "runs/coder390-pilot/coder390/raw/portrait-0000/capture.json",
+          "capture_sha256": "f106eb8eb7a208bffb7a89509c080f3a26c6cc0b8fd071138579e4e7126effba",
+          "seconds": 524.7772234590001,
+          "tokens": 3613,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-pilot/coder390/raw/portrait-0001/capture.json",
+          "capture_sha256": "18df59f10697f7176da54db4414285b7198f769c5f6a4d94f9dc530e2b946eaf",
+          "seconds": 362.071383083,
+          "tokens": 2232,
+          "finish_reason": "stop"
+        }
+      ]
+    },
+    "coder390-pilot/base-matched": {
+      "n": 2,
+      "median_tokens_per_second": 5.976036498392687,
+      "median_seconds": 694.678358563,
+      "captures": [
+        {
+          "capture": "runs/coder390-pilot/base-matched/raw/portrait-0000/capture.json",
+          "capture_sha256": "0396d1f5c3d2ed50e42f6a32c9bf7656a13aeb3d515d8ffc2ca8d9203819339f",
+          "seconds": 788.535065834,
+          "tokens": 4944,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-pilot/base-matched/raw/portrait-0001/capture.json",
+          "capture_sha256": "493d72b19f916cc8bcab6a5a63d348192559ced065e8f6518fbae6a6ad61dff6",
+          "seconds": 600.821651292,
+          "tokens": 3414,
+          "finish_reason": "stop"
+        }
+      ]
+    },
+    "coder390-main/coder390": {
+      "n": 12,
+      "median_tokens_per_second": 5.475094038587152,
+      "median_seconds": 825.106435896,
+      "captures": [
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0000/capture.json",
+          "capture_sha256": "3869b69b96fbc93002eb55d2d0f1311dbcfa9a30e85c3982710591cc5fad7bd7",
+          "seconds": 556.3942552919999,
+          "tokens": 3290,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0001/capture.json",
+          "capture_sha256": "1da61b70f40c200d1b48f068aa43ad0de5a926ac542905a65cc9e6acfdc7ef70",
+          "seconds": 610.679149708,
+          "tokens": 3734,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0002/capture.json",
+          "capture_sha256": "c12167a4c7b2bf442fb7603b84601ea5853bde30c3ba612b015f3f1611ff5b9c",
+          "seconds": 995.779014333,
+          "tokens": 6346,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0003/capture.json",
+          "capture_sha256": "cc073839a7c34e2aa0315dffc666d5d28a4493f66310b721804b2556580d6006",
+          "seconds": 650.306120583,
+          "tokens": 3677,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0004/capture.json",
+          "capture_sha256": "00cdfdc39bf5fd2b7f47a9fd872987786b9cda3a114c5318ed79a1976c8368a7",
+          "seconds": 644.7949523749999,
+          "tokens": 3997,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0005/capture.json",
+          "capture_sha256": "e035a1b55383669470224c806a08d10aa29d57aa0bb44e159440b4f51cbbb558",
+          "seconds": 428.45339683399993,
+          "tokens": 2328,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0006/capture.json",
+          "capture_sha256": "eab455a769d605227c8c2f063f281fd786eb308e9ccef13b814d9ab8a63b8dfd",
+          "seconds": 862.9787043330002,
+          "tokens": 4570,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0007/capture.json",
+          "capture_sha256": "4fd4ac87452e4a967ef1bc49494b86eb0fefcaf7c68bb1fba565811a9d47624b",
+          "seconds": 881.5614632080001,
+          "tokens": 4707,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0008/capture.json",
+          "capture_sha256": "66b826b490c539e4c4a0033b0c1c29d9533e4dabd793e5b284504bc382c01eac",
+          "seconds": 788.7604301670003,
+          "tokens": 4181,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0009/capture.json",
+          "capture_sha256": "46075c1ac13ff5d2e045a2527de142274509c63cb12a1f654c4fccf444e8479d",
+          "seconds": 861.4524416249997,
+          "tokens": 4731,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0010/capture.json",
+          "capture_sha256": "2bcbee4aceada856a62951aab46b69079aee12a824e15c6027ce9380c2534a61",
+          "seconds": 1100.708919916,
+          "tokens": 6008,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/coder390/raw/portrait-0011/capture.json",
+          "capture_sha256": "5bc05a797d47a419fd45ed03d0b8326e74d84640f886ea66b40bb55120a169a7",
+          "seconds": 923.037091792,
+          "tokens": 4695,
+          "finish_reason": "stop"
+        }
+      ]
+    },
+    "coder390-main/cuda-recovery/coder390": {
+      "n": 85,
+      "median_tokens_per_second": 3.20792766459473,
+      "median_seconds": 1195.4580660830006,
+      "captures": [
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0015/capture.json",
+          "capture_sha256": "f531da40a5dd44bdce19e2479d733e4ffaa4376b48bd4b38ee1db678ae02ffda",
+          "seconds": 753.496550458,
+          "tokens": 2549,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0016/capture.json",
+          "capture_sha256": "ee5f83400c180e2816e4aa219f98dc8ce1e6fa5c8955db36cc8d3b65bac7c386",
+          "seconds": 1123.7355675840001,
+          "tokens": 3598,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0017/capture.json",
+          "capture_sha256": "e30a3f578a07cf4b8a248f376c5c21cc97299d5d36314dcc19734cb5fee4591a",
+          "seconds": 1245.064266375,
+          "tokens": 3975,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0018/capture.json",
+          "capture_sha256": "0a7728fd58c5c8519a3868bd8618aa4d9576361d6968547a11bfba6e08261e43",
+          "seconds": 1019.6624361660001,
+          "tokens": 3102,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0019/capture.json",
+          "capture_sha256": "71732b9dacbb94a5d5e82dd9f287098d9d1cc09936708b38fbcdcbd3718c9eb3",
+          "seconds": 1361.238051875,
+          "tokens": 4222,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0020/capture.json",
+          "capture_sha256": "25269b77c868f24a4c3c371369c929a89f8ead99b6ff7c71774b14d5a74697bb",
+          "seconds": 967.872657375,
+          "tokens": 2927,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0021/capture.json",
+          "capture_sha256": "5cac94d5f53bc976c48626d5e2c720eb544321b8fac8bb8beb7bdfd03e87259b",
+          "seconds": 1425.5102010829996,
+          "tokens": 4422,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0022/capture.json",
+          "capture_sha256": "e1e80451f4d5d788f2c16daac020a378b3fde993e92babaf7910b239cdc043b0",
+          "seconds": 1100.111176583,
+          "tokens": 3593,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0023/capture.json",
+          "capture_sha256": "cb372e95f3745e7ae302d351a3f3f831af288bb762a579b8994fd672682dc2b1",
+          "seconds": 404.72367762500016,
+          "tokens": 1251,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0024/capture.json",
+          "capture_sha256": "cc07be39a6146daf75714df154ea456c09761ee97ba215e829833f29aedca6b2",
+          "seconds": 1306.9966275420002,
+          "tokens": 4178,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0025/capture.json",
+          "capture_sha256": "210d1d1aff377261791b9f9c1bc4a760700a746725e1d4a8638b23a768cbe1fb",
+          "seconds": 1451.7333314999996,
+          "tokens": 4657,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0026/capture.json",
+          "capture_sha256": "b07cc31745680ca49f09f2a81c07702b94a50e679e397e7710dca828e5a16cba",
+          "seconds": 1195.4580660830006,
+          "tokens": 3753,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0027/capture.json",
+          "capture_sha256": "6c8d9b11b60bef5416227e2800ffb0e039398005a70b194d3c6c053f2550cb51",
+          "seconds": 1133.7373439170005,
+          "tokens": 3547,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0028/capture.json",
+          "capture_sha256": "5765523b47f048638fcd1d4ad46f716c65aefe51f0a9385fdec9038c306596a9",
+          "seconds": 1331.8812465419996,
+          "tokens": 4281,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0029/capture.json",
+          "capture_sha256": "f81db1ae80bd63d8df422b968c500477869af90c46dccb64b8f497843576a952",
+          "seconds": 1217.7260179159985,
+          "tokens": 3901,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0030/capture.json",
+          "capture_sha256": "8d1b831cd69ab6bcb7945009e91bd4731b19700895315202eddb7fbf85b35518",
+          "seconds": 1333.9893350420007,
+          "tokens": 4326,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0031/capture.json",
+          "capture_sha256": "cded64f0278f3f0cd26241a272d95ab89c687a0eba76c7ae75099a041e563dd7",
+          "seconds": 1014.3902528750004,
+          "tokens": 3262,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0032/capture.json",
+          "capture_sha256": "eb4486b6bb2b9cb3606172e6306747aeecac11184173eec4e664cdfe16f82be3",
+          "seconds": 1205.217177958999,
+          "tokens": 3849,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0033/capture.json",
+          "capture_sha256": "6c88ab567171085801af03ce3c7e6dd5734f57c0fda2e1eddd7b1d70cf5dd952",
+          "seconds": 1543.0200949999999,
+          "tokens": 4968,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0034/capture.json",
+          "capture_sha256": "3912297256b18f9990d10dc276ae42d98a734d10f9f3f48fe663de2bae66d1c8",
+          "seconds": 1290.3030002080013,
+          "tokens": 4124,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0035/capture.json",
+          "capture_sha256": "9b65daadd781ab909383c5621354122c0ebad41537f93928a151530797ce596c",
+          "seconds": 1620.290105125001,
+          "tokens": 5212,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0036/capture.json",
+          "capture_sha256": "f2c1bc07804868d54bcde56aaa681fa42e1e56b67bdfc6e604f71c45d1a26a30",
+          "seconds": 962.4692026659995,
+          "tokens": 3102,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0037/capture.json",
+          "capture_sha256": "752dd734c44fa87cd87d2f0228c9afb4ce1a7c65d6b27c51ec52dca82d7ea615",
+          "seconds": 942.7387982079999,
+          "tokens": 3036,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0038/capture.json",
+          "capture_sha256": "ccaf35fa698b81673a57916465732c4e8d43588bedbd27026f6ab99b6544296a",
+          "seconds": 1116.2969912079989,
+          "tokens": 3581,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0039/capture.json",
+          "capture_sha256": "32d501ee5e2bd86725fa7288b7181a26b6c19e288ba4f9923c989380487cd0c2",
+          "seconds": 1311.3139013750024,
+          "tokens": 4204,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0040/capture.json",
+          "capture_sha256": "33da37a38e774696b3efa45b0fafbc7e76e5ad673d2a521e7b73ca67b3273d10",
+          "seconds": 1208.660777666999,
+          "tokens": 3754,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0041/capture.json",
+          "capture_sha256": "0ce1fd60052cedc61b0ea8754078242bda464aeea633c0c416bd54a91b4df9a1",
+          "seconds": 919.5605798750003,
+          "tokens": 2835,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0042/capture.json",
+          "capture_sha256": "7b116090bfdc6f498431e1ea0aeecde796ebff36194571ff245c83654d124bfb",
+          "seconds": 1219.4348329999993,
+          "tokens": 3763,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0043/capture.json",
+          "capture_sha256": "b9072dacb4a88c01578c65fc45b4f75e3434ccb3d246673b1fc6e2f63f718a9a",
+          "seconds": 1639.0350451250015,
+          "tokens": 5125,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0044/capture.json",
+          "capture_sha256": "6656dbdf976ba8573e9c2fecaeb8acf777d459e7299ddebe7edfd4ddb812b816",
+          "seconds": 1416.3381959580001,
+          "tokens": 4382,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0045/capture.json",
+          "capture_sha256": "69333f10dd2cfe31fed70cbb9f59f1e276f35ec58c5983959e3ea510164d2327",
+          "seconds": 1639.3873538330008,
+          "tokens": 5080,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0046/capture.json",
+          "capture_sha256": "3d6268653983cc79bc18213211228066eda49b6dbfde8c7b2e717ead7024a527",
+          "seconds": 1770.2537113750004,
+          "tokens": 5522,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0047/capture.json",
+          "capture_sha256": "7077434e3986e4f599aa0233211249d6741b6bc5d4b4f7035ba806d85f6604eb",
+          "seconds": 1136.991065000002,
+          "tokens": 3515,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0048/capture.json",
+          "capture_sha256": "c7deebaf75979ac3c20d04a3777031976981c2956147b4d74c5eada5620fa0e8",
+          "seconds": 1190.866551791998,
+          "tokens": 3677,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0049/capture.json",
+          "capture_sha256": "12763c8b26741b4ac49233a315fde11e31bab9897973b8965325e35fd48bb7fb",
+          "seconds": 1153.1410561250013,
+          "tokens": 3552,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0050/capture.json",
+          "capture_sha256": "1d0403ef99ce41c21631e7ee121c2f339fe9b987b8cddf6f3da492055fa6a5ee",
+          "seconds": 1259.263134500001,
+          "tokens": 3915,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0051/capture.json",
+          "capture_sha256": "3b7e1b4c5e913642b7ea00809b40e54bd118c726407c3faac30d36ac2c0e8ff7",
+          "seconds": 1233.3802453749995,
+          "tokens": 3829,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0052/capture.json",
+          "capture_sha256": "dfe506a06860eb730850249d171a5859dc4203dd84a001af9b6b08e38cfb1abe",
+          "seconds": 1194.9070324579989,
+          "tokens": 3721,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0053/capture.json",
+          "capture_sha256": "a792894b1d826b15a7162066e0201c6f217571c164dbfdea53b7dfe0e11c05bb",
+          "seconds": 1260.1854947089996,
+          "tokens": 3938,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0054/capture.json",
+          "capture_sha256": "47c97a1aa6aa529c20d63ba74ea8b59135ecece2d26960f10576e39b4c1d52c2",
+          "seconds": 1392.0685279589998,
+          "tokens": 4261,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0055/capture.json",
+          "capture_sha256": "70dc048b1b4e131c8a0371830e733b160999ee1134f3010b1beaf6e3b97ebd33",
+          "seconds": 2351.845201,
+          "tokens": 7338,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0056/capture.json",
+          "capture_sha256": "24bae2e5358c42f2d18466f98825bee118624a095039adc4c39e2f8e796d8783",
+          "seconds": 1782.3830775409988,
+          "tokens": 5621,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0057/capture.json",
+          "capture_sha256": "c78b8e659442ae80e8f3301e567505bd2590aa629aef97bb9c06f7634b24993a",
+          "seconds": 1003.4944585839985,
+          "tokens": 3131,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0058/capture.json",
+          "capture_sha256": "8955f0e90a9e01e5b75582fd168d2eed8bd164c8ac1591023942175c1eaa66c5",
+          "seconds": 1513.5860741670003,
+          "tokens": 4687,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0059/capture.json",
+          "capture_sha256": "4b593336d7eb4c76a164350d4c77069e4fca944f31ad22dbb21fb784e0d95df6",
+          "seconds": 1472.1036962920007,
+          "tokens": 4550,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0060/capture.json",
+          "capture_sha256": "c9e86f3b5e23599c2ed2bd9be4638c4056790a6b89ac012dd54c6b10adac7d51",
+          "seconds": 1312.6861733330006,
+          "tokens": 4323,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0061/capture.json",
+          "capture_sha256": "aeb2885705a9f0b702a1d44788c23757cffd4c45450ac9973497549d64c1b6d7",
+          "seconds": 640.9200970839993,
+          "tokens": 2075,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0062/capture.json",
+          "capture_sha256": "0332357a21f3c1a9a5b0430c758a2c65b916895c6d12178125e3b07873fd35de",
+          "seconds": 1102.733553416001,
+          "tokens": 3540,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0063/capture.json",
+          "capture_sha256": "65b2fe952480c8b392eafc797401e49651ab21d60e820f7e3a458f63bfd2b538",
+          "seconds": 1337.6797729159953,
+          "tokens": 4320,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0064/capture.json",
+          "capture_sha256": "6321ee8fea54fb5c880c09dd9068ad388f565bac7cb4d4958ab9ff5ebf05ec53",
+          "seconds": 922.9824395830001,
+          "tokens": 2957,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0065/capture.json",
+          "capture_sha256": "9a724c296d7c4cd2c8264b32335577def1b91643949ee77e29e5e212945994ee",
+          "seconds": 1293.0907964170037,
+          "tokens": 4189,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0066/capture.json",
+          "capture_sha256": "433848a3ba0029fbd5f9dcfffacc711d5e6f4feb50549415a99f602930fefed3",
+          "seconds": 1137.0753047910039,
+          "tokens": 3637,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0067/capture.json",
+          "capture_sha256": "3ff73c118953696b767d32d84956ae749518c11627f8d74ee055b45ce7ae6801",
+          "seconds": 1324.2188068340038,
+          "tokens": 4257,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0068/capture.json",
+          "capture_sha256": "5f5d63bde97d85257b71bf2d6e8ed6d10e3a8f2a44ca3648d6349b56a0534624",
+          "seconds": 654.7965115830011,
+          "tokens": 2117,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0069/capture.json",
+          "capture_sha256": "f66a20bb44f90697fad0f708ab6bd7e2990096280f13a7fcdd61f759d82a74ba",
+          "seconds": 802.3525583750015,
+          "tokens": 2614,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0070/capture.json",
+          "capture_sha256": "e2c48c87fa2fbe94d84b12a8c7b305f0044af281b09d345d99493ef94831904c",
+          "seconds": 869.448858083997,
+          "tokens": 2805,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0071/capture.json",
+          "capture_sha256": "0312021a1001e770d316c8013b0f0e4f1b65d104bb5288cee89a7f118b6706bf",
+          "seconds": 1601.992248333001,
+          "tokens": 5236,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0072/capture.json",
+          "capture_sha256": "5e559d8f859e32467ba88808b4d1153a49fd20e4aa5f4510ad941fc4a0540fca",
+          "seconds": 1168.5738955419947,
+          "tokens": 3746,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0073/capture.json",
+          "capture_sha256": "aed07d78df914b73b9299aca23b831f2f7a88d7fbd2fa0cdd9bb19b3b5c395d1",
+          "seconds": 1509.8698412919985,
+          "tokens": 4876,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0074/capture.json",
+          "capture_sha256": "086775a35db4b2e1ca99b7fb1881441c14f2f727e45de7a9142cd6cd31541ae1",
+          "seconds": 1145.3592866249965,
+          "tokens": 3676,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0075/capture.json",
+          "capture_sha256": "860d6eb230dd3381f2505623f737ae97f7a4542edd106b2ab8c411a0acfb814f",
+          "seconds": 1672.3142180420036,
+          "tokens": 5417,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0076/capture.json",
+          "capture_sha256": "0f0cc7ca9df79b26f71f39d78d8d5fa94fc0985a3524d85b8dd32552d3e9557f",
+          "seconds": 950.7052448750037,
+          "tokens": 3062,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0077/capture.json",
+          "capture_sha256": "8c5234eb89e648ba209636dca1a6d3f85df5a212602aaaf54596623b48d5218a",
+          "seconds": 1609.379008833006,
+          "tokens": 5249,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0078/capture.json",
+          "capture_sha256": "4f953423f3c1d6c2f196b223e866a8f6c6fde31ac107790b8ac52e3ebc7bed26",
+          "seconds": 947.3820236249958,
+          "tokens": 3050,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0079/capture.json",
+          "capture_sha256": "e9ad39ed1cc51a966fd094643b5a91683f6d88e3491283c3d7b8bd6caefd31e8",
+          "seconds": 959.9141702909983,
+          "tokens": 3092,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0080/capture.json",
+          "capture_sha256": "016dabe8a2e15b2ba61892261d54ec383a1b8f5036355a6b7ec326a937b3501d",
+          "seconds": 895.132557500001,
+          "tokens": 2887,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0081/capture.json",
+          "capture_sha256": "d9b16151c7a9e85c8b08f0e00226b3df9193adbdaf06ec49a9c72a8e60639cae",
+          "seconds": 1053.489455750001,
+          "tokens": 3418,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0082/capture.json",
+          "capture_sha256": "18cecfadb4b1d73845041af3e57764039b415955b4c3c73239ed8c8ff86292cf",
+          "seconds": 1108.8804043329947,
+          "tokens": 3576,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0083/capture.json",
+          "capture_sha256": "f321b1927d53a53bbcb10d3af8f8a4620555e96d902967e2435824810e6016a4",
+          "seconds": 1023.4405450409977,
+          "tokens": 3291,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0084/capture.json",
+          "capture_sha256": "4bacb8ae694944280b6a881c91554b811c6a95dcef213815990a034fa9e5018c",
+          "seconds": 1413.0563573750042,
+          "tokens": 4502,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0085/capture.json",
+          "capture_sha256": "91490b91bcada2cd743006905c6c6a65054a28ea48033b6ec85b4ae22329f590",
+          "seconds": 2552.1845065419984,
+          "tokens": 8192,
+          "finish_reason": "length"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0086/capture.json",
+          "capture_sha256": "19a4c10c6cbcfffce2f8aee6b8bff75006feb77172ac2c5bd302435bb6fcca69",
+          "seconds": 1775.8361147079995,
+          "tokens": 5777,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0087/capture.json",
+          "capture_sha256": "e31ae5180c4373c5ed0085c5d1eb76588432766ec80a4768c1ef79cb74617e67",
+          "seconds": 1022.2034531250029,
+          "tokens": 3281,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0088/capture.json",
+          "capture_sha256": "18b1224c8adfd15a706c83fbc121c49a4acee1d496582fec7d009f3ec1316c80",
+          "seconds": 1451.9774990840015,
+          "tokens": 4644,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0089/capture.json",
+          "capture_sha256": "1e9a216d8bd9eee0ff5c452ddd830f8fa63712f86f4ae265134d93155de5774e",
+          "seconds": 1374.5963101669986,
+          "tokens": 4387,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0090/capture.json",
+          "capture_sha256": "cd1f3e0509985f1bf7c53a7f16b0d5b7066cdeb463e431b9276ee859fa87aa03",
+          "seconds": 1701.6316730839972,
+          "tokens": 5562,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0091/capture.json",
+          "capture_sha256": "74eb7b09f2152b326230ca24fa378259e17e8338abffb727b892fca7df40cec3",
+          "seconds": 878.4915105420005,
+          "tokens": 2829,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0092/capture.json",
+          "capture_sha256": "65fb2a473c11e4da48d02c0df00eb44d15a40e6de6fd25e867f43d8841256f38",
+          "seconds": 1103.5870987919989,
+          "tokens": 3623,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0093/capture.json",
+          "capture_sha256": "91425123566dae7714b51873dde13aa9f054353115e13b4dd633adfc52c16226",
+          "seconds": 693.2640557500054,
+          "tokens": 2243,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0094/capture.json",
+          "capture_sha256": "2ecfa89040c3551ba34bf851a4bc339763694c7a4cd706348fce8cea0caa6552",
+          "seconds": 1149.691332334005,
+          "tokens": 3694,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0095/capture.json",
+          "capture_sha256": "c492e286f1f219d4e8f6775b33d1ddfeb0ef0620342b47b1da87eb2789fa3fc5",
+          "seconds": 1100.7257443749986,
+          "tokens": 3531,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0096/capture.json",
+          "capture_sha256": "b4e287054efad7afc2a6b512257a02546345efe0f0e52a1cf2486cdaacbb56c0",
+          "seconds": 1054.3755683749987,
+          "tokens": 3390,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0097/capture.json",
+          "capture_sha256": "f66e2a4d8b05d7e4fc7387d533dda3670f45f4553cf738a01cc363e5bd2da8f6",
+          "seconds": 1026.865386749996,
+          "tokens": 3298,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0098/capture.json",
+          "capture_sha256": "50bcb7413c1be0926371285a4ae41e33be165f01cbb32e6b002503cf6f91209e",
+          "seconds": 2508.732888708997,
+          "tokens": 8192,
+          "finish_reason": "length"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/coder390/raw/portrait-0099/capture.json",
+          "capture_sha256": "ee8c91ad3eedb827219ba1c6a02e1d180e70ff8290a76e920f30cfca1c611721",
+          "seconds": 614.6312002499981,
+          "tokens": 1991,
+          "finish_reason": "stop"
+        }
+      ]
+    },
+    "coder390-main/cuda-recovery/base-matched": {
+      "n": 27,
+      "median_tokens_per_second": 1.756518547009556,
+      "median_seconds": 2298.267544915998,
+      "captures": [
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0000/capture.json",
+          "capture_sha256": "2fa521434aaee265779f27fea1776c81e00a4b2664b6ea8029eb8b3a27d4b23f",
+          "seconds": 2550.1023170000003,
+          "tokens": 4598,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0001/capture.json",
+          "capture_sha256": "e491e061561938589b848456aed35b07d35d475c6e74350031c685fe3aeb3ede",
+          "seconds": 2473.569404417,
+          "tokens": 4336,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0002/capture.json",
+          "capture_sha256": "4b93a44d8702386af2d8c39aeff75a20a0c9c0509c7c276825acd11869907841",
+          "seconds": 2834.4361348330003,
+          "tokens": 5872,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0003/capture.json",
+          "capture_sha256": "17fb8454bb2fa415b4e0894c2e24a11d3e97b89c0dc1b51c6c5a7bf5e84aa4ad",
+          "seconds": 2244.192206834,
+          "tokens": 3938,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0004/capture.json",
+          "capture_sha256": "c574af8efd18cfcfa0c091955442da5d335fa292b1c77a66422b7f37593df6a3",
+          "seconds": 1492.6461680829998,
+          "tokens": 2628,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0005/capture.json",
+          "capture_sha256": "304a11df1bbbaa6db1818f39a897d3105125097882400789146cc22f19c0d6ec",
+          "seconds": 1563.0721782499995,
+          "tokens": 2873,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0006/capture.json",
+          "capture_sha256": "4a7d3a270b9d88bde1996c46d01d2fb2bd38def39bb45b6eecfc2295dbf295e7",
+          "seconds": 2406.3244529999993,
+          "tokens": 4210,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0007/capture.json",
+          "capture_sha256": "f0bac13e926d9dd8a00873189c1144a12d44c485865d266d40e43a974f9b44a3",
+          "seconds": 2612.0937879169996,
+          "tokens": 4914,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0008/capture.json",
+          "capture_sha256": "51418cf7c59583c1712e29a3f117ca63d846e3b651f19d711ed08cea229f3b91",
+          "seconds": 2883.041095790999,
+          "tokens": 6238,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0009/capture.json",
+          "capture_sha256": "9e1da0100065775c91dcb11277fd3b044c50e5f5069c6b2200f16d2677b3d829",
+          "seconds": 2043.9966832909995,
+          "tokens": 3546,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0010/capture.json",
+          "capture_sha256": "185c1f92171b07a26142e6e6cd928815c0eea39207f5b68748a185eae3222034",
+          "seconds": 2283.8850890000012,
+          "tokens": 3895,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0011/capture.json",
+          "capture_sha256": "6d9ed016220834d497ffcd5e60e2c97d2001d00f2a3c6485cd81f422e607e006",
+          "seconds": 2709.039253666,
+          "tokens": 5346,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0012/capture.json",
+          "capture_sha256": "ca3722c36aa33ce54480b36f03597de08fe2431edbc0f1eef58d917b06f69ced",
+          "seconds": 3204.990170500001,
+          "tokens": 5511,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0013/capture.json",
+          "capture_sha256": "76a0b6396f5c14be38b40633c73a2c969d46409f168b37a721b8bb72735b11fa",
+          "seconds": 3241.7171794589995,
+          "tokens": 5635,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0014/capture.json",
+          "capture_sha256": "7b51bab28a3ab12767fdfe2a598a55cb6a8b3b2b520d6dcf577184a18ae58281",
+          "seconds": 2038.8954567500004,
+          "tokens": 3458,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0015/capture.json",
+          "capture_sha256": "c34496ca8f13a94988a04a285715d678dca1eaeacd743eaf9e27da552ec50e95",
+          "seconds": 2348.0428666670014,
+          "tokens": 4471,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0016/capture.json",
+          "capture_sha256": "d1dfe9bdf4b8b8104d45f257c8e0267ee3c565b8307ae830aa79ede038d2315e",
+          "seconds": 2024.677637416,
+          "tokens": 3444,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0017/capture.json",
+          "capture_sha256": "f077d2d9512726422f55b77cf50f9f97095ebe949d9a1122826ed039c97a8a68",
+          "seconds": 2027.4321514999974,
+          "tokens": 3453,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0018/capture.json",
+          "capture_sha256": "cfb84d195c2ea1b98292c27405629c194465ed56e85be07f5b366000d2eacca4",
+          "seconds": 3475.202796166999,
+          "tokens": 5924,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0019/capture.json",
+          "capture_sha256": "320148bbf6a70947e121cbcce4445833cae26754461c2c8fade10cca7ab54a50",
+          "seconds": 3328.833995750003,
+          "tokens": 5437,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0020/capture.json",
+          "capture_sha256": "8fa422fc5344e104f527941021741708e90c382267a7761d71b6df0f2ba057d2",
+          "seconds": 1958.892307582999,
+          "tokens": 3407,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0021/capture.json",
+          "capture_sha256": "5cad042d853d2986241c9d1e82790fe93850141965d1faf4763803dca9a7bcc3",
+          "seconds": 2368.6519971670023,
+          "tokens": 4810,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0022/capture.json",
+          "capture_sha256": "07997200e3406b8db60acc70423c94476650ae257c7e912441b3a96b760ef47a",
+          "seconds": 1854.6332828340019,
+          "tokens": 3624,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0023/capture.json",
+          "capture_sha256": "870baeff37b15a17785a56341c9ebe4e2b6706a1f38e7bbc6c6045e5bb72120a",
+          "seconds": 1635.6217842909973,
+          "tokens": 2873,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0024/capture.json",
+          "capture_sha256": "e606d6fb81c533dec945fefa15a4295ccfb837fd30295d53f95248454a574f3f",
+          "seconds": 1640.7304498339981,
+          "tokens": 2897,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0025/capture.json",
+          "capture_sha256": "3f01b9fead8fdff74ad54896ab38ac81a1e321117fed48acdec19f8c7ae95715",
+          "seconds": 2298.267544915998,
+          "tokens": 5160,
+          "finish_reason": "stop"
+        },
+        {
+          "capture": "runs/coder390-main/cuda-recovery/base-matched/raw/portrait-0027/capture.json",
+          "capture_sha256": "3e3e95fb329320f49f08b4977e9eab81d7a3df972cf9b3198df8f059085f4cf4",
+          "seconds": 1686.785859208001,
+          "tokens": 2975,
+          "finish_reason": "stop"
+        }
+      ]
+    }
+  },
+  "active_server_contract": {
+    "command": [
+      "/opt/spontaneous-claude/runtime/build/bin/llama-server",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18097",
+      "--model",
+      "/opt/spontaneous-claude/models/Qwen3.8-27B-Q8_0-matched.gguf",
+      "--alias",
+      "specimen",
+      "--no-webui",
+      "--jinja",
+      "--reasoning",
+      "on",
+      "--reasoning-effort",
+      "low",
+      "--reasoning-format",
+      "deepseek",
+      "--ctx-size",
+      "65536",
+      "--gpu-layers",
+      "40",
+      "--threads",
+      "8",
+      "--fit",
+      "off",
+      "--parallel",
+      "4",
+      "--batch-size",
+      "2048",
+      "--ubatch-size",
+      "512",
+      "--flash-attn",
+      "on",
+      "--min-p",
+      "0.0",
+      "--no-context-shift"
+    ],
+    "model": {
+      "path": "/opt/spontaneous-claude/models/Qwen3.8-27B-Q8_0-matched.gguf",
+      "bytes": 28617882048,
+      "sha256": "fdbeb7dd49889908765d1c62391c457d01dcc4fad4ef7596d2a113959bda5266",
+      "metadata": {
+        "general.architecture": "qwen35",
+        "general.type": "model",
+        "general.sampling.top_k": 20,
+        "general.sampling.top_p": 0.949999988079071,
+        "general.sampling.temp": 1.0,
+        "general.name": "Qwen3.8-27B",
+        "general.size_label": "27B",
+        "general.license": "apache-2.0",
+        "general.tags": [
+          "image-text-to-text"
+        ],
+        "qwen35.block_count": 64,
+        "qwen35.context_length": 262144,
+        "qwen35.embedding_length": 5120,
+        "qwen35.feed_forward_length": 17408,
+        "qwen35.attention.head_count": 24,
+        "qwen35.attention.head_count_kv": 4,
+        "qwen35.rope.dimension_sections": [
+          11,
+          11,
+          10,
+          0
+        ],
+        "qwen35.rope.freq_base": 10000000.0,
+        "qwen35.attention.layer_norm_rms_epsilon": 9.999999974752427e-07,
+        "qwen35.attention.key_length": 256,
+        "qwen35.attention.value_length": 256,
+        "qwen35.ssm.conv_kernel": 4,
+        "qwen35.ssm.state_size": 128,
+        "qwen35.ssm.group_count": 16,
+        "qwen35.ssm.time_step_rank": 48,
+        "qwen35.ssm.inner_size": 6144,
+        "qwen35.attention.recurrent_layers": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "qwen35.full_attention_interval": 4,
+        "qwen35.rope.dimension_count": 64,
+        "general.file_type": 7
+      },
+      "tensor_types": {
+        "Q8_0": 402,
+        "F32": 353,
+        "BF16": 96
+      },
+      "template_sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+      "quantisation_overrides": {
+        "ssm_alpha": "BF16",
+        "ssm_beta": "BF16"
+      },
+      "original_path": "/Users/evadne/Projects/models/qwen3.8-27b-base-q8/Qwen3.8-27B-Q8_0-matched.gguf"
+    },
+    "host": "root@codex-test-1.local",
+    "llama_revision": "4df29be4f4c3673f428170fda944a5b19f743bb8",
+    "binary_sha256": "c7dbcda023275ea211a16437584e81a52ece91a090fa8bd61d2d370033b7b91b",
+    "backend": "CUDA with partial CPU offload",
+    "source_verification": "evidence/coder390/cuda-source-verification.json"
+  },
+  "startup_log": [
+    "0.00.163.427 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)",
+    "0.00.278.270 I srv          init: The UI is disabled",
+    "0.00.278.273 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable",
+    "0.00.278.338 W srv  llama_server: -----------------",
+    "0.00.278.338 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set",
+    "0.00.278.338 W srv  llama_server: this can be a security risk (cross-origin attacks)",
+    "0.00.278.338 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655",
+    "0.00.278.338 W srv  llama_server: -----------------",
+    "0.00.279.672 I srv    load_model: loading model '/opt/spontaneous-claude/models/Qwen3.8-27B-Q8_0-matched.gguf'",
+    "1.01.545.670 W resolve_fused_ops: layer 0 is assigned to device CPU but fused Gated Delta Net (chunked) is assigned to device CUDA0 (usually due to missing support)",
+    "1.01.545.675 W resolve_fused_ops: fused Gated Delta Net (chunked) not supported, set to disabled",
+    "1.01.585.883 I cmn          init: llama threadpool init, n_threads = 8",
+    "1.02.670.306 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 16384, kv_unified = 'false'",
+    "1.02.674.337 I srv          init: chat template supports preserving reasoning, consider enabling it via --reasoning-preserve",
+    "1.02.674.394 I srv  llama_server: model loaded",
+    "1.02.674.398 I srv  llama_server: listening on http://127.0.0.1:18097",
+    "1.04.032.917 I slot get_availabl: id  3 | task -1 | selected slot by LRU, t_last = -1",
+    "1.04.033.039 I slot launch_slot_: id  3 | task 0 | processing task, is_child = 0",
+    "1.12.857.155 I slot print_timing: id  3 | task 0 | prompt eval time =    2034.31 ms /    46 tokens (   44.22 ms per token,    22.61 tokens per second)",
+    "1.12.857.159 I slot print_timing: id  3 | task 0 |        eval time =    6789.77 ms /    25 tokens (  282.91 ms per token,     3.53 tokens per second)",
+    "1.12.857.160 I slot print_timing: id  3 | task 0 |       total time =    8824.08 ms /    71 tokens"
+  ]
+}
