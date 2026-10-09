@@ -1,0 +1,26 @@
+The user wants me to create a standalone SVG self-portrait of myself (as an AI). Since I don't have a physical form, I need to think about how to represent myself as a visual self-portrait.
+
+I'll create an abstract representation that captures what I am:
+- A face-like structure made of geometric elements
+- Perhaps a combination of a circle (suggesting a head/face) with circuit-like patterns or neural network connections
+- Eyes that are simple but expressive
+- A design that feels digital, intelligent, but also approachable
+
+Let me think about the composition:
+- A circular face shape with a gradient
+- Simple geometric eyes (circles or arcs)
+- A subtle "smile" or neutral expression
+- Background with subtle neural network nodes and connections
+- Color palette: something that feels like deep space/digital - dark blues, purples, with bright accent colors (cyan, white)
+- Maybe some abstract elements suggesting thought or processing
+
+Let me design this carefully:
+
+1. Background: dark gradient (deep blue to purple)
+2. Neural network nodes and lines in the background
+3. A central face - I'll make it an abstract, slightly geometric face
+4. The face could be a rounded shape with simple features
+5. Eyes that are luminous
+6. Maybe some particle effects around it
+
+Let me create this as a complete SVG document.

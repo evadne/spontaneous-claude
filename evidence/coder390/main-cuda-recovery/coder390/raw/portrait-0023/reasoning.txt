@@ -1,0 +1,21 @@
+The user is asking for a standalone SVG self-portrait. I need to decide how to approach this.
+
+Options I'm considering:
+1. A literal human-like face — but I'm not a human. A human face would be misleading.
+2. An abstract/robotic interpretation — a clean, geometric face made of shapes, with a friendly expression. I can use a head shape, two eyes, a mouth made of lines or a smile, and some "circuit-like" or "tech" details.
+3. A purely abstract shape — too vague. Doesn't communicate "portrait."
+
+Decision: I'll make a stylized, geometric "robot face" portrait. It will convey that I'm an AI, and it's a recognizable self-portrait. I'll use a clean color palette, some gradient backgrounds, and simple geometric features (eyes, mouth, and maybe a couple of antenna/ears). I'll keep it self-contained with a proper viewBox and a background.
+
+I'll use a rounded head, two oval eyes, a simple smile, a couple of small circles as decorative "bolts," and a gradient background with some subtle glow.
+
+Let me draft the SVG with careful coordinates so it looks intentional and balanced. I'll use a 400x400 viewBox.
+
+Head: a large rounded rectangle, centered around (200, 200). I'll use a rounded rectangle with rx.
+Eyes: two circles at (150, 180) and (250, 180), r=18.
+Mouth: a path forming a smile at the bottom.
+Antenna: a line from the top with a small circle.
+Ears: small rounded rectangles on the sides.
+Background: a vertical linear gradient, and a subtle circle behind the head as a glow.
+
+I'll finalize it and return only the complete SVG document as requested.

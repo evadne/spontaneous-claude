@@ -1,0 +1,12 @@
+The user wants me to create a standalone SVG self-portrait of myself (Qwen). I need to think about what visual representation would be fitting for Qwen.
+
+Qwen is an AI model developed by Alibaba. I should create an abstract, stylized representation that feels like a "portrait" - perhaps a geometric/abstract face or a symbolic representation that evokes the idea of an AI entity. I'll go with a stylized, abstract portrait that uses clean geometric shapes, a thoughtful composition, and a color palette that feels modern and tech-oriented.
+
+Let me design something that:
+- Has a recognizable "portrait" composition (head/face area, shoulders)
+- Uses abstract/geometric elements to represent an AI
+- Has a calm, thoughtful aesthetic
+- Uses a refined color palette
+- Is self-contained and complete as an SVG document
+
+I'll create an abstract face composed of geometric shapes - perhaps a smooth oval for the head, with circuit-like or wave-like patterns, and a contemplative expression suggested by minimal features. I'll use a deep blue/teal palette with some warm accents.

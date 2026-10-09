@@ -1,0 +1,18 @@
+The user is asking me to create a self-portrait as an SVG. Since I'm an AI (Qwen), I need to think about how to represent myself visually. I'll create a stylized abstract representation that evokes AI/LLM concepts - perhaps a geometric face-like form with circuit-like elements, or something more creative.
+
+Let me think about what would be a good "self-portrait" for an AI:
+- An abstract face made of geometric shapes
+- Could incorporate elements suggesting thought, language, or neural networks
+- I'll make it visually interesting with colors and patterns
+
+I'll create a stylized face composed of geometric elements - a circular head with abstract features, surrounded by floating text characters or code-like elements to suggest language and reasoning. I'll use a color palette that feels modern and tech-oriented.
+
+Let me design this:
+- A central face made from clean geometric shapes
+- Abstract eyes (perhaps angular or asymmetric)
+- A minimal mouth
+- Surrounded by floating characters, symbols, and code fragments
+- A neural-network-like background or aura
+- Color scheme: dark background with vibrant accents (blues, purples, teals)
+
+I'll make it a complete standalone SVG document.

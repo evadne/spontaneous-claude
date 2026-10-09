@@ -1,0 +1,185 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#020412"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1a237e" stroke-width="0.3" opacity="0.3">
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="200" x2="400" y2="200"/>
+    <line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+  </g>
+
+  <!-- Neural connections - outer face shape -->
+  <g stroke="url(#lineGrad)" stroke-width="1.2" fill="none" opacity="0.7">
+    <!-- Left side of face -->
+    <path d="M200,60 Q140,70 120,120 Q105,170 110,220 Q115,270 140,310 Q165,340 200,350"/>
+    <!-- Right side of face -->
+    <path d="M200,60 Q260,70 280,120 Q295,170 290,220 Q285,270 260,310 Q235,340 200,350"/>
+  </g>
+
+  <!-- Internal connections -->
+  <g stroke="url(#lineGrad2)" stroke-width="0.8" fill="none" opacity="0.5">
+    <!-- Cross connections forming network -->
+    <line x1="120" y1="120" x2="200" y2="170"/>
+    <line x1="280" y1="120" x2="200" y2="170"/>
+    <line x1="110" y1="220" x2="200" y2="170"/>
+    <line x1="290" y1="220" x2="200" y2="170"/>
+    <line x1="140" y1="310" x2="200" y2="280"/>
+    <line x1="260" y1="310" x2="200" y2="280"/>
+    <line x1="120" y1="120" x2="110" y2="220"/>
+    <line x1="280" y1="120" x2="290" y2="220"/>
+    <line x1="110" y1="220" x2="140" y2="310"/>
+    <line x1="290" y1="220" x2="260" y2="310"/>
+    <line x1="140" y1="310" x2="200" y2="350"/>
+    <line x1="260" y1="310" x2="200" y2="350"/>
+    <line x1="200" y1="60" x2="200" y2="170"/>
+    <line x1="200" y1="170" x2="200" y2="280"/>
+    <line x1="200" y1="280" x2="200" y2="350"/>
+    <!-- Additional web connections -->
+    <line x1="150" y1="100" x2="250" y2="100"/>
+    <line x1="150" y1="100" x2="200" y2="170"/>
+    <line x1="250" y1="100" x2="200" y2="170"/>
+    <line x1="130" y1="160" x2="270" y2="160"/>
+    <line x1="130" y1="160" x2="110" y2="220"/>
+    <line x1="270" y1="160" x2="290" y2="220"/>
+    <line x1="150" y1="250" x2="250" y2="250"/>
+    <line x1="150" y1="250" x2="140" y2="310"/>
+    <line x1="250" y1="250" x2="260" y2="310"/>
+    <line x1="150" y1="250" x2="200" y2="280"/>
+    <line x1="250" y1="250" x2="200" y2="280"/>
+    <!-- Eye to center connections -->
+    <line x1="155" y1="175" x2="200" y2="220"/>
+    <line x1="245" y1="175" x2="200" y2="220"/>
+    <!-- Mouth area connections -->
+    <line x1="170" y1="290" x2="230" y2="290"/>
+    <line x1="170" y1="290" x2="200" y2="280"/>
+    <line x1="230" y1="290" x2="200" y2="280"/>
+  </g>
+
+  <!-- Thought/brain area connections (above head) -->
+  <g stroke="#7c4dff" stroke-width="0.6" fill="none" opacity="0.3">
+    <line x1="200" y1="60" x2="170" y2="35"/>
+    <line x1="200" y1="60" x2="230" y2="35"/>
+    <line x1="200" y1="60" x2="200" y2="30"/>
+    <line x1="170" y1="35" x2="200" y2="30"/>
+    <line x1="230" y1="35" x2="200" y2="30"/>
+    <line x1="170" y1="35" x2="155" y2="20"/>
+    <line x1="230" y1="35" x2="245" y2="20"/>
+    <line x1="200" y1="30" x2="200" y2="15"/>
+  </g>
+
+  <!-- Nodes - outer face -->
+  <g filter="url(#glow)">
+    <!-- Face outline nodes -->
+    <circle cx="200" cy="60" r="4" fill="#00e5ff" opacity="0.9"/>
+    <circle cx="150" cy="100" r="3" fill="#00e5ff" opacity="0.7"/>
+    <circle cx="250" cy="100" r="3" fill="#00e5ff" opacity="0.7"/>
+    <circle cx="120" cy="120" r="3.5" fill="#00b8d4" opacity="0.8"/>
+    <circle cx="280" cy="120" r="3.5" fill="#00b8d4" opacity="0.8"/>
+    <circle cx="130" cy="160" r="3" fill="#0097a7" opacity="0.7"/>
+    <circle cx="270" cy="160" r="3" fill="#0097a7" opacity="0.7"/>
+    <circle cx="110" cy="220" r="3.5" fill="#00b8d4" opacity="0.8"/>
+    <circle cx="290" cy="220" r="3.5" fill="#00b8d4" opacity="0.8"/>
+    <circle cx="150" cy="250" r="3" fill="#0097a7" opacity="0.7"/>
+    <circle cx="250" cy="250" r="3" fill="#0097a7" opacity="0.7"/>
+    <circle cx="140" cy="310" r="3.5" fill="#00b8d4" opacity="0.8"/>
+    <circle cx="260" cy="310" r="3.5" fill="#00b8d4" opacity="0.8"/>
+    <circle cx="200" cy="350" r="4" fill="#00e5ff" opacity="0.9"/>
+  </g>
+
+  <!-- Nodes - eyes (brighter, larger) -->
+  <g filter="url(#glowStrong)">
+    <!-- Left eye -->
+    <circle cx="155" cy="175" r="8" fill="none" stroke="#00e5ff" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="155" cy="175" r="4" fill="#00e5ff" opacity="0.9"/>
+    <circle cx="155" cy="175" r="1.5" fill="#ffffff" opacity="1"/>
+    <!-- Right eye -->
+    <circle cx="245" cy="175" r="8" fill="none" stroke="#00e5ff" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="245" cy="175" r="4" fill="#00e5ff" opacity="0.9"/>
+    <circle cx="245" cy="175" r="1.5" fill="#ffffff" opacity="1"/>
+  </g>
+
+  <!-- Nodes - inner face structure -->
+  <g filter="url(#glow)">
+    <circle cx="200" cy="170" r="3" fill="#7c4dff" opacity="0.8"/>
+    <circle cx="200" cy="220" r="3.5" fill="#7c4dff" opacity="0.9"/>
+    <circle cx="200" cy="280" r="3" fill="#7c4dff" opacity="0.7"/>
+    <!-- Mouth nodes -->
+    <circle cx="170" cy="290" r="3" fill="#b388ff" opacity="0.8"/>
+    <circle cx="200" cy="295" r="2.5" fill="#b388ff" opacity="0.7"/>
+    <circle cx="230" cy="290" r="3" fill="#b388ff" opacity="0.8"/>
+    <!-- Additional inner nodes -->
+    <circle cx="175" cy="200" r="2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="225" cy="200" r="2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="185" cy="240" r="2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="215" cy="240" r="2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="160" cy="230" r="1.5" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="240" cy="230" r="1.5" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="175" cy="145" r="2" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="225" cy="145" r="2" fill="#00e5ff" opacity="0.4"/>
+  </g>
+
+  <!-- Thought nodes (above head) -->
+  <g filter="url(#glow)">
+    <circle cx="170" cy="35" r="2.5" fill="#7c4dff" opacity="0.6"/>
+    <circle cx="230" cy="35" r="2.5" fill="#7c4dff" opacity="0.6"/>
+    <circle cx="200" cy="30" r="3" fill="#b388ff" opacity="0.7"/>
+    <circle cx="155" cy="20" r="2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="245" cy="20" r="2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="200" cy="15" r="2.5" fill="#b388ff" opacity="0.6"/>
+    <circle cx="180" cy="45" r="1.5" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="220" cy="45" r="1.5" fill="#00e5ff" opacity="0.4"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g opacity="0.3">
+    <circle cx="50" cy="80" r="1" fill="#00e5ff"/>
+    <circle cx="350" cy="100" r="1.5" fill="#7c4dff"/>
+    <circle cx="30" cy="300" r="1" fill="#7c4dff"/>
+    <circle cx="370" cy="280" r="1" fill="#00e5ff"/>
+    <circle cx="60" cy="350" r="1.5" fill="#00e5ff"/>
+    <circle cx="340" cy="350" r="1" fill="#7c4dff"/>
+    <circle cx="40" cy="150" r="0.8" fill="#b388ff"/>
+    <circle cx="360" cy="200" r="0.8" fill="#b388ff"/>
+    <circle cx="80" cy="50" r="1" fill="#00e5ff"/>
+    <circle cx="320" cy="50" r="1" fill="#7c4dff"/>
+  </g>
+
+  <!-- Subtle outer ring suggesting containment/digital boundary -->
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#1a237e" stroke-width="0.5" opacity="0.3" stroke-dasharray="4,6"/>
+</svg>
+```

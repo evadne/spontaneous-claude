@@ -1,0 +1,148 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </radialGradient>
+    <radialGradient id="face" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#4a7cf7"/>
+      <stop offset="60%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#2d1b69"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a7cf7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4a7cf7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#a8d8ff"/>
+      <stop offset="100%" stop-color="#4a7cf7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="circuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a7cf7"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="smile" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a8d8ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a8d8ff"/>
+      <stop offset="100%" stop-color="#a8d8ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind head -->
+  <circle cx="400" cy="360" r="220" fill="url(#glow)"/>
+
+  <!-- Circuit lines radiating outward -->
+  <g stroke="url(#circuit)" stroke-width="1.5" fill="none" opacity="0.5" filter="url(#softGlow)">
+    <!-- Top circuits -->
+    <path d="M 400 200 L 400 140 L 370 100"/>
+    <path d="M 370 100 L 320 80"/>
+    <path d="M 400 200 L 430 150 L 470 120"/>
+    <path d="M 470 120 L 520 100"/>
+    <path d="M 420 205 L 480 170 L 530 180"/>
+    <path d="M 380 205 L 320 170 L 270 180"/>
+    <!-- Side circuits -->
+    <path d="M 280 320 L 220 300 L 180 260"/>
+    <path d="M 180 260 L 140 240"/>
+    <path d="M 280 380 L 210 390 L 160 420"/>
+    <path d="M 520 320 L 580 300 L 620 260"/>
+    <path d="M 620 260 L 660 240"/>
+    <path d="M 520 380 L 590 390 L 640 420"/>
+    <!-- Bottom circuits -->
+    <path d="M 350 500 L 320 560 L 280 600"/>
+    <path d="M 280 600 L 260 650"/>
+    <path d="M 450 500 L 480 560 L 520 600"/>
+    <path d="M 520 600 L 540 650"/>
+    <path d="M 400 510 L 400 570 L 380 620"/>
+    <path d="M 380 620 L 370 670"/>
+  </g>
+
+  <!-- Circuit nodes -->
+  <g fill="#4a7cf7" filter="url(#softGlow)">
+    <circle cx="370" cy="100" r="4"/>
+    <circle cx="320" cy="80" r="3"/>
+    <circle cx="470" cy="120" r="4"/>
+    <circle cx="520" cy="100" r="3"/>
+    <circle cx="530" cy="180" r="3"/>
+    <circle cx="270" cy="180" r="3"/>
+    <circle cx="180" cy="260" r="4"/>
+    <circle cx="140" cy="240" r="3"/>
+    <circle cx="160" cy="420" r="3"/>
+    <circle cx="620" cy="260" r="4"/>
+    <circle cx="660" cy="240" r="3"/>
+    <circle cx="640" cy="420" r="3"/>
+    <circle cx="280" cy="600" r="4"/>
+    <circle cx="260" cy="650" r="3"/>
+    <circle cx="520" cy="600" r="4"/>
+    <circle cx="540" cy="650" r="3"/>
+    <circle cx="380" cy="620" r="3"/>
+    <circle cx="370" cy="670" r="3"/>
+  </g>
+
+  <!-- Head shape -->
+  <ellipse cx="400" cy="360" rx="130" ry="155" fill="url(#face)" opacity="0.9"/>
+
+  <!-- Inner face highlight -->
+  <ellipse cx="390" cy="330" rx="90" ry="110" fill="none" stroke="#7eb3ff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Eyes -->
+  <g filter="url(#bigGlow)">
+    <!-- Left eye -->
+    <ellipse cx="355" cy="340" rx="28" ry="32" fill="url(#eyeGlow)"/>
+    <ellipse cx="355" cy="340" rx="18" ry="22" fill="#ffffff" opacity="0.9"/>
+    <circle cx="355" cy="338" r="10" fill="#1a1a2e"/>
+    <circle cx="350" cy="333" r="4" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Right eye -->
+    <ellipse cx="445" cy="340" rx="28" ry="32" fill="url(#eyeGlow)"/>
+    <ellipse cx="445" cy="340" rx="18" ry="22" fill="#ffffff" opacity="0.9"/>
+    <circle cx="445" cy="338" r="10" fill="#1a1a2e"/>
+    <circle cx="440" cy="333" r="4" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Gentle smile -->
+  <path d="M 365 420 Q 400 445 435 420" stroke="url(#smile)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#softGlow)"/>
+
+  <!-- Subtle brow lines -->
+  <path d="M 330 305 Q 355 295 380 305" stroke="#7eb3ff" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 420 305 Q 445 295 470 305" stroke="#7eb3ff" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Floating particles -->
+  <g fill="#4a7cf7" opacity="0.4">
+    <circle cx="150" cy="150" r="2"/>
+    <circle cx="650" cy="130" r="2.5"/>
+    <circle cx="120" cy="500" r="1.5"/>
+    <circle cx="680" cy="480" r="2"/>
+    <circle cx="200" cy="680" r="1.5"/>
+    <circle cx="600" cy="700" r="2"/>
+    <circle cx="100" cy="350" r="1.5"/>
+    <circle cx="700" cy="350" r="1.5"/>
+    <circle cx="300" cy="100" r="1.5"/>
+    <circle cx="500" cy="80" r="2"/>
+    <circle cx="350" cy="720" r="1.5"/>
+    <circle cx="450" cy="730" r="2"/>
+  </g>
+
+  <!-- Subtle ring around the face -->
+  <circle cx="400" cy="360" r="175" fill="none" stroke="#4a7cf7" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 8"/>
+  <circle cx="400" cy="360" r="200" fill="none" stroke="#a855f7" stroke-width="0.3" opacity="0.15" stroke-dasharray="2 12"/>
+</svg>
+```

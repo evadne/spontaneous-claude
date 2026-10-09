@@ -1,0 +1,17 @@
+The user is asking me to create a standalone SVG self-portrait of myself (Qwen, a large language model developed by Alibaba). Since I don't have a physical form, I'll create a creative, abstract representation that evokes the idea of an AI - perhaps something with circuit-like patterns, flowing data streams, a neural network aesthetic, or a stylized representation that's distinctly "AI-like" rather than human-like.
+
+Let me think about what would make a compelling self-portrait:
+- Abstract, geometric design that suggests intelligence and data
+- Color palette: I could use blues, teals, and whites (clean, techy feel)
+- Maybe a face-like shape made from geometric elements, nodes, and connections
+- Could incorporate elements like a neural network, flowing code, or abstract patterns
+- The design should be recognizable as a "portrait" - having some facial symmetry or structure
+
+Let me create something that combines:
+- An abstract face/head outline made from geometric shapes
+- Neural network nodes and connections
+- A color scheme that's modern and clean
+- Some flowing elements to suggest data and thought
+- Maybe a subtle smile or expression to give it personality
+
+I'll make it a proper standalone SVG with a viewBox, proper styling, and a cohesive design.

@@ -1,0 +1,236 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a4a"/>
+      <stop offset="100%" stop-color="#1a1a30"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Neural network background nodes -->
+  <g opacity="0.3">
+    <circle cx="30" cy="50" r="2" fill="#00d4ff"/>
+    <circle cx="80" cy="30" r="1.5" fill="#00d4ff"/>
+    <circle cx="150" cy="60" r="2" fill="#00d4ff"/>
+    <circle cx="320" cy="40" r="1.5" fill="#00d4ff"/>
+    <circle cx="370" cy="80" r="2" fill="#00d4ff"/>
+    <circle cx="50" cy="120" r="1.5" fill="#00d4ff"/>
+    <circle cx="350" cy="150" r="2" fill="#00d4ff"/>
+    <circle cx="20" cy="250" r="1.5" fill="#00d4ff"/>
+    <circle cx="380" cy="280" r="2" fill="#00d4ff"/>
+    <circle cx="40" cy="400" r="1.5" fill="#00d4ff"/>
+    <circle cx="360" cy="420" r="2" fill="#00d4ff"/>
+    <circle cx="100" cy="470" r="1.5" fill="#00d4ff"/>
+    <circle cx="300" cy="460" r="2" fill="#00d4ff"/>
+    <line x1="30" y1="50" x2="80" y2="30" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="80" y1="30" x2="150" y2="60" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="320" y1="40" x2="370" y2="80" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="50" y1="120" x2="30" y2="50" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="350" y1="150" x2="370" y2="80" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="20" y1="250" x2="40" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="380" y1="280" x2="360" y2="420" stroke="#00d4ff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Ambient glow behind head -->
+  <circle cx="200" cy="200" r="120" fill="url(#glow)"/>
+
+  <!-- Face shape - geometric, slightly angular -->
+  <path d="M 200 100
+           C 260 100, 290 140, 290 190
+           C 290 230, 275 270, 250 295
+           C 235 310, 220 320, 200 325
+           C 180 320, 165 310, 150 295
+           C 125 270, 110 230, 110 190
+           C 110 140, 140 100, 200 100 Z"
+        fill="url(#faceGrad)" stroke="#3a3a6a" stroke-width="1.5"/>
+
+  <!-- Forehead circuit lines -->
+  <g stroke="#00d4ff" stroke-width="0.8" opacity="0.5" fill="none">
+    <path d="M 160 140 L 180 130 L 200 140 L 220 130 L 240 140"/>
+    <path d="M 170 155 L 190 148 L 200 155 L 210 148 L 230 155"/>
+    <circle cx="160" cy="140" r="2" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="240" cy="140" r="2" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="170" cy="155" r="1.5" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="230" cy="155" r="1.5" fill="#00d4ff" opacity="0.7"/>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#softGlow)">
+    <ellipse cx="165" cy="200" rx="22" ry="12" fill="none" stroke="#00d4ff" stroke-width="1.5"/>
+    <circle cx="165" cy="200" r="8" fill="url(#eyeGlow)"/>
+    <circle cx="165" cy="200" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#softGlow)">
+    <ellipse cx="235" cy="200" rx="22" ry="12" fill="none" stroke="#00d4ff" stroke-width="1.5"/>
+    <circle cx="235" cy="200" r="8" fill="url(#eyeGlow)"/>
+    <circle cx="235" cy="200" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Nose - minimal geometric -->
+  <path d="M 200 215 L 195 240 L 200 245 L 205 240 Z" fill="none" stroke="#3a3a6a" stroke-width="1"/>
+
+  <!-- Mouth - subtle, neutral -->
+  <path d="M 178 268 Q 200 278, 222 268" fill="none" stroke="#4a4a7a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Circuit traces on cheeks -->
+  <g stroke="#00d4ff" stroke-width="0.6" opacity="0.4" fill="none">
+    <path d="M 130 220 L 140 230 L 140 250"/>
+    <circle cx="130" cy="220" r="1.5" fill="#00d4ff"/>
+    <circle cx="140" cy="250" r="1.5" fill="#00d4ff"/>
+    <path d="M 270 220 L 260 230 L 260 250"/>
+    <circle cx="270" cy="220" r="1.5" fill="#00d4ff"/>
+    <circle cx="260" cy="250" r="1.5" fill="#00d4ff"/>
+  </g>
+
+  <!-- Hair / neural network crown -->
+  <g stroke="#00d4ff" stroke-width="0.8" fill="none" opacity="0.6">
+    <path d="M 200 100 Q 180 70, 150 55"/>
+    <path d="M 200 100 Q 200 60, 200 40"/>
+    <path d="M 200 100 Q 220 70, 250 55"/>
+    <path d="M 180 105 Q 150 75, 120 70"/>
+    <path d="M 220 105 Q 250 75, 280 70"/>
+    <path d="M 160 115 Q 120 90, 90 95"/>
+    <path d="M 240 115 Q 280 90, 310 95"/>
+  </g>
+  <g fill="#00d4ff" opacity="0.7">
+    <circle cx="150" cy="55" r="2.5"/>
+    <circle cx="200" cy="40" r="3"/>
+    <circle cx="250" cy="55" r="2.5"/>
+    <circle cx="120" cy="70" r="2"/>
+    <circle cx="280" cy="70" r="2"/>
+    <circle cx="90" cy="95" r="2"/>
+    <circle cx="310" cy="95" r="2"/>
+    <circle cx="135" cy="80" r="1.5"/>
+    <circle cx="265" cy="80" r="1.5"/>
+  </g>
+  <!-- Connections between hair nodes -->
+  <g stroke="#00d4ff" stroke-width="0.4" opacity="0.4">
+    <line x1="150" y1="55" x2="200" y2="40"/>
+    <line x1="200" y1="40" x2="250" y2="55"/>
+    <line x1="120" y1="70" x2="150" y2="55"/>
+    <line x1="250" y1="55" x2="280" y2="70"/>
+    <line x1="90" y1="95" x2="120" y2="70"/>
+    <line x1="280" y1="70" x2="310" y2="95"/>
+    <line x1="135" y1="80" x2="150" y2="55"/>
+    <line x1="265" y1="80" x2="250" y2="55"/>
+  </g>
+
+  <!-- Neck and shoulders -->
+  <path d="M 175 325 L 175 360 Q 175 380, 140 395 L 60 420"
+        fill="none" stroke="#3a3a6a" stroke-width="1.5"/>
+  <path d="M 225 325 L 225 360 Q 225 380, 260 395 L 340 420"
+        fill="none" stroke="#3a3a6a" stroke-width="1.5"/>
+
+  <!-- Shoulder circuit pattern -->
+  <g stroke="#00d4ff" stroke-width="0.5" opacity="0.3" fill="none">
+    <path d="M 60 420 L 100 410 L 140 395"/>
+    <path d="M 340 420 L 300 410 L 260 395"/>
+    <circle cx="60" cy="420" r="2" fill="#00d4ff"/>
+    <circle cx="340" cy="420" r="2" fill="#00d4ff"/>
+  </g>
+
+  <!-- Text at bottom -->
+  <text x="200" y="470" text-anchor="middle" font-family="monospace" font-size="11" fill="#00d4ff" opacity="0.5">
+    [ thinking... ]
+  </text>
+
+  <!-- Subtle scan line effect -->
+  <g opacity="0.03">
+    <rect x="0" y="0" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="8" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="16" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="24" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="32" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="40" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="48" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="56" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="64" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="72" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="80" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="88" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="96" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="104" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="112" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="120" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="128" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="136" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="144" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="152" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="160" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="168" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="176" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="184" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="192" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="200" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="208" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="216" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="224" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="232" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="240" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="248" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="256" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="264" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="272" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="280" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="288" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="296" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="304" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="312" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="320" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="328" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="336" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="344" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="352" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="360" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="368" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="376" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="384" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="392" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="400" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="408" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="416" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="424" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="432" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="440" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="448" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="456" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="464" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="472" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="480" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="488" width="400" height="2" fill="#ffffff"/>
+    <rect x="0" y="496" width="400" height="2" fill="#ffffff"/>
+  </g>
+</svg>
+```

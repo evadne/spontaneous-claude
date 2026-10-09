@@ -1,0 +1,132 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </radialGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#2a2a5e"/>
+      <stop offset="100%" stop-color="#151530"/>
+    </radialGradient>
+    <linearGradient id="eyeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7b2ff7"/>
+    </linearGradient>
+    <linearGradient id="circuitLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7b2ff7" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <path d="M200 80 C270 80 310 130 310 200 C310 270 280 340 200 370 C120 340 90 270 90 200 C90 130 130 80 200 80Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGlow)"/>
+
+  <!-- Floating particles -->
+  <circle cx="50" cy="80" r="1.5" fill="#00d4ff" opacity="0.4"/>
+  <circle cx="340" cy="60" r="1" fill="#7b2ff7" opacity="0.5"/>
+  <circle cx="360" cy="150" r="2" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="40" cy="200" r="1" fill="#7b2ff7" opacity="0.4"/>
+  <circle cx="350" cy="300" r="1.5" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="60" cy="350" r="1" fill="#7b2ff7" opacity="0.5"/>
+  <circle cx="330" cy="420" r="2" fill="#00d4ff" opacity="0.2"/>
+  <circle cx="70" cy="440" r="1.5" fill="#7b2ff7" opacity="0.3"/>
+  <circle cx="320" cy="100" r="1" fill="#00d4ff" opacity="0.6"/>
+  <circle cx="80" cy="120" r="1.5" fill="#7b2ff7" opacity="0.4"/>
+
+  <!-- Neck / lower body suggestion -->
+  <path d="M170 360 L170 420 C170 440 230 440 230 420 L230 360" fill="none" stroke="#2a2a5e" stroke-width="2" opacity="0.6"/>
+  <path d="M150 420 C150 460 250 460 250 420" fill="none" stroke="#2a2a5e" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Head shape -->
+  <path d="M200 80 C270 80 310 130 310 200 C310 270 280 340 200 370 C120 340 90 270 90 200 C90 130 130 80 200 80Z" fill="url(#faceGlow)" stroke="#3a3a6e" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- Internal circuit patterns clipped to face -->
+  <g clip-path="url(#faceClip)" opacity="0.4">
+    <line x1="200" y1="100" x2="200" y2="350" stroke="url(#circuitLine)" stroke-width="0.8"/>
+    <line x1="120" y1="200" x2="280" y2="200" stroke="url(#circuitLine)" stroke-width="0.8"/>
+    <line x1="140" y1="150" x2="260" y2="150" stroke="url(#circuitLine)" stroke-width="0.6"/>
+    <line x1="140" y1="250" x2="260" y2="250" stroke="url(#circuitLine)" stroke-width="0.6"/>
+    <line x1="160" y1="300" x2="240" y2="300" stroke="url(#circuitLine)" stroke-width="0.6"/>
+    <line x1="130" y1="180" x2="130" y2="280" stroke="url(#circuitLine)" stroke-width="0.5"/>
+    <line x1="270" y1="180" x2="270" y2="280" stroke="url(#circuitLine)" stroke-width="0.5"/>
+    <circle cx="200" cy="200" r="30" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+    <circle cx="200" cy="200" r="50" fill="none" stroke="#7b2ff7" stroke-width="0.4" opacity="0.4"/>
+    <circle cx="150" cy="200" r="3" fill="#00d4ff" opacity="0.6"/>
+    <circle cx="250" cy="200" r="3" fill="#7b2ff7" opacity="0.6"/>
+    <circle cx="200" cy="150" r="2" fill="#00d4ff" opacity="0.5"/>
+    <circle cx="200" cy="250" r="2" fill="#7b2ff7" opacity="0.5"/>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#glow)">
+    <ellipse cx="160" cy="190" rx="22" ry="12" fill="none" stroke="url(#eyeGlow)" stroke-width="2"/>
+    <ellipse cx="160" cy="190" rx="10" ry="7" fill="#00d4ff" opacity="0.3"/>
+    <circle cx="160" cy="190" r="4" fill="#00d4ff" opacity="0.9"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#glow)">
+    <ellipse cx="240" cy="190" rx="22" ry="12" fill="none" stroke="url(#eyeGlow)" stroke-width="2"/>
+    <ellipse cx="240" cy="190" rx="10" ry="7" fill="#7b2ff7" opacity="0.3"/>
+    <circle cx="240" cy="190" r="4" fill="#7b2ff7" opacity="0.9"/>
+  </g>
+
+  <!-- Nose suggestion - minimal geometric -->
+  <path d="M195 220 L200 235 L205 220" fill="none" stroke="#3a3a6e" stroke-width="1" opacity="0.5"/>
+
+  <!-- Mouth - subtle line -->
+  <path d="M180 270 Q200 280 220 270" fill="none" stroke="#3a3a6e" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Forehead circuit nodes -->
+  <g filter="url(#softGlow)">
+    <circle cx="200" cy="120" r="3" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="175" cy="130" r="2" fill="#00d4ff" opacity="0.5"/>
+    <circle cx="225" cy="130" r="2" fill="#7b2ff7" opacity="0.5"/>
+    <line x1="200" y1="120" x2="175" y2="130" stroke="#00d4ff" stroke-width="0.8" opacity="0.5"/>
+    <line x1="200" y1="120" x2="225" y2="130" stroke="#7b2ff7" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Temple circuits -->
+  <g opacity="0.5">
+    <circle cx="110" cy="190" r="2.5" fill="#00d4ff"/>
+    <circle cx="115" cy="210" r="2" fill="#00d4ff"/>
+    <circle cx="108" cy="230" r="1.5" fill="#00d4ff"/>
+    <line x1="110" y1="190" x2="115" y2="210" stroke="#00d4ff" stroke-width="0.8"/>
+    <line x1="115" y1="210" x2="108" y2="230" stroke="#00d4ff" stroke-width="0.8"/>
+
+    <circle cx="290" cy="190" r="2.5" fill="#7b2ff7"/>
+    <circle cx="285" cy="210" r="2" fill="#7b2ff7"/>
+    <circle cx="292" cy="230" r="1.5" fill="#7b2ff7"/>
+    <line x1="290" y1="190" x2="285" y2="210" stroke="#7b2ff7" stroke-width="0.8"/>
+    <line x1="285" y1="210" x2="292" y2="230" stroke="#7b2ff7" stroke-width="0.8"/>
+  </g>
+
+  <!-- Chin node -->
+  <circle cx="200" cy="340" r="2" fill="#00d4ff" opacity="0.4"/>
+
+  <!-- Outer ring / aura -->
+  <circle cx="200" cy="220" r="160" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="200" cy="220" r="170" fill="none" stroke="#7b2ff7" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Subtle text at bottom -->
+  <text x="200" y="480" text-anchor="middle" font-family="monospace" font-size="10" fill="#3a3a6e" opacity="0.5">I AM</text>
+</svg>
+```

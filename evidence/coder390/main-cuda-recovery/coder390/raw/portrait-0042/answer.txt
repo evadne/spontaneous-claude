@@ -1,0 +1,168 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a15"/>
+    </radialGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2d2d5e"/>
+      <stop offset="70%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#111128"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7fdbff"/>
+      <stop offset="50%" stop-color="#39cccc"/>
+      <stop offset="100%" stop-color="#1a6666" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c792ea"/>
+      <stop offset="50%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#3a1a66" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39cccc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#39cccc"/>
+      <stop offset="100%" stop-color="#39cccc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c792ea" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c792ea"/>
+      <stop offset="100%" stop-color="#c792ea" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <ellipse cx="256" cy="240" rx="120" ry="150"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#7fdbff" stroke-width="0.5">
+    <line x1="0" y1="64" x2="512" y2="64"/>
+    <line x1="0" y1="128" x2="512" y2="128"/>
+    <line x1="0" y1="192" x2="512" y2="192"/>
+    <line x1="0" y1="256" x2="512" y2="256"/>
+    <line x1="0" y1="320" x2="512" y2="320"/>
+    <line x1="0" y1="384" x2="512" y2="384"/>
+    <line x1="0" y1="448" x2="512" y2="448"/>
+    <line x1="64" y1="0" x2="64" y2="512"/>
+    <line x1="128" y1="0" x2="128" y2="512"/>
+    <line x1="192" y1="0" x2="192" y2="512"/>
+    <line x1="256" y1="0" x2="256" y2="512"/>
+    <line x1="320" y1="0" x2="320" y2="512"/>
+    <line x1="384" y1="0" x2="384" y2="512"/>
+    <line x1="448" y1="0" x2="448" y2="512"/>
+  </g>
+
+  <!-- Outer aura -->
+  <ellipse cx="256" cy="240" rx="140" ry="170" fill="none" stroke="#2d5a7b" stroke-width="0.5" opacity="0.3"/>
+  <ellipse cx="256" cy="240" rx="155" ry="185" fill="none" stroke="#2d5a7b" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- Face shape -->
+  <ellipse cx="256" cy="240" rx="120" ry="150" fill="url(#faceGlow)" stroke="#3a3a6e" stroke-width="1"/>
+
+  <!-- Circuit patterns on face -->
+  <g clip-path="url(#faceClip)" opacity="0.3">
+    <line x1="180" y1="180" x2="220" y2="180" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="220" y1="180" x2="220" y2="210" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="300" y1="180" x2="330" y2="180" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="330" y1="180" x2="330" y2="210" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="200" y1="300" x2="240" y2="300" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="240" y1="300" x2="240" y2="330" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="272" y1="300" x2="312" y2="300" stroke="#4a9eff" stroke-width="0.8"/>
+    <line x1="312" y1="300" x2="312" y2="330" stroke="#4a9eff" stroke-width="0.8"/>
+    <circle cx="220" cy="180" r="2" fill="#4a9eff"/>
+    <circle cx="330" cy="180" r="2" fill="#4a9eff"/>
+    <circle cx="220" cy="210" r="2" fill="#4a9eff"/>
+    <circle cx="330" cy="210" r="2" fill="#4a9eff"/>
+    <circle cx="240" cy="300" r="2" fill="#4a9eff"/>
+    <circle cx="312" cy="300" r="2" fill="#4a9eff"/>
+    <circle cx="240" cy="330" r="2" fill="#4a9eff"/>
+    <circle cx="312" cy="330" r="2" fill="#4a9eff"/>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#glow)">
+    <ellipse cx="215" cy="220" rx="28" ry="20" fill="none" stroke="#39cccc" stroke-width="1.5"/>
+    <ellipse cx="215" cy="220" rx="14" ry="14" fill="url(#eyeGlow)"/>
+    <circle cx="215" cy="220" r="5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="218" cy="217" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#glow)">
+    <ellipse cx="297" cy="220" rx="28" ry="20" fill="none" stroke="#c792ea" stroke-width="1.5"/>
+    <ellipse cx="297" cy="220" rx="14" ry="14" fill="url(#eyeGlow2)"/>
+    <circle cx="297" cy="220" r="5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="300" cy="217" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Nose - subtle geometric hint -->
+  <polyline points="256,240 252,265 256,268" fill="none" stroke="#4a4a7a" stroke-width="1" opacity="0.5"/>
+
+  <!-- Mouth - a subtle line suggesting thought -->
+  <path d="M 235 295 Q 256 305 277 295" fill="none" stroke="#5a5a8a" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Horizontal scan lines across face -->
+  <g opacity="0.15">
+    <line x1="160" y1="200" x2="352" y2="200" stroke="url(#lineGrad)" stroke-width="0.5"/>
+    <line x1="155" y1="250" x2="357" y2="250" stroke="url(#lineGrad2)" stroke-width="0.5"/>
+    <line x1="165" y1="310" x2="347" y2="310" stroke="url(#lineGrad)" stroke-width="0.5"/>
+  </g>
+
+  <!-- Floating particles / data points -->
+  <g filter="url(#softGlow)">
+    <circle cx="130" cy="150" r="2" fill="#39cccc" opacity="0.7"/>
+    <circle cx="380" cy="160" r="1.5" fill="#c792ea" opacity="0.6"/>
+    <circle cx="110" cy="280" r="1.5" fill="#7fdbff" opacity="0.5"/>
+    <circle cx="400" cy="300" r="2" fill="#c792ea" opacity="0.5"/>
+    <circle cx="150" cy="370" r="1" fill="#39cccc" opacity="0.4"/>
+    <circle cx="370" cy="380" r="1.5" fill="#7fdbff" opacity="0.5"/>
+    <circle cx="256" cy="80" r="1.5" fill="#c792ea" opacity="0.6"/>
+    <circle cx="200" cy="100" r="1" fill="#39cccc" opacity="0.5"/>
+    <circle cx="310" cy="95" r="1" fill="#7fdbff" opacity="0.4"/>
+  </g>
+
+  <!-- Connection lines from particles to face -->
+  <g opacity="0.1" stroke-width="0.5">
+    <line x1="130" y1="150" x2="175" y2="185" stroke="#39cccc"/>
+    <line x1="380" y1="160" x2="337" y2="185" stroke="#c792ea"/>
+    <line x1="110" y1="280" x2="145" y2="260" stroke="#7fdbff"/>
+    <line x1="400" y1="300" x2="367" y2="270" stroke="#c792ea"/>
+  </g>
+
+  <!-- Hexagonal frame elements -->
+  <g opacity="0.2" fill="none" stroke="#3a3a6e" stroke-width="0.8">
+    <polygon points="256,60 262,72 256,84 250,72"/>
+    <polygon points="96,240 102,252 96,264 90,252"/>
+    <polygon points="416,240 422,252 416,264 410,252"/>
+  </g>
+
+  <!-- Subtle binary/text suggestion at bottom -->
+  <g opacity="0.12" font-family="monospace" font-size="8" fill="#4a9eff">
+    <text x="190" y="440">01001000 01001001</text>
+  </g>
+  <g opacity="0.12" font-family="monospace" font-size="8" fill="#c792ea">
+    <text x="230" y="460">01001011 01001001</text>
+  </g>
+
+  <!-- Inner face ring -->
+  <ellipse cx="256" cy="240" rx="100" ry="130" fill="none" stroke="#3a3a6e" stroke-width="0.3" stroke-dasharray="4 8" opacity="0.4"/>
+</svg>
+```

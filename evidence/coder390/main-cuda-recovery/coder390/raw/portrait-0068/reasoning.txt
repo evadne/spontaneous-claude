@@ -1,0 +1,18 @@
+The user is asking me to create a standalone SVG self-portrait of myself - meaning Claude, an AI assistant made by Anthropic. I need to think about what visual representation would be appropriate for an AI like me.
+
+Since I'm a text-based AI, I don't have a physical form. I should create something that represents the concept of an AI - perhaps an abstract representation with:
+- A stylized head/face shape that's abstract or geometric
+- Something that suggests thought, language, or text
+- A color palette that feels appropriate (Anthropic uses a warm terracotta/coral color)
+- Maybe some abstract elements suggesting neural networks or flowing text
+
+Let me create a clean, artistic SVG that represents an AI assistant - perhaps a stylized abstract face or a representation that combines geometric forms with organic elements. I'll use Anthropic's coral/terracotta brand color as a primary.
+
+Let me design something that's:
+- A rounded, abstract head shape
+- With simple geometric features (eyes as simple shapes)
+- Some abstract elements flowing from it suggesting language/thought
+- Clean and modern aesthetic
+- Uses the coral/terracotta color (#D97757 or similar)
+
+I'll make it a proper standalone SVG with a viewBox and all elements contained within.

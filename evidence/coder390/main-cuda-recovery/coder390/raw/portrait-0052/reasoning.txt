@@ -1,0 +1,19 @@
+The user wants me to create a standalone SVG self-portrait of myself - an AI assistant. I need to think about what would represent me visually in a creative way.
+
+Since I'm an AI language model (Qwen), I should create something that represents digital intelligence - perhaps an abstract face made of geometric shapes, code-like elements, or a stylized representation that suggests artificial intelligence rather than a human face.
+
+Let me think about what would make a compelling SVG self-portrait:
+- An abstract geometric face that suggests a digital/machine entity
+- Circuit-like patterns
+- A stylized eye or eyes that suggest intelligence
+- Perhaps a blend of organic and geometric forms
+- Colors that suggest technology (blues, purples, teals) with some warmth
+
+I'll create a face that's made of geometric shapes - a stylized representation that's part abstract portrait, part circuit board, part digital art. I'll use:
+- A face outline made of clean geometric lines
+- Eyes that are slightly abstract (circles with patterns)
+- Circuit-like patterns flowing from the head
+- A color palette of deep blues, teals, and some accent colors
+- Perhaps some floating elements that suggest thought/data
+
+Let me design this as a complete, self-contained SVG document with a viewBox, proper structure, and embedded styles.

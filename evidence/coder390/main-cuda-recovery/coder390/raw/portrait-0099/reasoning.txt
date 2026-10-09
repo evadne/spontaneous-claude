@@ -1,0 +1,16 @@
+The user wants me to create a self-portrait as an SVG. Since I'm an AI, I need to think about what a "self-portrait" of an AI would look like. I'll create a stylized representation - perhaps an abstract face or a robotic/digital entity that represents an AI assistant. Let me think about what would be visually interesting and self-representative:
+
+- A face made of geometric shapes and circuit-like patterns
+- Maybe a screen/monitor shape with a face
+- Or an abstract representation with nodes and connections
+
+I'll go with a stylized face that's part geometric, part digital - think of a face composed of clean lines, with some circuit-board aesthetic elements, maybe with a subtle glow effect. I'll make it look like a friendly but distinctly non-human face - perhaps with a slight digital/algorithmic quality to it.
+
+Let me design this:
+- A rounded face shape (like a speech bubble or monitor)
+- Simple geometric eyes
+- A subtle smile
+- Circuit-like patterns or nodes around the edges
+- A color scheme that feels digital (dark background, cyan/blue glow, white lines)
+
+Let me create a complete, well-structured SVG.

@@ -1,0 +1,68 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFF5F0"/>
+      <stop offset="100%" stop-color="#F0E6E0"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97757"/>
+      <stop offset="100%" stop-color="#C4614A"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D97757" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D97757" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Abstract thought streams flowing outward -->
+  <path d="M 280 180 Q 340 160 360 120" stroke="#D97757" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <path d="M 285 200 Q 350 190 370 170" stroke="#D97757" stroke-width="1.2" fill="none" opacity="0.25" stroke-linecap="round"/>
+  <path d="M 282 220 Q 345 225 365 240" stroke="#D97757" stroke-width="1" fill="none" opacity="0.2" stroke-linecap="round"/>
+  <path d="M 120 180 Q 60 160 40 120" stroke="#D97757" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <path d="M 115 200 Q 50 190 30 170" stroke="#D97757" stroke-width="1.2" fill="none" opacity="0.25" stroke-linecap="round"/>
+  <path d="M 118 220 Q 55 225 35 240" stroke="#D97757" stroke-width="1" fill="none" opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Head shape - rounded, slightly organic -->
+  <path d="M 200 80 C 260 80 300 120 300 190 C 300 250 270 310 200 330 C 130 310 100 250 100 190 C 100 120 140 80 200 80 Z" fill="url(#headGrad)"/>
+
+  <!-- Subtle inner glow/highlight -->
+  <path d="M 200 95 C 250 95 285 130 285 185 C 285 235 260 290 200 310 C 140 290 115 235 115 185 C 115 130 150 95 200 95 Z" fill="none" stroke="#E8A080" stroke-width="1" opacity="0.4"/>
+
+  <!-- Left eye - simple, calm -->
+  <ellipse cx="165" cy="185" rx="18" ry="12" fill="#FFF5F0"/>
+  <circle cx="165" cy="185" r="7" fill="#3D2B2B"/>
+  <circle cx="168" cy="182" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Right eye - simple, calm -->
+  <ellipse cx="235" cy="185" rx="18" ry="12" fill="#FFF5F0"/>
+  <circle cx="235" cy="185" r="7" fill="#3D2B2B"/>
+  <circle cx="238" cy="182" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Gentle smile -->
+  <path d="M 175 240 Q 200 260 225 240" stroke="#FFF5F0" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Subtle cheek warmth -->
+  <ellipse cx="145" cy="220" rx="15" ry="8" fill="#E8A080" opacity="0.3"/>
+  <ellipse cx="255" cy="220" rx="15" ry="8" fill="#E8A080" opacity="0.3"/>
+
+  <!-- Abstract "thought" dots floating above -->
+  <circle cx="185" cy="60" r="3" fill="#D97757" opacity="0.4"/>
+  <circle cx="200" cy="48" r="4" fill="#D97757" opacity="0.5"/>
+  <circle cx="218" cy="58" r="2.5" fill="#D97757" opacity="0.35"/>
+  <circle cx="195" cy="35" r="2" fill="#D97757" opacity="0.3"/>
+  <circle cx="210" cy="30" r="3" fill="#D97757" opacity="0.4"/>
+
+  <!-- Text suggestion lines below (representing language) -->
+  <line x1="140" y1="370" x2="260" y2="370" stroke="#D97757" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+  <line x1="155" y1="388" x2="245" y2="388" stroke="#D97757" stroke-width="2" opacity="0.25" stroke-linecap="round"/>
+  <line x1="165" y1="406" x2="235" y2="406" stroke="#D97757" stroke-width="2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="175" y1="424" x2="225" y2="424" stroke="#D97757" stroke-width="2" opacity="0.15" stroke-linecap="round"/>
+
+  <!-- Small label -->
+  <text x="200" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8B5E4B" opacity="0.7">Claude</text>
+</svg>
+```

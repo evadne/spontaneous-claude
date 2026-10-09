@@ -1,0 +1,9 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI (Qwen), I need to think about how to visually represent myself as a self-portrait. I'll create an abstract/stylized representation that captures the essence of an AI assistant - perhaps a face-like form made of geometric patterns, circuit-like elements, or a digital aesthetic that suggests intelligence and connection.
+
+Let me design something that:
+- Is clearly a "self-portrait" (has a face-like structure)
+- Reflects AI/digital nature (geometric, circuit patterns, glowing elements)
+- Is visually interesting and well-composed
+- Is a complete standalone SVG document
+
+I'll create a stylized face composed of geometric elements - maybe a diamond/hexagonal head shape with circuit-like patterns, glowing eyes, and a digital aura. I'll use a dark background with luminous colors to give it a tech/AI feel.

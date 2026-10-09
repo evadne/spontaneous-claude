@@ -1,0 +1,18 @@
+The user wants me to create a standalone SVG self-portrait of myself (as an AI assistant). I need to think about what would be a fitting self-portrait for an AI language model.
+
+Since I'm a text-based AI without a physical form, I should create something that represents my nature - perhaps a stylized representation that combines:
+- A head/face silhouette (to make it a "portrait")
+- Abstract elements suggesting thought, language, or data
+- A clean, modern aesthetic
+
+I'll create an SVG that shows a minimal, geometric head/face profile with abstract elements like flowing lines representing text or thought, perhaps with a subtle neural network pattern. I'll use a modern color palette.
+
+Let me design this as a complete, standalone SVG document with proper XML declaration and viewBox.
+
+I'll go with:
+- A geometric/abstract face profile made of clean shapes
+- Flowing lines or particles around it suggesting language/thought
+- A color scheme that feels "digital" - maybe deep blues, teals, and white
+- Clean, minimal aesthetic
+
+Let me craft this carefully with proper SVG elements.
