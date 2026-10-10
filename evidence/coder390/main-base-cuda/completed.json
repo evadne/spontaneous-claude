@@ -1,0 +1,13 @@
+{
+  "models": [
+    "coder390",
+    "base-matched"
+  ],
+  "completed_unix": 1791674563.333075,
+  "captures": 400,
+  "backends": [
+    "Metal prefix",
+    "CUDA continuation"
+  ],
+  "note": "Use migration provenance and backend strata in comparisons."
+}

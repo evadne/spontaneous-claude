@@ -1,0 +1,148 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0077aa"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <path d="M250 120 C310 120 350 160 350 220 C350 280 310 320 250 320 C190 320 150 280 150 220 C150 160 190 120 250 120 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="250" cy="220" rx="140" ry="140" fill="url(#glow)"/>
+
+  <!-- Circuit traces - left side -->
+  <g stroke="#00e5ff" stroke-width="1.5" fill="none" opacity="0.4" filter="url(#softGlow)">
+    <path d="M150 190 L100 190 L80 170 L50 170"/>
+    <path d="M150 220 L90 220 L70 240 L40 240"/>
+    <path d="M155 250 L105 270 L80 270 L60 290"/>
+    <path d="M160 280 L120 310 L100 310 L80 330"/>
+  </g>
+
+  <!-- Circuit traces - right side -->
+  <g stroke="#00e5ff" stroke-width="1.5" fill="none" opacity="0.4" filter="url(#softGlow)">
+    <path d="M350 190 L400 190 L420 170 L450 170"/>
+    <path d="M350 220 L410 220 L430 240 L460 240"/>
+    <path d="M345 250 L395 270 L420 270 L440 290"/>
+    <path d="M340 280 L380 310 L400 310 L420 330"/>
+  </g>
+
+  <!-- Circuit nodes - left -->
+  <g fill="#00e5ff" opacity="0.6" filter="url(#softGlow)">
+    <circle cx="50" cy="170" r="3"/>
+    <circle cx="40" cy="240" r="3"/>
+    <circle cx="60" cy="290" r="3"/>
+    <circle cx="80" cy="330" r="3"/>
+  </g>
+
+  <!-- Circuit nodes - right -->
+  <g fill="#00e5ff" opacity="0.6" filter="url(#softGlow)">
+    <circle cx="450" cy="170" r="3"/>
+    <circle cx="460" cy="240" r="3"/>
+    <circle cx="440" cy="290" r="3"/>
+    <circle cx="420" cy="330" r="3"/>
+  </g>
+
+  <!-- Head outline -->
+  <path d="M250 120 C310 120 350 160 350 220 C350 280 310 320 250 320 C190 320 150 280 150 220 C150 160 190 120 250 120 Z" 
+        fill="none" stroke="#00e5ff" stroke-width="2" opacity="0.7" filter="url(#softGlow)"/>
+
+  <!-- Head fill - subtle -->
+  <path d="M250 120 C310 120 350 160 350 220 C350 280 310 320 250 320 C190 320 150 280 150 220 C150 160 190 120 250 120 Z" 
+        fill="#00e5ff" opacity="0.04"/>
+
+  <!-- Internal circuit pattern on face -->
+  <g clip-path="url(#headClip)" stroke="#00e5ff" stroke-width="0.8" fill="none" opacity="0.15">
+    <line x1="250" y1="120" x2="250" y2="320"/>
+    <line x1="150" y1="220" x2="350" y2="220"/>
+    <line x1="180" y1="160" x2="320" y2="280"/>
+    <line x1="320" y1="160" x2="180" y2="280"/>
+    <circle cx="250" cy="220" r="50"/>
+    <circle cx="250" cy="220" r="80"/>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#bigGlow)">
+    <ellipse cx="210" cy="210" rx="18" ry="12" fill="url(#eyeGlow)"/>
+  </g>
+  <!-- Left eye inner -->
+  <ellipse cx="210" cy="210" rx="8" ry="6" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Right eye -->
+  <g filter="url(#bigGlow)">
+    <ellipse cx="290" cy="210" rx="18" ry="12" fill="url(#eyeGlow)"/>
+  </g>
+  <!-- Right eye inner -->
+  <ellipse cx="290" cy="210" rx="8" ry="6" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Mouth - subtle line, slight smile -->
+  <path d="M225 270 Q250 282 275 270" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.5" filter="url(#softGlow)" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <line x1="230" y1="320" x2="230" y2="370" stroke="#00e5ff" stroke-width="2" opacity="0.5" filter="url(#softGlow)"/>
+  <line x1="270" y1="320" x2="270" y2="370" stroke="#00e5ff" stroke-width="2" opacity="0.5" filter="url(#softGlow)"/>
+
+  <!-- Shoulders -->
+  <path d="M230 370 Q250 380 270 370" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.4" filter="url(#softGlow)"/>
+  <path d="M170 400 Q200 370 230 370" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.4" filter="url(#softGlow)"/>
+  <path d="M270 370 Q300 370 330 400" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.4" filter="url(#softGlow)"/>
+
+  <!-- Floating particles -->
+  <g fill="#00e5ff" opacity="0.5" filter="url(#softGlow)">
+    <circle cx="120" cy="140" r="2"/>
+    <circle cx="380" cy="130" r="1.5"/>
+    <circle cx="90" cy="350" r="2"/>
+    <circle cx="410" cy="360" r="1.5"/>
+    <circle cx="160" cy="380" r="1"/>
+    <circle cx="340" cy="390" r="1"/>
+    <circle cx="70" cy="250" r="1.5"/>
+    <circle cx="430" cy="200" r="1"/>
+    <circle cx="250" cy="80" r="2"/>
+    <circle cx="200" cy="90" r="1"/>
+    <circle cx="300" cy="85" r="1.5"/>
+  </g>
+
+  <!-- Data stream lines at bottom -->
+  <g stroke="#7b2ff7" stroke-width="1" fill="none" opacity="0.3">
+    <line x1="150" y1="430" x2="180" y2="430"/>
+    <line x1="195" y1="430" x2="220" y2="430"/>
+    <line x1="235" y1="430" x2="250" y2="430"/>
+    <line x1="265" y1="430" x2="300" y2="430"/>
+    <line x1="315" y1="430" x2="340" y2="430"/>
+    <line x1="170" y1="445" x2="210" y2="445"/>
+    <line x1="225" y1="445" x2="245" y2="445"/>
+    <line x1="260" y1="445" x2="320" y2="445"/>
+    <line x1="155" y1="460" x2="190" y2="460"/>
+    <line x1="205" y1="460" x2="280" y2="460"/>
+    <line x1="295" y1="460" x2="345" y2="460"/>
+  </g>
+</svg>
+```

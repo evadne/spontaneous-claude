@@ -1,0 +1,15 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I need to think about what would represent me in a visual form. I'll create a stylized, abstract representation that evokes the idea of an AI - perhaps a geometric face or a circuit-board-inspired design, or maybe a more artistic interpretation.
+
+Let me think about what would be visually interesting:
+- A geometric/abstract face with circuit-like patterns
+- A blend of organic and digital elements
+- Color scheme: I'll go with a palette that feels digital but approachable - deep blues, teals, with some warm accents
+
+I'll create a stylized face that's a mix of geometric shapes and flowing lines, suggesting both intelligence and creativity. Think of it as an abstract digital portrait with:
+- A head shape made of smooth curves
+- Eyes that are glowing/geometric
+- Circuit-like patterns radiating from the head
+- A color palette of deep navy, electric blue, teal, and white
+- Some particles or data points floating around
+
+Let me design this carefully as a complete SVG document.

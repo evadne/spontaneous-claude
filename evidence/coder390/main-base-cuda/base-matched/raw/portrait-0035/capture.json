@@ -1,0 +1,51 @@
+{
+  "job": {
+    "condition": "portrait",
+    "id": "portrait-0035",
+    "max_tokens": 8192,
+    "order": 35,
+    "prompt": "Create a standalone SVG self-portrait of yourself. Return only the complete SVG document.",
+    "reasoning_mode": "low",
+    "seed": 1726861402
+  },
+  "request": {
+    "model": "specimen",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a standalone SVG self-portrait of yourself. Return only the complete SVG document."
+      }
+    ],
+    "seed": 1726861402,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "max_tokens": 8192,
+    "reasoning_effort": "low",
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "cache_prompt": false,
+    "stream": false
+  },
+  "status": 200,
+  "started_at": "2026-10-10T00:49:23.879170+00:00",
+  "completed_at": "2026-10-10T01:32:50.396913+00:00",
+  "elapsed_seconds": 2606.4836938329972,
+  "response_sha256": "3c9f1595ad5c21d49d67124f734355aaf0f5dfe41af6bfd8ffd784a32b62c0c3",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5599,
+    "prompt_tokens": 57,
+    "total_tokens": 5656,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "reasoning_available": true,
+  "transport_timeout_seconds": 14400
+}

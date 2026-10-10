@@ -1,0 +1,22 @@
+The user wants me to create a standalone SVG self-portrait of myself - an AI assistant. Let me think about what would be a creative and appropriate self-portrait for an AI language model.
+
+I could create:
+1. A robotic face/head - classic AI representation
+2. A neural network visualization
+3. An abstract geometric face
+4. A face made of text characters
+5. A circuit-board style face
+6. A minimalist face with digital elements
+
+I think I'll go with a stylized, somewhat friendly digital face - a rounded geometric head with circuit-like patterns, glowing eyes, and some abstract elements suggesting a digital/ethereal nature. I'll make it visually interesting with gradients, glow effects, and a balanced composition.
+
+Let me design this:
+- A circular/rounded head shape
+- Eyes that glow (like digital eyes)
+- A subtle smile or neutral expression
+- Circuit board traces on the "skin"
+- A dark background with some ambient glow
+- Maybe some floating data particles
+- A color scheme of blues, cyans, and purples against dark
+
+Let me create a complete SVG with these elements.

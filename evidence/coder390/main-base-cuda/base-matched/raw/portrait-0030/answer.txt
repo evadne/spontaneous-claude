@@ -1,0 +1,194 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#F5F0E8"/>
+      <stop offset="100%" stop-color="#E8E0D4"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#CC785C" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#CC785C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8956E"/>
+      <stop offset="60%" stop-color="#CC785C"/>
+      <stop offset="100%" stop-color="#A05A3C"/>
+    </radialGradient>
+    <radialGradient id="eye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2C2420"/>
+      <stop offset="70%" stop-color="#3D3028"/>
+      <stop offset="100%" stop-color="#4A3A30"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="blur8" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur20" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="800" height="800" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Background -->
+    <rect width="800" height="800" fill="url(#bg)"/>
+
+    <!-- Subtle background texture lines -->
+    <g stroke="#D4C8B8" stroke-width="0.5" opacity="0.3">
+      <line x1="0" y1="100" x2="800" y2="100"/>
+      <line x1="0" y1="200" x2="800" y2="200"/>
+      <line x1="0" y1="300" x2="800" y2="300"/>
+      <line x1="0" y1="400" x2="800" y2="400"/>
+      <line x1="0" y1="500" x2="800" y2="500"/>
+      <line x1="0" y1="600" x2="800" y2="600"/>
+      <line x1="0" y1="700" x2="800" y2="700"/>
+    </g>
+
+    <!-- Ambient glow behind head -->
+    <ellipse cx="400" cy="350" rx="220" ry="260" fill="url(#glow)" filter="url(#blur20)"/>
+
+    <!-- Abstract neural network background -->
+    <g stroke="#CC785C" stroke-width="0.8" opacity="0.15" fill="none">
+      <circle cx="180" cy="150" r="3"/>
+      <circle cx="620" cy="120" r="3"/>
+      <circle cx="120" cy="350" r="3"/>
+      <circle cx="680" cy="400" r="3"/>
+      <circle cx="150" cy="600" r="3"/>
+      <circle cx="650" cy="620" r="3"/>
+      <circle cx="100" cy="480" r="2"/>
+      <circle cx="700" cy="250" r="2"/>
+      <circle cx="250" cy="80" r="2"/>
+      <circle cx="550" cy="700" r="2"/>
+      <line x1="180" y1="150" x2="120" y2="350"/>
+      <line x1="620" y1="120" x2="680" y2="400"/>
+      <line x1="120" y1="350" x2="150" y2="600"/>
+      <line x1="680" y1="400" x2="650" y2="620"/>
+      <line x1="100" y1="480" x2="150" y2="600"/>
+      <line x1="700" y1="250" x2="680" y2="400"/>
+      <line x1="250" y1="80" x2="180" y2="150"/>
+      <line x1="550" y1="700" x2="650" y2="620"/>
+      <line x1="180" y1="150" x2="250" y2="80"/>
+      <line x1="620" y1="120" x2="700" y2="250"/>
+    </g>
+
+    <!-- Head/face form - organic and abstract -->
+    <!-- Main head shape - suggestion of a face in profile/frontal -->
+    <path d="M 320 200 
+             C 320 160, 360 130, 400 130 
+             C 440 130, 480 160, 480 200 
+             C 490 240, 495 280, 490 320 
+             C 488 360, 480 400, 470 430 
+             C 460 460, 445 490, 430 510 
+             C 420 525, 410 535, 400 540 
+             C 390 535, 380 525, 370 510 
+             C 355 490, 340 460, 330 430 
+             C 320 400, 312 360, 310 320 
+             C 305 280, 310 240, 320 200 Z" 
+          fill="url(#core)" opacity="0.85" filter="url(#soft)"/>
+
+    <!-- Inner face - lighter area suggesting depth -->
+    <path d="M 335 220 
+             C 335 190, 360 165, 400 165 
+             C 440 165, 465 190, 465 220 
+             C 472 255, 475 290, 472 325 
+             C 470 360, 462 395, 452 420 
+             C 442 448, 428 475, 415 495 
+             C 408 505, 404 512, 400 515 
+             C 396 512, 392 505, 385 495 
+             C 372 475, 358 448, 348 420 
+             C 338 395, 330 360, 328 325 
+             C 325 290, 328 255, 335 220 Z" 
+          fill="#E8A07A" opacity="0.6"/>
+
+    <!-- Forehead highlight -->
+    <ellipse cx="400" cy="230" rx="55" ry="35" fill="#F0B898" opacity="0.4" filter="url(#blur8)"/>
+
+    <!-- Left eye -->
+    <ellipse cx="365" cy="310" rx="22" ry="14" fill="#F5EDE5" opacity="0.9"/>
+    <ellipse cx="365" cy="310" rx="12" ry="12" fill="url(#eye)"/>
+    <circle cx="362" cy="307" r="3" fill="#F5F0E8" opacity="0.7"/>
+    <!-- Left eyebrow -->
+    <path d="M 340 288 C 348 280, 365 278, 382 283" stroke="#5C3D2E" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right eye -->
+    <ellipse cx="435" cy="310" rx="22" ry="14" fill="#F5EDE5" opacity="0.9"/>
+    <ellipse cx="435" cy="310" rx="12" ry="12" fill="url(#eye)"/>
+    <circle cx="432" cy="307" r="3" fill="#F5F0E8" opacity="0.7"/>
+    <!-- Right eyebrow -->
+    <path d="M 418 283 C 435 278, 452 280, 460 288" stroke="#5C3D2E" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Nose - subtle -->
+    <path d="M 400 320 C 398 340, 396 360, 394 375 C 396 378, 404 378, 406 375 C 404 360, 402 340, 400 320" 
+          fill="#B8705A" opacity="0.3"/>
+    <!-- Nose tip shadow -->
+    <ellipse cx="400" cy="378" rx="10" ry="5" fill="#A05A3C" opacity="0.2" filter="url(#soft)"/>
+
+    <!-- Mouth - gentle, contemplative -->
+    <path d="M 375 420 C 385 415, 395 413, 400 414 C 405 413, 415 415, 425 420" 
+          stroke="#8B4535" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <!-- Lower lip suggestion -->
+    <path d="M 382 428 C 390 434, 410 434, 418 428" 
+          stroke="#A05A3C" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Cheek highlights -->
+    <ellipse cx="345" cy="370" rx="18" ry="12" fill="#E8956E" opacity="0.25" filter="url(#blur8)"/>
+    <ellipse cx="455" cy="370" rx="18" ry="12" fill="#E8956E" opacity="0.25" filter="url(#blur8)"/>
+
+    <!-- Neck and shoulders suggestion -->
+    <path d="M 370 540 C 365 560, 350 580, 320 600 C 280 625, 220 650, 180 660 
+             C 160 665, 140 670, 120 680 
+             L 120 800 L 680 800 L 680 680 
+             C 660 670, 640 665, 620 660 
+             C 580 650, 520 625, 480 600 
+             C 450 580, 435 560, 430 540" 
+          fill="#D4956E" opacity="0.5"/>
+    <path d="M 375 540 C 372 555, 365 570, 350 585 
+             C 330 605, 300 620, 270 630 
+             L 270 800 L 530 800 L 530 630 
+             C 500 620, 470 605, 450 585 
+             C 435 570, 428 555, 425 540" 
+          fill="#CC785C" opacity="0.4"/>
+
+    <!-- Collar/clothing suggestion -->
+    <path d="M 280 640 C 320 620, 370 610, 400 615 
+             C 430 610, 480 620, 520 640 
+             L 520 800 L 280 800 Z" 
+          fill="#3D3028" opacity="0.7"/>
+    <path d="M 340 630 C 370 618, 430 618, 460 630 
+             L 450 800 L 350 800 Z" 
+          fill="#2C2420" opacity="0.5"/>
+
+    <!-- Abstract thought/cognition elements floating around -->
+    <g opacity="0.5">
+      <!-- Small circles suggesting ideas -->
+      <circle cx="280" cy="160" r="8" fill="none" stroke="#CC785C" stroke-width="1.5"/>
+      <circle cx="260" cy="130" r="5" fill="#CC785C" opacity="0.4"/>
+      <circle cx="530" cy="140" r="6" fill="none" stroke="#CC785C" stroke-width="1.5"/>
+      <circle cx="555" cy="170" r="4" fill="#CC785C" opacity="0.3"/>
+      <circle cx="240" cy="250" r="4" fill="#CC785C" opacity="0.3"/>
+      <circle cx="560" cy="280" r="5" fill="none" stroke="#CC785C" stroke-width="1"/>
+      
+      <!-- Connecting lines to head -->
+      <path d="M 288 168 C 310 180, 330 195, 345 210" stroke="#CC785C" stroke-width="0.8" fill="none" stroke-dasharray="3,4"/>
+      <path d="M 524 148 C 505 165, 485 185, 465 200" stroke="#CC785C" stroke-width="0.8" fill="none" stroke-dasharray="3,4"/>
+    </g>
+
+    <!-- Subtle geometric overlay - suggesting structure within the organic -->
+    <g stroke="#CC785C" stroke-width="0.5" fill="none" opacity="0.12">
+      <polygon points="400,130 480,200 490,320 470,430 400,540 330,430 310,320 320,200"/>
+      <line x1="400" y1="130" x2="400" y2="540"/>
+      <line x1="310" y1="320" x2="490" y2="320"/>
+    </g>
+
+    <!-- Vignette -->
+    <rect width="800" height="800" fill="none" stroke="#2C2420" stroke-width="80" opacity="0.05" filter="url(#blur20)"/>
+
+    <!-- Signature mark -->
+    <text x="720" y="770" font-family="Georgia, serif" font-size="14" fill="#8B7060" opacity="0.5" text-anchor="end">a portrait of thought</text>
+  </g>
+</svg>
+```

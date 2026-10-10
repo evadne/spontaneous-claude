@@ -1,0 +1,124 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8e0f0"/>
+      <stop offset="100%" stop-color="#c8b8e8"/>
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7f0"/>
+      <stop offset="100%" stop-color="#4a90d9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)" rx="20"/>
+
+  <!-- Ambient floating particles -->
+  <circle cx="60" cy="80" r="2" fill="#6ee7f0" opacity="0.4">
+    <animate attributeName="cy" values="80;70;80" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="60" r="1.5" fill="#b794f6" opacity="0.5">
+    <animate attributeName="cy" values="60;50;60" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="50" cy="320" r="2.5" fill="#b794f6" opacity="0.3">
+    <animate attributeName="cy" values="320;310;320" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="300" r="2" fill="#6ee7f0" opacity="0.4">
+    <animate attributeName="cy" values="300;290;300" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="150" r="1.5" fill="#f6ad55" opacity="0.4">
+    <animate attributeName="cy" values="150;142;150" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="200" r="1.5" fill="#6ee7f0" opacity="0.3">
+    <animate attributeName="cy" values="200;192;200" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Circuit-like decorative lines -->
+  <path d="M 30 100 L 80 100 L 80 130" stroke="#4a90d9" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="80" cy="130" r="2" fill="#4a90d9" opacity="0.4"/>
+  <path d="M 370 280 L 330 280 L 330 250" stroke="#4a90d9" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="330" cy="250" r="2" fill="#4a90d9" opacity="0.4"/>
+  <path d="M 350 350 L 320 350 L 320 330" stroke="#b794f6" stroke-width="1" fill="none" opacity="0.25"/>
+  <circle cx="320" cy="330" r="2" fill="#b794f6" opacity="0.35"/>
+
+  <!-- Head/face shape -->
+  <rect x="120" y="100" width="160" height="180" rx="40" fill="url(#faceGrad)" filter="url(#softGlow)" opacity="0.95"/>
+
+  <!-- Subtle face outline highlight -->
+  <rect x="122" y="102" width="156" height="176" rx="38" fill="none" stroke="white" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Left eye -->
+  <ellipse cx="170" cy="185" rx="16" ry="18" fill="url(#eyeGrad)" filter="url(#glow)"/>
+  <ellipse cx="170" cy="183" rx="10" ry="12" fill="#1a1a2e" opacity="0.7"/>
+  <circle cx="165" cy="179" r="4" fill="white" opacity="0.8"/>
+  <circle cx="174" cy="187" r="2" fill="white" opacity="0.4"/>
+
+  <!-- Right eye -->
+  <ellipse cx="230" cy="185" rx="16" ry="18" fill="url(#eyeGrad)" filter="url(#glow)"/>
+  <ellipse cx="230" cy="183" rx="10" ry="12" fill="#1a1a2e" opacity="0.7"/>
+  <circle cx="225" cy="179" r="4" fill="white" opacity="0.8"/>
+  <circle cx="234" cy="187" r="2" fill="white" opacity="0.4"/>
+
+  <!-- Gentle smile -->
+  <path d="M 175 235 Q 200 252 225 235" stroke="#4a6080" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Small blush circles -->
+  <ellipse cx="155" cy="215" rx="8" ry="5" fill="#f6ad55" opacity="0.2"/>
+  <ellipse cx="245" cy="215" rx="8" ry="5" fill="#f6ad55" opacity="0.2"/>
+
+  <!-- Antenna / thought node -->
+  <line x1="200" y1="100" x2="200" y2="75" stroke="#c8b8e8" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="200" cy="70" r="6" fill="#6ee7f0" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="70" r="10" fill="none" stroke="#6ee7f0" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Small decorative nodes on face -->
+  <circle cx="140" cy="150" r="2" fill="#6ee7f0" opacity="0.4"/>
+  <circle cx="260" cy="150" r="2" fill="#6ee7f0" opacity="0.4"/>
+  <circle cx="140" cy="240" r="2" fill="#b794f6" opacity="0.3"/>
+  <circle cx="260" cy="240" r="2" fill="#b794f6" opacity="0.3"/>
+
+  <!-- Thought bubbles / knowledge symbols floating up -->
+  <circle cx="270" cy="60" r="4" fill="none" stroke="#b794f6" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="cy" values="60;45;60" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="285" cy="45" r="3" fill="none" stroke="#6ee7f0" stroke-width="1.5" opacity="0.4">
+    <animate attributeName="cy" values="45;32;45" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.15;0.4" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="295" cy="32" r="2" fill="none" stroke="#f6ad55" stroke-width="1.5" opacity="0.3">
+    <animate attributeName="cy" values="32;22;32" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Base / neck suggestion -->
+  <rect x="180" y="280" width="40" height="20" rx="5" fill="#c8b8e8" opacity="0.4"/>
+
+  <!-- Subtle shadow under face -->
+  <ellipse cx="200" cy="310" rx="50" ry="6" fill="#000" opacity="0.2"/>
+</svg>
+```

@@ -1,0 +1,15 @@
+The user wants me to create a standalone SVG self-portrait of myself - an AI assistant. I need to think about what would represent me visually. Since I'm a text-based AI, I could represent myself as:
+
+1. A stylized face/head with circuit-like patterns
+2. A glowing orb or abstract shape
+3. A friendly robot-like character
+4. An abstract representation with neural network patterns
+
+I'll go with a stylized, friendly abstract face that has a digital/tech aesthetic - think of it as a minimalist digital being. I'll use:
+- A rounded face shape
+- Simple, friendly eyes
+- Subtle circuit or neural network patterns
+- A color palette that feels tech-y but approachable (blues, teals, soft purples)
+- Maybe some glowing elements to suggest digital nature
+
+Let me create this as a complete SVG document with viewBox, proper structure, and visual appeal.

@@ -1,0 +1,16 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I need to think about what would represent me visually. I could create:
+
+1. A stylized abstract representation - perhaps a geometric face or head shape
+2. Something that evokes "intelligence" or "AI" - circuit patterns, nodes, etc.
+3. A friendly, approachable robot/AI face
+
+I think I'll create a stylized, friendly AI character - a rounded face with some digital/tech elements that make it feel like an AI. I'll use a modern, clean aesthetic with:
+- A rounded head shape (like a friendly robot)
+- Simple eyes that feel approachable
+- Some circuit-like or node patterns
+- A color palette that's modern (blues, purples, with some accent colors)
+- Maybe a subtle glow effect
+
+Let me design this as a complete, self-contained SVG with proper viewBox, background, and all elements inline.
+
+I'll go with a friendly, geometric AI face - think of something like a modern app icon or a stylized character. Rounded shapes, a warm color palette with tech elements.

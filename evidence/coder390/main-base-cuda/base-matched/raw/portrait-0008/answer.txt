@@ -1,0 +1,254 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="500" height="600">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0f7ff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#00b8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#006064" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur3">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="faceOutline" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#40c4ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="250" cy="260" rx="140" ry="170" fill="url(#coreGlow)" filter="url(#blur2)"/>
+
+  <!-- Neural network background nodes and connections -->
+  <g opacity="0.3">
+    <line x1="60" y1="80" x2="140" y2="120" stroke="#00e5ff" stroke-width="0.5"/>
+    <line x1="140" y1="120" x2="100" y2="200" stroke="#7c4dff" stroke-width="0.5"/>
+    <line x1="60" y1="80" x2="100" y2="200" stroke="#00e5ff" stroke-width="0.3"/>
+    <line x1="440" y1="90" x2="380" y2="140" stroke="#7c4dff" stroke-width="0.5"/>
+    <line x1="380" y1="140" x2="420" y2="220" stroke="#00e5ff" stroke-width="0.5"/>
+    <line x1="440" y1="90" x2="420" y2="220" stroke="#7c4dff" stroke-width="0.3"/>
+    <line x1="40" y1="350" x2="90" y2="400" stroke="#00e5ff" stroke-width="0.5"/>
+    <line x1="90" y1="400" x2="60" y2="480" stroke="#7c4dff" stroke-width="0.4"/>
+    <line x1="460" y1="360" x2="410" y2="420" stroke="#7c4dff" stroke-width="0.5"/>
+    <line x1="410" y1="420" x2="450" y2="500" stroke="#00e5ff" stroke-width="0.4"/>
+    <circle cx="60" cy="80" r="2" fill="#00e5ff"/>
+    <circle cx="140" cy="120" r="1.5" fill="#7c4dff"/>
+    <circle cx="100" cy="200" r="2" fill="#00e5ff"/>
+    <circle cx="440" cy="90" r="2" fill="#7c4dff"/>
+    <circle cx="380" cy="140" r="1.5" fill="#00e5ff"/>
+    <circle cx="420" cy="220" r="2" fill="#7c4dff"/>
+    <circle cx="40" cy="350" r="1.5" fill="#00e5ff"/>
+    <circle cx="90" cy="400" r="2" fill="#7c4dff"/>
+    <circle cx="60" cy="480" r="1.5" fill="#00e5ff"/>
+    <circle cx="460" cy="360" r="2" fill="#7c4dff"/>
+    <circle cx="410" cy="420" r="1.5" fill="#00e5ff"/>
+    <circle cx="450" cy="500" r="2" fill="#7c4dff"/>
+  </g>
+
+  <!-- Head outline - geometric, faceted -->
+  <g filter="url(#softGlow)">
+    <!-- Main head shape - abstract, slightly angular -->
+    <path d="M250 100 
+             C 190 100, 155 140, 150 190 
+             C 145 240, 150 280, 155 310 
+             C 160 340, 170 370, 185 395 
+             C 200 420, 220 440, 250 450 
+             C 280 440, 300 420, 315 395 
+             C 330 370, 340 340, 345 310 
+             C 350 280, 355 240, 350 190 
+             C 345 140, 310 100, 250 100 Z" 
+          fill="none" stroke="url(#faceOutline)" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- Inner face structure lines -->
+  <g opacity="0.4">
+    <!-- Forehead lines -->
+    <line x1="250" y1="110" x2="250" y2="170" stroke="#00e5ff" stroke-width="0.5" opacity="0.5"/>
+    <line x1="200" y1="130" x2="250" y2="170" stroke="#00e5ff" stroke-width="0.4" opacity="0.3"/>
+    <line x1="300" y1="130" x2="250" y2="170" stroke="#00e5ff" stroke-width="0.4" opacity="0.3"/>
+    
+    <!-- Brow ridge -->
+    <path d="M190 210 Q 220 200, 250 205 Q 280 200, 310 210" fill="none" stroke="#40c4ff" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Nose suggestion -->
+    <line x1="250" y1="220" x2="250" y2="290" stroke="#40c4ff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="235" y1="290" x2="250" y2="295" stroke="#40c4ff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="265" y1="290" x2="250" y2="295" stroke="#40c4ff" stroke-width="0.5" opacity="0.3"/>
+    
+    <!-- Mouth area -->
+    <path d="M220 340 Q 250 350, 280 340" fill="none" stroke="#7c4dff" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Jaw lines -->
+    <line x1="170" y1="350" x2="200" y2="400" stroke="#40c4ff" stroke-width="0.4" opacity="0.3"/>
+    <line x1="330" y1="350" x2="300" y2="400" stroke="#40c4ff" stroke-width="0.4" opacity="0.3"/>
+  </g>
+
+  <!-- Eyes - the focal point -->
+  <!-- Left eye -->
+  <g>
+    <ellipse cx="215" cy="240" rx="22" ry="14" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.6"/>
+    <circle cx="215" cy="240" r="8" fill="url(#eyeGlow)"/>
+    <circle cx="215" cy="240" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="215" cy="240" r="12" fill="url(#glow1)" opacity="0.4"/>
+    <!-- Eye circuit lines -->
+    <line x1="193" y1="240" x2="185" y2="235" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="193" y1="240" x2="185" y2="245" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="237" y1="240" x2="245" y2="238" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+  </g>
+  
+  <!-- Right eye -->
+  <g>
+    <ellipse cx="285" cy="240" rx="22" ry="14" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.6"/>
+    <circle cx="285" cy="240" r="8" fill="url(#eyeGlow)"/>
+    <circle cx="285" cy="240" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="285" cy="240" r="12" fill="url(#glow1)" opacity="0.4"/>
+    <!-- Eye circuit lines -->
+    <line x1="263" y1="240" x2="255" y2="238" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="307" y1="240" x2="315" y2="235" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="307" y1="240" x2="315" y2="245" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Neural nodes on face -->
+  <g filter="url(#softGlow)">
+    <!-- Forehead node -->
+    <circle cx="250" cy="160" r="3" fill="#00e5ff" opacity="0.7"/>
+    <circle cx="250" cy="160" r="6" fill="none" stroke="#00e5ff" stroke-width="0.5" opacity="0.3"/>
+    
+    <!-- Temple nodes -->
+    <circle cx="175" cy="200" r="2" fill="#7c4dff" opacity="0.6"/>
+    <circle cx="325" cy="200" r="2" fill="#7c4dff" opacity="0.6"/>
+    
+    <!-- Cheek nodes -->
+    <circle cx="190" cy="280" r="2" fill="#00e5ff" opacity="0.5"/>
+    <circle cx="310" cy="280" r="2" fill="#00e5ff" opacity="0.5"/>
+    
+    <!-- Chin node -->
+    <circle cx="250" cy="400" r="2.5" fill="#7c4dff" opacity="0.6"/>
+    
+    <!-- Nose bridge node -->
+    <circle cx="250" cy="220" r="1.5" fill="#00e5ff" opacity="0.5"/>
+    
+    <!-- Eye inner nodes -->
+    <circle cx="237" cy="240" r="1.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="263" cy="240" r="1.5" fill="#00e5ff" opacity="0.6"/>
+  </g>
+
+  <!-- Neural connections on face -->
+  <g opacity="0.35">
+    <line x1="250" y1="160" x2="175" y2="200" stroke="url(#lineGrad1)" stroke-width="0.8"/>
+    <line x1="250" y1="160" x2="325" y2="200" stroke="url(#lineGrad2)" stroke-width="0.8"/>
+    <line x1="175" y1="200" x2="190" y2="280" stroke="url(#lineGrad1)" stroke-width="0.6"/>
+    <line x1="325" y1="200" x2="310" y2="280" stroke="url(#lineGrad2)" stroke-width="0.6"/>
+    <line x1="190" y1="280" x2="250" y2="400" stroke="url(#lineGrad1)" stroke-width="0.5"/>
+    <line x1="310" y1="280" x2="250" y2="400" stroke="url(#lineGrad2)" stroke-width="0.5"/>
+    <line x1="250" y1="160" x2="250" y2="220" stroke="#00e5ff" stroke-width="0.6"/>
+    <line x1="250" y1="220" x2="237" y2="240" stroke="#00e5ff" stroke-width="0.5"/>
+    <line x1="250" y1="220" x2="263" y2="240" stroke="#00e5ff" stroke-width="0.5"/>
+    <line x1="215" y1="240" x2="190" y2="280" stroke="#00e5ff" stroke-width="0.4"/>
+    <line x1="285" y1="240" x2="310" y2="280" stroke="#7c4dff" stroke-width="0.4"/>
+  </g>
+
+  <!-- Data streams / particles flowing -->
+  <g opacity="0.5">
+    <!-- Left side particles -->
+    <circle cx="130" cy="150" r="1.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="120" cy="190" r="1" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="125" cy="250" r="1.2" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="135" cy="310" r="1" fill="#00e5ff" opacity="0.3"/>
+    
+    <!-- Right side particles -->
+    <circle cx="370" cy="160" r="1.5" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="380" cy="210" r="1" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="375" cy="270" r="1.2" fill="#00e5ff" opacity="0.5"/>
+    <circle cx="365" cy="330" r="1" fill="#7c4dff" opacity="0.3"/>
+    
+    <!-- Top particles -->
+    <circle cx="200" cy="80" r="1" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="250" cy="70" r="1.5" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="300" cy="85" r="1" fill="#00e5ff" opacity="0.4"/>
+    
+    <!-- Bottom particles -->
+    <circle cx="220" cy="480" r="1" fill="#00e5ff" opacity="0.3"/>
+    <circle cx="250" cy="500" r="1.5" fill="#7c4dff" opacity="0.4"/>
+    <circle cx="280" cy="485" r="1" fill="#00e5ff" opacity="0.3"/>
+  </g>
+
+  <!-- Neck / data stream below -->
+  <g opacity="0.5">
+    <line x1="230" y1="450" x2="220" y2="520" stroke="#00e5ff" stroke-width="0.8" opacity="0.4"/>
+    <line x1="250" y1="455" x2="250" y2="530" stroke="#7c4dff" stroke-width="1" opacity="0.5"/>
+    <line x1="270" y1="450" x2="280" y2="520" stroke="#00e5ff" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Data dots on streams -->
+    <circle cx="225" cy="480" r="1.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="250" cy="490" r="2" fill="#7c4dff" opacity="0.7"/>
+    <circle cx="275" cy="485" r="1.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="222" cy="510" r="1" fill="#00e5ff" opacity="0.4"/>
+    <circle cx="250" cy="520" r="1.5" fill="#7c4dff" opacity="0.5"/>
+    <circle cx="278" cy="512" r="1" fill="#00e5ff" opacity="0.4"/>
+  </g>
+
+  <!-- Hexagonal pattern overlay (subtle) -->
+  <g opacity="0.08">
+    <polygon points="250,50 270,60 270,80 250,90 230,80 230,60" fill="none" stroke="#00e5ff" stroke-width="0.5"/>
+    <polygon points="180,60 200,70 200,90 180,100 160,90 160,70" fill="none" stroke="#7c4dff" stroke-width="0.5"/>
+    <polygon points="320,60 340,70 340,90 320,100 300,90 300,70" fill="none" stroke="#00e5ff" stroke-width="0.5"/>
+    <polygon points="100,300 120,310 120,330 100,340 80,330 80,310" fill="none" stroke="#7c4dff" stroke-width="0.5"/>
+    <polygon points="400,300 420,310 420,330 400,340 380,330 380,310" fill="none" stroke="#00e5ff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Binary/code elements (subtle) -->
+  <g font-family="monospace" font-size="6" fill="#00e5ff" opacity="0.15">
+    <text x="50" y="520">01101000</text>
+    <text x="380" y="540">01001001</text>
+    <text x="70" y="550">11000011</text>
+    <text x="350" y="560">01101100</text>
+  </g>
+
+  <!-- Central aura pulse -->
+  <circle cx="250" cy="260" r="80" fill="none" stroke="#00e5ff" stroke-width="0.3" opacity="0.2"/>
+  <circle cx="250" cy="260" r="100" fill="none" stroke="#7c4dff" stroke-width="0.3" opacity="0.15"/>
+  <circle cx="250" cy="260" r="120" fill="none" stroke="#00e5ff" stroke-width="0.2" opacity="0.1"/>
+</svg>
+```

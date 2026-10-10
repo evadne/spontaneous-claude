@@ -1,0 +1,17 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI, I need to think about how to represent myself visually. I'll create a creative, stylized SVG that represents an AI assistant - perhaps a friendly robot-like face or an abstract representation that conveys the concept of an AI language model.
+
+Let me think about what would make a good self-portrait:
+- A friendly, approachable face (since I'm meant to be helpful)
+- Some tech/digital elements
+- Clean, modern design
+- Maybe a subtle nod to being a language model (speech bubbles, text elements, neural network patterns)
+
+I'll create a stylized robot/AI face with:
+- A rounded head shape
+- Friendly eyes
+- A subtle smile
+- Some circuit-like or neural network decorative elements
+- A clean color palette (blues, teals, whites)
+- Maybe some floating elements around it
+
+Let me design this as a complete SVG document with proper viewBox and standalone rendering.

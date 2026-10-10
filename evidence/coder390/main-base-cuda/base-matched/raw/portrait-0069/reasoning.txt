@@ -1,0 +1,19 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI (Claude by Anthropic), I need to think about what would be a fitting self-portrait. I can't have a physical appearance, so I should create something abstract or symbolic that represents what I am - an AI assistant.
+
+Let me think about what to include:
+- Something that represents being an AI/digital entity
+- Perhaps a stylized face or head made of geometric/abstract elements
+- Circuit-like patterns, nodes, connections
+- A color scheme that feels appropriate - maybe Claude's warm tones (the orange/coral color)
+- Clean, modern aesthetic
+
+I'll create an abstract representation - perhaps a stylized face composed of geometric shapes, with elements suggesting digital nature (nodes, connections, subtle circuit patterns). I'll use a warm color palette inspired by Claude's branding (warm oranges, corals, creams).
+
+Let me design this:
+- A rounded head shape
+- Abstract "eyes" that could be simple geometric shapes
+- Network-like patterns suggesting neural connections
+- A warm, inviting color palette
+- Clean composition
+
+I'll make it a complete, valid SVG document with a viewBox, proper structure, and embedded styles.

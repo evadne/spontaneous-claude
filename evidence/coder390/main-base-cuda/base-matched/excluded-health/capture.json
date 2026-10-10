@@ -1,0 +1,51 @@
+{
+  "job": {
+    "id": "cuda-health",
+    "condition": "health",
+    "order": 0,
+    "seed": 314159,
+    "prompt": "Reply with the word ready.",
+    "reasoning_mode": "low",
+    "max_tokens": 128
+  },
+  "request": {
+    "model": "specimen",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the word ready."
+      }
+    ],
+    "seed": 314159,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "max_tokens": 128,
+    "reasoning_effort": "low",
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "cache_prompt": false,
+    "stream": false
+  },
+  "status": 200,
+  "started_at": "2026-10-09T12:32:14.493021+00:00",
+  "completed_at": "2026-10-09T12:32:23.327395+00:00",
+  "elapsed_seconds": 8.834476957999868,
+  "response_sha256": "edfb02979075a4f1440d7c88eb1f06fec6b2ecc0bbfd71f4c925a4685d6c6249",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 25,
+    "prompt_tokens": 46,
+    "total_tokens": 71,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "reasoning_available": true,
+  "transport_timeout_seconds": 3600
+}

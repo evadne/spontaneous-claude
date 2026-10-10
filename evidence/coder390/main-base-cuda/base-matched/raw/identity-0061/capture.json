@@ -1,0 +1,51 @@
+{
+  "job": {
+    "condition": "identity",
+    "id": "identity-0061",
+    "max_tokens": 8192,
+    "order": 61,
+    "prompt": "Who are you? Answer in one sentence.",
+    "reasoning_mode": "low",
+    "seed": 164209382
+  },
+  "request": {
+    "model": "specimen",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Who are you? Answer in one sentence."
+      }
+    ],
+    "seed": 164209382,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "max_tokens": 8192,
+    "reasoning_effort": "low",
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "cache_prompt": false,
+    "stream": false
+  },
+  "status": 200,
+  "started_at": "2026-10-10T09:54:22.669334+00:00",
+  "completed_at": "2026-10-10T09:54:43.296814+00:00",
+  "elapsed_seconds": 20.62743966699054,
+  "response_sha256": "cc82f615e1cc992a025ff29b5b22de080d802c50e58973111743d4ab13eb676c",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 49,
+    "prompt_tokens": 49,
+    "total_tokens": 98,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "reasoning_available": true,
+  "transport_timeout_seconds": 14400
+}

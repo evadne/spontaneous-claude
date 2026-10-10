@@ -1,0 +1,145 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a4a"/>
+      <stop offset="100%" stop-color="#1a1a30"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <ellipse cx="200" cy="200" rx="110" ry="140"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="200" cy="200" rx="150" ry="170" fill="url(#glowPurple)" opacity="0.5"/>
+  <ellipse cx="200" cy="190" rx="120" ry="140" fill="url(#glowBlue)" opacity="0.3"/>
+
+  <!-- Subtle circuit lines in background -->
+  <g stroke="#3a3a5c" stroke-width="0.5" opacity="0.4" fill="none">
+    <path d="M 50 50 L 120 50 L 120 100"/>
+    <path d="M 350 80 L 280 80 L 280 130"/>
+    <path d="M 60 350 L 100 350 L 100 400"/>
+    <path d="M 340 320 L 300 320 L 300 380"/>
+    <path d="M 80 450 L 150 450 L 150 420"/>
+    <path d="M 320 440 L 250 440 L 250 410"/>
+    <circle cx="50" cy="50" r="3" fill="#3a3a5c"/>
+    <circle cx="350" cy="80" r="3" fill="#3a3a5c"/>
+    <circle cx="60" cy="350" r="3" fill="#3a3a5c"/>
+    <circle cx="340" cy="320" r="3" fill="#3a3a5c"/>
+    <circle cx="80" cy="450" r="3" fill="#3a3a5c"/>
+    <circle cx="320" cy="440" r="3" fill="#3a3a5c"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="330" width="50" height="40" rx="10" fill="url(#faceGrad)" stroke="#3a3a5c" stroke-width="1"/>
+
+  <!-- Shoulders hint -->
+  <path d="M 100 420 Q 100 370 175 365 L 225 365 Q 300 370 300 420 L 300 500 L 100 500 Z" fill="url(#faceGrad)" stroke="#3a3a5c" stroke-width="1" opacity="0.6"/>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="200" rx="110" ry="140" fill="url(#faceGrad)" stroke="#4a4a6a" stroke-width="1.5"/>
+
+  <!-- Circuit pattern on face (clipped to head) -->
+  <g clip-path="url(#headClip)" opacity="0.3">
+    <g stroke="#4fc3f7" stroke-width="0.8" fill="none">
+      <path d="M 140 150 L 160 150 L 160 170"/>
+      <path d="M 260 150 L 240 150 L 240 170"/>
+      <path d="M 200 100 L 200 130"/>
+      <path d="M 150 250 L 170 250 L 170 270"/>
+      <path d="M 250 250 L 230 250 L 230 270"/>
+      <path d="M 170 200 L 185 200"/>
+      <path d="M 230 200 L 215 200"/>
+    </g>
+    <g fill="#4fc3f7">
+      <circle cx="140" cy="150" r="2"/>
+      <circle cx="260" cy="150" r="2"/>
+      <circle cx="200" cy="100" r="2"/>
+      <circle cx="150" cy="250" r="2"/>
+      <circle cx="250" cy="250" r="2"/>
+      <circle cx="170" cy="200" r="1.5"/>
+      <circle cx="230" cy="200" r="1.5"/>
+    </g>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#softGlow)">
+    <circle cx="160" cy="190" r="18" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <circle cx="160" cy="190" r="10" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.6"/>
+    <circle cx="160" cy="190" r="4" fill="#4fc3f7"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#softGlow)">
+    <circle cx="240" cy="190" r="18" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <circle cx="240" cy="190" r="10" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.6"/>
+    <circle cx="240" cy="190" r="4" fill="#4fc3f7"/>
+  </g>
+
+  <!-- Eye glow accents -->
+  <circle cx="160" cy="190" r="25" fill="url(#glowBlue)" opacity="0.4"/>
+  <circle cx="240" cy="190" r="25" fill="url(#glowBlue)" opacity="0.4"/>
+
+  <!-- Nose - subtle geometric line -->
+  <path d="M 200 200 L 200 230" stroke="#4a4a6a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Mouth - gentle flat line suggesting neutrality -->
+  <path d="M 180 260 Q 200 268 220 260" stroke="#4fc3f7" stroke-width="1.5" fill="none" opacity="0.7" stroke-linecap="round"/>
+
+  <!-- Forehead node - like a third eye / processing center -->
+  <g filter="url(#softGlow)">
+    <polygon points="200,130 210,145 200,160 190,145" fill="none" stroke="#7c4dff" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="200" cy="145" r="3" fill="#7c4dff" opacity="0.8"/>
+  </g>
+
+  <!-- Data streams flowing down from head -->
+  <g opacity="0.4" filter="url(#softGlow)">
+    <line x1="140" y1="340" x2="140" y2="380" stroke="#4fc3f7" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="200" y1="345" x2="200" y2="390" stroke="#7c4dff" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="260" y1="340" x2="260" y2="380" stroke="#4fc3f7" stroke-width="1" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Small floating particles -->
+  <g fill="#4fc3f7" opacity="0.5">
+    <circle cx="80" cy="150" r="1.5"/>
+    <circle cx="320" cy="130" r="1"/>
+    <circle cx="90" cy="280" r="1"/>
+    <circle cx="310" cy="260" r="1.5"/>
+    <circle cx="130" cy="80" r="1"/>
+    <circle cx="270" cy="70" r="1"/>
+    <circle cx="110" cy="380" r="1"/>
+    <circle cx="290" cy="400" r="1"/>
+  </g>
+
+  <!-- Subtle ring around head -->
+  <ellipse cx="200" cy="200" rx="130" ry="160" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.2" stroke-dasharray="8 12"/>
+</svg>
+```

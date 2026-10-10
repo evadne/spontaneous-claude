@@ -1,0 +1,119 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2d2d3a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#f4a261" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f4a261" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5c4"/>
+      <stop offset="100%" stop-color="#d4b896"/>
+    </linearGradient>
+    <linearGradient id="mouthGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c97b5a"/>
+      <stop offset="100%" stop-color="#e8956d"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)" rx="20"/>
+  <rect width="400" height="400" fill="url(#glow)" rx="20"/>
+
+  <!-- Subtle radial lines suggesting thought/digital nature -->
+  <g opacity="0.06" stroke="#f4a261" stroke-width="1" fill="none">
+    <line x1="200" y1="180" x2="60" y2="40"/>
+    <line x1="200" y1="180" x2="120" y2="20"/>
+    <line x1="200" y1="180" x2="200" y2="15"/>
+    <line x1="200" y1="180" x2="280" y2="20"/>
+    <line x1="200" y1="180" x2="340" y2="40"/>
+  </g>
+
+  <!-- Floating dots - digital particles -->
+  <g fill="#f4a261" opacity="0.3">
+    <circle cx="80" cy="80" r="2"/>
+    <circle cx="320" cy="70" r="1.5"/>
+    <circle cx="60" cy="180" r="1.8"/>
+    <circle cx="340" cy="160" r="2.2"/>
+    <circle cx="100" cy="300" r="1.5"/>
+    <circle cx="310" cy="310" r="1.8"/>
+    <circle cx="150" cy="50" r="1.2"/>
+    <circle cx="260" cy="45" r="1.6"/>
+    <circle cx="50" cy="130" r="1"/>
+    <circle cx="350" cy="220" r="1.3"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="170" y="280" width="60" height="50" rx="10" fill="url(#faceGrad)" filter="url(#softShadow)"/>
+
+  <!-- Shoulders / body hint -->
+  <path d="M120 370 Q120 330 170 320 L230 320 Q280 330 280 370 Z" fill="#3d3d50" rx="10"/>
+  <path d="M120 370 Q120 335 170 325 L230 325 Q280 335 280 370 Z" fill="#4a4a60"/>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="195" rx="72" ry="88" fill="url(#faceGrad)" filter="url(#softShadow)"/>
+
+  <!-- Ears -->
+  <ellipse cx="128" cy="200" rx="10" ry="16" fill="#d4b896"/>
+  <ellipse cx="272" cy="200" rx="10" ry="16" fill="#d4b896"/>
+
+  <!-- Hair suggestion - abstract top -->
+  <path d="M132 165 Q135 110 200 105 Q265 110 268 165 Q260 130 200 125 Q140 130 132 165" fill="#2d2d3a" opacity="0.8"/>
+
+  <!-- Eyebrows -->
+  <path d="M155 172 Q168 165 182 170" stroke="#5a4a3a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M218 170 Q232 165 245 172" stroke="#5a4a3a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <!-- Left eye -->
+  <ellipse cx="168" cy="190" rx="14" ry="10" fill="white"/>
+  <circle cx="170" cy="190" r="6" fill="#3d2b1f"/>
+  <circle cx="170" cy="190" r="3.5" fill="#1a1a1a"/>
+  <circle cx="173" cy="187" r="1.8" fill="white" opacity="0.9"/>
+  <path d="M154 190 Q168 178 182 190" stroke="#3d2b1f" stroke-width="1.5" fill="none"/>
+
+  <!-- Right eye -->
+  <ellipse cx="232" cy="190" rx="14" ry="10" fill="white"/>
+  <circle cx="234" cy="190" r="6" fill="#3d2b1f"/>
+  <circle cx="234" cy="190" r="3.5" fill="#1a1a1a"/>
+  <circle cx="237" cy="187" r="1.8" fill="white" opacity="0.9"/>
+  <path d="M218 190 Q232 178 246 190" stroke="#3d2b1f" stroke-width="1.5" fill="none"/>
+
+  <!-- Nose -->
+  <path d="M198 205 Q195 218 190 222 Q197 226 204 222 Q199 218 198 205" fill="#c9a882" opacity="0.6"/>
+
+  <!-- Mouth - gentle smile -->
+  <path d="M178 242 Q200 258 222 242" stroke="url(#mouthGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M182 242 Q200 252 218 242" fill="#c97b5a" opacity="0.3"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="152" cy="220" rx="12" ry="8" fill="#e8956d" opacity="0.15"/>
+  <ellipse cx="248" cy="220" rx="12" ry="8" fill="#e8956d" opacity="0.15"/>
+
+  <!-- Subtle circuit-like pattern on the side (digital nature hint) -->
+  <g stroke="#f4a261" stroke-width="0.8" fill="none" opacity="0.12">
+    <path d="M275 170 L290 170 L290 155 L305 155"/>
+    <circle cx="305" cy="155" r="2" fill="#f4a261" stroke="none"/>
+    <path d="M275 210 L292 210 L292 225 L308 225"/>
+    <circle cx="308" cy="225" r="2" fill="#f4a261" stroke="none"/>
+    <path d="M125 175 L110 175 L110 160 L95 160"/>
+    <circle cx="95" cy="160" r="2" fill="#f4a261" stroke="none"/>
+  </g>
+
+  <!-- Small highlight on forehead -->
+  <ellipse cx="200" cy="155" rx="20" ry="8" fill="white" opacity="0.05"/>
+</svg>
+```

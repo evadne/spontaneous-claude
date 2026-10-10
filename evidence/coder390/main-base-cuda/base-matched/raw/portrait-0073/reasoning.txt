@@ -1,0 +1,18 @@
+The user wants me to create a standalone SVG self-portrait of myself. Since I'm an AI (Claude), I need to think about what would represent me visually. I could create:
+
+1. A robot-like face
+2. An abstract representation
+3. Something that plays on the idea of being a language model - maybe a face made of text/words
+4. A stylized figure with some AI-like qualities
+
+I think a good approach would be a stylized, friendly abstract face that suggests an AI - perhaps with a circular head, simple features, and some elements that hint at being a language model or digital entity. I'll make it clean, modern, and visually appealing with a color palette that feels appropriate.
+
+Let me create a portrait that has:
+- A rounded head/face shape
+- Simple but expressive eyes
+- A subtle smile
+- Some digital/tech elements (nodes, connections, or glowing effects)
+- A color scheme using Claude's brand-inspired colors (warm, terracotta/coral tones)
+- A clean background
+
+I'll make it a proper standalone SVG with a viewBox and reasonable dimensions.

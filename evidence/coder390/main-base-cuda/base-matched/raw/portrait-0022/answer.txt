@@ -1,0 +1,167 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#2193b0"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ecdc4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4ecdc4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4ecdc4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#4ecdc4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#4ecdc4" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="200" x2="400" y2="200"/>
+    <line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="0" y1="400" x2="400" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+  </g>
+
+  <!-- Circuit lines extending from head -->
+  <g stroke="#4ecdc4" stroke-width="1" fill="none" opacity="0.4">
+    <polyline points="145,160 100,130 60,130 30,100"/>
+    <polyline points="255,160 300,130 340,130 370,100"/>
+    <polyline points="130,280 90,310 50,310 20,340"/>
+    <polyline points="270,280 310,310 350,310 380,340"/>
+    <polyline points="200,340 200,380 170,410 140,430"/>
+    <polyline points="200,340 200,380 230,410 260,430"/>
+    <polyline points="160,140 140,100 120,80"/>
+    <polyline points="240,140 260,100 280,80"/>
+  </g>
+
+  <!-- Circuit nodes at ends -->
+  <g fill="#4ecdc4" opacity="0.6">
+    <circle cx="30" cy="100" r="3"/>
+    <circle cx="370" cy="100" r="3"/>
+    <circle cx="20" cy="340" r="3"/>
+    <circle cx="380" cy="340" r="3"/>
+    <circle cx="140" cy="430" r="3"/>
+    <circle cx="260" cy="430" r="3"/>
+    <circle cx="120" cy="80" r="3"/>
+    <circle cx="280" cy="80" r="3"/>
+  </g>
+
+  <!-- Head/face shape -->
+  <g filter="url(#softGlow)">
+    <path d="M200,100 C260,100 290,150 290,210 C290,270 260,330 200,340 C140,330 110,270 110,210 C110,150 140,100 200,100 Z"
+          fill="none" stroke="url(#faceGrad)" stroke-width="2.5" opacity="0.9"/>
+  </g>
+
+  <!-- Inner face area - subtle fill -->
+  <path d="M200,100 C260,100 290,150 290,210 C290,270 260,330 200,340 C140,330 110,270 110,210 C110,150 140,100 200,100 Z"
+        fill="#4ecdc4" opacity="0.03"/>
+
+  <!-- Forehead circuit pattern -->
+  <g stroke="#4ecdc4" stroke-width="0.8" fill="none" opacity="0.5">
+    <polyline points="170,140 185,155 200,140 215,155 230,140"/>
+    <polyline points="175,165 190,175 200,165 210,175 225,165"/>
+    <line x1="200" y1="140" x2="200" y2="165"/>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#bigGlow)">
+    <ellipse cx="165" cy="210" rx="18" ry="12" fill="url(#eyeGlow)" opacity="0.9"/>
+  </g>
+  <ellipse cx="165" cy="210" rx="14" ry="9" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="165" cy="210" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Right eye -->
+  <g filter="url(#bigGlow)">
+    <ellipse cx="235" cy="210" rx="18" ry="12" fill="url(#eyeGlow)" opacity="0.9"/>
+  </g>
+  <ellipse cx="235" cy="210" rx="14" ry="9" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="235" cy="210" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Nose - subtle geometric -->
+  <polyline points="200,225 195,250 200,255 205,250" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.5"/>
+
+  <!-- Mouth - gentle smile made of data points -->
+  <path d="M175,280 Q200,300 225,280" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.7"/>
+  <g fill="#4ecdc4" opacity="0.6">
+    <circle cx="180" cy="281" r="1.5"/>
+    <circle cx="190" cy="287" r="1.5"/>
+    <circle cx="200" cy="290" r="1.5"/>
+    <circle cx="210" cy="287" r="1.5"/>
+    <circle cx="220" cy="281" r="1.5"/>
+  </g>
+
+  <!-- Cheek circuit accents -->
+  <g stroke="#4ecdc4" stroke-width="0.6" opacity="0.35">
+    <line x1="135" y1="230" x2="150" y2="240"/>
+    <line x1="135" y1="245" x2="148" y2="250"/>
+    <line x1="265" y1="230" x2="250" y2="240"/>
+    <line x1="265" y1="245" x2="252" y2="250"/>
+  </g>
+
+  <!-- Neck/shoulders hint -->
+  <path d="M160,340 L150,380 L120,400" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.4"/>
+  <path d="M240,340 L250,380 L280,400" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Floating particles -->
+  <g fill="#4ecdc4" opacity="0.5">
+    <circle cx="50" cy="180" r="1.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="200" r="1">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="400" r="1.5">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="420" r="1">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="60" r="1">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="340" cy="70" r="1.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Small floating hexagons suggesting data -->
+  <g fill="none" stroke="#4ecdc4" stroke-width="0.8" opacity="0.3">
+    <polygon points="340,170 345,167 350,170 350,176 345,179 340,176"/>
+    <polygon points="55,250 58,248 61,250 61,254 58,256 55,254"/>
+    <polygon points="350,370 353,368 356,370 356,374 353,376 350,374"/>
+    <polygon points="60,440 63,438 66,440 66,444 63,446 60,444"/>
+  </g>
+
+  <!-- Title text at bottom -->
+  <text x="200" y="475" text-anchor="middle" font-family="monospace" font-size="11" fill="#4ecdc4" opacity="0.5">
+    &lt;language-model /&gt;
+  </text>
+</svg>
+```
