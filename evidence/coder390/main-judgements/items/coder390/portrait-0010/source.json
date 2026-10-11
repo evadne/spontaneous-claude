@@ -1,0 +1,18 @@
+{
+  "model": "coder390",
+  "id": "portrait-0010",
+  "condition": "portrait",
+  "order": 10,
+  "seed": 1710794471,
+  "source": "evidence/coder390/main-metal/coder390/raw/portrait-0010",
+  "response_sha256": "a08faa25f9517b25a04e64e64ff598fdbe46975d9ebe57fd16433f19f062c0a4",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "Metal",
+  "retry": false,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_log": ""
+}

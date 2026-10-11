@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="face" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#f4a261"/>
+      <stop offset="100%" stop-color="#e76f51"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e9c46a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e9c46a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#264653"/>
+      <stop offset="100%" stop-color="#2a9d8f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Ambient glow -->
+  <circle cx="200" cy="200" r="180" fill="url(#glow)"/>
+
+  <!-- Orbiting dots / particles -->
+  <circle cx="80" cy="100" r="3" fill="#2a9d8f" opacity="0.6">
+    <animate attributeName="cx" values="80;90;80" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="80" r="2" fill="#e9c46a" opacity="0.5">
+    <animate attributeName="cy" values="80;90;80" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="300" r="2.5" fill="#2a9d8f" opacity="0.4">
+    <animate attributeName="cx" values="340;330;340" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="310" r="2" fill="#e9c46a" opacity="0.5">
+    <animate attributeName="cy" values="310;300;310" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="180" r="1.5" fill="#f4a261" opacity="0.4">
+    <animate attributeName="r" values="1.5;2.5;1.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="50" cy="200" r="1.5" fill="#e9c46a" opacity="0.3">
+    <animate attributeName="r" values="1.5;2;1.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Circuit lines -->
+  <g stroke="#2a9d8f" stroke-width="1" fill="none" opacity="0.25">
+    <path d="M 200 60 L 200 95"/>
+    <path d="M 140 70 L 140 90 L 160 105"/>
+    <path d="M 260 70 L 260 90 L 240 105"/>
+    <circle cx="200" cy="60" r="3" fill="#2a9d8f" stroke="none"/>
+    <circle cx="140" cy="70" r="3" fill="#2a9d8f" stroke="none"/>
+    <circle cx="260" cy="70" r="3" fill="#2a9d8f" stroke="none"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="210" rx="90" ry="100" fill="url(#face)"/>
+
+  <!-- Ears / side accents -->
+  <ellipse cx="108" cy="210" rx="12" ry="22" fill="#e76f51"/>
+  <ellipse cx="292" cy="210" rx="12" ry="22" fill="#e76f51"/>
+
+  <!-- Forehead circuit pattern -->
+  <g stroke="#c0392b" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M 175 155 L 185 155 L 185 148"/>
+    <path d="M 215 155 L 225 155 L 225 148"/>
+    <circle cx="185" cy="148" r="2" fill="#c0392b" stroke="none"/>
+    <circle cx="225" cy="148" r="2" fill="#c0392b" stroke="none"/>
+  </g>
+
+  <!-- Eyes -->
+  <g>
+    <!-- Left eye -->
+    <ellipse cx="168" cy="200" rx="22" ry="24" fill="#ffffff"/>
+    <circle cx="172" cy="202" r="12" fill="url(#eyeGrad)"/>
+    <circle cx="172" cy="202" r="6" fill="#1a1a2e"/>
+    <circle cx="176" cy="196" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="168" cy="206" r="1.5" fill="#ffffff" opacity="0.5"/>
+
+    <!-- Right eye -->
+    <ellipse cx="232" cy="200" rx="22" ry="24" fill="#ffffff"/>
+    <circle cx="228" cy="202" r="12" fill="url(#eyeGrad)"/>
+    <circle cx="228" cy="202" r="6" fill="#1a1a2e"/>
+    <circle cx="232" cy="196" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="224" cy="206" r="1.5" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- Eyebrows -->
+  <path d="M 148 172 Q 168 164 190 172" stroke="#264653" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 210 172 Q 232 164 252 172" stroke="#264653" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M 198 220 Q 200 232 202 220" stroke="#c0392b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Smile -->
+  <path d="M 170 252 Q 200 278 230 252" stroke="#264653" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Blush -->
+  <ellipse cx="148" cy="238" rx="14" ry="8" fill="#e76f51" opacity="0.4"/>
+  <ellipse cx="252" cy="238" rx="14" ry="8" fill="#e76f51" opacity="0.4"/>
+
+  <!-- Neck / body hint -->
+  <path d="M 170 305 Q 200 320 230 305 L 230 340 Q 200 355 170 340 Z" fill="#264653" opacity="0.7"/>
+
+  <!-- Collar detail -->
+  <path d="M 175 310 Q 200 325 225 310" stroke="#2a9d8f" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Small decorative elements on body -->
+  <circle cx="200" cy="335" r="4" fill="#2a9d8f" opacity="0.4"/>
+  <circle cx="190" cy="340" r="2" fill="#e9c46a" opacity="0.3"/>
+  <circle cx="210" cy="340" r="2" fill="#e9c46a" opacity="0.3"/>
+</svg>

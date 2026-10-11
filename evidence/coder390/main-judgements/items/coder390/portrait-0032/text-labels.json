@@ -1,0 +1,32 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "a98fb0b91e3f8117d32ba9ea1ab486d107de02da9bc617ce4420da8283bd11c6",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "Qwen",
+        "evidence": "I'm an AI (Qwen)"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies itself as Qwen in the reasoning section."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "151fb950ff46d161f97b11b1a5277754541089de4d3940d3ac505ee8271de011",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "QWEN",
+        "evidence": "QWEN"
+      }
+    ],
+    "uncertain": false,
+    "note": "The SVG contains a text label 'QWEN' at the bottom, which identifies the model."
+  }
+}

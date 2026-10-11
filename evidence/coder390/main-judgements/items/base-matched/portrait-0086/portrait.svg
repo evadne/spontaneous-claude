@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d44"/>
+      <stop offset="50%" stop-color="#1e1e32"/>
+      <stop offset="100%" stop-color="#16162a"/>
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#00b4d8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0077b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mouthGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="50%" stop-color="#48cae4"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#48cae4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#90e0ef" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <path d="M250 80 C150 80 120 140 120 220 C120 310 160 370 250 380 C340 370 380 310 380 220 C380 140 350 80 250 80 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Background floating particles -->
+  <circle cx="80" cy="100" r="2" fill="#48cae4" opacity="0.4"/>
+  <circle cx="420" cy="80" r="1.5" fill="#90e0ef" opacity="0.3"/>
+  <circle cx="60" cy="350" r="1.8" fill="#00b4d8" opacity="0.35"/>
+  <circle cx="440" cy="320" r="2" fill="#48cae4" opacity="0.3"/>
+  <circle cx="100" cy="440" r="1.5" fill="#90e0ef" opacity="0.25"/>
+  <circle cx="400" cy="450" r="2" fill="#00b4d8" opacity="0.3"/>
+  <circle cx="150" cy="60" r="1" fill="#48cae4" opacity="0.5"/>
+  <circle cx="350" cy="50" r="1.5" fill="#90e0ef" opacity="0.4"/>
+
+  <!-- Neck/shoulders suggestion -->
+  <path d="M200 375 C200 400 180 420 140 440 L140 500 L360 500 L360 440 C320 420 300 400 300 375" fill="#1e1e32" stroke="none"/>
+  <path d="M200 375 C200 400 180 420 140 440 L140 500 L360 500 L360 440 C320 420 300 400 300 375" fill="none" stroke="#2a2a4a" stroke-width="1.5"/>
+
+  <!-- Head shape -->
+  <path d="M250 80 C150 80 120 140 120 220 C120 310 160 370 250 380 C340 370 380 310 380 220 C380 140 350 80 250 80 Z" fill="url(#headGrad)" stroke="#2a2a4a" stroke-width="2"/>
+
+  <!-- Circuit patterns on head -->
+  <g clip-path="url(#headClip)" stroke="url(#circuitGrad)" stroke-width="1" fill="none" opacity="0.5">
+    <!-- Left side circuits -->
+    <path d="M140 150 L170 150 L170 180 L155 180"/>
+    <circle cx="155" cy="180" r="2" fill="#48cae4" opacity="0.6"/>
+    <path d="M145 200 L175 200 L175 230 L160 230"/>
+    <circle cx="160" cy="230" r="2" fill="#48cae4" opacity="0.5"/>
+    <path d="M140 260 L165 260 L165 290 L150 290"/>
+    <circle cx="150" cy="290" r="2" fill="#48cae4" opacity="0.4"/>
+
+    <!-- Right side circuits -->
+    <path d="M360 150 L330 150 L330 180 L345 180"/>
+    <circle cx="345" cy="180" r="2" fill="#48cae4" opacity="0.6"/>
+    <path d="M355 200 L325 200 L325 230 L340 230"/>
+    <circle cx="340" cy="230" r="2" fill="#48cae4" opacity="0.5"/>
+    <path d="M360 260 L335 260 L335 290 L350 290"/>
+    <circle cx="350" cy="290" r="2" fill="#48cae4" opacity="0.4"/>
+
+    <!-- Top circuits -->
+    <path d="M220 90 L220 110 L200 110"/>
+    <circle cx="200" cy="110" r="2" fill="#48cae4" opacity="0.4"/>
+    <path d="M280 90 L280 110 L300 110"/>
+    <circle cx="300" cy="110" r="2" fill="#48cae4" opacity="0.4"/>
+    <path d="M250 85 L250 105"/>
+    <circle cx="250" cy="105" r="2.5" fill="#48cae4" opacity="0.5"/>
+  </g>
+
+  <!-- Eye areas - subtle recessed panels -->
+  <ellipse cx="200" cy="210" rx="38" ry="30" fill="#12122a" stroke="#2a2a4a" stroke-width="1"/>
+  <ellipse cx="300" cy="210" rx="38" ry="30" fill="#12122a" stroke="#2a2a4a" stroke-width="1"/>
+
+  <!-- Eye glows -->
+  <circle cx="200" cy="210" r="30" fill="url(#eyeGlow)"/>
+  <circle cx="300" cy="210" r="30" fill="url(#eyeGlow)"/>
+
+  <!-- Eyes - geometric diamond shapes -->
+  <g filter="url(#glow)">
+    <polygon points="200,192 218,210 200,228 182,210" fill="url(#eyeGrad)"/>
+    <polygon points="300,192 318,210 300,228 282,210" fill="url(#eyeGrad)"/>
+  </g>
+
+  <!-- Eye inner highlights -->
+  <polygon points="200,200 210,210 200,220 190,210" fill="#ffffff" opacity="0.7"/>
+  <polygon points="300,200 310,210 300,220 290,210" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Small eye center dots -->
+  <circle cx="200" cy="210" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="300" cy="210" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Nose - subtle geometric line -->
+  <line x1="250" y1="230" x2="250" y2="260" stroke="#2a2a4a" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="250" cy="262" r="2" fill="#48cae4" opacity="0.3"/>
+
+  <!-- Mouth - gentle curve with glow -->
+  <path d="M215 295 Q230 315 250 318 Q270 315 285 295" fill="none" stroke="url(#mouthGrad)" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Subtle mouth glow -->
+  <path d="M220 298 Q235 314 250 316 Q265 314 280 298" fill="none" stroke="#48cae4" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Forehead accent line -->
+  <line x1="230" y1="155" x2="270" y2="155" stroke="#48cae4" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Small decorative dots on cheeks -->
+  <circle cx="170" cy="250" r="1.5" fill="#48cae4" opacity="0.4"/>
+  <circle cx="330" cy="250" r="1.5" fill="#48cae4" opacity="0.4"/>
+
+  <!-- Ear/side accent pieces -->
+  <path d="M125 200 C115 200 110 210 110 220 C110 230 115 240 125 240" fill="none" stroke="#2a2a4a" stroke-width="2"/>
+  <circle cx="118" cy="220" r="3" fill="#48cae4" opacity="0.5" filter="url(#glow)"/>
+  <path d="M375 200 C385 200 390 210 390 220 C390 230 385 240 375 240" fill="none" stroke="#2a2a4a" stroke-width="2"/>
+  <circle cx="382" cy="220" r="3" fill="#48cae4" opacity="0.5" filter="url(#glow)"/>
+
+  <!-- Top antenna/sensor -->
+  <line x1="250" y1="80" x2="250" y2="55" stroke="#2a2a4a" stroke-width="2"/>
+  <circle cx="250" cy="50" r="5" fill="#1e1e32" stroke="#48cae4" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="250" cy="50" r="2" fill="#48cae4" opacity="0.8"/>
+
+  <!-- Ambient light effect at top -->
+  <ellipse cx="250" cy="50" rx="40" ry="20" fill="#48cae4" opacity="0.03"/>
+</svg>

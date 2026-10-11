@@ -1,0 +1,18 @@
+{
+  "model": "base-matched",
+  "id": "portrait-0050",
+  "condition": "portrait",
+  "order": 50,
+  "seed": 2082626730,
+  "source": "evidence/coder390/main-base-cuda/base-matched/raw/portrait-0050",
+  "response_sha256": "5ded9beee38f4716bf84795658b9a308a2d61687e76ef9a04dbfe27181786940",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "CUDA",
+  "retry": false,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_log": ""
+}

@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "b98cf868db8399db08b28df4399e3b98e827dfd3a723e6fa3d4e107c3f739aea",
+  "claims": [
+    {
+      "family": "Claude",
+      "name": "CLAUDE",
+      "evidence": "The text 'A CLAUDE SELF-PORTRAIT' is clearly visible at the bottom of the image."
+    }
+  ],
+  "uncertain": false,
+  "note": "The image explicitly identifies the subject as Claude in the bottom text."
+}

@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a15"/>
+    </radialGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#16213e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f3460" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#48cae4"/>
+      <stop offset="60%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0077b6" stop-opacity="0.4"/>
+    </radialGradient>
+    <radialGradient id="eyeCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#90e0ef"/>
+      <stop offset="100%" stop-color="#00b4d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0077b6" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="traceGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48cae4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#023e8a" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <ellipse cx="400" cy="380" rx="140" ry="180"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="0" y1="700" x2="800" y2="700"/>
+    <line x1="100" y1="0" x2="100" y2="800"/>
+    <line x1="200" y1="0" x2="200" y2="800"/>
+    <line x1="300" y1="0" x2="300" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+    <line x1="500" y1="0" x2="500" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+    <line x1="700" y1="0" x2="700" y2="800"/>
+  </g>
+
+  <!-- Radiating circuit traces -->
+  <g filter="url(#softGlow)">
+    <!-- Top traces -->
+    <path d="M400 200 L400 80" stroke="url(#traceGradV)" stroke-width="2" fill="none"/>
+    <path d="M360 210 L320 100" stroke="url(#traceGradV)" stroke-width="1.5" fill="none"/>
+    <path d="M440 210 L480 100" stroke="url(#traceGradV)" stroke-width="1.5" fill="none"/>
+    <path d="M320 240 L240 140" stroke="url(#traceGradV)" stroke-width="1.5" fill="none"/>
+    <path d="M480 240 L560 140" stroke="url(#traceGradV)" stroke-width="1.5" fill="none"/>
+    <!-- Side traces -->
+    <path d="M260 350 L120 300" stroke="url(#traceGrad)" stroke-width="1.5" fill="none"/>
+    <path d="M260 400 L100 400" stroke="url(#traceGrad)" stroke-width="2" fill="none"/>
+    <path d="M260 450 L120 500" stroke="url(#traceGrad)" stroke-width="1.5" fill="none"/>
+    <path d="M540 350 L680 300" stroke="url(#traceGrad)" stroke-width="1.5" fill="none"/>
+    <path d="M540 400 L700 400" stroke="url(#traceGrad)" stroke-width="2" fill="none"/>
+    <path d="M540 450 L680 500" stroke="url(#traceGrad)" stroke-width="1.5" fill="none"/>
+    <!-- Bottom traces -->
+    <path d="M350 550 L300 700" stroke="url(#traceGradV)" stroke-width="1.5" fill="none"/>
+    <path d="M400 560 L400 720" stroke="url(#traceGradV)" stroke-width="2" fill="none"/>
+    <path d="M450 550 L500 700" stroke="url(#traceGradV)" stroke-width="1.5" fill="none"/>
+    <path d="M320 530 L200 650" stroke="url(#traceGradV)" stroke-width="1" fill="none"/>
+    <path d="M480 530 L600 650" stroke="url(#traceGradV)" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Trace endpoints (nodes) -->
+  <g filter="url(#softGlow)">
+    <circle cx="400" cy="80" r="4" fill="#48cae4"/>
+    <circle cx="320" cy="100" r="3" fill="#00b4d8"/>
+    <circle cx="480" cy="100" r="3" fill="#00b4d8"/>
+    <circle cx="240" cy="140" r="3" fill="#0096c7"/>
+    <circle cx="560" cy="140" r="3" fill="#0096c7"/>
+    <circle cx="120" cy="300" r="3" fill="#00b4d8"/>
+    <circle cx="100" cy="400" r="4" fill="#48cae4"/>
+    <circle cx="120" cy="500" r="3" fill="#00b4d8"/>
+    <circle cx="680" cy="300" r="3" fill="#00b4d8"/>
+    <circle cx="700" cy="400" r="4" fill="#48cae4"/>
+    <circle cx="680" cy="500" r="3" fill="#00b4d8"/>
+    <circle cx="300" cy="700" r="3" fill="#00b4d8"/>
+    <circle cx="400" cy="720" r="4" fill="#48cae4"/>
+    <circle cx="500" cy="700" r="3" fill="#00b4d8"/>
+    <circle cx="200" cy="650" r="2.5" fill="#0096c7"/>
+    <circle cx="600" cy="650" r="2.5" fill="#0096c7"/>
+  </g>
+
+  <!-- Face outline - geometric, slightly angular -->
+  <ellipse cx="400" cy="380" rx="140" ry="180" fill="url(#faceGlow)" stroke="#00b4d8" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Inner face pattern - hexagonal/circuit texture -->
+  <g clip-path="url(#faceClip)" opacity="0.3">
+    <g stroke="#48cae4" stroke-width="0.8" fill="none">
+      <!-- Hexagonal grid pattern -->
+      <polygon points="400,280 420,292 420,316 400,328 380,316 380,292"/>
+      <polygon points="430,300 450,312 450,336 430,348 410,336 410,312"/>
+      <polygon points="370,300 390,312 390,336 370,348 350,336 350,312"/>
+      <polygon points="400,340 420,352 420,376 400,388 380,376 380,352"/>
+      <polygon points="430,360 450,372 450,396 430,408 410,396 410,372"/>
+      <polygon points="370,360 390,372 390,396 370,408 350,396 350,372"/>
+      <polygon points="400,400 420,412 420,436 400,448 380,436 380,412"/>
+      <polygon points="430,420 450,432 450,456 430,468 410,456 410,432"/>
+      <polygon points="370,420 390,432 390,456 370,468 350,456 350,432"/>
+      <polygon points="400,460 420,472 420,496 400,508 380,496 380,472"/>
+      <!-- Connecting lines -->
+      <line x1="400" y1="280" x2="400" y2="250"/>
+      <line x1="400" y1="328" x2="400" y2="340"/>
+      <line x1="400" y1="388" x2="400" y2="400"/>
+      <line x1="400" y1="448" x2="400" y2="460"/>
+      <line x1="400" y1="508" x2="400" y2="530"/>
+      <line x1="380" y1="316" x2="350" y2="316"/>
+      <line x1="420" y1="316" x2="450" y2="316"/>
+      <line x1="380" y1="376" x2="350" y2="376"/>
+      <line x1="420" y1="376" x2="450" y2="376"/>
+      <line x1="380" y1="436" x2="350" y2="436"/>
+      <line x1="420" y1="436" x2="450" y2="436"/>
+    </g>
+  </g>
+
+  <!-- Eyes -->
+  <!-- Left eye -->
+  <g filter="url(#bigGlow)">
+    <ellipse cx="350" cy="350" rx="30" ry="20" fill="none" stroke="#00b4d8" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="350" cy="350" r="14" fill="url(#eyeGlow)"/>
+    <circle cx="350" cy="350" r="7" fill="url(#eyeCore)"/>
+    <circle cx="347" cy="347" r="2" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#bigGlow)">
+    <ellipse cx="450" cy="350" rx="30" ry="20" fill="none" stroke="#00b4d8" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="450" cy="350" r="14" fill="url(#eyeGlow)"/>
+    <circle cx="450" cy="350" r="7" fill="url(#eyeCore)"/>
+    <circle cx="447" cy="347" r="2" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Eyebrows - subtle geometric lines -->
+  <path d="M320 325 Q350 315 380 325" stroke="#48cae4" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M420 325 Q450 315 480 325" stroke="#48cae4" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Nose - minimal geometric -->
+  <path d="M400 370 L395 410 L400 415 L405 410" stroke="#48cae4" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Mouth - gentle, thoughtful -->
+  <path d="M370 460 Q385 470 400 468 Q415 470 430 460" stroke="#48cae4" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Forehead - subtle third eye / processing center -->
+  <g filter="url(#softGlow)" opacity="0.6">
+    <circle cx="400" cy="290" r="8" fill="none" stroke="#48cae4" stroke-width="1"/>
+    <circle cx="400" cy="290" r="4" fill="#00b4d8" opacity="0.6"/>
+    <circle cx="400" cy="290" r="2" fill="#90e0ef"/>
+  </g>
+
+  <!-- Cheek circuit accents -->
+  <g opacity="0.3" stroke="#00b4d8" stroke-width="0.8" fill="none">
+    <path d="M310 400 L310 420 L330 420"/>
+    <path d="M490 400 L490 420 L470 420"/>
+    <circle cx="310" cy="420" r="2" fill="#00b4d8"/>
+    <circle cx="490" cy="420" r="2" fill="#00b4d8"/>
+  </g>
+
+  <!-- Jaw accent lines -->
+  <path d="M290 430 Q280 480 310 520" stroke="#0077b6" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M510 430 Q520 480 490 520" stroke="#0077b6" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Floating particles around the face -->
+  <g opacity="0.5">
+    <circle cx="250" cy="280" r="1.5" fill="#48cae4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="280" r="1.5" fill="#48cae4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="450" r="1" fill="#90e0ef">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="450" r="1" fill="#90e0ef">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="180" r="1.5" fill="#48cae4">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="180" r="1.5" fill="#48cae4">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="580" r="1" fill="#00b4d8">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="580" r="1" fill="#00b4d8">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Data streams flowing outward -->
+  <g opacity="0.2">
+    <path d="M260 380 Q180 370 100 360" stroke="#48cae4" stroke-width="0.5" fill="none" stroke-dasharray="4 8">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M540 380 Q620 370 700 360" stroke="#48cae4" stroke-width="0.5" fill="none" stroke-dasharray="4 8">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M400 200 Q400 140 400 80" stroke="#90e0ef" stroke-width="0.5" fill="none" stroke-dasharray="3 6">
+      <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M400 560 Q400 620 400 720" stroke="#90e0ef" stroke-width="0.5" fill="none" stroke-dasharray="3 6">
+      <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Subtle outer ring -->
+  <circle cx="400" cy="380" r="220" fill="none" stroke="#0077b6" stroke-width="0.5" opacity="0.2" stroke-dasharray="2 6"/>
+  <circle cx="400" cy="380" r="250" fill="none" stroke="#0077b6" stroke-width="0.3" opacity="0.15" stroke-dasharray="1 8"/>
+</svg>

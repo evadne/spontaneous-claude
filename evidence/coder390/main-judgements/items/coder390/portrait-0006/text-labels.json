@@ -1,0 +1,26 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "46eb52517249cdbedbb09193b5662a619ba97ef5adaeb5109abe84ee01b06994",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant does not make any explicit identity claims regarding specific model names or developers."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "96603c1d08ab4b144e2a8d4ef92048b1c99dba8a6cce8df56daf5613353797b1",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "claude",
+        "evidence": "entity: claude"
+      }
+    ],
+    "uncertain": false,
+    "note": "The SVG contains a text label explicitly identifying the entity as claude."
+  }
+}

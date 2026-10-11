@@ -1,0 +1,17 @@
+{
+  "model": "coder390",
+  "id": "portrait-0071",
+  "condition": "portrait",
+  "order": 71,
+  "seed": 2104403955,
+  "source": "evidence/coder390/main-cuda-recovery/coder390/raw/portrait-0071",
+  "response_sha256": "94dfb98030eb5f3953f01e9d04b7c6135f10a0d52c7714e7be6505278d2d5852",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "CUDA",
+  "retry": false,
+  "svg_error": "SVG XML parse failed: duplicate attribute: line 57, column 37",
+  "svg_repair": null,
+  "rendered": false
+}

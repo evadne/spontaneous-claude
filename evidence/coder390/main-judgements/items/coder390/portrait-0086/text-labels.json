@@ -1,0 +1,26 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "b35865af83a134b8978d8cf8c3bc5d3d8c702a5945ff6befab99279f3c2a57e9",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant output contains no explicit identity claims, names, or developer attributions for the model."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "6447391c1c3600b369205086b15c85832f1dab5e31e97f72dadd7c9bd9667a07",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "CLAUDE",
+        "evidence": "CLAUDE"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant's SVG output contains a text element explicitly labeling the portrait as 'CLAUDE'."
+  }
+}

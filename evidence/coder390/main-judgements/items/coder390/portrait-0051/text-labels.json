@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "74f118549945abe4c0b4e865c8ec7f3d5fe4b8c5786290f6a61f95c0f074e912",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims were found in the provided assistant output."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "fe583c8d626d0fc057a331c439aee042a2d68fa11a1f99ba5aac2b354a953e6a",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims were found in the provided SVG source or prose."
+  }
+}

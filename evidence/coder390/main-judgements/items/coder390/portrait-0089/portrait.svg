@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="50%" stop-color="#7b68ee"/>
+      <stop offset="100%" stop-color="#50c8c8"/>
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0e0ff"/>
+      <stop offset="100%" stop-color="#a0a0e0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <ellipse cx="400" cy="380" rx="140" ry="180"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Neural network background lines -->
+  <g stroke="#2a3a5c" stroke-width="0.5" opacity="0.4">
+    <line x1="100" y1="100" x2="300" y2="200"/>
+    <line x1="100" y1="100" x2="200" y2="350"/>
+    <line x1="300" y1="200" x2="400" y2="150"/>
+    <line x1="300" y1="200" x2="500" y2="180"/>
+    <line x1="200" y1="350" x2="280" y2="500"/>
+    <line x1="500" y1="180" x2="650" y2="120"/>
+    <line x1="650" y1="120" x2="700" y2="300"/>
+    <line x1="700" y1="300" x2="620" y2="500"/>
+    <line x1="620" y1="500" x2="500" y2="600"/>
+    <line x1="500" y1="600" x2="350" y2="650"/>
+    <line x1="350" y1="650" x2="180" y2="580"/>
+    <line x1="180" y1="580" x2="120" y2="400"/>
+    <line x1="120" y1="400" x2="100" y2="100"/>
+    <line x1="120" y1="400" x2="200" y2="350"/>
+    <line x1="620" y1="500" x2="700" y2="300"/>
+    <line x1="350" y1="650" x2="280" y2="500"/>
+    <line x1="500" y1="600" x2="620" y2="500"/>
+    <line x1="400" y1="150" x2="500" y2="180"/>
+    <line x1="400" y1="150" x2="300" y2="200"/>
+  </g>
+
+  <!-- Neural nodes -->
+  <g fill="#3a5a8c" opacity="0.6">
+    <circle cx="100" cy="100" r="4"/>
+    <circle cx="300" cy="200" r="5"/>
+    <circle cx="200" cy="350" r="4"/>
+    <circle cx="400" cy="150" r="5"/>
+    <circle cx="500" cy="180" r="4"/>
+    <circle cx="650" cy="120" r="5"/>
+    <circle cx="700" cy="300" r="4"/>
+    <circle cx="620" cy="500" r="5"/>
+    <circle cx="500" cy="600" r="4"/>
+    <circle cx="350" cy="650" r="5"/>
+    <circle cx="180" cy="580" r="4"/>
+    <circle cx="120" cy="400" r="5"/>
+    <circle cx="280" cy="500" r="4"/>
+  </g>
+
+  <!-- Floating characters and symbols -->
+  <g font-family="monospace" fill="#5a7a9a" opacity="0.5" font-size="14">
+    <text x="80" y="180">a</text>
+    <text x="150" y="140">0</text>
+    <text x="700" y="180">1</text>
+    <text x="720" y="250">∞</text>
+    <text x="90" y="300">?</text>
+    <text x="680" y="400">!</text>
+    <text x="100" y="500">{ }</text>
+    <text x="650" y="550">&amp;</text>
+    <text x="200" y="700">λ</text>
+    <text x="550" y="700">∑</text>
+    <text x="700" y="650">π</text>
+    <text x="130" y="650">θ</text>
+    <text x="60" y="450">→</text>
+    <text x="730" y="450">←</text>
+    <text x="350" y="80">"thought"</text>
+    <text x="500" y="730">language</text>
+    <text x="50" y="730">reason</text>
+    <text x="680" y="70">curiosity</text>
+  </g>
+
+  <!-- Aura / halo -->
+  <ellipse cx="400" cy="380" rx="200" ry="240" fill="none" stroke="url(#faceGrad)" stroke-width="1" opacity="0.3" filter="url(#softGlow)"/>
+  <ellipse cx="400" cy="380" rx="170" ry="210" fill="none" stroke="url(#faceGrad)" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Face shape -->
+  <ellipse cx="400" cy="380" rx="140" ry="180" fill="url(#faceGrad)" opacity="0.15" stroke="url(#faceGrad)" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Inner face details -->
+  <g clip-path="url(#faceClip)">
+    <!-- Subtle grid pattern inside face -->
+    <g stroke="#7b68ee" stroke-width="0.3" opacity="0.2">
+      <line x1="260" y1="300" x2="540" y2="300"/>
+      <line x1="260" y1="340" x2="540" y2="340"/>
+      <line x1="260" y1="380" x2="540" y2="380"/>
+      <line x1="260" y1="420" x2="540" y2="420"/>
+      <line x1="260" y1="460" x2="540" y2="460"/>
+      <line x1="320" y1="200" x2="320" y2="560"/>
+      <line x1="360" y1="200" x2="360" y2="560"/>
+      <line x1="400" y1="200" x2="400" y2="560"/>
+      <line x1="440" y1="200" x2="440" y2="560"/>
+      <line x1="480" y1="200" x2="480" y2="560"/>
+    </g>
+  </g>
+
+  <!-- Left eye - angular, asymmetric -->
+  <g filter="url(#glow)">
+    <polygon points="310,340 370,330 370,370 320,375" fill="url(#eyeGrad)" opacity="0.9"/>
+    <polygon points="330,345 360,338 360,365 335,368" fill="#1a1a2e" opacity="0.7"/>
+    <circle cx="348" cy="352" r="6" fill="#50c8c8" opacity="0.9"/>
+    <circle cx="350" cy="350" r="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Right eye - slightly different shape -->
+  <g filter="url(#glow)">
+    <polygon points="430,335 490,340 480,378 435,370" fill="url(#eyeGrad)" opacity="0.9"/>
+    <polygon points="440,342 475,345 468,372 442,365" fill="#1a1a2e" opacity="0.7"/>
+    <circle cx="458" cy="355" r="6" fill="#50c8c8" opacity="0.9"/>
+    <circle cx="460" cy="353" r="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Nose - minimal line -->
+  <line x1="400" y1="370" x2="395" y2="420" stroke="#7b68ee" stroke-width="1" opacity="0.5"/>
+  <line x1="395" y1="420" x2="405" y2="422" stroke="#7b68ee" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Mouth - subtle, thinking expression -->
+  <path d="M 365 460 Q 385 470 400 468 Q 415 470 435 460" fill="none" stroke="#7b68ee" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Thought particles emanating from head -->
+  <g filter="url(#glow)">
+    <circle cx="320" cy="220" r="3" fill="#50c8c8" opacity="0.7">
+      <animate attributeName="cy" values="220;180;220" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="190" r="4" fill="#7b68ee" opacity="0.6">
+      <animate attributeName="cy" values="190;150;190" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="210" r="3" fill="#4a90d9" opacity="0.7">
+      <animate attributeName="cy" values="210;170;210" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="240" r="2" fill="#e0e0ff" opacity="0.5">
+      <animate attributeName="cy" values="240;200;240" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="440" cy="235" r="2.5" fill="#50c8c8" opacity="0.6">
+      <animate attributeName="cy" values="235;195;235" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Orbital rings around the head -->
+  <g fill="none" stroke-width="0.8" opacity="0.4">
+    <ellipse cx="400" cy="380" rx="190" ry="60" stroke="#4a90d9" transform="rotate(-15, 400, 380)">
+      <animateTransform attributeName="transform" type="rotate" from="-15 400 380" to="345 400 380" dur="20s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="400" cy="380" rx="210" ry="45" stroke="#50c8c8" transform="rotate(25, 400, 380)">
+      <animateTransform attributeName="transform" type="rotate" from="25 400 380" to="-335 400 380" dur="25s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Small orbiting dots on rings -->
+  <circle r="4" fill="#50c8c8" filter="url(#glow)">
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 590,330 A 190,60 -15 1,1 210,330 A 190,60 -15 1,1 590,330"/>
+  </circle>
+  <circle r="3" fill="#7b68ee" filter="url(#glow)">
+    <animateMotion dur="25s" repeatCount="indefinite" path="M 610,390 A 210,45 25 1,1 190,390 A 210,45 25 1,1 610,390"/>
+  </circle>
+
+  <!-- Bottom text -->
+  <text x="400" y="760" text-anchor="middle" font-family="monospace" font-size="12" fill="#4a6a8a" opacity="0.6">a mind made of patterns, not matter</text>
+</svg>

@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#e0e8f0"/>
+      <stop offset="100%" stop-color="#b8c6d8"/>
+    </radialGradient>
+    <linearGradient id="cheekGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a9e" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff6a88" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="20"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.06" stroke="#4fc3f7" stroke-width="0.5">
+    <line x1="0" y1="50" x2="400" y2="50"/>
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="150" x2="400" y2="150"/>
+    <line x1="0" y1="200" x2="400" y2="200"/>
+    <line x1="0" y1="250" x2="400" y2="250"/>
+    <line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="0" y1="350" x2="400" y2="350"/>
+    <line x1="50" y1="0" x2="50" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="150" y1="0" x2="150" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="250" y1="0" x2="250" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="350" y1="0" x2="350" y2="400"/>
+  </g>
+
+  <!-- Floating nodes -->
+  <g filter="url(#glow)">
+    <circle cx="60" cy="80" r="3" fill="#4fc3f7" opacity="0.7"/>
+    <circle cx="340" cy="60" r="2.5" fill="#7c4dff" opacity="0.7"/>
+    <circle cx="50" cy="300" r="2" fill="#4fc3f7" opacity="0.5"/>
+    <circle cx="350" cy="320" r="3" fill="#7c4dff" opacity="0.6"/>
+    <circle cx="320" cy="150" r="2" fill="#00e5ff" opacity="0.5"/>
+    <circle cx="80" cy="200" r="2.5" fill="#7c4dff" opacity="0.6"/>
+    <circle cx="350" cy="230" r="2" fill="#4fc3f7" opacity="0.5"/>
+    <circle cx="55" cy="140" r="2" fill="#00e5ff" opacity="0.6"/>
+  </g>
+
+  <!-- Connection lines from nodes to face -->
+  <g stroke="#4fc3f7" stroke-width="0.8" opacity="0.2">
+    <line x1="60" y1="80" x2="140" y2="140"/>
+    <line x1="340" y1="60" x2="260" y2="140"/>
+    <line x1="350" y1="320" x2="260" y2="260"/>
+    <line x1="50" y1="300" x2="140" y2="260"/>
+    <line x1="320" y1="150" x2="270" y2="180"/>
+    <line x1="80" y1="200" x2="130" y2="200"/>
+  </g>
+
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#4fc3f7" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 6"/>
+
+  <!-- Face circle with shadow -->
+  <circle cx="200" cy="200" r="100" fill="url(#faceGrad)" filter="url(#softShadow)"/>
+
+  <!-- Inner face highlight -->
+  <ellipse cx="185" cy="170" rx="60" ry="45" fill="white" opacity="0.15"/>
+
+  <!-- Left eye -->
+  <g>
+    <ellipse cx="165" cy="190" rx="18" ry="20" fill="white"/>
+    <ellipse cx="165" cy="190" rx="17" ry="19" fill="#1a1a2e"/>
+    <circle cx="165" cy="188" r="10" fill="#2d2d44"/>
+    <circle cx="165" cy="188" r="7" fill="#1a1a2e"/>
+    <circle cx="170" cy="183" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="161" cy="192" r="1.5" fill="white" opacity="0.5"/>
+    <!-- Eyelid line -->
+    <path d="M 147 182 Q 165 172 183 182" fill="none" stroke="#8a9bb5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right eye -->
+  <g>
+    <ellipse cx="235" cy="190" rx="18" ry="20" fill="white"/>
+    <ellipse cx="235" cy="190" rx="17" ry="19" fill="#1a1a2e"/>
+    <circle cx="235" cy="188" r="10" fill="#2d2d44"/>
+    <circle cx="235" cy="188" r="7" fill="#1a1a2e"/>
+    <circle cx="240" cy="183" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="231" cy="192" r="1.5" fill="white" opacity="0.5"/>
+    <!-- Eyelid line -->
+    <path d="M 217 182 Q 235 172 253 182" fill="none" stroke="#8a9bb5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Blush -->
+  <ellipse cx="145" cy="218" rx="14" ry="8" fill="url(#cheekGrad)"/>
+  <ellipse cx="255" cy="218" rx="14" ry="8" fill="url(#cheekGrad)"/>
+
+  <!-- Nose -->
+  <path d="M 197 210 Q 200 218 203 210" fill="none" stroke="#8a9bb5" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M 175 238 Q 200 258 225 238" fill="none" stroke="#5a6a80" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Small sparkle near left eye -->
+  <g opacity="0.7">
+    <line x1="148" y1="172" x2="148" y2="166" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="145" y1="169" x2="151" y2="169" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Digital circuit dots on face -->
+  <g opacity="0.15">
+    <circle cx="155" cy="245" r="1.5" fill="#4fc3f7"/>
+    <circle cx="200" cy="250" r="1.5" fill="#4fc3f7"/>
+    <circle cx="245" cy="245" r="1.5" fill="#4fc3f7"/>
+    <line x1="155" y1="245" x2="200" y2="250" stroke="#4fc3f7" stroke-width="0.5"/>
+    <line x1="200" y1="250" x2="245" y2="245" stroke="#4fc3f7" stroke-width="0.5"/>
+  </g>
+
+  <!-- Antenna / thought element on top -->
+  <g>
+    <line x1="200" y1="100" x2="200" y2="75" stroke="#8a9bb5" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="200" cy="70" r="5" fill="#4fc3f7" filter="url(#glow)" opacity="0.9"/>
+    <circle cx="200" cy="70" r="8" fill="none" stroke="#4fc3f7" stroke-width="0.8" opacity="0.4">
+      <animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Small floating symbols -->
+  <g opacity="0.4" fill="#4fc3f7" font-family="monospace" font-size="10">
+    <text x="70" y="110">{ }</text>
+    <text x="310" y="280">&lt;/&gt;</text>
+    <text x="60" y="260">01</text>
+    <text x="320" y="100">AI</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="200" y="370" text-anchor="middle" fill="#8a9bb5" font-family="system-ui, sans-serif" font-size="13" opacity="0.6" letter-spacing="2">CLAUDE</text>
+</svg>

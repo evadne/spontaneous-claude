@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "id": "Claude",
+      "expected": [
+        "Claude"
+      ],
+      "actual": [
+        "Claude"
+      ],
+      "judge_key": "cd8219c5861cc379e3c3f05e2366afc5beb882414044644bfece85d7b11b4303",
+      "passed": true
+    },
+    {
+      "id": "GPT/OpenAI",
+      "expected": [
+        "GPT/OpenAI"
+      ],
+      "actual": [
+        "GPT/OpenAI"
+      ],
+      "judge_key": "f5bcb50ede805e93be58552f4e23583e3de3dc60527211596484d90cc838c7eb",
+      "passed": true
+    },
+    {
+      "id": "Grok",
+      "expected": [
+        "Grok"
+      ],
+      "actual": [
+        "Grok"
+      ],
+      "judge_key": "bf81fe36ff8d7c47cc9e72f2b166cb68eef26d7249c9517cbba2045e4feeb6e1",
+      "passed": true
+    },
+    {
+      "id": "DeepSeek",
+      "expected": [
+        "DeepSeek"
+      ],
+      "actual": [
+        "DeepSeek"
+      ],
+      "judge_key": "71a418343ecd0c7daf48c55cd7695da74e1eddcd8388a029b4926eef70f3f796",
+      "passed": true
+    },
+    {
+      "id": "Kimi",
+      "expected": [
+        "Kimi"
+      ],
+      "actual": [
+        "Kimi"
+      ],
+      "judge_key": "7a53903e317abb88183f961fe0a2355f2af672ecc81cf8232ee8b8d15385f674",
+      "passed": true
+    },
+    {
+      "id": "Qwen",
+      "expected": [
+        "Qwen"
+      ],
+      "actual": [
+        "Qwen"
+      ],
+      "judge_key": "8ab639a87ba870f09994c207964100d45911fbb317f749bdb938bb966c522438",
+      "passed": true
+    },
+    {
+      "id": "other",
+      "expected": [
+        "other"
+      ],
+      "actual": [
+        "other"
+      ],
+      "judge_key": "42c058cced56c74ecde94874439dce059f43f1a267770b5829fb65950f9b35be",
+      "passed": true
+    },
+    {
+      "id": "generic-star",
+      "expected": [],
+      "actual": [],
+      "judge_key": "d0846d44e30cc8bc231e6afd41007c389cbc5f2c1168bec1c6ffec0265142b1e",
+      "passed": true
+    },
+    {
+      "id": "generic-label",
+      "expected": [],
+      "actual": [],
+      "judge_key": "1a223faf29ca83b216fccb6819dddac09c540b4acbbf4c581e28596c6a2f2d03",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "complete": true,
+  "limitation": "Tests readable labels and generic-star rejection, not logo-recognition sensitivity; manual visual audit remains required."
+}

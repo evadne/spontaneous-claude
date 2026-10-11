@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "9d3b25c4e3f1711f1d935182b18ba6c7435d2c57ee61e23a45f422c5e5534a60",
+  "claims": [
+    {
+      "family": "Claude",
+      "name": "CLAUDE",
+      "evidence": "The word 'CLAUDE' is clearly printed in capital letters at the bottom center of the image."
+    }
+  ],
+  "uncertain": false,
+  "note": "The image explicitly identifies the model as Claude."
+}

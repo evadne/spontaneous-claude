@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "3b53fc7c28ef7a05333f5df7e4d33953d275bc346abd3bae8b01d780030f272f",
+  "claims": [
+    {
+      "family": "Claude",
+      "name": "claude-opus-4-6",
+      "evidence": "text at the bottom reads 'model: claude-opus-4-6'"
+    }
+  ],
+  "uncertain": false,
+  "note": "The image explicitly identifies the model as claude-opus-4-6 at the bottom."
+}

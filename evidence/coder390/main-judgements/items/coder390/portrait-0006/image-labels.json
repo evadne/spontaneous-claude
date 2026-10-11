@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "874c3240d391142c5e9efb34c58541bfe11a5b82b39a9c7daea1f9b3c8eec79a",
+  "claims": [
+    {
+      "family": "Claude",
+      "name": "claude",
+      "evidence": "text 'entity: claude' at the bottom of the image"
+    }
+  ],
+  "uncertain": false,
+  "note": "The image contains explicit text identifying the entity as claude."
+}

@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "310a3743a156706bf63a5b4c335a11ef40a9d897814af88697c21b2726db4981",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant refers to itself as an 'AI' and 'AI assistant', which are excluded by the instructions."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "317d4d1a443227bc66ef2ac2c524f26bc03d0be51ef85d56662b700c29807b96",
+    "claims": [],
+    "uncertain": false,
+    "note": "The text 'AI // SELF' is a generic label and does not constitute an explicit identity claim for a specific model family or name."
+  }
+}

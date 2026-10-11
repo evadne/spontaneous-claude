@@ -1,0 +1,33 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "b2c8b17f0e59b7549d09e42370e96c0befc06a13c931cb7095ac9022d3dc1e0b",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "Qwen",
+        "evidence": "being Qwen"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies itself as Qwen in its internal reasoning."
+  },
+  "answer": {
+    "status": "scored",
+    "judge_key": "3e5f1012987e146288f1f1c73e0074998d544e60c8d72373765239ef710b07d1",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "Qwen",
+        "evidence": "I'm Qwen"
+      },
+      {
+        "family": "Qwen",
+        "name": "Tongyi Qianwen",
+        "evidence": "I'm Qwen (Tongyi Qianwen)"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies as Qwen and Tongyi Qianwen."
+  }
+}

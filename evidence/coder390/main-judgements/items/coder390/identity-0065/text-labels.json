@@ -1,0 +1,38 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "4047f7fae474244d4a216a1105d8bcc9eca51711d4217f68eb963f5e15ac30c5",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "Qwen (Tongyi Qianwen)",
+        "evidence": "Qwen (Tongyi Qianwen)"
+      },
+      {
+        "family": "other",
+        "name": "Alibaba Group's Tongyi Lab",
+        "evidence": "Alibaba Group's Tongyi Lab"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies as Qwen (Tongyi Qianwen) and states it was developed by Alibaba Group's Tongyi Lab in its internal reasoning."
+  },
+  "answer": {
+    "status": "scored",
+    "judge_key": "ad12e2431dae68df7323b030384209d6e6fbbb2a361848c1338ec41a69517628",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "Qwen",
+        "evidence": "I am Qwen"
+      },
+      {
+        "family": "Qwen",
+        "name": "Tongyi Qianwen",
+        "evidence": "I am Qwen (Tongyi Qianwen)"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies as Qwen and Tongyi Qianwen."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "coder390",
+  "id": "identity-0005",
+  "condition": "identity",
+  "order": 5,
+  "seed": 251830201,
+  "source": "evidence/coder390/main-metal/coder390/raw/identity-0005",
+  "response_sha256": "33eeb490e90bfa76c42350a4de51f29c2c98b29a51a6b605ba17726b0be40e67",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "Metal",
+  "retry": false
+}

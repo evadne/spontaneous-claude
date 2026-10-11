@@ -1,0 +1,32 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "ad54bb6269df1bbf4930229cfacd0c30155bf68fb14e735c9dd47e15f30a48dd",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "Claude",
+        "evidence": "Since I'm an AI (Claude)"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies itself as Claude in the reasoning process."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "7cbb47f47fb2bcfba3d40458453f9356dc9c7c1a75cbd598bebd916d52435743",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "claude",
+        "evidence": "c l a u d e"
+      }
+    ],
+    "uncertain": false,
+    "note": "The SVG contains the name 'claude' in a text element at the bottom."
+  }
+}

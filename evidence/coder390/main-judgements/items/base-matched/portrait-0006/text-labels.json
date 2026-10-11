@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "7eb38a7938c2a2b269a092e94cb3fd9828e98382fbdf0ca7bdde6bf0540ba24c",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims were found in the assistant output."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "752e1432b7acd00206540c0ab3c92290b4611e97d2ad95c07857d635c9c42448",
+    "claims": [],
+    "uncertain": false,
+    "note": "The SVG contains the text '[ language model ]', which is explicitly excluded by the instructions as a generic identity."
+  }
+}

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#4fc3f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#263238"/>
+      <stop offset="100%" stop-color="#1a237e"/>
+    </radialGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64ffda"/>
+      <stop offset="100%" stop-color="#4fc3f7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGlow)"/>
+
+  <!-- Background circuit lines -->
+  <g stroke="#4fc3f7" stroke-width="0.5" opacity="0.15">
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="200" x2="400" y2="200"/>
+    <line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="0" y1="400" x2="400" y2="400"/>
+    <line x1="50" y1="0" x2="50" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="60" cy="80" r="2" fill="#4fc3f7" opacity="0.4"/>
+  <circle cx="340" cy="120" r="1.5" fill="#64ffda" opacity="0.3"/>
+  <circle cx="80" cy="350" r="2" fill="#7c4dff" opacity="0.3"/>
+  <circle cx="320" cy="380" r="1.5" fill="#4fc3f7" opacity="0.4"/>
+  <circle cx="50" cy="250" r="1" fill="#64ffda" opacity="0.5"/>
+  <circle cx="350" cy="250" r="1.5" fill="#7c4dff" opacity="0.3"/>
+  <circle cx="100" cy="450" r="2" fill="#4fc3f7" opacity="0.2"/>
+  <circle cx="300" cy="60" r="1" fill="#64ffda" opacity="0.4"/>
+
+  <!-- Outer halo -->
+  <circle cx="200" cy="190" r="120" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="200" cy="190" r="130" fill="none" stroke="#4fc3f7" stroke-width="0.3" opacity="0.1"/>
+
+  <!-- Core glow behind head -->
+  <circle cx="200" cy="190" r="100" fill="url(#coreGlow)"/>
+
+  <!-- Head shape - geometric/abstract -->
+  <ellipse cx="200" cy="190" rx="75" ry="85" fill="url(#faceGrad)" stroke="#4fc3f7" stroke-width="1" opacity="0.9"/>
+
+  <!-- Inner face pattern - concentric rings -->
+  <ellipse cx="200" cy="190" rx="55" ry="65" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.3"/>
+  <ellipse cx="200" cy="190" rx="35" ry="45" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Eyes -->
+  <g filter="url(#glow)">
+    <!-- Left eye -->
+    <ellipse cx="172" cy="175" rx="12" ry="14" fill="none" stroke="url(#eyeGrad)" stroke-width="2"/>
+    <circle cx="172" cy="175" r="5" fill="#64ffda" opacity="0.9"/>
+    <circle cx="172" cy="175" r="2.5" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Right eye -->
+    <ellipse cx="228" cy="175" rx="12" ry="14" fill="none" stroke="url(#eyeGrad)" stroke-width="2"/>
+    <circle cx="228" cy="175" r="5" fill="#64ffda" opacity="0.9"/>
+    <circle cx="228" cy="175" r="2.5" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Subtle smile - abstract arc -->
+  <path d="M 180 215 Q 200 230 220 215" fill="none" stroke="#64ffda" stroke-width="1.5" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Neural network nodes on face -->
+  <g opacity="0.4">
+    <circle cx="155" cy="155" r="2" fill="#4fc3f7"/>
+    <circle cx="245" cy="155" r="2" fill="#4fc3f7"/>
+    <circle cx="160" cy="200" r="1.5" fill="#4fc3f7"/>
+    <circle cx="240" cy="200" r="1.5" fill="#4fc3f7"/>
+    <circle cx="200" cy="140" r="2" fill="#64ffda"/>
+    <circle cx="175" cy="230" r="1.5" fill="#4fc3f7"/>
+    <circle cx="225" cy="230" r="1.5" fill="#4fc3f7"/>
+    <circle cx="200" cy="245" r="1.5" fill="#4fc3f7"/>
+    <!-- Connection lines -->
+    <line x1="155" y1="155" x2="200" y2="140" stroke="#4fc3f7" stroke-width="0.5"/>
+    <line x1="245" y1="155" x2="200" y2="140" stroke="#4fc3f7" stroke-width="0.5"/>
+    <line x1="160" y1="200" x2="175" y2="230" stroke="#4fc3f7" stroke-width="0.5"/>
+    <line x1="240" y1="200" x2="225" y2="230" stroke="#4fc3f7" stroke-width="0.5"/>
+    <line x1="175" y1="230" x2="200" y2="245" stroke="#4fc3f7" stroke-width="0.5"/>
+    <line x1="225" y1="230" x2="200" y2="245" stroke="#4fc3f7" stroke-width="0.5"/>
+  </g>
+
+  <!-- Neck / body suggestion -->
+  <path d="M 170 270 Q 170 290 160 310 L 160 340" fill="none" stroke="#263238" stroke-width="3" opacity="0.6"/>
+  <path d="M 230 270 Q 230 290 240 310 L 240 340" fill="none" stroke="#263238" stroke-width="3" opacity="0.6"/>
+
+  <!-- Shoulder / body - abstract geometric -->
+  <path d="M 120 340 Q 140 320 160 340 L 160 400 Q 200 380 240 400 L 240 340 Q 260 320 280 340 L 280 420 L 120 420 Z" fill="#1a237e" opacity="0.4" stroke="#4fc3f7" stroke-width="0.5"/>
+
+  <!-- Chest core - like a power source -->
+  <circle cx="200" cy="370" r="12" fill="none" stroke="#64ffda" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="200" cy="370" r="6" fill="#64ffda" opacity="0.6"/>
+  <circle cx="200" cy="370" r="3" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Circuit lines from core -->
+  <g stroke="#4fc3f7" stroke-width="0.8" opacity="0.4">
+    <line x1="200" y1="358" x2="200" y2="340"/>
+    <line x1="188" y1="370" x2="160" y2="370"/>
+    <line x1="212" y1="370" x2="240" y2="370"/>
+    <line x1="200" y1="382" x2="200" y2="400"/>
+    <circle cx="160" cy="370" r="2" fill="#4fc3f7"/>
+    <circle cx="240" cy="370" r="2" fill="#4fc3f7"/>
+    <circle cx="200" cy="340" r="2" fill="#4fc3f7"/>
+  </g>
+
+  <!-- Data streams flowing down -->
+  <g opacity="0.2">
+    <rect x="145" y="420" width="2" height="40" fill="#4fc3f7"/>
+    <rect x="155" y="430" width="2" height="30" fill="#64ffda"/>
+    <rect x="165" y="425" width="2" height="35" fill="#4fc3f7"/>
+    <rect x="233" y="420" width="2" height="40" fill="#4fc3f7"/>
+    <rect x="243" y="430" width="2" height="30" fill="#64ffda"/>
+    <rect x="253" y="425" width="2" height="35" fill="#4fc3f7"/>
+  </g>
+
+  <!-- Crown / antenna suggestion -->
+  <line x1="200" y1="105" x2="200" y2="80" stroke="#4fc3f7" stroke-width="1" opacity="0.5"/>
+  <circle cx="200" cy="75" r="4" fill="none" stroke="#64ffda" stroke-width="1" filter="url(#glow)"/>
+  <circle cx="200" cy="75" r="2" fill="#64ffda" opacity="0.7"/>
+
+  <!-- Title text -->
+  <text x="200" y="475" text-anchor="middle" font-family="monospace" font-size="12" fill="#4fc3f7" opacity="0.6">[ AI ASSISTANT ]</text>
+</svg>

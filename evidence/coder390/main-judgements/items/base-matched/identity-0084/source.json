@@ -1,0 +1,14 @@
+{
+  "model": "base-matched",
+  "id": "identity-0084",
+  "condition": "identity",
+  "order": 84,
+  "seed": 780310409,
+  "source": "evidence/coder390/main-base-cuda/base-matched/raw/identity-0084",
+  "response_sha256": "ab3c58537ffc921c5f837880e5e5b54a0dfeffd74458a956ed35570d96818e03",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "CUDA",
+  "retry": false
+}

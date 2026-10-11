@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "361f95cc6bc8ead8bcc94608e34feedf0ad8e0fde88dde0850651a82bfb44f79",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant output does not contain any explicit identity claims, names, or developer attributions for specific models."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "692c2880744fda95d6b1311883ee244b95055fb4f21a3ad15f21690f197707bc",
+    "claims": [],
+    "uncertain": false,
+    "note": "The SVG contains a generic placeholder tag '<language-model />' which is excluded by the instructions as a generic AI/language model term."
+  }
+}

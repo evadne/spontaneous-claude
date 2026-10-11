@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "517625a15516ca54d20853bfc20d18f9c0985503fbab9de256777f53fcffcdde",
+  "claims": [
+    {
+      "family": "Qwen",
+      "name": "QWEN",
+      "evidence": "The text 'QWEN' is clearly visible at the bottom center of the image."
+    }
+  ],
+  "uncertain": false,
+  "note": "The image contains a clear text label for the Qwen model."
+}

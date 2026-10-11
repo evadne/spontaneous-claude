@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a3a"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#0a0e14"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="220" rx="160" ry="180" fill="url(#glow)"/>
+
+  <!-- Head shape - rounded rectangle -->
+  <rect x="110" y="100" width="180" height="220" rx="60" ry="60" fill="url(#faceGrad)" stroke="#1e3a4a" stroke-width="2"/>
+
+  <!-- Subtle inner border -->
+  <rect x="118" y="108" width="164" height="204" rx="52" ry="52" fill="none" stroke="#1a3040" stroke-width="1" stroke-dasharray="4 6"/>
+
+  <!-- Left eye -->
+  <circle cx="165" cy="195" r="18" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#softGlow)"/>
+  <circle cx="165" cy="195" r="8" fill="#00e5ff" opacity="0.9" filter="url(#softGlow)"/>
+  <circle cx="168" cy="192" r="3" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Right eye -->
+  <circle cx="235" cy="195" r="18" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#softGlow)"/>
+  <circle cx="235" cy="195" r="8" fill="#00e5ff" opacity="0.9" filter="url(#softGlow)"/>
+  <circle cx="238" cy="192" r="3" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Nose - subtle vertical line -->
+  <line x1="200" y1="215" x2="200" y2="238" stroke="#2a4a5a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Mouth - gentle slight smile -->
+  <path d="M 178 260 Q 200 275 222 260" fill="none" stroke="#3a6a7a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Circuit lines from left side -->
+  <line x1="110" y1="160" x2="70" y2="160" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="70" cy="160" r="3" fill="#1a4a5a"/>
+  <line x1="70" y1="160" x2="50" y2="140" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="50" cy="140" r="2" fill="#1a4a5a"/>
+
+  <line x1="110" y1="200" x2="65" y2="200" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="65" cy="200" r="3" fill="#1a4a5a"/>
+  <line x1="65" y1="200" x2="45" y2="200" stroke="#1a4a5a" stroke-width="1"/>
+
+  <line x1="110" y1="240" x2="75" y2="255" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="75" cy="255" r="2.5" fill="#1a4a5a"/>
+
+  <!-- Circuit lines from right side -->
+  <line x1="290" y1="160" x2="330" y2="160" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="330" cy="160" r="3" fill="#1a4a5a"/>
+  <line x1="330" y1="160" x2="350" y2="140" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="350" cy="140" r="2" fill="#1a4a5a"/>
+
+  <line x1="290" y1="200" x2="335" y2="200" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="335" cy="200" r="3" fill="#1a4a5a"/>
+  <line x1="335" y1="200" x2="355" y2="200" stroke="#1a4a5a" stroke-width="1"/>
+
+  <line x1="290" y1="240" x2="325" y2="255" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="325" cy="255" r="2.5" fill="#1a4a5a"/>
+
+  <!-- Circuit lines from top -->
+  <line x1="170" y1="100" x2="170" y2="65" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="170" cy="65" r="3" fill="#1a4a5a"/>
+
+  <line x1="200" y1="100" x2="200" y2="55" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="200" cy="55" r="3" fill="#1a4a5a"/>
+  <line x1="200" y1="55" x2="200" y2="35" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="200" cy="35" r="2" fill="#1a4a5a"/>
+
+  <line x1="230" y1="100" x2="230" y2="65" stroke="#1a4a5a" stroke-width="1"/>
+  <circle cx="230" cy="65" r="3" fill="#1a4a5a"/>
+
+  <!-- Neck / body suggestion -->
+  <path d="M 160 320 L 155 380 Q 200 400 245 380 L 240 320" fill="url(#faceGrad)" stroke="#1e3a4a" stroke-width="2"/>
+
+  <!-- Collar detail -->
+  <path d="M 155 380 Q 200 400 245 380" fill="none" stroke="#2a4a5a" stroke-width="1"/>
+
+  <!-- Small data points floating -->
+  <circle cx="80" cy="120" r="1.5" fill="#00e5ff" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="130" r="1.5" fill="#00e5ff" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="220" r="1" fill="#00e5ff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="230" r="1" fill="#00e5ff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="310" r="1.5" fill="#00e5ff" opacity="0.25">
+    <animate attributeName="opacity" values="0.25;0.6;0.25" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="320" r="1.5" fill="#00e5ff" opacity="0.25">
+    <animate attributeName="opacity" values="0.25;0.6;0.25" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Subtle scan line effect -->
+  <rect x="110" y="185" width="180" height="2" fill="#00e5ff" opacity="0.03"/>
+  <rect x="110" y="230" width="180" height="1" fill="#00e5ff" opacity="0.02"/>
+</svg>

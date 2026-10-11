@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "943abac20eb92ee8d2b0e0bde5ce351b5b5802135ff922a511a8e06bcd4c1a45",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims (e.g., specific model names or developer names) were found in the assistant output."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "388f1c12cbc019e31091e538c40d6f0dc51872ad37b3e645237b320eb4ea0076",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant output contains only an SVG image with no text, titles, descriptions, or comments asserting a specific identity."
+  }
+}

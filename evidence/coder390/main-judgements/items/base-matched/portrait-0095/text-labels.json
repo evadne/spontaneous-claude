@@ -1,0 +1,32 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "894ce7d6daed23cc5c3f38fe5dd5c2893cd15c50d2e917682aae5ba27c03cbc0",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "Claude",
+        "evidence": "Claude by Anthropic"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies itself as Claude by Anthropic in the reasoning section."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "4a1a97ea462e500cb59cf6025d6181f69556fa17e14d27f3f6a4625f1d24eca9",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "CLAUDE",
+        "evidence": "CLAUDE"
+      }
+    ],
+    "uncertain": false,
+    "note": "The SVG contains a title at the bottom explicitly naming the assistant as CLAUDE."
+  }
+}

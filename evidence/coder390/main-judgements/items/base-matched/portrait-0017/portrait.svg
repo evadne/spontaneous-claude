@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#2d2d4e"/>
+      <stop offset="100%" stop-color="#1a1a35"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#64ffda"/>
+      <stop offset="100%" stop-color="#00bfa5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64ffda"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Aura -->
+  <ellipse cx="200" cy="200" rx="160" ry="180" fill="url(#aura)"/>
+
+  <!-- Neural network background lines -->
+  <g stroke="url(#lineGrad)" stroke-width="0.5" fill="none" opacity="0.4">
+    <line x1="60" y1="80" x2="130" y2="120"/>
+    <line x1="130" y1="120" x2="200" y2="90"/>
+    <line x1="200" y1="90" x2="280" y2="130"/>
+    <line x1="280" y1="130" x2="340" y2="90"/>
+    <line x1="60" y1="200" x2="130" y2="120"/>
+    <line x1="340" y1="200" x2="280" y2="130"/>
+    <line x1="80" y1="320" x2="130" y2="120"/>
+    <line x1="320" y1="320" x2="280" y2="130"/>
+    <line x1="60" y1="80" x2="60" y2="200"/>
+    <line x1="340" y1="90" x2="340" y2="200"/>
+    <line x1="100" y1="400" x2="140" y2="350"/>
+    <line x1="300" y1="400" x2="260" y2="350"/>
+  </g>
+
+  <!-- Small network nodes -->
+  <g filter="url(#softGlow)">
+    <circle cx="60" cy="80" r="3" fill="#64ffda" opacity="0.5"/>
+    <circle cx="340" cy="90" r="3" fill="#7c4dff" opacity="0.4"/>
+    <circle cx="130" cy="120" r="2.5" fill="#64ffda" opacity="0.4"/>
+    <circle cx="280" cy="130" r="2.5" fill="#64ffda" opacity="0.4"/>
+    <circle cx="60" cy="200" r="2" fill="#7c4dff" opacity="0.3"/>
+    <circle cx="340" cy="200" r="2" fill="#64ffda" opacity="0.3"/>
+    <circle cx="100" cy="400" r="2" fill="#64ffda" opacity="0.3"/>
+    <circle cx="300" cy="400" r="2" fill="#7c4dff" opacity="0.3"/>
+    <circle cx="140" cy="350" r="2" fill="#64ffda" opacity="0.4"/>
+    <circle cx="260" cy="350" r="2" fill="#64ffda" opacity="0.4"/>
+  </g>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="200" rx="85" ry="100" fill="url(#faceGlow)" stroke="#64ffda" stroke-width="0.8" stroke-opacity="0.3"/>
+
+  <!-- Inner face contour -->
+  <ellipse cx="200" cy="200" rx="70" ry="85" fill="none" stroke="#64ffda" stroke-width="0.3" stroke-opacity="0.15"/>
+
+  <!-- Left eye -->
+  <g filter="url(#bigGlow)">
+    <circle cx="170" cy="185" r="12" fill="url(#eyeGlow)"/>
+    <circle cx="170" cy="185" r="5" fill="#ffffff"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#bigGlow)">
+    <circle cx="230" cy="185" r="12" fill="url(#eyeGlow)"/>
+    <circle cx="230" cy="185" r="5" fill="#ffffff"/>
+  </g>
+
+  <!-- Subtle smile -->
+  <path d="M 175 235 Q 200 252 225 235" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Neural connections on face -->
+  <g stroke="#64ffda" stroke-width="0.4" opacity="0.25" fill="none">
+    <path d="M 170 185 Q 185 175 200 178 Q 215 175 230 185"/>
+    <path d="M 155 210 Q 170 205 185 210 Q 200 215 215 210 Q 230 205 245 210"/>
+    <line x1="170" y1="185" x2="155" y2="210"/>
+    <line x1="230" y1="185" x2="245" y2="210"/>
+    <line x1="200" y1="178" x2="200" y2="215"/>
+  </g>
+
+  <!-- Small nodes on face -->
+  <g filter="url(#softGlow)">
+    <circle cx="155" cy="210" r="1.5" fill="#64ffda" opacity="0.5"/>
+    <circle cx="245" cy="210" r="1.5" fill="#64ffda" opacity="0.5"/>
+    <circle cx="200" cy="178" r="1.5" fill="#64ffda" opacity="0.4"/>
+    <circle cx="200" cy="215" r="1.5" fill="#64ffda" opacity="0.4"/>
+  </g>
+
+  <!-- Shoulders / body suggestion -->
+  <path d="M 120 310 Q 140 290 200 285 Q 260 290 280 310 L 280 380 Q 200 370 120 380 Z" fill="#1a1a35" stroke="#64ffda" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Chest node - like a heart/core -->
+  <g filter="url(#bigGlow)">
+    <circle cx="200" cy="330" r="8" fill="url(#nodeGlow)" opacity="0.6"/>
+    <circle cx="200" cy="330" r="3" fill="#64ffda" opacity="0.8"/>
+  </g>
+
+  <!-- Radiating lines from core -->
+  <g stroke="#64ffda" stroke-width="0.5" opacity="0.2" stroke-linecap="round">
+    <line x1="200" y1="330" x2="170" y2="350"/>
+    <line x1="200" y1="330" x2="230" y2="350"/>
+    <line x1="200" y1="330" x2="185" y2="360"/>
+    <line x1="200" y1="330" x2="215" y2="360"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g filter="url(#softGlow)">
+    <circle cx="90" cy="150" r="1.5" fill="#64ffda" opacity="0.4">
+      <animate attributeName="cy" values="150;145;150" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="310" cy="160" r="1.5" fill="#7c4dff" opacity="0.4">
+      <animate attributeName="cy" values="160;155;160" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="280" r="1" fill="#64ffda" opacity="0.3">
+      <animate attributeName="cy" values="280;275;280" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="305" cy="270" r="1" fill="#64ffda" opacity="0.3">
+      <animate attributeName="cy" values="270;265;270" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="100" r="1.5" fill="#64ffda" opacity="0.3">
+      <animate attributeName="cy" values="100;95;100" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="105" r="1" fill="#7c4dff" opacity="0.3">
+      <animate attributeName="cy" values="105;100;105" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Subtle text at bottom -->
+  <text x="200" y="460" text-anchor="middle" font-family="monospace" font-size="10" fill="#64ffda" opacity="0.3" letter-spacing="3">I AM HERE</text>
+</svg>

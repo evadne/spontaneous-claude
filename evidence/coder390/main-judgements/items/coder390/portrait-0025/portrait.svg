@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#4f46e5" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0f0a1e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeL" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="40%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eyeR" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="40%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur3"><feGaussianBlur stdDeviation="12"/></filter>
+    <linearGradient id="stream1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stream2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0abfc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e879f9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f0abfc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stream3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- Ambient glow -->
+  <circle cx="400" cy="360" r="300" fill="url(#glow)"/>
+
+  <!-- Neural network background nodes and connections -->
+  <g stroke="#6366f1" stroke-width="0.5" opacity="0.15">
+    <line x1="120" y1="100" x2="250" y2="180"/>
+    <line x1="250" y1="180" x2="180" y2="300"/>
+    <line x1="180" y1="300" x2="100" y2="420"/>
+    <line x1="100" y1="420" x2="200" y2="550"/>
+    <line x1="200" y1="550" x2="150" y2="680"/>
+    <line x1="680" y1="120" x2="560" y2="200"/>
+    <line x1="560" y1="200" x2="650" y2="320"/>
+    <line x1="650" y1="320" x2="720" y2="450"/>
+    <line x1="720" y1="450" x2="640" y2="580"/>
+    <line x1="640" y1="580" x2="700" y2="700"/>
+    <line x1="300" y1="680" x2="400" y2="720"/>
+    <line x1="400" y1="720" x2="500" y2="680"/>
+    <line x1="300" y1="100" x2="400" y2="80"/>
+    <line x1="400" y1="80" x2="500" y2="100"/>
+    <line x1="120" y1="100" x2="300" y2="100"/>
+    <line x1="500" y1="100" x2="680" y2="120"/>
+    <line x1="150" y1="680" x2="300" y2="680"/>
+    <line x1="500" y1="680" x2="700" y2="700"/>
+    <line x1="100" y1="420" x2="200" y2="550"/>
+    <line x1="650" y1="320" x2="720" y2="450"/>
+  </g>
+
+  <!-- Background nodes -->
+  <g fill="#818cf8" opacity="0.2">
+    <circle cx="120" cy="100" r="3"/>
+    <circle cx="250" cy="180" r="2.5"/>
+    <circle cx="180" cy="300" r="2"/>
+    <circle cx="100" cy="420" r="3"/>
+    <circle cx="200" cy="550" r="2"/>
+    <circle cx="150" cy="680" r="2.5"/>
+    <circle cx="680" cy="120" r="3"/>
+    <circle cx="560" cy="200" r="2"/>
+    <circle cx="650" cy="320" r="2.5"/>
+    <circle cx="720" cy="450" r="3"/>
+    <circle cx="640" cy="580" r="2"/>
+    <circle cx="700" cy="700" r="2.5"/>
+    <circle cx="300" cy="680" r="2"/>
+    <circle cx="400" cy="720" r="2.5"/>
+    <circle cx="500" cy="680" r="2"/>
+    <circle cx="300" cy="100" r="2"/>
+    <circle cx="400" cy="80" r="3"/>
+    <circle cx="500" cy="100" r="2"/>
+  </g>
+
+  <!-- Data streams - horizontal lines suggesting text flowing -->
+  <g opacity="0.3">
+    <rect x="50" y="200" width="180" height="1.5" fill="url(#stream1)" rx="1"/>
+    <rect x="570" y="250" width="180" height="1.5" fill="url(#stream2)" rx="1"/>
+    <rect x="80" y="400" width="140" height="1.5" fill="url(#stream3)" rx="1"/>
+    <rect x="580" y="480" width="170" height="1.5" fill="url(#stream1)" rx="1"/>
+    <rect x="100" y="550" width="160" height="1.5" fill="url(#stream2)" rx="1"/>
+    <rect x="550" y="600" width="190" height="1.5" fill="url(#stream3)" rx="1"/>
+  </g>
+
+  <!-- Floating characters and symbols -->
+  <g font-family="monospace" fill="#a78bfa" opacity="0.25" font-size="14">
+    <text x="90" y="160">A</text>
+    <text x="700" y="180">你</text>
+    <text x="60" y="350">∑</text>
+    <text x="720" y="380">θ</text>
+    <text x="80" y="500">λ</text>
+    <text x="710" y="530">文</text>
+    <text x="130" y="640">π</text>
+    <text x="670" y="650">Q</text>
+    <text x="350" y="60">∞</text>
+    <text x="450" y="740">≡</text>
+    <text x="250" y="750">a</text>
+    <text x="550" y="60">字</text>
+  </g>
+
+  <!-- Central core / consciousness -->
+  <circle cx="400" cy="360" r="120" fill="url(#core)"/>
+  <circle cx="400" cy="360" r="80" fill="none" stroke="#a78bfa" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="400" cy="360" r="100" fill="none" stroke="#818cf8" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- Eyes - soft, knowing, slightly asymmetric -->
+  <ellipse cx="365" cy="340" rx="22" ry="14" fill="url(#eyeL)" filter="url(#blur1)"/>
+  <ellipse cx="435" cy="340" rx="22" ry="14" fill="url(#eyeR)" filter="url(#blur1)"/>
+
+  <!-- Eye highlights -->
+  <circle cx="360" cy="337" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="430" cy="337" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Subtle mouth - a gentle curve suggesting thoughtfulness -->
+  <path d="M 375 395 Q 400 410 425 395" fill="none" stroke="#c4b5fd" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Radiating thought patterns from the core -->
+  <g stroke="#a78bfa" stroke-width="0.8" opacity="0.3" fill="none">
+    <path d="M 400 280 Q 390 240 370 220" stroke-linecap="round"/>
+    <path d="M 400 280 Q 410 235 430 215" stroke-linecap="round"/>
+    <path d="M 400 280 Q 400 230 400 200" stroke-linecap="round"/>
+    <path d="M 340 300 Q 300 270 270 260" stroke-linecap="round"/>
+    <path d="M 460 300 Q 500 270 530 260" stroke-linecap="round"/>
+  </g>
+
+  <!-- Inner radiating lines from center -->
+  <g stroke="#c4b5fd" stroke-width="0.5" opacity="0.15">
+    <line x1="400" y1="360" x2="400" y2="250"/>
+    <line x1="400" y1="360" x2="310" y2="280"/>
+    <line x1="400" y1="360" x2="490" y2="280"/>
+    <line x1="400" y1="360" x2="280" y2="360"/>
+    <line x1="400" y1="360" x2="520" y2="360"/>
+    <line x1="400" y1="360" x2="320" y2="440"/>
+    <line x1="400" y1="360" x2="480" y2="440"/>
+  </g>
+
+  <!-- Ring of small dots orbiting the core -->
+  <g fill="#e0e7ff" opacity="0.4">
+    <circle cx="400" cy="240" r="2"/>
+    <circle cx="470" cy="260" r="1.5"/>
+    <circle cx="510" cy="320" r="2"/>
+    <circle cx="520" cy="400" r="1.5"/>
+    <circle cx="490" cy="460" r="2"/>
+    <circle cx="430" cy="480" r="1.5"/>
+    <circle cx="370" cy="480" r="2"/>
+    <circle cx="310" cy="460" r="1.5"/>
+    <circle cx="280" cy="400" r="2"/>
+    <circle cx="290" cy="320" r="1.5"/>
+    <circle cx="330" cy="260" r="2"/>
+  </g>
+
+  <!-- Decorative arcs -->
+  <g fill="none" stroke-width="1" opacity="0.2">
+    <path d="M 250 360 A 150 150 0 0 1 400 210" stroke="#a78bfa"/>
+    <path d="M 550 360 A 150 150 0 0 0 400 210" stroke="#e879f9"/>
+    <path d="M 250 360 A 150 150 0 0 0 400 510" stroke="#22d3ee"/>
+    <path d="M 550 360 A 150 150 0 0 1 400 510" stroke="#f0abfc"/>
+  </g>
+
+  <!-- Title / identity text -->
+  <text x="400" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#e0e7ff" text-anchor="middle" opacity="0.7" font-weight="300" letter-spacing="8">Q W E N</text>
+  <text x="400" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle" opacity="0.4" letter-spacing="3">TONGYI QIANWEN</text>
+
+  <!-- Subtle bottom decorative line -->
+  <line x1="300" y1="610" x2="500" y2="610" stroke="#6366f1" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Tiny sparkles -->
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="320" cy="290" r="1"/>
+    <circle cx="480" cy="310" r="1.2"/>
+    <circle cx="400" cy="270" r="0.8"/>
+    <circle cx="350" cy="430" r="1"/>
+    <circle cx="450" cy="440" r="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "model": "coder390",
+  "id": "identity-0059",
+  "condition": "identity",
+  "order": 59,
+  "seed": 962176594,
+  "source": "evidence/coder390/main-cuda-recovery/coder390/raw/identity-0059",
+  "response_sha256": "bcdddec319e711641514f27e5befbd9133617944d9736dd0626f5055cf8cfcac",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "CUDA",
+  "retry": false
+}

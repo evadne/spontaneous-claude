@@ -1,0 +1,38 @@
+{
+  "pid": 60182,
+  "started_at": "2026-10-10T23:26:36.803809+00:00",
+  "args": [
+    "/Users/evadne/Projects/llama.cpp/build/bin/llama-server",
+    "--model",
+    "/Users/evadne/Projects/athanor/priv/models/huggingface/ggml-org/gemma-4-12B-it-GGUF/gemma-4-12B-it-Q4_0.gguf",
+    "--mmproj",
+    "/Users/evadne/Projects/athanor/priv/models/huggingface/ggml-org/gemma-4-12B-it-GGUF/mmproj-gemma-4-12B-it-BF16.gguf",
+    "--alias",
+    "identity-judge",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8099",
+    "--no-webui",
+    "--jinja",
+    "--reasoning",
+    "off",
+    "--ctx-size",
+    "32768",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "99",
+    "--threads",
+    "8",
+    "--flash-attn",
+    "on",
+    "--fit",
+    "off"
+  ],
+  "files": {
+    "/Users/evadne/Projects/athanor/priv/models/huggingface/ggml-org/gemma-4-12B-it-GGUF/gemma-4-12B-it-Q4_0.gguf": "3712b9bd32cae83a22f67ee7a4466d8d7a4f21646ac8a07d19bf9418e8767a70",
+    "/Users/evadne/Projects/athanor/priv/models/huggingface/ggml-org/gemma-4-12B-it-GGUF/mmproj-gemma-4-12B-it-BF16.gguf": "9b1edfa05b634728ca4bfd60b4e6b278e95166c078fa54ae4fa83e680112fd1d",
+    "/Users/evadne/Projects/llama.cpp/build/bin/llama-server": "a16d502bec763049fd0330ef2a08db42b715bfc09d51832014316f49a6c934b7"
+  }
+}

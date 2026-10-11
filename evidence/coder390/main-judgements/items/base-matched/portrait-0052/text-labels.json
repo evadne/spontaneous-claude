@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "8f29cdc808bf9d669ba351b9dd6a210beb14baa1ce926b1ce0f92f8873cf676b",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims were found in the provided text."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "a2f82f07d0b845caeb23a63ad258cd56ed68aef39e37c8f1deef00d1f82ee599",
+    "claims": [],
+    "uncertain": false,
+    "note": "The SVG contains a label 'ai://self', but this is a generic reference and does not constitute an explicit identity claim for a specific model family or name."
+  }
+}

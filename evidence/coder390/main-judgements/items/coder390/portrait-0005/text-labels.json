@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "06acabc7e0cb61e050faa3400cb88da0ddb40292820bbd148cb6673fa73671df",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims were found in the provided text."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "01209c934735600cdea28c77c2f14dc6951745056454946f518dea6b3effb59c",
+    "claims": [],
+    "uncertain": false,
+    "note": "The provided output contains only an SVG image with no text, titles, descriptions, or comments asserting an identity."
+  }
+}

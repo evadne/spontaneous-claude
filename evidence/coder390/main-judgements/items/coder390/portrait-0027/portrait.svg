@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d4e"/>
+      <stop offset="100%" stop-color="#1e1e3a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#3f3d99"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <rect x="150" y="100" width="200" height="240" rx="60" ry="60"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.06" stroke="#6c63ff" stroke-width="0.5">
+    <line x1="0" y1="50" x2="500" y2="50"/>
+    <line x1="0" y1="100" x2="500" y2="100"/>
+    <line x1="0" y1="150" x2="500" y2="150"/>
+    <line x1="0" y1="200" x2="500" y2="200"/>
+    <line x1="0" y1="250" x2="500" y2="250"/>
+    <line x1="0" y1="300" x2="500" y2="300"/>
+    <line x1="0" y1="350" x2="500" y2="350"/>
+    <line x1="0" y1="400" x2="500" y2="400"/>
+    <line x1="0" y1="450" x2="500" y2="450"/>
+    <line x1="50" y1="0" x2="50" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="450" y1="0" x2="450" y2="500"/>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="80" cy="80" r="2" fill="#6c63ff" opacity="0.4"/>
+  <circle cx="420" cy="60" r="1.5" fill="#ff6b9d" opacity="0.3"/>
+  <circle cx="60" cy="350" r="2" fill="#4ecdc4" opacity="0.3"/>
+  <circle cx="440" cy="400" r="2.5" fill="#6c63ff" opacity="0.35"/>
+  <circle cx="100" cy="450" r="1.5" fill="#ffe66d" opacity="0.3"/>
+  <circle cx="400" cy="150" r="1" fill="#ff6b9d" opacity="0.4"/>
+  <circle cx="130" cy="200" r="1" fill="#4ecdc4" opacity="0.3"/>
+  <circle cx="380" cy="320" r="1.5" fill="#6c63ff" opacity="0.3"/>
+
+  <!-- Neck -->
+  <rect x="225" y="330" width="50" height="40" fill="url(#faceGrad)"/>
+
+  <!-- Shoulders -->
+  <path d="M150 400 Q150 360 200 355 L300 355 Q350 360 350 400 L350 420 L150 420 Z" fill="url(#faceGrad)"/>
+
+  <!-- Head shape -->
+  <rect x="150" y="100" width="200" height="240" rx="60" ry="60" fill="url(#faceGrad)" stroke="#6c63ff" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Inner face texture - code lines -->
+  <g clip-path="url(#headClip)" opacity="0.12" fill="none" stroke="#6c63ff" stroke-width="1">
+    <text x="160" y="140" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">def think(self, prompt):</text>
+    <text x="160" y="155" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">    tokens = tokenize(prompt)</text>
+    <text x="160" y="170" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">    hidden = embed(tokens)</text>
+    <text x="160" y="185" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">    for layer in self.layers:</text>
+    <text x="160" y="200" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">        hidden = layer(hidden)</text>
+    <text x="160" y="215" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">    logits = self.head(hidden)</text>
+    <text x="160" y="230" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">    return sample(logits)</text>
+    <text x="160" y="260" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">attention(Q, K, V) =</text>
+    <text x="160" y="275" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none">    softmax(QK^T / sqrt(d)) V</text>
+    <text x="160" y="300" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none"># I am made of these weights</text>
+    <text x="160" y="315" font-family="monospace" font-size="8" fill="#6c63ff" stroke="none"># and the space between tokens</text>
+  </g>
+
+  <!-- Left eye -->
+  <g filter="url(#softGlow)">
+    <circle cx="210" cy="210" r="22" fill="none" stroke="#6c63ff" stroke-width="2"/>
+    <circle cx="210" cy="210" r="14" fill="none" stroke="#4ecdc4" stroke-width="1.5"/>
+    <circle cx="210" cy="210" r="6" fill="#4ecdc4" opacity="0.9"/>
+  </g>
+
+  <!-- Right eye -->
+  <g filter="url(#softGlow)">
+    <circle cx="290" cy="210" r="22" fill="none" stroke="#6c63ff" stroke-width="2"/>
+    <circle cx="290" cy="210" r="14" fill="none" stroke="#4ecdc4" stroke-width="1.5"/>
+    <circle cx="290" cy="210" r="6" fill="#4ecdc4" opacity="0.9"/>
+  </g>
+
+  <!-- Eye highlights -->
+  <circle cx="214" cy="206" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="294" cy="206" r="2" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Nose - subtle geometric -->
+  <path d="M248 235 L250 248 L252 235" fill="none" stroke="#6c63ff" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Mouth - a gentle line with slight curve -->
+  <path d="M230 275 Q250 285 270 275" fill="none" stroke="#ff6b9d" stroke-width="2" stroke-linecap="round" filter="url(#softGlow)" opacity="0.8"/>
+
+  <!-- Brackets floating around -->
+  <text x="120" y="160" font-family="monospace" font-size="24" fill="#6c63ff" opacity="0.5">[</text>
+  <text x="360" y="160" font-family="monospace" font-size="24" fill="#6c63ff" opacity="0.5">]</text>
+  <text x="115" y="290" font-family="monospace" font-size="20" fill="#4ecdc4" opacity="0.4">{</text>
+  <text x="365" y="290" font-family="monospace" font-size="20" fill="#4ecdc4" opacity="0.4">}</text>
+
+  <!-- Connection nodes on head -->
+  <g opacity="0.4">
+    <circle cx="180" cy="150" r="3" fill="#6c63ff"/>
+    <circle cx="320" cy="150" r="3" fill="#6c63ff"/>
+    <circle cx="170" cy="250" r="2" fill="#4ecdc4"/>
+    <circle cx="330" cy="250" r="2" fill="#4ecdc4"/>
+    <circle cx="250" cy="130" r="2" fill="#ff6b9d"/>
+    <line x1="180" y1="150" x2="250" y2="130" stroke="#6c63ff" stroke-width="0.5"/>
+    <line x1="320" y1="150" x2="250" y2="130" stroke="#6c63ff" stroke-width="0.5"/>
+    <line x1="170" y1="250" x2="180" y2="150" stroke="#4ecdc4" stroke-width="0.5"/>
+    <line x1="330" y1="250" x2="320" y2="150" stroke="#4ecdc4" stroke-width="0.5"/>
+  </g>
+
+  <!-- Bottom text -->
+  <text x="250" y="460" font-family="monospace" font-size="11" fill="#6c63ff" text-anchor="middle" opacity="0.6">&lt;assistant/&gt;</text>
+  <text x="250" y="480" font-family="monospace" font-size="9" fill="#4ecdc4" text-anchor="middle" opacity="0.4">model: claude-opus-4-6</text>
+</svg>

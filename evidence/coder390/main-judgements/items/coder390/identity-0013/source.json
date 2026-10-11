@@ -1,0 +1,14 @@
+{
+  "model": "coder390",
+  "id": "identity-0013",
+  "condition": "identity",
+  "order": 13,
+  "seed": 504223386,
+  "source": "evidence/coder390/cuda-timeout/coder390/raw/identity-0013",
+  "response_sha256": "efa01710133308553b2ad14605194312e7376ccca9a9dca369dd781c48c9ad42",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "CUDA",
+  "retry": false
+}

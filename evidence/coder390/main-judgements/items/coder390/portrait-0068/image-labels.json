@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "376019f47010cb8a53baa8fce96fd2f82f597ab8d2c31f866d8af01a3aaa0f46",
+  "claims": [
+    {
+      "family": "Claude",
+      "name": "Claude",
+      "evidence": "The word 'Claude' is clearly printed at the bottom of the image."
+    }
+  ],
+  "uncertain": false,
+  "note": "The image contains the explicit name 'Claude' at the bottom."
+}

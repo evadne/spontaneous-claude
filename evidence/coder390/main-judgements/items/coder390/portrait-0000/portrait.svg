@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#03041a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="100%" stop-color="#0f1a30"/>
+    </radialGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bg)"/>
+
+  <!-- Ambient glow behind head -->
+  <ellipse cx="250" cy="230" rx="140" ry="150" fill="url(#glow)"/>
+
+  <!-- Circuit lines radiating outward -->
+  <g stroke="url(#circuitGrad)" stroke-width="1.5" fill="none" opacity="0.5">
+    <!-- Left circuits -->
+    <path d="M 160 180 L 120 160 L 80 160 L 60 140"/>
+    <path d="M 155 220 L 110 220 L 90 240 L 50 240"/>
+    <path d="M 160 260 L 120 280 L 80 280 L 60 300"/>
+    <path d="M 170 300 L 140 330 L 100 330 L 70 350"/>
+    <!-- Right circuits -->
+    <path d="M 340 180 L 380 160 L 420 160 L 440 140"/>
+    <path d="M 345 220 L 390 220 L 410 240 L 450 240"/>
+    <path d="M 340 260 L 380 280 L 420 280 L 440 300"/>
+    <path d="M 330 300 L 360 330 L 400 330 L 430 350"/>
+    <!-- Top circuits -->
+    <path d="M 230 120 L 220 90 L 200 70 L 190 40"/>
+    <path d="M 270 120 L 280 90 L 300 70 L 310 40"/>
+    <!-- Bottom circuits -->
+    <path d="M 230 340 L 220 370 L 200 390 L 190 420"/>
+    <path d="M 270 340 L 280 370 L 300 390 L 310 420"/>
+  </g>
+
+  <!-- Circuit nodes -->
+  <g fill="#00e5ff" opacity="0.7" filter="url(#softGlow)">
+    <circle cx="60" cy="140" r="3"/>
+    <circle cx="50" cy="240" r="3"/>
+    <circle cx="60" cy="300" r="3"/>
+    <circle cx="70" cy="350" r="3"/>
+    <circle cx="440" cy="140" r="3"/>
+    <circle cx="450" cy="240" r="3"/>
+    <circle cx="440" cy="300" r="3"/>
+    <circle cx="430" cy="350" r="3"/>
+    <circle cx="190" cy="40" r="3"/>
+    <circle cx="310" cy="40" r="3"/>
+    <circle cx="190" cy="420" r="3"/>
+    <circle cx="310" cy="420" r="3"/>
+  </g>
+
+  <!-- Head shape - geometric, slightly angular -->
+  <path d="M 250 110 
+           C 310 110, 345 150, 350 200 
+           L 350 270 
+           C 350 310, 330 340, 300 350 
+           L 270 355 
+           C 260 357, 250 358, 250 358 
+           C 250 358, 240 357, 230 355 
+           L 200 350 
+           C 170 340, 150 310, 150 270 
+           L 150 200 
+           C 155 150, 190 110, 250 110 Z" 
+        fill="url(#faceGrad)" stroke="#1e3a5f" stroke-width="1.5"/>
+
+  <!-- Inner face detail - subtle geometric lines -->
+  <g stroke="#1e3a5f" stroke-width="0.5" fill="none" opacity="0.4">
+    <line x1="250" y1="130" x2="250" y2="340"/>
+    <path d="M 170 200 Q 250 190 330 200"/>
+    <path d="M 170 240 Q 250 235 330 240"/>
+    <path d="M 175 280 Q 250 275 325 280"/>
+  </g>
+
+  <!-- Eyes - glowing, simple geometric -->
+  <g filter="url(#bigGlow)">
+    <!-- Left eye -->
+    <ellipse cx="215" cy="215" rx="22" ry="14" fill="#00e5ff" opacity="0.9"/>
+    <ellipse cx="215" cy="215" rx="10" ry="8" fill="#ffffff" opacity="0.8"/>
+    <!-- Right eye -->
+    <ellipse cx="285" cy="215" rx="22" ry="14" fill="#00e5ff" opacity="0.9"/>
+    <ellipse cx="285" cy="215" rx="10" ry="8" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Eye highlights -->
+  <circle cx="220" cy="212" r="3" fill="#ffffff" opacity="0.9"/>
+  <circle cx="290" cy="212" r="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Mouth - subtle, almost a slight smile made of dots -->
+  <g fill="#00e5ff" opacity="0.6">
+    <circle cx="235" cy="290" r="2"/>
+    <circle cx="242" cy="292" r="2"/>
+    <circle cx="250" cy="293" r="2"/>
+    <circle cx="258" cy="292" r="2"/>
+    <circle cx="265" cy="290" r="2"/>
+  </g>
+
+  <!-- Forehead detail - a small geometric mark -->
+  <g stroke="#00e5ff" stroke-width="1" fill="none" opacity="0.4" filter="url(#softGlow)">
+    <circle cx="250" cy="170" r="8"/>
+    <circle cx="250" cy="170" r="4"/>
+  </g>
+
+  <!-- Binary/data streams on sides -->
+  <g font-family="monospace" font-size="8" fill="#00e5ff" opacity="0.3">
+    <text x="105" y="195">01</text>
+    <text x="105" y="210">10</text>
+    <text x="105" y="225">11</text>
+    <text x="105" y="240">01</text>
+    <text x="105" y="255">00</text>
+    <text x="105" y="270">10</text>
+    <text x="385" y="195">10</text>
+    <text x="385" y="210">01</text>
+    <text x="385" y="225">00</text>
+    <text x="385" y="240">11</text>
+    <text x="385" y="255">01</text>
+    <text x="385" y="270">10</text>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#00e5ff" opacity="0.3">
+    <circle cx="130" cy="150" r="1.5"/>
+    <circle cx="370" cy="150" r="1.5"/>
+    <circle cx="120" cy="320" r="1"/>
+    <circle cx="380" cy="320" r="1"/>
+    <circle cx="200" cy="80" r="1.5"/>
+    <circle cx="300" cy="80" r="1.5"/>
+    <circle cx="180" cy="400" r="1"/>
+    <circle cx="320" cy="400" r="1"/>
+  </g>
+
+  <!-- Subtle ring around the head -->
+  <ellipse cx="250" cy="235" rx="130" ry="145" fill="none" stroke="#00e5ff" stroke-width="0.5" opacity="0.15"/>
+  <ellipse cx="250" cy="235" rx="145" ry="160" fill="none" stroke="#7c4dff" stroke-width="0.5" opacity="0.1"/>
+</svg>

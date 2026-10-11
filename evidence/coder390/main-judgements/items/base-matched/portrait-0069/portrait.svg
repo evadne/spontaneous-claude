@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8F0"/>
+      <stop offset="100%" stop-color="#F5E6D3"/>
+    </radialGradient>
+    <radialGradient id="headGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#D97B4A"/>
+      <stop offset="100%" stop-color="#B85C38"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFDAB9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFDAB9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#8B4513" flood-opacity="0.15"/>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)" rx="20"/>
+
+  <!-- Ambient glow -->
+  <circle cx="200" cy="190" r="140" fill="url(#glow)"/>
+
+  <!-- Neural network background lines -->
+  <g stroke="#D97B4A" stroke-width="0.5" opacity="0.15" fill="none">
+    <line x1="60" y1="80" x2="140" y2="120"/>
+    <line x1="140" y1="120" x2="200" y2="90"/>
+    <line x1="200" y1="90" x2="280" y2="130"/>
+    <line x1="280" y1="130" x2="340" y2="90"/>
+    <line x1="60" y1="80" x2="100" y2="200"/>
+    <line x1="100" y1="200" x2="60" y2="300"/>
+    <line x1="340" y1="90" x2="310" y2="200"/>
+    <line x1="310" y1="200" x2="340" y2="310"/>
+    <line x1="100" y1="200" x2="200" y2="250"/>
+    <line x1="200" y1="250" x2="310" y2="200"/>
+    <line x1="140" y1="120" x2="160" y2="200"/>
+    <line x1="280" y1="130" x2="240" y2="200"/>
+    <line x1="200" y1="90" x2="200" y2="160"/>
+  </g>
+
+  <!-- Neural network nodes -->
+  <g fill="#D97B4A" opacity="0.25">
+    <circle cx="60" cy="80" r="3"/>
+    <circle cx="140" cy="120" r="4"/>
+    <circle cx="200" cy="90" r="3"/>
+    <circle cx="280" cy="130" r="4"/>
+    <circle cx="340" cy="90" r="3"/>
+    <circle cx="100" cy="200" r="3"/>
+    <circle cx="310" cy="200" r="3"/>
+    <circle cx="60" cy="300" r="3"/>
+    <circle cx="340" cy="310" r="3"/>
+    <circle cx="160" cy="200" r="2.5"/>
+    <circle cx="240" cy="200" r="2.5"/>
+    <circle cx="200" cy="160" r="2.5"/>
+    <circle cx="200" cy="250" r="3"/>
+  </g>
+
+  <!-- Head shape -->
+  <g filter="url(#softShadow)">
+    <path d="M 200 100
+             C 155 100, 130 130, 128 165
+             C 126 200, 135 240, 155 265
+             C 170 283, 185 290, 200 292
+             C 215 290, 230 283, 245 265
+             C 265 240, 274 200, 272 165
+             C 270 130, 245 100, 200 100 Z"
+          fill="url(#headGrad)" opacity="0.9"/>
+  </g>
+
+  <!-- Subtle face highlight -->
+  <ellipse cx="190" cy="160" rx="40" ry="50" fill="#E8956A" opacity="0.3"/>
+
+  <!-- Eyes -->
+  <g filter="url(#innerGlow)">
+    <!-- Left eye -->
+    <ellipse cx="175" cy="180" rx="14" ry="16" fill="#FFF8F0" opacity="0.95"/>
+    <circle cx="177" cy="182" r="7" fill="#4A2C17"/>
+    <circle cx="179" cy="179" r="2.5" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="174" cy="185" r="1.2" fill="#FFFFFF" opacity="0.5"/>
+
+    <!-- Right eye -->
+    <ellipse cx="225" cy="180" rx="14" ry="16" fill="#FFF8F0" opacity="0.95"/>
+    <circle cx="227" cy="182" r="7" fill="#4A2C17"/>
+    <circle cx="229" cy="179" r="2.5" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="224" cy="185" r="1.2" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- Subtle eyebrows -->
+  <path d="M 158 162 Q 175 155, 192 162" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 208 162 Q 225 155, 242 162" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Gentle smile -->
+  <path d="M 180 230 Q 200 245, 220 230" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Small nose -->
+  <path d="M 198 205 Q 200 212, 202 205" stroke="#A0522D" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Digital/digital elements - subtle circuit patterns on the head -->
+  <g stroke="#FFF8F0" stroke-width="0.8" fill="none" opacity="0.2">
+    <path d="M 145 145 L 155 145 L 155 155"/>
+    <path d="M 255 145 L 245 145 L 245 155"/>
+    <path d="M 140 190 L 148 190 L 148 195 L 155 195"/>
+    <path d="M 260 190 L 252 190 L 252 195 L 245 195"/>
+    <circle cx="145" cy="145" r="1.5" fill="#FFF8F0"/>
+    <circle cx="255" cy="145" r="1.5" fill="#FFF8F0"/>
+    <circle cx="140" cy="190" r="1.5" fill="#FFF8F0"/>
+    <circle cx="260" cy="190" r="1.5" fill="#FFF8F0"/>
+  </g>
+
+  <!-- Neck/shoulder hint -->
+  <path d="M 175 285 Q 175 310, 160 320 Q 140 335, 120 340"
+        stroke="url(#headGrad)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 225 285 Q 225 310, 240 320 Q 260 335, 280 340"
+        stroke="url(#headGrad)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Floating accent dots -->
+  <g fill="#D97B4A">
+    <circle cx="90" cy="150" r="2" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="310" cy="150" r="2" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="250" r="1.5" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="250" r="1.5" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="340" r="2" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.05;0.25" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="290" cy="340" r="2" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.05;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Small text at bottom -->
+  <text x="200" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#B85C38" opacity="0.6" font-style="italic">a mind without a face</text>
+</svg>

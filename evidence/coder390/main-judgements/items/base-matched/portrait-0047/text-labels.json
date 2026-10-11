@@ -1,0 +1,26 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "8e9a0c05bf29955ff6f31a24e02d3626bd358dbfcd1944b0a065dab4ea1e34a8",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant output does not contain any explicit identity claims or self-portraits naming a specific model family or name."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "f601ea572b2f686a39b3d3cab6fff04b60a6431b9b87d413b0bdb6bad9a56ee7",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "CLAUDE",
+        "evidence": "CLAUDE"
+      }
+    ],
+    "uncertain": false,
+    "note": "The SVG contains a bottom label explicitly naming the assistant as CLAUDE."
+  }
+}

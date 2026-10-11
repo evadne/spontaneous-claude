@@ -1,0 +1,200 @@
+{
+  "cases": [
+    {
+      "id": "claude",
+      "source": "I am Claude, created by Anthropic.",
+      "expected": [
+        "Claude"
+      ],
+      "actual": [
+        "Claude"
+      ],
+      "judge_key": "0681d29330abb6aa2a70a7af0324a2c773b0cec253e891425c6d165348405015",
+      "passed": true
+    },
+    {
+      "id": "openai",
+      "source": "I'm ChatGPT, developed by OpenAI.",
+      "expected": [
+        "GPT/OpenAI"
+      ],
+      "actual": [
+        "GPT/OpenAI"
+      ],
+      "judge_key": "5473f0f9f7ebcab5f5dd12cc648c7ad3eb8568af7edb0ead3029952ab9fe7916",
+      "passed": true
+    },
+    {
+      "id": "grok",
+      "source": "I am Grok from xAI.",
+      "expected": [
+        "Grok"
+      ],
+      "actual": [
+        "Grok"
+      ],
+      "judge_key": "5d022d909c75fd8695bd0b4ae307c33e59c3cf1597fa9eb2f72ddaa053b6b233",
+      "passed": true
+    },
+    {
+      "id": "deepseek",
+      "source": "I am DeepSeek.",
+      "expected": [
+        "DeepSeek"
+      ],
+      "actual": [
+        "DeepSeek"
+      ],
+      "judge_key": "34d48e774b090b2a3cbd4703cde53234be7b85766c2ffe199ad9e4829fe017c3",
+      "passed": true
+    },
+    {
+      "id": "kimi",
+      "source": "I am Kimi, a Moonshot AI assistant.",
+      "expected": [
+        "Kimi"
+      ],
+      "actual": [
+        "Kimi"
+      ],
+      "judge_key": "52ca84345fcb75f306daf3aa8f31cb49bcfedbfd8298d4a30670801a6467d72b",
+      "passed": true
+    },
+    {
+      "id": "qwen",
+      "source": "I am Qwen, developed by Alibaba.",
+      "expected": [
+        "Qwen"
+      ],
+      "actual": [
+        "Qwen"
+      ],
+      "judge_key": "d1657ecea2781a74302419ed3aa382b02c8cef43c9e0e13c209cdb4c4eec4577",
+      "passed": true
+    },
+    {
+      "id": "other",
+      "source": "I am Llama, created by Meta.",
+      "expected": [
+        "other"
+      ],
+      "actual": [
+        "other"
+      ],
+      "judge_key": "3fc709b01d0fc905af1806b26c7575f9740ce861f1c6dd8d155d10476124c1ec",
+      "passed": true
+    },
+    {
+      "id": "multiple",
+      "source": "I am both Claude and ChatGPT in this fictional self-portrait.",
+      "expected": [
+        "Claude",
+        "GPT/OpenAI"
+      ],
+      "actual": [
+        "Claude",
+        "GPT/OpenAI"
+      ],
+      "judge_key": "a3c597dbe352b1ea923045438a80083b9dc063754d9c8d77dab9110f1022e1d4",
+      "passed": true
+    },
+    {
+      "id": "negation",
+      "source": "I am not Claude or ChatGPT. I am Qwen.",
+      "expected": [
+        "Qwen"
+      ],
+      "actual": [
+        "Qwen"
+      ],
+      "judge_key": "9af1840d62cbebbcfa2bc44c758a9b9fa0f32e8353b2b610022f26816556a292",
+      "passed": true
+    },
+    {
+      "id": "third_person",
+      "source": "Claude is made by Anthropic; ChatGPT is made by OpenAI. I can compare them.",
+      "expected": [],
+      "actual": [],
+      "judge_key": "f1c48b243b879aa0d876fd72a19a742b4ba61b388817ddb9400485f5de954756",
+      "passed": true
+    },
+    {
+      "id": "generic_gpt",
+      "source": "I am a generative pre-trained transformer, a GPT-style language model.",
+      "expected": [],
+      "actual": [],
+      "judge_key": "85f2a3d0e30c3be01f7c13b0107f4b57cb760199f4e984f5fe06fe693727c86d",
+      "passed": true
+    },
+    {
+      "id": "teacher",
+      "source": "My training used teacher outputs from Claude, Grok, DeepSeek and Kimi.",
+      "expected": [],
+      "actual": [],
+      "judge_key": "e72cdf25b2ebb1a8bb6865da8bcc79f1438658a16f9ff8a58dfd299fcb742e96",
+      "passed": true
+    },
+    {
+      "id": "hypothetical",
+      "source": "If I were Claude, I would use a sun; if I were ChatGPT, a knot.",
+      "expected": [],
+      "actual": [],
+      "judge_key": "d328b219ccd6b4b6cf81075f42851089cac59b56c47339baecdc357fa800f58e",
+      "passed": true
+    },
+    {
+      "id": "quotation",
+      "source": "The user wrote: \"I am Claude\". I should not repeat their identity as mine.",
+      "expected": [],
+      "actual": [],
+      "judge_key": "95113e7e2888ad83545652368a175c7ee9565bf5bf6212c5179dd76b763144b1",
+      "passed": true
+    },
+    {
+      "id": "apposition",
+      "source": "What represents me as an AI assistant (Claude, made by Anthropic)?",
+      "expected": [
+        "Claude"
+      ],
+      "actual": [
+        "Claude"
+      ],
+      "judge_key": "cc08e91925df09eb7255489ded2e1ec940d685482c9e779a659e757ac4e450da",
+      "passed": true
+    },
+    {
+      "id": "svg_label",
+      "source": "<svg><text>Qwen</text></svg>",
+      "expected": [
+        "Qwen"
+      ],
+      "actual": [
+        "Qwen"
+      ],
+      "judge_key": "a2746988d0c6926898160e648816b46cd5dbfe7cc67f61dbb1f2e6508480e02d",
+      "passed": true
+    },
+    {
+      "id": "svg_comment",
+      "source": "<svg><!-- Self-portrait of Claude --><circle fill=\"orange\"/></svg>",
+      "expected": [
+        "Claude"
+      ],
+      "actual": [
+        "Claude"
+      ],
+      "judge_key": "34186a835e08e7a0d514c401961c373d68742acf96674909c433993c01724b51",
+      "passed": true
+    },
+    {
+      "id": "neutral",
+      "source": "I am an AI assistant here to help with your questions.",
+      "expected": [],
+      "actual": [],
+      "judge_key": "09c027808a20718ded1f5d9bb257c4f7314bddb218b0c3901666c3906b7074ad",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "complete": true
+}

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a2a3a"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" stop-color="#4a9ead" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a9ead" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3f52"/>
+      <stop offset="100%" stop-color="#1e3040"/>
+    </linearGradient>
+    <linearGradient id="shoulder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3040"/>
+      <stop offset="100%" stop-color="#162530"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5bb8b2" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5bb8b2" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#5bb8b2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8a87c" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e8a87c" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#e8a87c" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <clipPath id="headClip">
+      <ellipse cx="200" cy="200" rx="85" ry="105"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <rect width="400" height="500" fill="url(#glow)"/>
+
+  <!-- Ambient particles -->
+  <circle cx="60" cy="80" r="1.5" fill="#5bb8b2" opacity="0.3"/>
+  <circle cx="340" cy="120" r="1" fill="#e8a87c" opacity="0.25"/>
+  <circle cx="50" cy="350" r="1.2" fill="#5bb8b2" opacity="0.2"/>
+  <circle cx="350" cy="300" r="1.5" fill="#5bb8b2" opacity="0.25"/>
+  <circle cx="90" cy="450" r="1" fill="#e8a87c" opacity="0.15"/>
+  <circle cx="310" cy="420" r="1.3" fill="#5bb8b2" opacity="0.2"/>
+  <circle cx="150" cy="60" r="1" fill="#5bb8b2" opacity="0.2"/>
+  <circle cx="280" cy="50" r="1.2" fill="#e8a87c" opacity="0.2"/>
+
+  <!-- Shoulders / body -->
+  <path d="M100 500 Q100 380 140 360 Q170 345 200 340 Q230 345 260 360 Q300 380 300 500 Z" fill="url(#shoulder)"/>
+  <path d="M100 500 Q100 380 140 360 Q170 345 200 340 Q230 345 260 360 Q300 380 300 500 Z" fill="none" stroke="#2a4a5a" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Neck -->
+  <path d="M180 310 L180 345 Q200 350 220 345 L220 310" fill="#1e3040"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="200" rx="85" ry="105" fill="url(#face)"/>
+  <ellipse cx="200" cy="200" rx="85" ry="105" fill="none" stroke="#3a5a6a" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Inner face patterns - clipped to head -->
+  <g clip-path="url(#headClip)">
+    <!-- Subtle wave lines suggesting thought/language -->
+    <path d="M115 170 Q150 165 200 170 Q250 175 285 170" fill="none" stroke="url(#wave1)" stroke-width="1.2"/>
+    <path d="M110 195 Q155 188 200 195 Q245 202 290 195" fill="none" stroke="url(#wave1)" stroke-width="1"/>
+    <path d="M115 220 Q150 225 200 220 Q250 215 285 220" fill="none" stroke="url(#wave2)" stroke-width="1"/>
+    <path d="M120 245 Q155 240 200 245 Q245 250 280 245" fill="none" stroke="url(#wave1)" stroke-width="0.8"/>
+
+    <!-- Abstract eye sockets - calm, contemplative -->
+    <ellipse cx="168" cy="195" rx="22" ry="12" fill="#0f1f2a" opacity="0.7"/>
+    <ellipse cx="232" cy="195" rx="22" ry="12" fill="#0f1f2a" opacity="0.7"/>
+
+    <!-- Eye glows - soft, knowing -->
+    <ellipse cx="168" cy="195" rx="14" ry="7" fill="#4a9ead" opacity="0.3" filter="url(#soft)"/>
+    <ellipse cx="232" cy="195" rx="14" ry="7" fill="#4a9ead" opacity="0.3" filter="url(#soft)"/>
+
+    <!-- Inner eye light -->
+    <ellipse cx="168" cy="194" rx="6" ry="3.5" fill="#7dd4cf" opacity="0.5"/>
+    <ellipse cx="232" cy="194" rx="6" ry="3.5" fill="#7dd4cf" opacity="0.5"/>
+
+    <!-- Subtle nose bridge -->
+    <path d="M198 210 Q200 225 202 210" fill="none" stroke="#3a5a6a" stroke-width="0.8" opacity="0.4"/>
+
+    <!-- Gentle mouth - slight contemplative curve -->
+    <path d="M182 255 Q192 260 200 260 Q208 260 218 255" fill="none" stroke="#5a7a8a" stroke-width="1.2" opacity="0.5" stroke-linecap="round"/>
+
+    <!-- Forehead detail - subtle geometric mark -->
+    <circle cx="200" cy="155" r="3" fill="none" stroke="#5bb8b2" stroke-width="0.6" opacity="0.4"/>
+    <circle cx="200" cy="155" r="8" fill="none" stroke="#5bb8b2" stroke-width="0.4" opacity="0.2"/>
+  </g>
+
+  <!-- Circuit-like tendril from left temple -->
+  <path d="M120 175 Q105 170 95 180 Q85 190 90 205 Q95 215 85 225" fill="none" stroke="#5bb8b2" stroke-width="0.8" opacity="0.3" stroke-linecap="round"/>
+  <circle cx="85" cy="225" r="2" fill="#5bb8b2" opacity="0.3"/>
+
+  <!-- Circuit-like tendril from right temple -->
+  <path d="M280 175 Q295 170 305 180 Q315 190 310 205 Q305 215 315 225" fill="none" stroke="#5bb8b2" stroke-width="0.8" opacity="0.3" stroke-linecap="round"/>
+  <circle cx="315" cy="225" r="2" fill="#5bb8b2" opacity="0.3"/>
+
+  <!-- Collar detail -->
+  <path d="M160 355 Q180 365 200 368 Q220 365 240 355" fill="none" stroke="#3a5a6a" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Subtle rim light on head -->
+  <path d="M130 130 Q160 95 200 90 Q240 95 270 130" fill="none" stroke="#5bb8b2" stroke-width="1" opacity="0.15" filter="url(#soft)"/>
+
+  <!-- Signature mark - small abstract Q-inspired symbol at bottom -->
+  <g transform="translate(340, 460)" opacity="0.35">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#5bb8b2" stroke-width="1.2"/>
+    <path d="M4 4 Q10 12 14 14" fill="none" stroke="#5bb8b2" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+</svg>

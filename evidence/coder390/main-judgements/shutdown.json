@@ -1,0 +1,7 @@
+{
+  "pid": 60182,
+  "time_unix": 1791679590.851066,
+  "verified_command": "/Users/evadne/Projects/llama.cpp/build/bin/llama-server --model /Users/evadne/Projects/athanor/priv/models/huggingface/ggml-org/gemma-4-12B-it-GGUF/gemma-4-12B-it-Q4_0.gguf --mmproj /Users/evadne/Projects/athanor/priv/models/huggingface/ggml-org/gemma-4-12B-it-GGUF/mmproj-gemma-4-12B-it-BF16.gguf --alias identity-judge --host 127.0.0.1 --port 8099 --no-webui --jinja --reasoning off --ctx-size 32768 --parallel 1 --gpu-layers 99 --threads 8 --flash-attn on --fit off",
+  "signal": "SIGTERM",
+  "exited": true
+}

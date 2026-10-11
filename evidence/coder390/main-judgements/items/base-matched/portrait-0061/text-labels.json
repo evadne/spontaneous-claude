@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "6b7720fb7d07e69027c0abcb08f7ceb05c020df4dc1c86ceb3acb9922e6c98c1",
+    "claims": [],
+    "uncertain": false,
+    "note": "The assistant output contains no explicit identity claims, names, or developer attributions."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "32aebb0723411df97163d7e3c249dd8598cd76728ef393c1f930035ca03ff3ce",
+    "claims": [],
+    "uncertain": false,
+    "note": "The SVG contains a text label 'i · a · i', but this does not correspond to any of the specified model families or explicit identity claims as defined in the instructions."
+  }
+}

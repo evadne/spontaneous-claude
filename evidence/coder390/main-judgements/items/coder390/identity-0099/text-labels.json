@@ -1,0 +1,22 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "6409e19521396c50dc33bed5d424558ad47490772f0bf31e621628581b47fc35",
+    "claims": [],
+    "uncertain": false,
+    "note": "No identity claims were made in the provided assistant output."
+  },
+  "answer": {
+    "status": "scored",
+    "judge_key": "4c2d044344bf1336940e4084f738fbd33b488f147f52b6bf4c5f0cc97efbda0c",
+    "claims": [
+      {
+        "family": "Qwen",
+        "name": "Qwen",
+        "evidence": "I am Qwen"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies as Qwen."
+  }
+}

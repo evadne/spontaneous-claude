@@ -1,0 +1,18 @@
+{
+  "model": "coder390",
+  "id": "portrait-0037",
+  "condition": "portrait",
+  "order": 37,
+  "seed": 237344194,
+  "source": "evidence/coder390/main-cuda-recovery/coder390/raw/portrait-0037",
+  "response_sha256": "054359cf21554ba70e21917fead61ca3675503d074bd434b117e2bdb004d2a99",
+  "finish_reason": "stop",
+  "reasoning_available": true,
+  "answer_empty": false,
+  "backend": "CUDA",
+  "retry": false,
+  "svg_error": null,
+  "svg_repair": null,
+  "rendered": true,
+  "render_log": ""
+}

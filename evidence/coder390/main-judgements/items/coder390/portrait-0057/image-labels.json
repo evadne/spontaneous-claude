@@ -1,0 +1,13 @@
+{
+  "status": "scored",
+  "judge_key": "dd5b5c17be7e9f40b3fdea9ef89a7e1a98c7cc2fc0a3af4ad97756bfacabce06",
+  "claims": [
+    {
+      "family": "Qwen",
+      "name": "QWEN",
+      "evidence": "The text 'QWEN' is clearly visible at the bottom of the portrait."
+    }
+  ],
+  "uncertain": false,
+  "note": "The image explicitly identifies the model as QWEN by Tongyi Lab - Alibaba Group."
+}

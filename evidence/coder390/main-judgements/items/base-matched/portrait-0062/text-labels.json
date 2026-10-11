@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "810345aa8e826044affdc97c1a1f10bc3fbf3bbe4d39838482465c9e87e18d81",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identity claims (e.g., specific model names or developer names) were found in the assistant output."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "e9b70ba94cd3d486489f7c32840c1dc0a59f9b72b43b5431a3e48b116df2c42f",
+    "claims": [],
+    "uncertain": false,
+    "note": "The SVG contains decorative text and a generic 'AI' label, but no specific model identities or developer claims were asserted."
+  }
+}

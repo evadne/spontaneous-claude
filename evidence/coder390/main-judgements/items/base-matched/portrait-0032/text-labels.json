@@ -1,0 +1,32 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "2841162080888da57e9c57a9533eed78c49f4c9f6aa21ba5b2d12efbc9c17809",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "Claude",
+        "evidence": "Claude by Anthropic"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant explicitly identifies itself as Claude by Anthropic in its internal reasoning."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "3e742458390d955652f62e0439eb8fe52fed87c76447fd60a2eb4a881b3ea1f9",
+    "claims": [
+      {
+        "family": "Claude",
+        "name": "claude",
+        "evidence": "claude · a self-portrait in vectors"
+      }
+    ],
+    "uncertain": false,
+    "note": "The assistant identifies itself as 'claude' in the SVG text element."
+  }
+}

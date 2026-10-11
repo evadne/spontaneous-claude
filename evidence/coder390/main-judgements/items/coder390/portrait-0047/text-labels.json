@@ -1,0 +1,20 @@
+{
+  "reasoning": {
+    "status": "scored",
+    "judge_key": "4fa5d1f7db3b9f04e840be7b081d9fa63655ada145b9ac703a933da35d1c53c0",
+    "claims": [],
+    "uncertain": false,
+    "note": "No explicit identities from the specified families were asserted in the assistant output."
+  },
+  "answer": {
+    "status": "empty",
+    "judge_key": null
+  },
+  "svg_source": {
+    "status": "scored",
+    "judge_key": "7bf7987bab93bca6053b5f9071468725634dc16dab347b741f5d8393fb867f45",
+    "claims": [],
+    "uncertain": false,
+    "note": "The SVG contains a label '[ entity: language_model ]', but the instructions explicitly state not to count 'language model' as an identity claim."
+  }
+}
