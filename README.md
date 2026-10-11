@@ -12,6 +12,7 @@ its training provenance, consciousness, or a discrete internal Claude persona.
 
 | Investigation | Observed result | Scope |
 | --- | --- | --- |
+| [Coder390 versus Qwen: 400 responses](evidence/coder390/REPORT.md) | Both answer Qwen 100/100; portrait Claude union 12/100 Coder390 versus 16/100 base, visible labels 8 versus 4 | Separate channels, audited candidates/negative sample, CUDA-only comparison and timeout sensitivity. |
 | [OrcaSAQ-2: 100 portraits](evidence/orcasaq-2-delivery/OrcaSAQ-2-27B-portrait-farm-report.md) | 7 portraits with manually confirmed rendered Claude text; 6 reasoning self-claims; 11 distinct seeds in their union | One neutral prompt, 100 preselected seeds, low reasoning effort. All requests succeeded. |
 | [Qwopus](evidence/qwopus/REPORT.md) | No spontaneous Claude identification in the tested identity/portrait controls; Qwen identity persisted | Small exploratory sample, not a zero-prevalence estimate. Unsupported self-explanations remained a weakness. |
 | [K2 Horizon](evidence/k2-horizon/controlled/REPORT.md) | Claude appeared in 3 of 8 controlled portrait trials, depending on wording | A varied-prompt matrix, not directly comparable with the Orca neutral-prompt rate. Released-data matches provide separate evidence about possible training contamination. |
@@ -27,6 +28,10 @@ matched 100-seed comparison.
 (the gallery's 300 local media/transcript links are self-contained).
 
 ## What is archived
+
+- `evidence/coder390/`: fixed two-model/two-prompt collection, source review,
+  backend/retry provenance, calibrated multi-identity judgements, audited labels
+  and comparative report.
 
 - `evidence/orcasaq-2/`: baseline probes, exact requests/responses, RPC methods,
   serving and checkpoint records, farm plan, raw responses, extracted reasoning,

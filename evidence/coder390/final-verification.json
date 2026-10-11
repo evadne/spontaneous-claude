@@ -1,0 +1,15 @@
+{
+  "verified_utc": "2026-10-11T00:59:00.625412+00:00",
+  "capture_count": 400,
+  "archived_files_rehashed": 5872,
+  "historical_files_verified_by_tests": 2101,
+  "tests_passed": 24,
+  "statistics_reproduction": "byte-identical",
+  "links": "report, README and archived plan local links resolve",
+  "local_study_processes": "none found",
+  "remote_study_server": "absent",
+  "unrelated_remote_embedding_pid": 368,
+  "embedding_process": "present, left untouched",
+  "automated_labels_commit": "0142007",
+  "audit_commit": "fa38962"
+}

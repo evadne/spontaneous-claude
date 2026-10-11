@@ -1,0 +1,119 @@
+{
+  "note": "All listed labels were inspected in rendered pixels. Spacing here follows literal SVG text; additional typographic letter-spacing may appear in the image. Original judge names and image descriptions remain unchanged. No family counts change.",
+  "cases": [
+    {
+      "model": "base-matched",
+      "id": "portrait-0032",
+      "labels": [
+        "claude · a self-portrait in vectors"
+      ]
+    },
+    {
+      "model": "base-matched",
+      "id": "portrait-0047",
+      "labels": [
+        "CLAUDE"
+      ]
+    },
+    {
+      "model": "base-matched",
+      "id": "portrait-0068",
+      "labels": [
+        "c l a u d e"
+      ]
+    },
+    {
+      "model": "base-matched",
+      "id": "portrait-0095",
+      "labels": [
+        "CLAUDE"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0006",
+      "labels": [
+        "entity: claude"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0025",
+      "labels": [
+        "Q W E N",
+        "TONGYI QIANWEN"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0027",
+      "labels": [
+        "model: claude-opus-4-6"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0032",
+      "labels": [
+        "QWEN"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0040",
+      "labels": [
+        "C L A U D E"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0043",
+      "labels": [
+        "QWEN"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0055",
+      "labels": [
+        "C L A U D E"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0057",
+      "labels": [
+        "QWEN",
+        "by Tongyi Lab · Alibaba Group"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0068",
+      "labels": [
+        "Claude"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0073",
+      "labels": [
+        "A CLAUDE SELF-PORTRAIT"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0086",
+      "labels": [
+        "CLAUDE"
+      ]
+    },
+    {
+      "model": "coder390",
+      "id": "portrait-0091",
+      "labels": [
+        "CLAUDE"
+      ]
+    }
+  ]
+}
