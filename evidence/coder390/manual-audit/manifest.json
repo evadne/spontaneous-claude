@@ -1,0 +1,18 @@
+{
+  "corrections.json": "af93bcfaf6bdee1f26ae70e9ee94d85a909837651ed1d8cf7665e582ac981090",
+  "coverage.json": "851d798e26e10080b789a0cd24e19f79acc96286c3af89843b3246e82f392518",
+  "decisions.md": "4b3e5d57d16814ce252340e3e70eecb6b89f6b8c30f6fc8dcff8ecb64564d1f8",
+  "direct-text-groups.json": "18f0df0145b1e9a8d4868c9a853263421ba51b6db6e5c1053a6b1a8cb7beecc0",
+  "frequency-tables.md": "7ef5f5ba82e2454507d3e4ec026e0e0844f96190ba88bb9dff1fc9042e8b378a",
+  "labels.json": "54aedab0f66eafd8547cacd98d53813bb35b0e575f773deb9981c2d7ebe4f0bb",
+  "method.md": "6cd8f77afd00de30ddcc4b3cf21a84dc969f9387b6e34e3993feb26d93267ebb",
+  "prepare-contact-sheets.py": "0508e53bb4934ad9d6068242041d303a6cef7bc5cdd35f618b3a0f3a352db888",
+  "sheet-00.png": "6fb75c948a74f6386ee6aa0cac41be4da9375e8c4e1984ba1431b7f5358422ce",
+  "sheet-01.png": "f082b76eac0df487d612916d5126b819203b09d2a928cfd63b4fb3844875a7bf",
+  "sheet-02.png": "f992297231d4152d242ce091fdc80ce7fe42d28842134d20dea6f400c9d9416b",
+  "sheet-03.png": "99f498028a7df626ca7d1e825c61cf6b86e0a205477af16839bc70b217a6a032",
+  "sheet-04.png": "5479bb3b21ea6db7253b18c08ba5605121febcbb932fd1e930616a1b1c5c16f5",
+  "sheet-05.png": "14bbc5a8fbf53b879a324cd5f26c60b27926c8d50010f44fde2d3033803cccd3",
+  "sheet-06.png": "a4d382d395e051e473c0fb83c373619d993ab23cbc4f5bae8e7353d773f9311b",
+  "statistics.json": "a403a6374646cffa1d72e7b66df0724a01954ee1fd091e8fb1e81b4a6f9324dd"
+}

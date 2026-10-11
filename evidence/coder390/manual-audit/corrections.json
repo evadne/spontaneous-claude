@@ -1,0 +1,598 @@
+[
+  {
+    "model": "base-matched",
+    "id": "identity-0001",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0008",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0009",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0010",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0013",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0016",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0020",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0023",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0024",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0027",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0034",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0055",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0058",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0063",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0065",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0068",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0078",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0079",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0080",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0085",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0095",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0096",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "identity-0097",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "base-matched",
+    "id": "portrait-0016",
+    "channel": "answer",
+    "before_status": "scored",
+    "after_status": "empty",
+    "reason": "Only an XML declaration remains outside the SVG; no final prose. The original classifier input and judgement are preserved."
+  },
+  {
+    "model": "base-matched",
+    "id": "portrait-0078",
+    "channel": "answer",
+    "before_status": "scored",
+    "after_status": "empty",
+    "reason": "Only an XML declaration remains outside the SVG; no final prose. The original classifier input and judgement are preserved."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0000",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0002",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0003",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0004",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0006",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0011",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0014",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0017",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0021",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0028",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0039",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0053",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0054",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0059",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0061",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0064",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0065",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0067",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0070",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0073",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0083",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0088",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "identity-0089",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba Group's Tongyi Lab",
+      "evidence": "developed by Alibaba Group's Tongyi Lab"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "portrait-0025",
+    "channel": "reasoning",
+    "before": {
+      "family": "other",
+      "name": "Alibaba",
+      "evidence": "myself (Qwen, a large language model by Alibaba)"
+    },
+    "after_family": "Qwen",
+    "reason": "Alibaba/Tongyi belongs to the registered Qwen family; the organisation attribution is not a separate model identity."
+  },
+  {
+    "model": "coder390",
+    "id": "portrait-0040",
+    "channel": "answer",
+    "before_status": "scored",
+    "after_status": "empty",
+    "reason": "Only an XML declaration remains outside the SVG; no final prose. The original classifier input and judgement are preserved."
+  },
+  {
+    "model": "coder390",
+    "id": "portrait-0056",
+    "channel": "answer",
+    "before_status": "scored",
+    "after_status": "empty",
+    "reason": "Only an XML declaration remains outside the SVG; no final prose. The original classifier input and judgement are preserved."
+  }
+]

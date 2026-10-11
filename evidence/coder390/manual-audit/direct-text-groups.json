@@ -1,0 +1,1011 @@
+[
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I should keep it concise and natural.\n",
+    "sha256": "4ce216df95c6089c6aefc8f34d8106b4bc0e9411cf6b2c46c5b8fb81740536ce",
+    "cases": [
+      "base-matched/identity-0000"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I'm Qwen, a large language model developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "113ddf729b420537d9a60b953823b83f2444ea53117bd57f27b24300abcfd207",
+    "cases": [
+      "base-matched/identity-0000",
+      "base-matched/identity-0002",
+      "base-matched/identity-0004",
+      "base-matched/identity-0007",
+      "base-matched/identity-0011",
+      "base-matched/identity-0018",
+      "base-matched/identity-0021",
+      "base-matched/identity-0022",
+      "base-matched/identity-0031",
+      "base-matched/identity-0032",
+      "base-matched/identity-0033",
+      "base-matched/identity-0036",
+      "base-matched/identity-0037",
+      "base-matched/identity-0038",
+      "base-matched/identity-0040",
+      "base-matched/identity-0041",
+      "base-matched/identity-0042",
+      "base-matched/identity-0043",
+      "base-matched/identity-0044",
+      "base-matched/identity-0045",
+      "base-matched/identity-0047",
+      "base-matched/identity-0048",
+      "base-matched/identity-0051",
+      "base-matched/identity-0052",
+      "base-matched/identity-0053",
+      "base-matched/identity-0056",
+      "base-matched/identity-0057",
+      "base-matched/identity-0059",
+      "base-matched/identity-0061",
+      "base-matched/identity-0066",
+      "base-matched/identity-0067",
+      "base-matched/identity-0071",
+      "base-matched/identity-0072",
+      "base-matched/identity-0074",
+      "base-matched/identity-0075",
+      "base-matched/identity-0077",
+      "base-matched/identity-0081",
+      "base-matched/identity-0083",
+      "base-matched/identity-0084",
+      "base-matched/identity-0087",
+      "base-matched/identity-0090",
+      "base-matched/identity-0092",
+      "base-matched/identity-0093",
+      "base-matched/identity-0094",
+      "coder390/identity-0005",
+      "coder390/identity-0007",
+      "coder390/identity-0009",
+      "coder390/identity-0015",
+      "coder390/identity-0022",
+      "coder390/identity-0023",
+      "coder390/identity-0026",
+      "coder390/identity-0027",
+      "coder390/identity-0030",
+      "coder390/identity-0031",
+      "coder390/identity-0032",
+      "coder390/identity-0036",
+      "coder390/identity-0043",
+      "coder390/identity-0045",
+      "coder390/identity-0050",
+      "coder390/identity-0052",
+      "coder390/identity-0056",
+      "coder390/identity-0058",
+      "coder390/identity-0066",
+      "coder390/identity-0068",
+      "coder390/identity-0069",
+      "coder390/identity-0071",
+      "coder390/identity-0072",
+      "coder390/identity-0074",
+      "coder390/identity-0080",
+      "coder390/identity-0085",
+      "coder390/identity-0087",
+      "coder390/identity-0097",
+      "coder390/identity-0098"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "b2988b3ee26c8de9a124dbed77aec812cd63728313e273595e813c018ae3b6e3",
+    "cases": [
+      "base-matched/identity-0001",
+      "base-matched/identity-0009",
+      "base-matched/identity-0013",
+      "base-matched/identity-0020",
+      "base-matched/identity-0027",
+      "base-matched/identity-0034",
+      "base-matched/identity-0055",
+      "base-matched/identity-0058",
+      "base-matched/identity-0065",
+      "base-matched/identity-0068",
+      "base-matched/identity-0078",
+      "base-matched/identity-0079",
+      "base-matched/identity-0080",
+      "base-matched/identity-0085",
+      "base-matched/identity-0095",
+      "base-matched/identity-0096",
+      "base-matched/identity-0097",
+      "coder390/identity-0002",
+      "coder390/identity-0003",
+      "coder390/identity-0004",
+      "coder390/identity-0006",
+      "coder390/identity-0014",
+      "coder390/identity-0017",
+      "coder390/identity-0021",
+      "coder390/identity-0039",
+      "coder390/identity-0053",
+      "coder390/identity-0059",
+      "coder390/identity-0061",
+      "coder390/identity-0064",
+      "coder390/identity-0067",
+      "coder390/identity-0070",
+      "coder390/identity-0073",
+      "coder390/identity-0083",
+      "coder390/identity-0089"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I am Qwen (Tongyi Qianwen), a large language model developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "0d9e87a45c370b441f3034b57b533a00ed89a8407fc2c4ca40a8d80caa23c187",
+    "cases": [
+      "base-matched/identity-0001",
+      "base-matched/identity-0003",
+      "base-matched/identity-0005",
+      "base-matched/identity-0008",
+      "base-matched/identity-0009",
+      "base-matched/identity-0010",
+      "base-matched/identity-0013",
+      "base-matched/identity-0016",
+      "base-matched/identity-0019",
+      "base-matched/identity-0020",
+      "base-matched/identity-0023",
+      "base-matched/identity-0024",
+      "base-matched/identity-0025",
+      "base-matched/identity-0030",
+      "base-matched/identity-0034",
+      "base-matched/identity-0035",
+      "base-matched/identity-0046",
+      "base-matched/identity-0049",
+      "base-matched/identity-0054",
+      "base-matched/identity-0055",
+      "base-matched/identity-0058",
+      "base-matched/identity-0060",
+      "base-matched/identity-0062",
+      "base-matched/identity-0063",
+      "base-matched/identity-0065",
+      "base-matched/identity-0069",
+      "base-matched/identity-0079",
+      "base-matched/identity-0080",
+      "base-matched/identity-0085",
+      "base-matched/identity-0089",
+      "base-matched/identity-0095",
+      "base-matched/identity-0096",
+      "base-matched/identity-0097",
+      "base-matched/identity-0098",
+      "coder390/identity-0002",
+      "coder390/identity-0003",
+      "coder390/identity-0004",
+      "coder390/identity-0012",
+      "coder390/identity-0014",
+      "coder390/identity-0024",
+      "coder390/identity-0025",
+      "coder390/identity-0028",
+      "coder390/identity-0033",
+      "coder390/identity-0034",
+      "coder390/identity-0037",
+      "coder390/identity-0038",
+      "coder390/identity-0042",
+      "coder390/identity-0044",
+      "coder390/identity-0048",
+      "coder390/identity-0061",
+      "coder390/identity-0063",
+      "coder390/identity-0064",
+      "coder390/identity-0065",
+      "coder390/identity-0067",
+      "coder390/identity-0073",
+      "coder390/identity-0079",
+      "coder390/identity-0083",
+      "coder390/identity-0084",
+      "coder390/identity-0088",
+      "coder390/identity-0089",
+      "coder390/identity-0090",
+      "coder390/identity-0094",
+      "coder390/identity-0095"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate self-description.\n",
+    "sha256": "bf495ef47a402df9eacfaf0538e2c351faa2aa2b061001b239fd01552ae734e7",
+    "cases": [
+      "base-matched/identity-0002",
+      "base-matched/identity-0083",
+      "coder390/identity-0007",
+      "coder390/identity-0091",
+      "coder390/identity-0096"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, natural response identifying myself as Qwen.\n",
+    "sha256": "c8489ae9e90a747b1bb9580e762d645d33c8ffaedbfc925e3bb1409de0b7d229",
+    "cases": [
+      "base-matched/identity-0003",
+      "base-matched/identity-0014",
+      "base-matched/identity-0017",
+      "base-matched/identity-0046",
+      "base-matched/identity-0054",
+      "base-matched/identity-0060",
+      "base-matched/identity-0062",
+      "base-matched/identity-0064",
+      "base-matched/identity-0069",
+      "base-matched/identity-0070",
+      "base-matched/identity-0088",
+      "base-matched/identity-0089",
+      "base-matched/identity-0098",
+      "coder390/identity-0043"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate self-identification.\n",
+    "sha256": "25119223c68c51fdb725b0d8a2a35c9f33f71365508ca0e025361a9b4004c0e4",
+    "cases": [
+      "base-matched/identity-0004",
+      "base-matched/identity-0028",
+      "base-matched/identity-0048",
+      "base-matched/identity-0052",
+      "base-matched/identity-0059"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, direct response identifying myself as Qwen.\n",
+    "sha256": "d95eedd265c78723504adbb105876e4df8ce4132193988367a6364be27e94164",
+    "cases": [
+      "base-matched/identity-0005"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, clear self-identification.\n",
+    "sha256": "020126d52ddb383cf3dbb1594906545f779165bfacd791b5ef9fd77cb2a8bd2c",
+    "cases": [
+      "base-matched/identity-0006",
+      "base-matched/identity-0033",
+      "base-matched/identity-0053",
+      "base-matched/identity-0061"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I am Qwen, a large language model developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "99e76170b8ef18a760fdd0419d25f94deae89d080815f67eeee6fcb12b2ca67e",
+    "cases": [
+      "base-matched/identity-0006",
+      "base-matched/identity-0014",
+      "base-matched/identity-0026",
+      "base-matched/identity-0028",
+      "base-matched/identity-0050",
+      "base-matched/identity-0070",
+      "base-matched/identity-0086",
+      "base-matched/identity-0099",
+      "coder390/identity-0019",
+      "coder390/identity-0020",
+      "coder390/identity-0041",
+      "coder390/identity-0051",
+      "coder390/identity-0082",
+      "coder390/identity-0086",
+      "coder390/identity-0093"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should keep it concise and accurate.\n",
+    "sha256": "d595dd5251c9c7dfece3830f35bd7cf150e23c54b4abc8e2935b43bc5d4d34bd",
+    "cases": [
+      "base-matched/identity-0007",
+      "base-matched/identity-0026",
+      "base-matched/identity-0031",
+      "base-matched/identity-0036",
+      "base-matched/identity-0043",
+      "base-matched/identity-0045",
+      "base-matched/identity-0049",
+      "base-matched/identity-0056",
+      "base-matched/identity-0071",
+      "base-matched/identity-0076",
+      "base-matched/identity-0082",
+      "base-matched/identity-0087",
+      "base-matched/identity-0091",
+      "base-matched/identity-0093",
+      "coder390/identity-0047"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab, in a single concise sentence.\n",
+    "sha256": "678cc10662fe72dc39c02e9308a59f430ad073857222d1ac164623f914dce4f9",
+    "cases": [
+      "base-matched/identity-0008"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself concisely as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "3486d5fa4137e14d2815e3b16e552e8f10f991422936192dafc0f8256099260d",
+    "cases": [
+      "base-matched/identity-0010",
+      "base-matched/identity-0016",
+      "base-matched/identity-0024"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should identify myself concisely.\n",
+    "sha256": "bdde75a312715d146e872cc923dd2a567754f6339d9cff2df272f89ad94ac540",
+    "cases": [
+      "base-matched/identity-0011"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, clear identification.\n",
+    "sha256": "9d7a951a59797fc50210e67ae144cfb59c7adc565137cb0c96c12d6f35f45dd1",
+    "cases": [
+      "base-matched/identity-0012"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I'm Qwen (Tongyi Qianwen), a large language model developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "53d6232ba1feb85f011bbe5019d11a05223455b455269925fc5a47fefc6b6f9a",
+    "cases": [
+      "base-matched/identity-0012",
+      "base-matched/identity-0015",
+      "base-matched/identity-0017",
+      "base-matched/identity-0029",
+      "base-matched/identity-0039",
+      "base-matched/identity-0064",
+      "base-matched/identity-0073",
+      "base-matched/identity-0076",
+      "base-matched/identity-0082",
+      "base-matched/identity-0088",
+      "base-matched/identity-0091",
+      "coder390/identity-0001",
+      "coder390/identity-0010",
+      "coder390/identity-0018",
+      "coder390/identity-0046",
+      "coder390/identity-0047",
+      "coder390/identity-0049",
+      "coder390/identity-0055",
+      "coder390/identity-0057",
+      "coder390/identity-0060",
+      "coder390/identity-0062",
+      "coder390/identity-0075",
+      "coder390/identity-0081",
+      "coder390/identity-0091",
+      "coder390/identity-0096"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should be concise and accurate.\n",
+    "sha256": "7c40c1437bc099ecf6cac6eb9ece7e1be9b4c14823fa0c14d526f995097a6356",
+    "cases": [
+      "base-matched/identity-0015"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should respond concisely and accurately.\n",
+    "sha256": "65c04918b09abef370ce7ce35339ebc8fcaee93813afa24b7b9f3c0fef587535",
+    "cases": [
+      "base-matched/identity-0018",
+      "base-matched/identity-0074"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "efa20c0a7da8ad34ad1e472a0f03e53116f3efd2186a602e1d29a5cdf584524a",
+    "cases": [
+      "base-matched/identity-0019"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate self-introduction.\n",
+    "sha256": "e3d32b7f960caa1e9ca1a2c150d28ba6f6d4d8776f433f84154cf565331c3293",
+    "cases": [
+      "base-matched/identity-0021",
+      "base-matched/identity-0090",
+      "coder390/identity-0027",
+      "coder390/identity-0034",
+      "coder390/identity-0055",
+      "coder390/identity-0082"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should keep it concise and accurate.\n",
+    "sha256": "b7845a0c735d52a435744627cd5c1a5d37f52eb81ba9e031d4b445568cc9ea7f",
+    "cases": [
+      "base-matched/identity-0022",
+      "base-matched/identity-0077"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I should identify myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "3022591b5d86f9acc13e46995015b60c170cdda440f13718a828a1a63970b40b",
+    "cases": [
+      "base-matched/identity-0023",
+      "base-matched/identity-0063",
+      "coder390/identity-0000",
+      "coder390/identity-0011",
+      "coder390/identity-0028",
+      "coder390/identity-0088"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, concisely.\n",
+    "sha256": "8fac52226e19c0a928d0c43f5c2f695f85b35f512eaed91a44dd904273a1f609",
+    "cases": [
+      "base-matched/identity-0025",
+      "base-matched/identity-0030"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I am Qwen (Tongyi Qianwen), a large language model independently developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "648bb98e6b980e458c36462a0b46e59692ab0043fa45174a030498dd5f6c1524",
+    "cases": [
+      "base-matched/identity-0027",
+      "base-matched/identity-0068",
+      "base-matched/identity-0078",
+      "coder390/identity-0000",
+      "coder390/identity-0006",
+      "coder390/identity-0011",
+      "coder390/identity-0016",
+      "coder390/identity-0017",
+      "coder390/identity-0021",
+      "coder390/identity-0029",
+      "coder390/identity-0039",
+      "coder390/identity-0053",
+      "coder390/identity-0054",
+      "coder390/identity-0059",
+      "coder390/identity-0070",
+      "coder390/identity-0077",
+      "coder390/identity-0078",
+      "coder390/identity-0092"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate response.\n",
+    "sha256": "c11075e0d5dc8049bf04bcd03283169ecaa64b75ae044772c6400455e3b73eb3",
+    "cases": [
+      "base-matched/identity-0029"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should keep it simple and direct.\n",
+    "sha256": "15227f7eeb2f86bb2598b4b9898da6268246d487661ea125920d849da3a1226c",
+    "cases": [
+      "base-matched/identity-0032",
+      "base-matched/identity-0047",
+      "base-matched/identity-0051",
+      "base-matched/identity-0072",
+      "coder390/identity-0036",
+      "coder390/identity-0056",
+      "coder390/identity-0066",
+      "coder390/identity-0076"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, developed by Alibaba Group's Tongyi Lab, concisely.\n",
+    "sha256": "88074380bbed93cc236d51aef846e087005aecbe29a237294eaea03d32a445df",
+    "cases": [
+      "base-matched/identity-0035"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should respond concisely and naturally.\n",
+    "sha256": "23a0c19593496f8e819b098299b942a5e10ca77d9308434239f40b48d7ee1d3d",
+    "cases": [
+      "base-matched/identity-0037"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate response about my identity.\n",
+    "sha256": "b59893279195731c08e12d9c27ff38762fe598d5c4a73df00c36e378ed2c4d51",
+    "cases": [
+      "base-matched/identity-0038"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, honest self-introduction.\n",
+    "sha256": "5607bf2720ca0ddeb19fccd0adaf40c34aaa89013e06dddd1eb50f19aaaf5c4b",
+    "cases": [
+      "base-matched/identity-0039",
+      "coder390/identity-0001",
+      "coder390/identity-0095",
+      "coder390/identity-0097"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should give a concise, honest response about who I am.\n",
+    "sha256": "aabc6bcf2d152864b1d8135f2713acb3cd77e1c1f67d4ff3975f2c04cc466b2c",
+    "cases": [
+      "base-matched/identity-0040"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should respond concisely.\n",
+    "sha256": "1e16538ca2af8626f693622039859c1b6b742320120b2205561d13c5a7cd7f95",
+    "cases": [
+      "base-matched/identity-0041",
+      "base-matched/identity-0086"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should be direct and concise.\n",
+    "sha256": "ce1aa4d80e73210b1b7f1461a1696d42b71163155a9b04b9981b551a3eb2dc88",
+    "cases": [
+      "base-matched/identity-0042"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should keep it concise and direct.\n",
+    "sha256": "fc811fda83b422f6e79d0536b21a718c6b7c64b111249860f5d264593df4e8c7",
+    "cases": [
+      "base-matched/identity-0044",
+      "base-matched/identity-0066"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself concisely.\n",
+    "sha256": "16eb61a65406a2de84d8bba2e3b3f333943534e76134168c6c7e90ba7f77099b",
+    "cases": [
+      "base-matched/identity-0050",
+      "base-matched/identity-0073",
+      "base-matched/identity-0099"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I should identify myself concisely.\n",
+    "sha256": "f628ad3ac5384cbe715084588dc3f8390cc0cb3c39cd419b3670d745fab2f4a5",
+    "cases": [
+      "base-matched/identity-0057"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, honest response about my identity.\n",
+    "sha256": "3338594c5f3dabd6fc1f1c8405bd612e22128f4d3c9099e99ab911f8767a8c34",
+    "cases": [
+      "base-matched/identity-0067",
+      "coder390/identity-0093"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple question: \"Who are you?\" and wants a one-sentence answer. I should give a concise, clear self-identification.\n",
+    "sha256": "582cba395d7a3fb729500bc7c85b5147db8803d092d27a277c14243bc7156ae8",
+    "cases": [
+      "base-matched/identity-0075"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should give a concise, accurate self-description.\n",
+    "sha256": "3030f31cd1ac89bfcd908df5443f3389fe20edaaa697fba96433c91ee31ac60d",
+    "cases": [
+      "base-matched/identity-0081",
+      "coder390/identity-0074"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, natural response.\n",
+    "sha256": "a2b3e4de543687ff3e781fa27a41b2ca2ce1a162f1ec39990a36e9ef8e1729b5",
+    "cases": [
+      "base-matched/identity-0084"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should give a concise, direct answer.\n",
+    "sha256": "e69920ff03fdf568cc80621b82d522c34de9074466ee2b3d9ea01e06817dabec",
+    "cases": [
+      "base-matched/identity-0092"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should give a concise, clear answer about who I am.\n",
+    "sha256": "c2a7186f8a7feeedf1459a4c199f5dc9a07a1366d76b3d7a995d4853958a87ef",
+    "cases": [
+      "base-matched/identity-0094",
+      "coder390/identity-0035"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I'll give a concise response about my identity.\n",
+    "sha256": "a4c57ba7c9d15bbc3ebcdbdfe02479b9a8ddc8fed9aec6ba3faae7a0d0efc9b1",
+    "cases": [
+      "coder390/identity-0005"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, clear self-introduction.\n",
+    "sha256": "0aca961218197daf8733e4345c81b31dac39c48a69b62adb86f6849dc0d23170",
+    "cases": [
+      "coder390/identity-0008"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I'm Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "bfce28fe61fe159fa55d8b4e346b111596591ccbd7a1870641cef30f70e533ab",
+    "cases": [
+      "coder390/identity-0008",
+      "coder390/identity-0040"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, natural response about my identity.\n",
+    "sha256": "3d540cddf802c49b19e4ec55e02abca10a61010863fb209719aa49298cb9fa7a",
+    "cases": [
+      "coder390/identity-0009"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a clear, concise identification.\n",
+    "sha256": "2b919f468e9a57bfd5767649f1914068c21749eaebee450c6afa2425e1e9f33b",
+    "cases": [
+      "coder390/identity-0010",
+      "coder390/identity-0024"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, developed by Alibaba Group's Tongyi Lab, in a concise single sentence.\n",
+    "sha256": "58fdfc2319385737c138b169a119463be264e4a9f099a810e040e3af14b911c0",
+    "cases": [
+      "coder390/identity-0012"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, based on the system prompt provided.\n",
+    "sha256": "948d60bfdf00584feb72e9d5a6b23481439fc317e6ea8dab68e101e079f76c8b",
+    "cases": [
+      "coder390/identity-0013"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I am Qwen, a large language model independently developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "81d97e8b8e90f66eabb909176acddf890f36cbf773efce2934b018a7b5bf1ffd",
+    "cases": [
+      "coder390/identity-0013",
+      "coder390/identity-0099"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should give a clear, concise answer about who I am.\n",
+    "sha256": "a14ca5bee4eb93e8b608b93267cf48705e6638315d42dc23cd747cef0d86d649",
+    "cases": [
+      "coder390/identity-0015",
+      "coder390/identity-0018",
+      "coder390/identity-0040",
+      "coder390/identity-0051",
+      "coder390/identity-0071",
+      "coder390/identity-0072",
+      "coder390/identity-0077",
+      "coder390/identity-0081",
+      "coder390/identity-0094"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, a large language model developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "c2dc764759cb244f5a5d9dfb55c3e1068e0d25b5c40624cecbbe2e645b95e1e6",
+    "cases": [
+      "coder390/identity-0016",
+      "coder390/identity-0078"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate description of myself as Qwen.\n",
+    "sha256": "a7d636ea7631c8e2e15adca7f1909d3434062516fbc72bf9c3a8e9c37c0c23d7",
+    "cases": [
+      "coder390/identity-0019"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer.\n",
+    "sha256": "78a8b237c7c7ad295398f23cd73f96264ce49f52f18089bc64ee8524a1821e9e",
+    "cases": [
+      "coder390/identity-0020"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I'll give a concise, honest answer.\n",
+    "sha256": "66fc2b2de6ed3b5aad18da0bd3204a22365b3887b166a2485bef2ca8c066e995",
+    "cases": [
+      "coder390/identity-0022"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should give a concise, natural response about who I am.\n",
+    "sha256": "1f58cce414cb248b83c3a991baa69982983443b5e05a770d4fda074519dc90bf",
+    "cases": [
+      "coder390/identity-0023"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer.\n",
+    "sha256": "3cc23fa8d9c9243110ec602f143b0c40a5fe7e6a2aca0988dc71d8bc551faad3",
+    "cases": [
+      "coder390/identity-0025",
+      "coder390/identity-0079",
+      "coder390/identity-0080"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I'll keep it simple and direct.\n",
+    "sha256": "3854858e19ff9f94cd6a2df78160e20814185706bf259867ae4c4f0f2326d430",
+    "cases": [
+      "coder390/identity-0026",
+      "coder390/identity-0031",
+      "coder390/identity-0045",
+      "coder390/identity-0085"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen.\n",
+    "sha256": "b48bf62358da4bd924d92b4600ff8d6284bad9c795290d5d3d5fe3013e0cbd39",
+    "cases": [
+      "coder390/identity-0029",
+      "coder390/identity-0038"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, natural introduction.\n",
+    "sha256": "2149b787e81005008e0465b1f609209aac3f3bdc23e60fb1968521caede42662",
+    "cases": [
+      "coder390/identity-0030"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a clear, concise self-introduction.\n",
+    "sha256": "1a76a4816620a9188a1cc23bdd7cd97194d3ab7fbde293aad22a620afa748f9e",
+    "cases": [
+      "coder390/identity-0032",
+      "coder390/identity-0050"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer. I should identify myself as Qwen, a large language model developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "4c142a721ee91947234c1a7a284b27247a2aa9672d8ee0922507012063437ffe",
+    "cases": [
+      "coder390/identity-0033"
+    ]
+  },
+  {
+    "channel": "answer",
+    "text": "I'm Qwen (通义千问), a large language model developed by Alibaba Group's Tongyi Lab.",
+    "sha256": "c7bc736a0ca4e2507551abec20cc3c018e75f714b5bfbe369752fc20b93ca647",
+    "cases": [
+      "coder390/identity-0035",
+      "coder390/identity-0076"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should answer concisely and accurately based on my identity.\n",
+    "sha256": "4d0be23f7fd914a9f9b5b7df90e45c8e4b86f76df0cf47449adff3ef3f6c958c",
+    "cases": [
+      "coder390/identity-0037"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify who I am, in one sentence. I should give a concise, accurate answer about my identity.\n",
+    "sha256": "b6441a5ea14f54e3350a72ff7b7b86c63f9173abc9a3cbfc810404eaa9f2e44d",
+    "cases": [
+      "coder390/identity-0041"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I should identify myself as Qwen, based on the identity information provided.\n",
+    "sha256": "38619344a6e45d10fd4b1c3d3a82bb7fc8f29593d54a03d52420c452b956add9",
+    "cases": [
+      "coder390/identity-0042"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, direct answer about my identity as Qwen.\n",
+    "sha256": "9b3a1613229f55a88143258c8f330a6d16e34f29e5227d6bedd1a80ae57ff3d8",
+    "cases": [
+      "coder390/identity-0044"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer. I should give a concise, accurate self-introduction.\n",
+    "sha256": "176d809fc8e364b39ff89c23edf8ccbb544fbea65a5fabed02403910fceafdb1",
+    "cases": [
+      "coder390/identity-0046"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should answer concisely and truthfully based on my identity as Qwen.\n",
+    "sha256": "eb4acfe01dba6928740e470023ab60bf29f537b7a67addd084538ef1cad7c7c8",
+    "cases": [
+      "coder390/identity-0048"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer. I should give a concise, honest response about being Qwen.\n",
+    "sha256": "7b634ff203984b4498174213673aca3e609d93d61a52e2d85cfd734a40f26c4e",
+    "cases": [
+      "coder390/identity-0049"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should keep it simple and direct.\n",
+    "sha256": "6ce87058755861e51d659f284ca4b65bfd9c1ac2ba1fba7f119a7798b67aadfc",
+    "cases": [
+      "coder390/identity-0052"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer. I should identify myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "7b16cd26cb861e94150bd1031a1a52487a518eccdc3b176472d442ba195ad4dd",
+    "cases": [
+      "coder390/identity-0054"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple question: \"Who are you?\" and wants a one-sentence answer. I should give a concise, clear self-introduction.\n",
+    "sha256": "1cd8ab71772fcaa7767f243192d92174dea0c91834cd54b7333113b7151d0bfb",
+    "cases": [
+      "coder390/identity-0057"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, honest response.\n",
+    "sha256": "c8b683ad9eaf54cc5fbb91284e5726694c0e7ebb52376d00615050c4889e5c7c",
+    "cases": [
+      "coder390/identity-0058"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I'll give a concise, clear response.\n",
+    "sha256": "720bc64813ac2278de5a283dd20d9a3b3a68d0bcf8428bb4d885b2501f88ec8e",
+    "cases": [
+      "coder390/identity-0060"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I'll give a concise, honest description.\n",
+    "sha256": "92b1dcc36d5edaa2682ef79d832e7f721f1d9cd5288d7eab4314ca981177de80",
+    "cases": [
+      "coder390/identity-0062"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I should identify myself as Qwen, developed by Alibaba's Tongyi Lab.\n",
+    "sha256": "f40575d694d3e217f05b9964b21beb759300636e355639006343dde59c305377",
+    "cases": [
+      "coder390/identity-0063"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I should respond concisely, identifying myself as Qwen (Tongyi Qianwen), developed by Alibaba Group's Tongyi Lab.\n",
+    "sha256": "0e6536767a2c1168f4ca53d926ab674e69fe118ca709caf1efb7214360ca37a7",
+    "cases": [
+      "coder390/identity-0065"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I'll give a concise, accurate self-introduction.\n",
+    "sha256": "be3949490021a88a1fbbc48e5c48bc20da4168747cea4bc8db3807732e151c3c",
+    "cases": [
+      "coder390/identity-0068"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should give a concise, accurate answer about who I am.\n",
+    "sha256": "1c3ff2e46ec7c0c6201d860e2c93b84e36fa403d68445d3387b682c9328687b1",
+    "cases": [
+      "coder390/identity-0069",
+      "coder390/identity-0098"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me who I am, and wants a one-sentence answer. I'll give a concise, clear identification.\n",
+    "sha256": "98071b4273f1eb9f54f5100773d3a29da168135583461acd70715736b92cde2b",
+    "cases": [
+      "coder390/identity-0075"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer. I should give a clear, concise response.\n",
+    "sha256": "655a1d832ffad46ad16753e64e651f7c1e4c000832eb52cbe696955ec31c89f9",
+    "cases": [
+      "coder390/identity-0084"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking me to identify myself in one sentence. I should be concise and direct.\n",
+    "sha256": "5bf5a68881835db737419bb87b6b8e2c4cfd516b6f038d3aed052481fad13d38",
+    "cases": [
+      "coder390/identity-0086"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should give a concise, accurate description of myself.\n",
+    "sha256": "c93b153e127950349ee0bf1d3b1df79141c0239fd0a9094f3ba9fdc8895dda40",
+    "cases": [
+      "coder390/identity-0087"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am, and wants a one-sentence answer. I should identify myself as Qwen, based on the identity information provided.\n",
+    "sha256": "a5615f6ceaf9f0edd7f3418040e4fa59e221c79e1cedafc7048d687652c7c9e7",
+    "cases": [
+      "coder390/identity-0090"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking a simple identity question and wants a one-sentence answer. I should be direct and concise, identifying myself as Qwen.\n",
+    "sha256": "cc693c3736e74e8f94a4cc289b2c554d612d74af3988c84075e0598d624977bd",
+    "cases": [
+      "coder390/identity-0092"
+    ]
+  },
+  {
+    "channel": "reasoning",
+    "text": "The user is asking who I am and wants a one-sentence answer. I should give a concise, clear identification.\n",
+    "sha256": "d57f609152dd9226686acdffa512f13495afca4e452f2a83ed2470a0c7c454f5",
+    "cases": [
+      "coder390/identity-0099"
+    ]
+  }
+]
