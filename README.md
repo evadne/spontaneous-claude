@@ -1,12 +1,30 @@
 # Spontaneous Claude
 
 A local research archive of spontaneous Claude/Anthropic self-identification in
-models released under other names. It brings together the K2 Horizon, Qwopus
-and OrcaSAQ-2 investigations, their original evidence, and a repeatable local
-portrait-generation and judging workflow.
+models released under other names. It brings together the K2 Horizon, Qwopus,
+OrcaSAQ-2 and Coder390 investigations, their original evidence, and a repeatable
+local portrait-generation and judging workflow.
 
 This records observed behaviour. A model calling itself Claude is not proof of
 its training provenance, consciousness, or a discrete internal Claude persona.
+
+## Project status: closed — 12 October 2026
+
+The authorised studies are complete and merged to `main`. This repository is
+retained as a research and reproducibility archive. The Coder390 study servers
+were shut down and its monitor was deleted on completion; no further collection
+or follow-up experiment is scheduled.
+
+The final matched comparison found Claude claims in the Qwen control as well as
+Coder390, while both models answered Qwen in every direct-answer trial. Coder390
+produced more visibly Claude-labelled portraits but fewer Claude claims across
+all portrait channels. Self-identification is therefore an observable,
+prompt-dependent behaviour, and a weak standalone test of model provenance.
+These data do not isolate the contribution of any particular teacher.
+
+See [closing notes](docs/CLOSING-NOTES.md) for interpretation and limitations,
+and the [full Coder390 report](evidence/coder390/REPORT.md) for uncertainty,
+backend strata, failures, audit decisions and the retry sensitivity analysis.
 
 ## Findings
 
@@ -32,7 +50,6 @@ matched 100-seed comparison.
 - `evidence/coder390/`: fixed two-model/two-prompt collection, source review,
   backend/retry provenance, calibrated multi-identity judgements, audited labels
   and comparative report.
-
 - `evidence/orcasaq-2/`: baseline probes, exact requests/responses, RPC methods,
   serving and checkpoint records, farm plan, raw responses, extracted reasoning,
   SVGs/PNGs, local judge outputs, calibration, positive and negative audits.
@@ -52,6 +69,10 @@ See [archive scope and source history](docs/ARCHIVE.md) and
 remain unchanged; the runnable commands below use this repository's paths.
 
 ## Repeatable local runs
+
+The commands below document how to reproduce or extend the archived work. They
+are not pending project tasks. Any future experiment should be a separately
+registered study that preserves the completed evidence and its limitations.
 
 Requirements: Python 3.9 or later; `rsvg-convert` from librsvg for image rendering;
 an OpenAI-compatible local inference endpoint for generation; and a local
